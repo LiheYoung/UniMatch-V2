@@ -1,0 +1,21 @@
+# arguments for dataset
+dataset: coco
+data_root: Your/COCO/Path
+nclass: 81
+crop_size: 518
+
+# arguments for training
+epochs: 20
+batch_size: 4 # per GPU x 4 GPUs
+lr: 0.000005
+lr_multi: 40.0
+criterion:
+  name: CELoss
+  kwargs:
+    ignore_index: 255
+conf_thresh: 0.95
+
+# arguments for model
+model: dpt
+backbone: dinov2_small
+lock_backbone: False

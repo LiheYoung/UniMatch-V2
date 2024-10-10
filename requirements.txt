@@ -1,0 +1,12 @@
+pyyaml>=5.4.0
+easydict
+TensorBoardX
+tensorboard
+opencv-python
+scipy
+scikit-learn
+scikit-image
+einops
+h5py
+torch
+torchvision
