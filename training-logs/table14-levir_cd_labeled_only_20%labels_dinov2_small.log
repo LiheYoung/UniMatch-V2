@@ -1,0 +1,862 @@
+[2024-09-14 13:43:14,555][    INFO] {'backbone': 'dinov2_small',
+ 'batch_size': 16,
+ 'conf_thresh': 0.95,
+ 'config': 'configs/levir.yaml',
+ 'crop_size': 252,
+ 'data_root': '/home/bingxing2/lihe/data/LEVIR-CD',
+ 'dataset': 'levir',
+ 'epochs': 60,
+ 'labeled_id_path': 'splits/levir/20%/labeled.txt',
+ 'local_rank': 0,
+ 'lock_backbone': False,
+ 'lr': 5e-06,
+ 'lr_multi': 40.0,
+ 'model': 'dpt',
+ 'nclass': 2,
+ 'ngpus': 1,
+ 'port': 25849,
+ 'save_path': 'exp/levir/supervised/dinov2_small/20%',
+ 'unlabeled_id_path': 'splits/levir/20%/unlabeled.txt'}
+
+[2024-09-14 13:43:15,905][    INFO] Total params: 24.8M
+
+[2024-09-14 13:43:16,708][    INFO] ===========> Epoch: 0, LR: 0.0000050, Previous best Changed IoU: 0.00, Overall Accuracy: 0.00
+[2024-09-14 13:43:19,404][    INFO] Iters: 0, Total loss: 0.840
+[2024-09-14 13:43:26,049][    INFO] Iters: 23, Total loss: 0.317
+[2024-09-14 13:43:32,799][    INFO] Iters: 46, Total loss: 0.264
+[2024-09-14 13:43:39,256][    INFO] Iters: 69, Total loss: 0.237
+[2024-09-14 13:43:45,485][    INFO] Iters: 92, Total loss: 0.209
+[2024-09-14 13:43:51,427][    INFO] Iters: 115, Total loss: 0.187
+[2024-09-14 13:43:57,247][    INFO] Iters: 138, Total loss: 0.168
+[2024-09-14 13:44:02,952][    INFO] Iters: 161, Total loss: 0.152
+[2024-09-14 13:44:08,437][    INFO] Iters: 184, Total loss: 0.141
+[2024-09-14 13:44:51,862][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 97.22
+[2024-09-14 13:44:51,862][    INFO] ***** Evaluation ***** >>>> Changed IoU: 59.42
+[2024-09-14 13:44:51,862][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 97.33
+
+[2024-09-14 13:44:52,855][    INFO] ===========> Epoch: 1, LR: 0.0000049, Previous best Changed IoU: 59.42, Overall Accuracy: 97.33
+[2024-09-14 13:44:53,435][    INFO] Iters: 0, Total loss: 0.042
+[2024-09-14 13:44:59,881][    INFO] Iters: 23, Total loss: 0.049
+[2024-09-14 13:45:05,946][    INFO] Iters: 46, Total loss: 0.050
+[2024-09-14 13:45:11,799][    INFO] Iters: 69, Total loss: 0.051
+[2024-09-14 13:45:17,534][    INFO] Iters: 92, Total loss: 0.051
+[2024-09-14 13:45:23,185][    INFO] Iters: 115, Total loss: 0.051
+[2024-09-14 13:45:28,713][    INFO] Iters: 138, Total loss: 0.050
+[2024-09-14 13:45:34,157][    INFO] Iters: 161, Total loss: 0.048
+[2024-09-14 13:45:39,546][    INFO] Iters: 184, Total loss: 0.049
+[2024-09-14 13:46:22,224][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 96.99
+[2024-09-14 13:46:22,225][    INFO] ***** Evaluation ***** >>>> Changed IoU: 46.18
+[2024-09-14 13:46:22,225][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 97.06
+
+[2024-09-14 13:46:22,762][    INFO] ===========> Epoch: 2, LR: 0.0000049, Previous best Changed IoU: 59.42, Overall Accuracy: 97.33
+[2024-09-14 13:46:23,228][    INFO] Iters: 0, Total loss: 0.054
+[2024-09-14 13:46:28,761][    INFO] Iters: 23, Total loss: 0.054
+[2024-09-14 13:46:34,565][    INFO] Iters: 46, Total loss: 0.048
+[2024-09-14 13:46:40,235][    INFO] Iters: 69, Total loss: 0.047
+[2024-09-14 13:46:45,808][    INFO] Iters: 92, Total loss: 0.044
+[2024-09-14 13:46:51,348][    INFO] Iters: 115, Total loss: 0.043
+[2024-09-14 13:46:56,714][    INFO] Iters: 138, Total loss: 0.042
+[2024-09-14 13:47:02,043][    INFO] Iters: 161, Total loss: 0.041
+[2024-09-14 13:47:07,285][    INFO] Iters: 184, Total loss: 0.040
+[2024-09-14 13:47:49,283][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.09
+[2024-09-14 13:47:49,284][    INFO] ***** Evaluation ***** >>>> Changed IoU: 70.26
+[2024-09-14 13:47:49,284][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.17
+
+[2024-09-14 13:47:50,510][    INFO] ===========> Epoch: 3, LR: 0.0000048, Previous best Changed IoU: 70.26, Overall Accuracy: 98.17
+[2024-09-14 13:47:51,061][    INFO] Iters: 0, Total loss: 0.044
+[2024-09-14 13:47:56,411][    INFO] Iters: 23, Total loss: 0.032
+[2024-09-14 13:48:01,892][    INFO] Iters: 46, Total loss: 0.031
+[2024-09-14 13:48:07,258][    INFO] Iters: 69, Total loss: 0.032
+[2024-09-14 13:48:12,574][    INFO] Iters: 92, Total loss: 0.032
+[2024-09-14 13:48:18,062][    INFO] Iters: 115, Total loss: 0.032
+[2024-09-14 13:48:23,562][    INFO] Iters: 138, Total loss: 0.032
+[2024-09-14 13:48:29,023][    INFO] Iters: 161, Total loss: 0.033
+[2024-09-14 13:48:34,497][    INFO] Iters: 184, Total loss: 0.033
+[2024-09-14 13:49:16,836][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.28
+[2024-09-14 13:49:16,836][    INFO] ***** Evaluation ***** >>>> Changed IoU: 71.22
+[2024-09-14 13:49:16,836][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.35
+
+[2024-09-14 13:49:17,897][    INFO] ===========> Epoch: 4, LR: 0.0000047, Previous best Changed IoU: 71.22, Overall Accuracy: 98.35
+[2024-09-14 13:49:18,418][    INFO] Iters: 0, Total loss: 0.044
+[2024-09-14 13:49:23,731][    INFO] Iters: 23, Total loss: 0.033
+[2024-09-14 13:49:29,060][    INFO] Iters: 46, Total loss: 0.031
+[2024-09-14 13:49:34,293][    INFO] Iters: 69, Total loss: 0.031
+[2024-09-14 13:49:39,729][    INFO] Iters: 92, Total loss: 0.030
+[2024-09-14 13:49:45,533][    INFO] Iters: 115, Total loss: 0.030
+[2024-09-14 13:49:51,336][    INFO] Iters: 138, Total loss: 0.030
+[2024-09-14 13:49:56,898][    INFO] Iters: 161, Total loss: 0.030
+[2024-09-14 13:50:02,548][    INFO] Iters: 184, Total loss: 0.030
+[2024-09-14 13:50:44,799][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.36
+[2024-09-14 13:50:44,799][    INFO] ***** Evaluation ***** >>>> Changed IoU: 73.54
+[2024-09-14 13:50:44,799][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.43
+
+[2024-09-14 13:50:45,909][    INFO] ===========> Epoch: 5, LR: 0.0000046, Previous best Changed IoU: 73.54, Overall Accuracy: 98.43
+[2024-09-14 13:50:46,418][    INFO] Iters: 0, Total loss: 0.012
+[2024-09-14 13:50:51,977][    INFO] Iters: 23, Total loss: 0.026
+[2024-09-14 13:50:57,208][    INFO] Iters: 46, Total loss: 0.026
+[2024-09-14 13:51:02,553][    INFO] Iters: 69, Total loss: 0.028
+[2024-09-14 13:51:07,995][    INFO] Iters: 92, Total loss: 0.028
+[2024-09-14 13:51:13,331][    INFO] Iters: 115, Total loss: 0.028
+[2024-09-14 13:51:18,528][    INFO] Iters: 138, Total loss: 0.028
+[2024-09-14 13:51:23,899][    INFO] Iters: 161, Total loss: 0.027
+[2024-09-14 13:51:29,365][    INFO] Iters: 184, Total loss: 0.027
+[2024-09-14 13:52:11,955][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.45
+[2024-09-14 13:52:11,955][    INFO] ***** Evaluation ***** >>>> Changed IoU: 73.86
+[2024-09-14 13:52:11,955][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.51
+
+[2024-09-14 13:52:13,026][    INFO] ===========> Epoch: 6, LR: 0.0000045, Previous best Changed IoU: 73.86, Overall Accuracy: 98.51
+[2024-09-14 13:52:13,553][    INFO] Iters: 0, Total loss: 0.018
+[2024-09-14 13:52:18,963][    INFO] Iters: 23, Total loss: 0.026
+[2024-09-14 13:52:24,228][    INFO] Iters: 46, Total loss: 0.026
+[2024-09-14 13:52:29,463][    INFO] Iters: 69, Total loss: 0.025
+[2024-09-14 13:52:35,245][    INFO] Iters: 92, Total loss: 0.026
+[2024-09-14 13:52:40,909][    INFO] Iters: 115, Total loss: 0.026
+[2024-09-14 13:52:46,415][    INFO] Iters: 138, Total loss: 0.026
+[2024-09-14 13:52:51,770][    INFO] Iters: 161, Total loss: 0.026
+[2024-09-14 13:52:57,006][    INFO] Iters: 184, Total loss: 0.026
+[2024-09-14 13:53:39,024][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.43
+[2024-09-14 13:53:39,024][    INFO] ***** Evaluation ***** >>>> Changed IoU: 75.17
+[2024-09-14 13:53:39,024][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.50
+
+[2024-09-14 13:53:40,102][    INFO] ===========> Epoch: 7, LR: 0.0000045, Previous best Changed IoU: 75.17, Overall Accuracy: 98.50
+[2024-09-14 13:53:40,569][    INFO] Iters: 0, Total loss: 0.068
+[2024-09-14 13:53:45,903][    INFO] Iters: 23, Total loss: 0.029
+[2024-09-14 13:53:51,129][    INFO] Iters: 46, Total loss: 0.027
+[2024-09-14 13:53:56,288][    INFO] Iters: 69, Total loss: 0.026
+[2024-09-14 13:54:01,597][    INFO] Iters: 92, Total loss: 0.025
+[2024-09-14 13:54:06,895][    INFO] Iters: 115, Total loss: 0.025
+[2024-09-14 13:54:12,043][    INFO] Iters: 138, Total loss: 0.025
+[2024-09-14 13:54:17,077][    INFO] Iters: 161, Total loss: 0.024
+[2024-09-14 13:54:21,910][    INFO] Iters: 184, Total loss: 0.024
+[2024-09-14 13:55:03,778][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.54
+[2024-09-14 13:55:03,778][    INFO] ***** Evaluation ***** >>>> Changed IoU: 76.22
+[2024-09-14 13:55:03,778][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.60
+
+[2024-09-14 13:55:04,971][    INFO] ===========> Epoch: 8, LR: 0.0000044, Previous best Changed IoU: 76.22, Overall Accuracy: 98.60
+[2024-09-14 13:55:05,480][    INFO] Iters: 0, Total loss: 0.008
+[2024-09-14 13:55:10,551][    INFO] Iters: 23, Total loss: 0.024
+[2024-09-14 13:55:15,666][    INFO] Iters: 46, Total loss: 0.023
+[2024-09-14 13:55:20,731][    INFO] Iters: 69, Total loss: 0.023
+[2024-09-14 13:55:25,750][    INFO] Iters: 92, Total loss: 0.022
+[2024-09-14 13:55:30,886][    INFO] Iters: 115, Total loss: 0.022
+[2024-09-14 13:55:36,223][    INFO] Iters: 138, Total loss: 0.022
+[2024-09-14 13:55:41,446][    INFO] Iters: 161, Total loss: 0.022
+[2024-09-14 13:55:46,638][    INFO] Iters: 184, Total loss: 0.023
+[2024-09-14 13:56:28,873][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.61
+[2024-09-14 13:56:28,873][    INFO] ***** Evaluation ***** >>>> Changed IoU: 76.44
+[2024-09-14 13:56:28,873][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.67
+
+[2024-09-14 13:56:29,910][    INFO] ===========> Epoch: 9, LR: 0.0000043, Previous best Changed IoU: 76.44, Overall Accuracy: 98.67
+[2024-09-14 13:56:30,356][    INFO] Iters: 0, Total loss: 0.039
+[2024-09-14 13:56:35,597][    INFO] Iters: 23, Total loss: 0.023
+[2024-09-14 13:56:40,649][    INFO] Iters: 46, Total loss: 0.040
+[2024-09-14 13:56:45,687][    INFO] Iters: 69, Total loss: 0.038
+[2024-09-14 13:56:50,578][    INFO] Iters: 92, Total loss: 0.037
+[2024-09-14 13:56:55,423][    INFO] Iters: 115, Total loss: 0.035
+[2024-09-14 13:57:00,952][    INFO] Iters: 138, Total loss: 0.035
+[2024-09-14 13:57:06,637][    INFO] Iters: 161, Total loss: 0.034
+[2024-09-14 13:57:12,073][    INFO] Iters: 184, Total loss: 0.034
+[2024-09-14 13:57:54,331][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.52
+[2024-09-14 13:57:54,331][    INFO] ***** Evaluation ***** >>>> Changed IoU: 75.17
+[2024-09-14 13:57:54,331][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.58
+
+[2024-09-14 13:57:54,863][    INFO] ===========> Epoch: 10, LR: 0.0000042, Previous best Changed IoU: 76.44, Overall Accuracy: 98.67
+[2024-09-14 13:57:55,353][    INFO] Iters: 0, Total loss: 0.036
+[2024-09-14 13:58:00,481][    INFO] Iters: 23, Total loss: 0.025
+[2024-09-14 13:58:05,545][    INFO] Iters: 46, Total loss: 0.025
+[2024-09-14 13:58:10,521][    INFO] Iters: 69, Total loss: 0.025
+[2024-09-14 13:58:15,438][    INFO] Iters: 92, Total loss: 0.025
+[2024-09-14 13:58:20,461][    INFO] Iters: 115, Total loss: 0.025
+[2024-09-14 13:58:25,492][    INFO] Iters: 138, Total loss: 0.025
+[2024-09-14 13:58:30,424][    INFO] Iters: 161, Total loss: 0.025
+[2024-09-14 13:58:35,219][    INFO] Iters: 184, Total loss: 0.024
+[2024-09-14 13:59:17,491][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.60
+[2024-09-14 13:59:17,491][    INFO] ***** Evaluation ***** >>>> Changed IoU: 76.20
+[2024-09-14 13:59:17,491][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.66
+
+[2024-09-14 13:59:18,022][    INFO] ===========> Epoch: 11, LR: 0.0000042, Previous best Changed IoU: 76.44, Overall Accuracy: 98.67
+[2024-09-14 13:59:18,509][    INFO] Iters: 0, Total loss: 0.005
+[2024-09-14 13:59:23,953][    INFO] Iters: 23, Total loss: 0.022
+[2024-09-14 13:59:29,521][    INFO] Iters: 46, Total loss: 0.022
+[2024-09-14 13:59:34,966][    INFO] Iters: 69, Total loss: 0.023
+[2024-09-14 13:59:40,359][    INFO] Iters: 92, Total loss: 0.023
+[2024-09-14 13:59:45,674][    INFO] Iters: 115, Total loss: 0.022
+[2024-09-14 13:59:50,824][    INFO] Iters: 138, Total loss: 0.022
+[2024-09-14 13:59:56,057][    INFO] Iters: 161, Total loss: 0.022
+[2024-09-14 14:00:01,173][    INFO] Iters: 184, Total loss: 0.022
+[2024-09-14 14:00:43,814][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.65
+[2024-09-14 14:00:43,814][    INFO] ***** Evaluation ***** >>>> Changed IoU: 77.24
+[2024-09-14 14:00:43,814][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.71
+
+[2024-09-14 14:00:44,900][    INFO] ===========> Epoch: 12, LR: 0.0000041, Previous best Changed IoU: 77.24, Overall Accuracy: 98.71
+[2024-09-14 14:00:45,444][    INFO] Iters: 0, Total loss: 0.020
+[2024-09-14 14:00:50,974][    INFO] Iters: 23, Total loss: 0.020
+[2024-09-14 14:00:56,590][    INFO] Iters: 46, Total loss: 0.021
+[2024-09-14 14:01:02,440][    INFO] Iters: 69, Total loss: 0.021
+[2024-09-14 14:01:08,160][    INFO] Iters: 92, Total loss: 0.021
+[2024-09-14 14:01:13,643][    INFO] Iters: 115, Total loss: 0.021
+[2024-09-14 14:01:18,938][    INFO] Iters: 138, Total loss: 0.021
+[2024-09-14 14:01:24,103][    INFO] Iters: 161, Total loss: 0.021
+[2024-09-14 14:01:29,112][    INFO] Iters: 184, Total loss: 0.021
+[2024-09-14 14:02:11,040][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.68
+[2024-09-14 14:02:11,040][    INFO] ***** Evaluation ***** >>>> Changed IoU: 77.80
+[2024-09-14 14:02:11,040][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.74
+
+[2024-09-14 14:02:12,113][    INFO] ===========> Epoch: 13, LR: 0.0000040, Previous best Changed IoU: 77.80, Overall Accuracy: 98.74
+[2024-09-14 14:02:12,644][    INFO] Iters: 0, Total loss: 0.015
+[2024-09-14 14:02:18,319][    INFO] Iters: 23, Total loss: 0.020
+[2024-09-14 14:02:24,058][    INFO] Iters: 46, Total loss: 0.021
+[2024-09-14 14:02:29,661][    INFO] Iters: 69, Total loss: 0.021
+[2024-09-14 14:02:34,985][    INFO] Iters: 92, Total loss: 0.021
+[2024-09-14 14:02:41,231][    INFO] Iters: 115, Total loss: 0.021
+[2024-09-14 14:02:46,536][    INFO] Iters: 138, Total loss: 0.021
+[2024-09-14 14:02:51,673][    INFO] Iters: 161, Total loss: 0.021
+[2024-09-14 14:02:56,740][    INFO] Iters: 184, Total loss: 0.021
+[2024-09-14 14:03:40,056][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.70
+[2024-09-14 14:03:40,056][    INFO] ***** Evaluation ***** >>>> Changed IoU: 78.04
+[2024-09-14 14:03:40,056][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.75
+
+[2024-09-14 14:03:41,207][    INFO] ===========> Epoch: 14, LR: 0.0000039, Previous best Changed IoU: 78.04, Overall Accuracy: 98.75
+[2024-09-14 14:03:41,786][    INFO] Iters: 0, Total loss: 0.037
+[2024-09-14 14:03:47,710][    INFO] Iters: 23, Total loss: 0.023
+[2024-09-14 14:03:53,679][    INFO] Iters: 46, Total loss: 0.021
+[2024-09-14 14:03:59,476][    INFO] Iters: 69, Total loss: 0.021
+[2024-09-14 14:04:05,321][    INFO] Iters: 92, Total loss: 0.021
+[2024-09-14 14:04:11,172][    INFO] Iters: 115, Total loss: 0.020
+[2024-09-14 14:04:16,920][    INFO] Iters: 138, Total loss: 0.021
+[2024-09-14 14:04:22,661][    INFO] Iters: 161, Total loss: 0.020
+[2024-09-14 14:04:28,392][    INFO] Iters: 184, Total loss: 0.020
+[2024-09-14 14:05:09,177][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.70
+[2024-09-14 14:05:09,177][    INFO] ***** Evaluation ***** >>>> Changed IoU: 78.38
+[2024-09-14 14:05:09,177][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.76
+
+[2024-09-14 14:05:10,304][    INFO] ===========> Epoch: 15, LR: 0.0000039, Previous best Changed IoU: 78.38, Overall Accuracy: 98.76
+[2024-09-14 14:05:10,870][    INFO] Iters: 0, Total loss: 0.033
+[2024-09-14 14:05:17,014][    INFO] Iters: 23, Total loss: 0.020
+[2024-09-14 14:05:22,884][    INFO] Iters: 46, Total loss: 0.020
+[2024-09-14 14:05:28,528][    INFO] Iters: 69, Total loss: 0.019
+[2024-09-14 14:05:33,899][    INFO] Iters: 92, Total loss: 0.019
+[2024-09-14 14:05:39,171][    INFO] Iters: 115, Total loss: 0.020
+[2024-09-14 14:05:44,318][    INFO] Iters: 138, Total loss: 0.020
+[2024-09-14 14:05:49,384][    INFO] Iters: 161, Total loss: 0.020
+[2024-09-14 14:05:54,361][    INFO] Iters: 184, Total loss: 0.020
+[2024-09-14 14:06:37,964][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.71
+[2024-09-14 14:06:37,965][    INFO] ***** Evaluation ***** >>>> Changed IoU: 77.80
+[2024-09-14 14:06:37,965][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.77
+
+[2024-09-14 14:06:38,572][    INFO] ===========> Epoch: 16, LR: 0.0000038, Previous best Changed IoU: 78.38, Overall Accuracy: 98.76
+[2024-09-14 14:06:39,123][    INFO] Iters: 0, Total loss: 0.012
+[2024-09-14 14:06:45,271][    INFO] Iters: 23, Total loss: 0.017
+[2024-09-14 14:06:51,215][    INFO] Iters: 46, Total loss: 0.019
+[2024-09-14 14:06:56,975][    INFO] Iters: 69, Total loss: 0.019
+[2024-09-14 14:07:02,644][    INFO] Iters: 92, Total loss: 0.020
+[2024-09-14 14:07:08,239][    INFO] Iters: 115, Total loss: 0.020
+[2024-09-14 14:07:13,714][    INFO] Iters: 138, Total loss: 0.020
+[2024-09-14 14:07:19,013][    INFO] Iters: 161, Total loss: 0.019
+[2024-09-14 14:07:24,181][    INFO] Iters: 184, Total loss: 0.019
+[2024-09-14 14:08:06,913][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.73
+[2024-09-14 14:08:06,914][    INFO] ***** Evaluation ***** >>>> Changed IoU: 78.58
+[2024-09-14 14:08:06,914][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.79
+
+[2024-09-14 14:08:08,019][    INFO] ===========> Epoch: 17, LR: 0.0000037, Previous best Changed IoU: 78.58, Overall Accuracy: 98.79
+[2024-09-14 14:08:08,561][    INFO] Iters: 0, Total loss: 0.016
+[2024-09-14 14:08:13,892][    INFO] Iters: 23, Total loss: 0.018
+[2024-09-14 14:08:19,405][    INFO] Iters: 46, Total loss: 0.019
+[2024-09-14 14:08:25,066][    INFO] Iters: 69, Total loss: 0.019
+[2024-09-14 14:08:30,736][    INFO] Iters: 92, Total loss: 0.019
+[2024-09-14 14:08:36,218][    INFO] Iters: 115, Total loss: 0.019
+[2024-09-14 14:08:41,689][    INFO] Iters: 138, Total loss: 0.019
+[2024-09-14 14:08:47,041][    INFO] Iters: 161, Total loss: 0.019
+[2024-09-14 14:08:52,310][    INFO] Iters: 184, Total loss: 0.019
+[2024-09-14 14:09:34,994][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.74
+[2024-09-14 14:09:34,994][    INFO] ***** Evaluation ***** >>>> Changed IoU: 77.79
+[2024-09-14 14:09:34,994][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.79
+
+[2024-09-14 14:09:35,558][    INFO] ===========> Epoch: 18, LR: 0.0000036, Previous best Changed IoU: 78.58, Overall Accuracy: 98.79
+[2024-09-14 14:09:36,055][    INFO] Iters: 0, Total loss: 0.014
+[2024-09-14 14:09:41,269][    INFO] Iters: 23, Total loss: 0.021
+[2024-09-14 14:09:46,725][    INFO] Iters: 46, Total loss: 0.019
+[2024-09-14 14:09:52,043][    INFO] Iters: 69, Total loss: 0.019
+[2024-09-14 14:09:57,292][    INFO] Iters: 92, Total loss: 0.019
+[2024-09-14 14:10:02,530][    INFO] Iters: 115, Total loss: 0.019
+[2024-09-14 14:10:07,784][    INFO] Iters: 138, Total loss: 0.018
+[2024-09-14 14:10:13,019][    INFO] Iters: 161, Total loss: 0.019
+[2024-09-14 14:10:18,236][    INFO] Iters: 184, Total loss: 0.019
+[2024-09-14 14:10:59,906][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.77
+[2024-09-14 14:10:59,906][    INFO] ***** Evaluation ***** >>>> Changed IoU: 79.02
+[2024-09-14 14:10:59,906][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.83
+
+[2024-09-14 14:11:01,152][    INFO] ===========> Epoch: 19, LR: 0.0000035, Previous best Changed IoU: 79.02, Overall Accuracy: 98.83
+[2024-09-14 14:11:01,689][    INFO] Iters: 0, Total loss: 0.014
+[2024-09-14 14:11:07,397][    INFO] Iters: 23, Total loss: 0.019
+[2024-09-14 14:11:13,067][    INFO] Iters: 46, Total loss: 0.018
+[2024-09-14 14:11:18,762][    INFO] Iters: 69, Total loss: 0.018
+[2024-09-14 14:11:24,558][    INFO] Iters: 92, Total loss: 0.018
+[2024-09-14 14:11:30,379][    INFO] Iters: 115, Total loss: 0.018
+[2024-09-14 14:11:36,088][    INFO] Iters: 138, Total loss: 0.018
+[2024-09-14 14:11:41,727][    INFO] Iters: 161, Total loss: 0.018
+[2024-09-14 14:11:47,298][    INFO] Iters: 184, Total loss: 0.018
+[2024-09-14 14:12:29,709][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.73
+[2024-09-14 14:12:29,709][    INFO] ***** Evaluation ***** >>>> Changed IoU: 78.87
+[2024-09-14 14:12:29,709][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.79
+
+[2024-09-14 14:12:30,279][    INFO] ===========> Epoch: 20, LR: 0.0000035, Previous best Changed IoU: 79.02, Overall Accuracy: 98.83
+[2024-09-14 14:12:30,733][    INFO] Iters: 0, Total loss: 0.026
+[2024-09-14 14:12:36,147][    INFO] Iters: 23, Total loss: 0.020
+[2024-09-14 14:12:41,891][    INFO] Iters: 46, Total loss: 0.018
+[2024-09-14 14:12:47,507][    INFO] Iters: 69, Total loss: 0.018
+[2024-09-14 14:12:52,964][    INFO] Iters: 92, Total loss: 0.018
+[2024-09-14 14:12:58,264][    INFO] Iters: 115, Total loss: 0.018
+[2024-09-14 14:13:03,474][    INFO] Iters: 138, Total loss: 0.018
+[2024-09-14 14:13:08,590][    INFO] Iters: 161, Total loss: 0.018
+[2024-09-14 14:13:13,574][    INFO] Iters: 184, Total loss: 0.018
+[2024-09-14 14:13:55,627][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.78
+[2024-09-14 14:13:55,627][    INFO] ***** Evaluation ***** >>>> Changed IoU: 79.27
+[2024-09-14 14:13:55,627][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.83
+
+[2024-09-14 14:13:56,773][    INFO] ===========> Epoch: 21, LR: 0.0000034, Previous best Changed IoU: 79.27, Overall Accuracy: 98.83
+[2024-09-14 14:13:57,325][    INFO] Iters: 0, Total loss: 0.020
+[2024-09-14 14:14:03,024][    INFO] Iters: 23, Total loss: 0.020
+[2024-09-14 14:14:08,865][    INFO] Iters: 46, Total loss: 0.019
+[2024-09-14 14:14:14,581][    INFO] Iters: 69, Total loss: 0.018
+[2024-09-14 14:14:19,986][    INFO] Iters: 92, Total loss: 0.018
+[2024-09-14 14:14:25,149][    INFO] Iters: 115, Total loss: 0.018
+[2024-09-14 14:14:30,185][    INFO] Iters: 138, Total loss: 0.017
+[2024-09-14 14:14:35,165][    INFO] Iters: 161, Total loss: 0.017
+[2024-09-14 14:14:40,046][    INFO] Iters: 184, Total loss: 0.017
+[2024-09-14 14:15:21,340][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.77
+[2024-09-14 14:15:21,341][    INFO] ***** Evaluation ***** >>>> Changed IoU: 79.14
+[2024-09-14 14:15:21,341][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.83
+
+[2024-09-14 14:15:21,843][    INFO] ===========> Epoch: 22, LR: 0.0000033, Previous best Changed IoU: 79.27, Overall Accuracy: 98.83
+[2024-09-14 14:15:22,336][    INFO] Iters: 0, Total loss: 0.020
+[2024-09-14 14:15:28,607][    INFO] Iters: 23, Total loss: 0.017
+[2024-09-14 14:15:34,627][    INFO] Iters: 46, Total loss: 0.017
+[2024-09-14 14:15:40,463][    INFO] Iters: 69, Total loss: 0.017
+[2024-09-14 14:15:46,131][    INFO] Iters: 92, Total loss: 0.018
+[2024-09-14 14:15:51,825][    INFO] Iters: 115, Total loss: 0.019
+[2024-09-14 14:15:57,345][    INFO] Iters: 138, Total loss: 0.022
+[2024-09-14 14:16:03,801][    INFO] Iters: 161, Total loss: 0.023
+[2024-09-14 14:16:09,113][    INFO] Iters: 184, Total loss: 0.023
+[2024-09-14 14:16:49,902][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.72
+[2024-09-14 14:16:49,902][    INFO] ***** Evaluation ***** >>>> Changed IoU: 78.60
+[2024-09-14 14:16:49,902][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.77
+
+[2024-09-14 14:16:50,392][    INFO] ===========> Epoch: 23, LR: 0.0000032, Previous best Changed IoU: 79.27, Overall Accuracy: 98.83
+[2024-09-14 14:16:50,826][    INFO] Iters: 0, Total loss: 0.015
+[2024-09-14 14:16:56,471][    INFO] Iters: 23, Total loss: 0.019
+[2024-09-14 14:17:02,209][    INFO] Iters: 46, Total loss: 0.020
+[2024-09-14 14:17:07,992][    INFO] Iters: 69, Total loss: 0.020
+[2024-09-14 14:17:13,707][    INFO] Iters: 92, Total loss: 0.019
+[2024-09-14 14:17:19,322][    INFO] Iters: 115, Total loss: 0.019
+[2024-09-14 14:17:24,888][    INFO] Iters: 138, Total loss: 0.019
+[2024-09-14 14:17:30,380][    INFO] Iters: 161, Total loss: 0.018
+[2024-09-14 14:17:35,797][    INFO] Iters: 184, Total loss: 0.018
+[2024-09-14 14:18:16,563][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.80
+[2024-09-14 14:18:16,563][    INFO] ***** Evaluation ***** >>>> Changed IoU: 79.31
+[2024-09-14 14:18:16,563][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.85
+
+[2024-09-14 14:18:17,598][    INFO] ===========> Epoch: 24, LR: 0.0000032, Previous best Changed IoU: 79.31, Overall Accuracy: 98.85
+[2024-09-14 14:18:18,135][    INFO] Iters: 0, Total loss: 0.009
+[2024-09-14 14:18:24,002][    INFO] Iters: 23, Total loss: 0.017
+[2024-09-14 14:18:29,804][    INFO] Iters: 46, Total loss: 0.016
+[2024-09-14 14:18:35,444][    INFO] Iters: 69, Total loss: 0.016
+[2024-09-14 14:18:41,181][    INFO] Iters: 92, Total loss: 0.017
+[2024-09-14 14:18:46,872][    INFO] Iters: 115, Total loss: 0.016
+[2024-09-14 14:18:52,407][    INFO] Iters: 138, Total loss: 0.016
+[2024-09-14 14:18:57,812][    INFO] Iters: 161, Total loss: 0.017
+[2024-09-14 14:19:03,036][    INFO] Iters: 184, Total loss: 0.017
+[2024-09-14 14:19:43,665][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.79
+[2024-09-14 14:19:43,665][    INFO] ***** Evaluation ***** >>>> Changed IoU: 79.67
+[2024-09-14 14:19:43,665][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.85
+
+[2024-09-14 14:19:44,694][    INFO] ===========> Epoch: 25, LR: 0.0000031, Previous best Changed IoU: 79.67, Overall Accuracy: 98.85
+[2024-09-14 14:19:45,160][    INFO] Iters: 0, Total loss: 0.009
+[2024-09-14 14:19:51,145][    INFO] Iters: 23, Total loss: 0.019
+[2024-09-14 14:19:57,263][    INFO] Iters: 46, Total loss: 0.017
+[2024-09-14 14:20:02,923][    INFO] Iters: 69, Total loss: 0.016
+[2024-09-14 14:20:08,365][    INFO] Iters: 92, Total loss: 0.016
+[2024-09-14 14:20:13,648][    INFO] Iters: 115, Total loss: 0.017
+[2024-09-14 14:20:18,762][    INFO] Iters: 138, Total loss: 0.016
+[2024-09-14 14:20:23,763][    INFO] Iters: 161, Total loss: 0.017
+[2024-09-14 14:20:28,713][    INFO] Iters: 184, Total loss: 0.016
+[2024-09-14 14:21:09,161][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.80
+[2024-09-14 14:21:09,161][    INFO] ***** Evaluation ***** >>>> Changed IoU: 79.62
+[2024-09-14 14:21:09,161][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.85
+
+[2024-09-14 14:21:09,717][    INFO] ===========> Epoch: 26, LR: 0.0000030, Previous best Changed IoU: 79.67, Overall Accuracy: 98.85
+[2024-09-14 14:21:10,181][    INFO] Iters: 0, Total loss: 0.026
+[2024-09-14 14:21:15,880][    INFO] Iters: 23, Total loss: 0.017
+[2024-09-14 14:21:21,411][    INFO] Iters: 46, Total loss: 0.017
+[2024-09-14 14:21:26,822][    INFO] Iters: 69, Total loss: 0.017
+[2024-09-14 14:21:32,150][    INFO] Iters: 92, Total loss: 0.017
+[2024-09-14 14:21:37,306][    INFO] Iters: 115, Total loss: 0.017
+[2024-09-14 14:21:42,313][    INFO] Iters: 138, Total loss: 0.017
+[2024-09-14 14:21:47,296][    INFO] Iters: 161, Total loss: 0.017
+[2024-09-14 14:21:52,155][    INFO] Iters: 184, Total loss: 0.016
+[2024-09-14 14:22:32,361][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.82
+[2024-09-14 14:22:32,361][    INFO] ***** Evaluation ***** >>>> Changed IoU: 79.33
+[2024-09-14 14:22:32,361][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.87
+
+[2024-09-14 14:22:32,871][    INFO] ===========> Epoch: 27, LR: 0.0000029, Previous best Changed IoU: 79.67, Overall Accuracy: 98.85
+[2024-09-14 14:22:33,318][    INFO] Iters: 0, Total loss: 0.031
+[2024-09-14 14:22:38,812][    INFO] Iters: 23, Total loss: 0.019
+[2024-09-14 14:22:44,166][    INFO] Iters: 46, Total loss: 0.017
+[2024-09-14 14:22:49,674][    INFO] Iters: 69, Total loss: 0.017
+[2024-09-14 14:22:55,000][    INFO] Iters: 92, Total loss: 0.016
+[2024-09-14 14:23:00,339][    INFO] Iters: 115, Total loss: 0.016
+[2024-09-14 14:23:05,842][    INFO] Iters: 138, Total loss: 0.016
+[2024-09-14 14:23:11,183][    INFO] Iters: 161, Total loss: 0.016
+[2024-09-14 14:23:16,369][    INFO] Iters: 184, Total loss: 0.016
+[2024-09-14 14:23:57,054][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.82
+[2024-09-14 14:23:57,054][    INFO] ***** Evaluation ***** >>>> Changed IoU: 79.74
+[2024-09-14 14:23:57,054][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.87
+
+[2024-09-14 14:23:58,053][    INFO] ===========> Epoch: 28, LR: 0.0000028, Previous best Changed IoU: 79.74, Overall Accuracy: 98.87
+[2024-09-14 14:23:58,568][    INFO] Iters: 0, Total loss: 0.010
+[2024-09-14 14:24:04,241][    INFO] Iters: 23, Total loss: 0.019
+[2024-09-14 14:24:09,709][    INFO] Iters: 46, Total loss: 0.016
+[2024-09-14 14:24:15,463][    INFO] Iters: 69, Total loss: 0.016
+[2024-09-14 14:24:21,013][    INFO] Iters: 92, Total loss: 0.016
+[2024-09-14 14:24:26,344][    INFO] Iters: 115, Total loss: 0.016
+[2024-09-14 14:24:31,594][    INFO] Iters: 138, Total loss: 0.016
+[2024-09-14 14:24:36,722][    INFO] Iters: 161, Total loss: 0.016
+[2024-09-14 14:24:41,752][    INFO] Iters: 184, Total loss: 0.016
+[2024-09-14 14:25:22,616][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.79
+[2024-09-14 14:25:22,617][    INFO] ***** Evaluation ***** >>>> Changed IoU: 78.89
+[2024-09-14 14:25:22,617][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.85
+
+[2024-09-14 14:25:23,176][    INFO] ===========> Epoch: 29, LR: 0.0000028, Previous best Changed IoU: 79.74, Overall Accuracy: 98.87
+[2024-09-14 14:25:23,627][    INFO] Iters: 0, Total loss: 0.019
+[2024-09-14 14:25:29,430][    INFO] Iters: 23, Total loss: 0.017
+[2024-09-14 14:25:35,228][    INFO] Iters: 46, Total loss: 0.017
+[2024-09-14 14:25:40,726][    INFO] Iters: 69, Total loss: 0.016
+[2024-09-14 14:25:46,218][    INFO] Iters: 92, Total loss: 0.016
+[2024-09-14 14:25:51,716][    INFO] Iters: 115, Total loss: 0.016
+[2024-09-14 14:25:57,146][    INFO] Iters: 138, Total loss: 0.015
+[2024-09-14 14:26:02,486][    INFO] Iters: 161, Total loss: 0.016
+[2024-09-14 14:26:07,721][    INFO] Iters: 184, Total loss: 0.016
+[2024-09-14 14:26:48,392][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.84
+[2024-09-14 14:26:48,392][    INFO] ***** Evaluation ***** >>>> Changed IoU: 80.08
+[2024-09-14 14:26:48,392][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.89
+
+[2024-09-14 14:26:49,412][    INFO] ===========> Epoch: 30, LR: 0.0000027, Previous best Changed IoU: 80.08, Overall Accuracy: 98.89
+[2024-09-14 14:26:49,911][    INFO] Iters: 0, Total loss: 0.012
+[2024-09-14 14:26:55,601][    INFO] Iters: 23, Total loss: 0.015
+[2024-09-14 14:27:01,671][    INFO] Iters: 46, Total loss: 0.015
+[2024-09-14 14:27:07,236][    INFO] Iters: 69, Total loss: 0.015
+[2024-09-14 14:27:12,737][    INFO] Iters: 92, Total loss: 0.015
+[2024-09-14 14:27:18,010][    INFO] Iters: 115, Total loss: 0.015
+[2024-09-14 14:27:23,137][    INFO] Iters: 138, Total loss: 0.015
+[2024-09-14 14:27:28,119][    INFO] Iters: 161, Total loss: 0.015
+[2024-09-14 14:27:32,977][    INFO] Iters: 184, Total loss: 0.015
+[2024-09-14 14:28:13,403][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.80
+[2024-09-14 14:28:13,403][    INFO] ***** Evaluation ***** >>>> Changed IoU: 79.67
+[2024-09-14 14:28:13,404][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.85
+
+[2024-09-14 14:28:13,925][    INFO] ===========> Epoch: 31, LR: 0.0000026, Previous best Changed IoU: 80.08, Overall Accuracy: 98.89
+[2024-09-14 14:28:14,415][    INFO] Iters: 0, Total loss: 0.021
+[2024-09-14 14:28:20,033][    INFO] Iters: 23, Total loss: 0.017
+[2024-09-14 14:28:25,546][    INFO] Iters: 46, Total loss: 0.015
+[2024-09-14 14:28:31,588][    INFO] Iters: 69, Total loss: 0.016
+[2024-09-14 14:28:37,650][    INFO] Iters: 92, Total loss: 0.016
+[2024-09-14 14:28:43,580][    INFO] Iters: 115, Total loss: 0.016
+[2024-09-14 14:28:49,109][    INFO] Iters: 138, Total loss: 0.016
+[2024-09-14 14:28:54,342][    INFO] Iters: 161, Total loss: 0.015
+[2024-09-14 14:28:59,567][    INFO] Iters: 184, Total loss: 0.015
+[2024-09-14 14:29:39,863][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.84
+[2024-09-14 14:29:39,863][    INFO] ***** Evaluation ***** >>>> Changed IoU: 80.21
+[2024-09-14 14:29:39,863][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.90
+
+[2024-09-14 14:29:40,885][    INFO] ===========> Epoch: 32, LR: 0.0000025, Previous best Changed IoU: 80.21, Overall Accuracy: 98.90
+[2024-09-14 14:29:41,425][    INFO] Iters: 0, Total loss: 0.021
+[2024-09-14 14:29:47,120][    INFO] Iters: 23, Total loss: 0.016
+[2024-09-14 14:29:53,182][    INFO] Iters: 46, Total loss: 0.016
+[2024-09-14 14:29:58,610][    INFO] Iters: 69, Total loss: 0.015
+[2024-09-14 14:30:03,960][    INFO] Iters: 92, Total loss: 0.014
+[2024-09-14 14:30:09,327][    INFO] Iters: 115, Total loss: 0.015
+[2024-09-14 14:30:14,446][    INFO] Iters: 138, Total loss: 0.015
+[2024-09-14 14:30:19,456][    INFO] Iters: 161, Total loss: 0.015
+[2024-09-14 14:30:24,267][    INFO] Iters: 184, Total loss: 0.015
+[2024-09-14 14:31:04,775][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.85
+[2024-09-14 14:31:04,775][    INFO] ***** Evaluation ***** >>>> Changed IoU: 80.43
+[2024-09-14 14:31:04,775][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.91
+
+[2024-09-14 14:31:05,795][    INFO] ===========> Epoch: 33, LR: 0.0000024, Previous best Changed IoU: 80.43, Overall Accuracy: 98.91
+[2024-09-14 14:31:06,272][    INFO] Iters: 0, Total loss: 0.016
+[2024-09-14 14:31:12,049][    INFO] Iters: 23, Total loss: 0.015
+[2024-09-14 14:31:17,798][    INFO] Iters: 46, Total loss: 0.014
+[2024-09-14 14:31:23,262][    INFO] Iters: 69, Total loss: 0.015
+[2024-09-14 14:31:28,640][    INFO] Iters: 92, Total loss: 0.015
+[2024-09-14 14:31:34,141][    INFO] Iters: 115, Total loss: 0.015
+[2024-09-14 14:31:39,803][    INFO] Iters: 138, Total loss: 0.015
+[2024-09-14 14:31:45,278][    INFO] Iters: 161, Total loss: 0.015
+[2024-09-14 14:31:50,606][    INFO] Iters: 184, Total loss: 0.015
+[2024-09-14 14:32:30,762][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.85
+[2024-09-14 14:32:30,763][    INFO] ***** Evaluation ***** >>>> Changed IoU: 80.37
+[2024-09-14 14:32:30,763][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.90
+
+[2024-09-14 14:32:31,268][    INFO] ===========> Epoch: 34, LR: 0.0000024, Previous best Changed IoU: 80.43, Overall Accuracy: 98.91
+[2024-09-14 14:32:31,720][    INFO] Iters: 0, Total loss: 0.017
+[2024-09-14 14:32:37,532][    INFO] Iters: 23, Total loss: 0.016
+[2024-09-14 14:32:43,063][    INFO] Iters: 46, Total loss: 0.015
+[2024-09-14 14:32:48,369][    INFO] Iters: 69, Total loss: 0.015
+[2024-09-14 14:32:53,681][    INFO] Iters: 92, Total loss: 0.015
+[2024-09-14 14:32:58,870][    INFO] Iters: 115, Total loss: 0.015
+[2024-09-14 14:33:04,465][    INFO] Iters: 138, Total loss: 0.015
+[2024-09-14 14:33:10,325][    INFO] Iters: 161, Total loss: 0.015
+[2024-09-14 14:33:16,148][    INFO] Iters: 184, Total loss: 0.015
+[2024-09-14 14:33:56,226][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.86
+[2024-09-14 14:33:56,226][    INFO] ***** Evaluation ***** >>>> Changed IoU: 80.37
+[2024-09-14 14:33:56,226][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.91
+
+[2024-09-14 14:33:56,771][    INFO] ===========> Epoch: 35, LR: 0.0000023, Previous best Changed IoU: 80.43, Overall Accuracy: 98.91
+[2024-09-14 14:33:57,231][    INFO] Iters: 0, Total loss: 0.008
+[2024-09-14 14:34:03,135][    INFO] Iters: 23, Total loss: 0.011
+[2024-09-14 14:34:08,794][    INFO] Iters: 46, Total loss: 0.013
+[2024-09-14 14:34:14,313][    INFO] Iters: 69, Total loss: 0.013
+[2024-09-14 14:34:19,867][    INFO] Iters: 92, Total loss: 0.014
+[2024-09-14 14:34:25,336][    INFO] Iters: 115, Total loss: 0.014
+[2024-09-14 14:34:30,721][    INFO] Iters: 138, Total loss: 0.015
+[2024-09-14 14:34:36,029][    INFO] Iters: 161, Total loss: 0.015
+[2024-09-14 14:34:41,347][    INFO] Iters: 184, Total loss: 0.015
+[2024-09-14 14:35:22,618][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.88
+[2024-09-14 14:35:22,618][    INFO] ***** Evaluation ***** >>>> Changed IoU: 80.61
+[2024-09-14 14:35:22,618][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.93
+
+[2024-09-14 14:35:23,779][    INFO] ===========> Epoch: 36, LR: 0.0000022, Previous best Changed IoU: 80.61, Overall Accuracy: 98.93
+[2024-09-14 14:35:24,337][    INFO] Iters: 0, Total loss: 0.014
+[2024-09-14 14:35:30,146][    INFO] Iters: 23, Total loss: 0.013
+[2024-09-14 14:35:35,950][    INFO] Iters: 46, Total loss: 0.013
+[2024-09-14 14:35:41,610][    INFO] Iters: 69, Total loss: 0.014
+[2024-09-14 14:35:47,225][    INFO] Iters: 92, Total loss: 0.014
+[2024-09-14 14:35:52,707][    INFO] Iters: 115, Total loss: 0.014
+[2024-09-14 14:35:58,099][    INFO] Iters: 138, Total loss: 0.014
+[2024-09-14 14:36:03,405][    INFO] Iters: 161, Total loss: 0.014
+[2024-09-14 14:36:08,794][    INFO] Iters: 184, Total loss: 0.015
+[2024-09-14 14:36:49,476][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.87
+[2024-09-14 14:36:49,476][    INFO] ***** Evaluation ***** >>>> Changed IoU: 80.16
+[2024-09-14 14:36:49,476][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.92
+
+[2024-09-14 14:36:50,031][    INFO] ===========> Epoch: 37, LR: 0.0000021, Previous best Changed IoU: 80.61, Overall Accuracy: 98.93
+[2024-09-14 14:36:50,682][    INFO] Iters: 0, Total loss: 0.009
+[2024-09-14 14:36:56,187][    INFO] Iters: 23, Total loss: 0.018
+[2024-09-14 14:37:01,626][    INFO] Iters: 46, Total loss: 0.016
+[2024-09-14 14:37:07,151][    INFO] Iters: 69, Total loss: 0.016
+[2024-09-14 14:37:12,560][    INFO] Iters: 92, Total loss: 0.015
+[2024-09-14 14:37:17,963][    INFO] Iters: 115, Total loss: 0.015
+[2024-09-14 14:37:23,368][    INFO] Iters: 138, Total loss: 0.015
+[2024-09-14 14:37:28,705][    INFO] Iters: 161, Total loss: 0.014
+[2024-09-14 14:37:34,138][    INFO] Iters: 184, Total loss: 0.014
+[2024-09-14 14:38:17,661][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.82
+[2024-09-14 14:38:17,661][    INFO] ***** Evaluation ***** >>>> Changed IoU: 80.10
+[2024-09-14 14:38:17,661][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.87
+
+[2024-09-14 14:38:18,220][    INFO] ===========> Epoch: 38, LR: 0.0000020, Previous best Changed IoU: 80.61, Overall Accuracy: 98.93
+[2024-09-14 14:38:18,660][    INFO] Iters: 0, Total loss: 0.016
+[2024-09-14 14:38:24,083][    INFO] Iters: 23, Total loss: 0.014
+[2024-09-14 14:38:29,425][    INFO] Iters: 46, Total loss: 0.014
+[2024-09-14 14:38:34,879][    INFO] Iters: 69, Total loss: 0.015
+[2024-09-14 14:38:40,185][    INFO] Iters: 92, Total loss: 0.015
+[2024-09-14 14:38:45,309][    INFO] Iters: 115, Total loss: 0.015
+[2024-09-14 14:38:50,444][    INFO] Iters: 138, Total loss: 0.014
+[2024-09-14 14:38:55,413][    INFO] Iters: 161, Total loss: 0.014
+[2024-09-14 14:39:00,306][    INFO] Iters: 184, Total loss: 0.014
+[2024-09-14 14:39:43,490][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.87
+[2024-09-14 14:39:43,491][    INFO] ***** Evaluation ***** >>>> Changed IoU: 80.54
+[2024-09-14 14:39:43,491][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.92
+
+[2024-09-14 14:39:44,045][    INFO] ===========> Epoch: 39, LR: 0.0000019, Previous best Changed IoU: 80.61, Overall Accuracy: 98.93
+[2024-09-14 14:39:44,548][    INFO] Iters: 0, Total loss: 0.008
+[2024-09-14 14:39:49,827][    INFO] Iters: 23, Total loss: 0.015
+[2024-09-14 14:39:55,033][    INFO] Iters: 46, Total loss: 0.015
+[2024-09-14 14:40:00,210][    INFO] Iters: 69, Total loss: 0.014
+[2024-09-14 14:40:05,296][    INFO] Iters: 92, Total loss: 0.014
+[2024-09-14 14:40:10,256][    INFO] Iters: 115, Total loss: 0.014
+[2024-09-14 14:40:15,175][    INFO] Iters: 138, Total loss: 0.014
+[2024-09-14 14:40:20,102][    INFO] Iters: 161, Total loss: 0.014
+[2024-09-14 14:40:25,004][    INFO] Iters: 184, Total loss: 0.014
+[2024-09-14 14:41:07,497][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.88
+[2024-09-14 14:41:07,497][    INFO] ***** Evaluation ***** >>>> Changed IoU: 80.52
+[2024-09-14 14:41:07,497][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.93
+
+[2024-09-14 14:41:08,096][    INFO] ===========> Epoch: 40, LR: 0.0000019, Previous best Changed IoU: 80.61, Overall Accuracy: 98.93
+[2024-09-14 14:41:08,576][    INFO] Iters: 0, Total loss: 0.017
+[2024-09-14 14:41:13,736][    INFO] Iters: 23, Total loss: 0.013
+[2024-09-14 14:41:18,802][    INFO] Iters: 46, Total loss: 0.014
+[2024-09-14 14:41:23,836][    INFO] Iters: 69, Total loss: 0.014
+[2024-09-14 14:41:28,746][    INFO] Iters: 92, Total loss: 0.014
+[2024-09-14 14:41:33,611][    INFO] Iters: 115, Total loss: 0.014
+[2024-09-14 14:41:38,421][    INFO] Iters: 138, Total loss: 0.014
+[2024-09-14 14:41:43,186][    INFO] Iters: 161, Total loss: 0.014
+[2024-09-14 14:41:47,880][    INFO] Iters: 184, Total loss: 0.014
+[2024-09-14 14:42:30,027][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.87
+[2024-09-14 14:42:30,027][    INFO] ***** Evaluation ***** >>>> Changed IoU: 80.53
+[2024-09-14 14:42:30,027][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.92
+
+[2024-09-14 14:42:30,601][    INFO] ===========> Epoch: 41, LR: 0.0000018, Previous best Changed IoU: 80.61, Overall Accuracy: 98.93
+[2024-09-14 14:42:31,056][    INFO] Iters: 0, Total loss: 0.018
+[2024-09-14 14:42:36,268][    INFO] Iters: 23, Total loss: 0.015
+[2024-09-14 14:42:41,431][    INFO] Iters: 46, Total loss: 0.014
+[2024-09-14 14:42:46,541][    INFO] Iters: 69, Total loss: 0.015
+[2024-09-14 14:42:51,694][    INFO] Iters: 92, Total loss: 0.014
+[2024-09-14 14:42:56,904][    INFO] Iters: 115, Total loss: 0.014
+[2024-09-14 14:43:02,166][    INFO] Iters: 138, Total loss: 0.014
+[2024-09-14 14:43:07,660][    INFO] Iters: 161, Total loss: 0.014
+[2024-09-14 14:43:13,135][    INFO] Iters: 184, Total loss: 0.014
+[2024-09-14 14:43:56,395][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.88
+[2024-09-14 14:43:56,395][    INFO] ***** Evaluation ***** >>>> Changed IoU: 80.80
+[2024-09-14 14:43:56,395][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.93
+
+[2024-09-14 14:43:57,586][    INFO] ===========> Epoch: 42, LR: 0.0000017, Previous best Changed IoU: 80.80, Overall Accuracy: 98.93
+[2024-09-14 14:43:58,122][    INFO] Iters: 0, Total loss: 0.010
+[2024-09-14 14:44:03,421][    INFO] Iters: 23, Total loss: 0.014
+[2024-09-14 14:44:08,677][    INFO] Iters: 46, Total loss: 0.013
+[2024-09-14 14:44:13,855][    INFO] Iters: 69, Total loss: 0.013
+[2024-09-14 14:44:18,992][    INFO] Iters: 92, Total loss: 0.013
+[2024-09-14 14:44:24,058][    INFO] Iters: 115, Total loss: 0.013
+[2024-09-14 14:44:29,077][    INFO] Iters: 138, Total loss: 0.013
+[2024-09-14 14:44:34,191][    INFO] Iters: 161, Total loss: 0.014
+[2024-09-14 14:44:39,356][    INFO] Iters: 184, Total loss: 0.014
+[2024-09-14 14:45:21,810][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.88
+[2024-09-14 14:45:21,810][    INFO] ***** Evaluation ***** >>>> Changed IoU: 80.71
+[2024-09-14 14:45:21,810][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.93
+
+[2024-09-14 14:45:22,340][    INFO] ===========> Epoch: 43, LR: 0.0000016, Previous best Changed IoU: 80.80, Overall Accuracy: 98.93
+[2024-09-14 14:45:22,838][    INFO] Iters: 0, Total loss: 0.021
+[2024-09-14 14:45:28,087][    INFO] Iters: 23, Total loss: 0.013
+[2024-09-14 14:45:33,204][    INFO] Iters: 46, Total loss: 0.014
+[2024-09-14 14:45:38,284][    INFO] Iters: 69, Total loss: 0.014
+[2024-09-14 14:45:43,261][    INFO] Iters: 92, Total loss: 0.013
+[2024-09-14 14:45:48,194][    INFO] Iters: 115, Total loss: 0.013
+[2024-09-14 14:45:53,086][    INFO] Iters: 138, Total loss: 0.013
+[2024-09-14 14:45:57,900][    INFO] Iters: 161, Total loss: 0.014
+[2024-09-14 14:46:02,779][    INFO] Iters: 184, Total loss: 0.013
+[2024-09-14 14:46:45,604][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.89
+[2024-09-14 14:46:45,604][    INFO] ***** Evaluation ***** >>>> Changed IoU: 80.80
+[2024-09-14 14:46:45,604][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.94
+
+[2024-09-14 14:46:46,176][    INFO] ===========> Epoch: 44, LR: 0.0000015, Previous best Changed IoU: 80.80, Overall Accuracy: 98.93
+[2024-09-14 14:46:46,629][    INFO] Iters: 0, Total loss: 0.014
+[2024-09-14 14:46:51,990][    INFO] Iters: 23, Total loss: 0.012
+[2024-09-14 14:46:57,277][    INFO] Iters: 46, Total loss: 0.013
+[2024-09-14 14:47:02,456][    INFO] Iters: 69, Total loss: 0.013
+[2024-09-14 14:47:07,539][    INFO] Iters: 92, Total loss: 0.013
+[2024-09-14 14:47:12,587][    INFO] Iters: 115, Total loss: 0.013
+[2024-09-14 14:47:17,605][    INFO] Iters: 138, Total loss: 0.013
+[2024-09-14 14:47:22,639][    INFO] Iters: 161, Total loss: 0.013
+[2024-09-14 14:47:27,628][    INFO] Iters: 184, Total loss: 0.013
+[2024-09-14 14:48:10,259][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.89
+[2024-09-14 14:48:10,260][    INFO] ***** Evaluation ***** >>>> Changed IoU: 80.91
+[2024-09-14 14:48:10,260][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.94
+
+[2024-09-14 14:48:11,320][    INFO] ===========> Epoch: 45, LR: 0.0000014, Previous best Changed IoU: 80.91, Overall Accuracy: 98.94
+[2024-09-14 14:48:11,833][    INFO] Iters: 0, Total loss: 0.013
+[2024-09-14 14:48:17,265][    INFO] Iters: 23, Total loss: 0.011
+[2024-09-14 14:48:22,534][    INFO] Iters: 46, Total loss: 0.012
+[2024-09-14 14:48:27,627][    INFO] Iters: 69, Total loss: 0.012
+[2024-09-14 14:48:32,548][    INFO] Iters: 92, Total loss: 0.012
+[2024-09-14 14:48:37,374][    INFO] Iters: 115, Total loss: 0.012
+[2024-09-14 14:48:42,199][    INFO] Iters: 138, Total loss: 0.013
+[2024-09-14 14:48:46,983][    INFO] Iters: 161, Total loss: 0.013
+[2024-09-14 14:48:51,850][    INFO] Iters: 184, Total loss: 0.013
+[2024-09-14 14:49:35,032][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.89
+[2024-09-14 14:49:35,032][    INFO] ***** Evaluation ***** >>>> Changed IoU: 80.86
+[2024-09-14 14:49:35,032][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.94
+
+[2024-09-14 14:49:35,564][    INFO] ===========> Epoch: 46, LR: 0.0000013, Previous best Changed IoU: 80.91, Overall Accuracy: 98.94
+[2024-09-14 14:49:36,035][    INFO] Iters: 0, Total loss: 0.014
+[2024-09-14 14:49:41,715][    INFO] Iters: 23, Total loss: 0.013
+[2024-09-14 14:49:47,240][    INFO] Iters: 46, Total loss: 0.013
+[2024-09-14 14:49:52,487][    INFO] Iters: 69, Total loss: 0.013
+[2024-09-14 14:49:57,583][    INFO] Iters: 92, Total loss: 0.013
+[2024-09-14 14:50:02,536][    INFO] Iters: 115, Total loss: 0.013
+[2024-09-14 14:50:07,503][    INFO] Iters: 138, Total loss: 0.013
+[2024-09-14 14:50:12,385][    INFO] Iters: 161, Total loss: 0.013
+[2024-09-14 14:50:17,186][    INFO] Iters: 184, Total loss: 0.013
+[2024-09-14 14:51:00,208][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.88
+[2024-09-14 14:51:00,209][    INFO] ***** Evaluation ***** >>>> Changed IoU: 80.76
+[2024-09-14 14:51:00,209][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.93
+
+[2024-09-14 14:51:00,766][    INFO] ===========> Epoch: 47, LR: 0.0000013, Previous best Changed IoU: 80.91, Overall Accuracy: 98.94
+[2024-09-14 14:51:01,213][    INFO] Iters: 0, Total loss: 0.008
+[2024-09-14 14:51:06,920][    INFO] Iters: 23, Total loss: 0.012
+[2024-09-14 14:51:12,287][    INFO] Iters: 46, Total loss: 0.012
+[2024-09-14 14:51:17,484][    INFO] Iters: 69, Total loss: 0.012
+[2024-09-14 14:51:22,542][    INFO] Iters: 92, Total loss: 0.012
+[2024-09-14 14:51:27,464][    INFO] Iters: 115, Total loss: 0.013
+[2024-09-14 14:51:32,305][    INFO] Iters: 138, Total loss: 0.013
+[2024-09-14 14:51:37,084][    INFO] Iters: 161, Total loss: 0.013
+[2024-09-14 14:51:41,885][    INFO] Iters: 184, Total loss: 0.013
+[2024-09-14 14:52:23,891][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.75
+[2024-09-14 14:52:23,891][    INFO] ***** Evaluation ***** >>>> Changed IoU: 78.31
+[2024-09-14 14:52:23,891][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.81
+
+[2024-09-14 14:52:24,456][    INFO] ===========> Epoch: 48, LR: 0.0000012, Previous best Changed IoU: 80.91, Overall Accuracy: 98.94
+[2024-09-14 14:52:24,910][    INFO] Iters: 0, Total loss: 0.011
+[2024-09-14 14:52:30,417][    INFO] Iters: 23, Total loss: 0.015
+[2024-09-14 14:52:36,038][    INFO] Iters: 46, Total loss: 0.014
+[2024-09-14 14:52:41,234][    INFO] Iters: 69, Total loss: 0.014
+[2024-09-14 14:52:46,287][    INFO] Iters: 92, Total loss: 0.014
+[2024-09-14 14:52:51,320][    INFO] Iters: 115, Total loss: 0.013
+[2024-09-14 14:52:56,303][    INFO] Iters: 138, Total loss: 0.013
+[2024-09-14 14:53:01,272][    INFO] Iters: 161, Total loss: 0.014
+[2024-09-14 14:53:06,265][    INFO] Iters: 184, Total loss: 0.013
+[2024-09-14 14:53:48,384][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.90
+[2024-09-14 14:53:48,384][    INFO] ***** Evaluation ***** >>>> Changed IoU: 80.97
+[2024-09-14 14:53:48,384][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.94
+
+[2024-09-14 14:53:49,812][    INFO] ===========> Epoch: 49, LR: 0.0000011, Previous best Changed IoU: 80.97, Overall Accuracy: 98.94
+[2024-09-14 14:53:50,322][    INFO] Iters: 0, Total loss: 0.035
+[2024-09-14 14:53:55,768][    INFO] Iters: 23, Total loss: 0.014
+[2024-09-14 14:54:01,030][    INFO] Iters: 46, Total loss: 0.013
+[2024-09-14 14:54:06,232][    INFO] Iters: 69, Total loss: 0.013
+[2024-09-14 14:54:11,328][    INFO] Iters: 92, Total loss: 0.013
+[2024-09-14 14:54:16,329][    INFO] Iters: 115, Total loss: 0.013
+[2024-09-14 14:54:21,236][    INFO] Iters: 138, Total loss: 0.013
+[2024-09-14 14:54:25,982][    INFO] Iters: 161, Total loss: 0.013
+[2024-09-14 14:54:30,763][    INFO] Iters: 184, Total loss: 0.013
+[2024-09-14 14:55:12,920][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.90
+[2024-09-14 14:55:12,920][    INFO] ***** Evaluation ***** >>>> Changed IoU: 81.05
+[2024-09-14 14:55:12,920][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.95
+
+[2024-09-14 14:55:14,077][    INFO] ===========> Epoch: 50, LR: 0.0000010, Previous best Changed IoU: 81.05, Overall Accuracy: 98.95
+[2024-09-14 14:55:14,609][    INFO] Iters: 0, Total loss: 0.017
+[2024-09-14 14:55:20,249][    INFO] Iters: 23, Total loss: 0.010
+[2024-09-14 14:55:25,844][    INFO] Iters: 46, Total loss: 0.011
+[2024-09-14 14:55:31,296][    INFO] Iters: 69, Total loss: 0.012
+[2024-09-14 14:55:36,515][    INFO] Iters: 92, Total loss: 0.012
+[2024-09-14 14:55:41,618][    INFO] Iters: 115, Total loss: 0.012
+[2024-09-14 14:55:46,620][    INFO] Iters: 138, Total loss: 0.013
+[2024-09-14 14:55:51,497][    INFO] Iters: 161, Total loss: 0.013
+[2024-09-14 14:55:56,369][    INFO] Iters: 184, Total loss: 0.013
+[2024-09-14 14:56:38,969][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.90
+[2024-09-14 14:56:38,970][    INFO] ***** Evaluation ***** >>>> Changed IoU: 80.95
+[2024-09-14 14:56:38,970][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.95
+
+[2024-09-14 14:56:39,592][    INFO] ===========> Epoch: 51, LR: 0.0000009, Previous best Changed IoU: 81.05, Overall Accuracy: 98.95
+[2024-09-14 14:56:40,113][    INFO] Iters: 0, Total loss: 0.016
+[2024-09-14 14:56:45,622][    INFO] Iters: 23, Total loss: 0.012
+[2024-09-14 14:56:51,026][    INFO] Iters: 46, Total loss: 0.012
+[2024-09-14 14:56:56,369][    INFO] Iters: 69, Total loss: 0.013
+[2024-09-14 14:57:01,505][    INFO] Iters: 92, Total loss: 0.013
+[2024-09-14 14:57:06,634][    INFO] Iters: 115, Total loss: 0.013
+[2024-09-14 14:57:11,718][    INFO] Iters: 138, Total loss: 0.012
+[2024-09-14 14:57:16,716][    INFO] Iters: 161, Total loss: 0.012
+[2024-09-14 14:57:21,722][    INFO] Iters: 184, Total loss: 0.012
+[2024-09-14 14:58:04,921][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.89
+[2024-09-14 14:58:04,921][    INFO] ***** Evaluation ***** >>>> Changed IoU: 80.91
+[2024-09-14 14:58:04,921][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.94
+
+[2024-09-14 14:58:05,485][    INFO] ===========> Epoch: 52, LR: 0.0000008, Previous best Changed IoU: 81.05, Overall Accuracy: 98.95
+[2024-09-14 14:58:05,975][    INFO] Iters: 0, Total loss: 0.012
+[2024-09-14 14:58:11,115][    INFO] Iters: 23, Total loss: 0.012
+[2024-09-14 14:58:16,327][    INFO] Iters: 46, Total loss: 0.011
+[2024-09-14 14:58:21,690][    INFO] Iters: 69, Total loss: 0.012
+[2024-09-14 14:58:26,953][    INFO] Iters: 92, Total loss: 0.012
+[2024-09-14 14:58:32,030][    INFO] Iters: 115, Total loss: 0.012
+[2024-09-14 14:58:37,024][    INFO] Iters: 138, Total loss: 0.012
+[2024-09-14 14:58:41,931][    INFO] Iters: 161, Total loss: 0.012
+[2024-09-14 14:58:46,792][    INFO] Iters: 184, Total loss: 0.012
+[2024-09-14 14:59:29,374][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.90
+[2024-09-14 14:59:29,374][    INFO] ***** Evaluation ***** >>>> Changed IoU: 80.85
+[2024-09-14 14:59:29,375][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.94
+
+[2024-09-14 14:59:29,915][    INFO] ===========> Epoch: 53, LR: 0.0000007, Previous best Changed IoU: 81.05, Overall Accuracy: 98.95
+[2024-09-14 14:59:30,417][    INFO] Iters: 0, Total loss: 0.021
+[2024-09-14 14:59:35,576][    INFO] Iters: 23, Total loss: 0.013
+[2024-09-14 14:59:40,683][    INFO] Iters: 46, Total loss: 0.012
+[2024-09-14 14:59:45,819][    INFO] Iters: 69, Total loss: 0.012
+[2024-09-14 14:59:51,169][    INFO] Iters: 92, Total loss: 0.011
+[2024-09-14 14:59:56,389][    INFO] Iters: 115, Total loss: 0.012
+[2024-09-14 15:00:01,576][    INFO] Iters: 138, Total loss: 0.012
+[2024-09-14 15:00:06,779][    INFO] Iters: 161, Total loss: 0.012
+[2024-09-14 15:00:11,873][    INFO] Iters: 184, Total loss: 0.012
+[2024-09-14 15:00:54,979][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.89
+[2024-09-14 15:00:54,979][    INFO] ***** Evaluation ***** >>>> Changed IoU: 81.01
+[2024-09-14 15:00:54,979][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.94
+
+[2024-09-14 15:00:55,542][    INFO] ===========> Epoch: 54, LR: 0.0000006, Previous best Changed IoU: 81.05, Overall Accuracy: 98.95
+[2024-09-14 15:00:56,005][    INFO] Iters: 0, Total loss: 0.017
+[2024-09-14 15:01:01,854][    INFO] Iters: 23, Total loss: 0.013
+[2024-09-14 15:01:07,883][    INFO] Iters: 46, Total loss: 0.013
+[2024-09-14 15:01:13,489][    INFO] Iters: 69, Total loss: 0.013
+[2024-09-14 15:01:18,791][    INFO] Iters: 92, Total loss: 0.012
+[2024-09-14 15:01:24,049][    INFO] Iters: 115, Total loss: 0.012
+[2024-09-14 15:01:29,133][    INFO] Iters: 138, Total loss: 0.013
+[2024-09-14 15:01:34,210][    INFO] Iters: 161, Total loss: 0.013
+[2024-09-14 15:01:39,177][    INFO] Iters: 184, Total loss: 0.012
+[2024-09-14 15:02:22,206][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.90
+[2024-09-14 15:02:22,206][    INFO] ***** Evaluation ***** >>>> Changed IoU: 81.01
+[2024-09-14 15:02:22,206][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.95
+
+[2024-09-14 15:02:22,750][    INFO] ===========> Epoch: 55, LR: 0.0000005, Previous best Changed IoU: 81.05, Overall Accuracy: 98.95
+[2024-09-14 15:02:23,262][    INFO] Iters: 0, Total loss: 0.011
+[2024-09-14 15:02:28,555][    INFO] Iters: 23, Total loss: 0.013
+[2024-09-14 15:02:34,041][    INFO] Iters: 46, Total loss: 0.012
+[2024-09-14 15:02:39,350][    INFO] Iters: 69, Total loss: 0.012
+[2024-09-14 15:02:44,916][    INFO] Iters: 92, Total loss: 0.012
+[2024-09-14 15:02:50,393][    INFO] Iters: 115, Total loss: 0.012
+[2024-09-14 15:02:55,815][    INFO] Iters: 138, Total loss: 0.012
+[2024-09-14 15:03:01,304][    INFO] Iters: 161, Total loss: 0.012
+[2024-09-14 15:03:06,676][    INFO] Iters: 184, Total loss: 0.012
+[2024-09-14 15:03:49,953][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.90
+[2024-09-14 15:03:49,953][    INFO] ***** Evaluation ***** >>>> Changed IoU: 80.99
+[2024-09-14 15:03:49,953][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.95
+
+[2024-09-14 15:03:50,473][    INFO] ===========> Epoch: 56, LR: 0.0000004, Previous best Changed IoU: 81.05, Overall Accuracy: 98.95
+[2024-09-14 15:03:50,964][    INFO] Iters: 0, Total loss: 0.009
+[2024-09-14 15:03:56,849][    INFO] Iters: 23, Total loss: 0.012
+[2024-09-14 15:04:02,419][    INFO] Iters: 46, Total loss: 0.012
+[2024-09-14 15:04:07,791][    INFO] Iters: 69, Total loss: 0.012
+[2024-09-14 15:04:13,177][    INFO] Iters: 92, Total loss: 0.012
+[2024-09-14 15:04:18,387][    INFO] Iters: 115, Total loss: 0.013
+[2024-09-14 15:04:23,468][    INFO] Iters: 138, Total loss: 0.012
+[2024-09-14 15:04:28,445][    INFO] Iters: 161, Total loss: 0.012
+[2024-09-14 15:04:33,769][    INFO] Iters: 184, Total loss: 0.012
+[2024-09-14 15:05:18,150][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.89
+[2024-09-14 15:05:18,150][    INFO] ***** Evaluation ***** >>>> Changed IoU: 80.93
+[2024-09-14 15:05:18,150][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.94
+
+[2024-09-14 15:05:18,684][    INFO] ===========> Epoch: 57, LR: 0.0000003, Previous best Changed IoU: 81.05, Overall Accuracy: 98.95
+[2024-09-14 15:05:19,223][    INFO] Iters: 0, Total loss: 0.004
+[2024-09-14 15:05:25,525][    INFO] Iters: 23, Total loss: 0.012
+[2024-09-14 15:05:32,162][    INFO] Iters: 46, Total loss: 0.012
+[2024-09-14 15:05:38,101][    INFO] Iters: 69, Total loss: 0.013
+[2024-09-14 15:05:43,925][    INFO] Iters: 92, Total loss: 0.012
+[2024-09-14 15:05:49,627][    INFO] Iters: 115, Total loss: 0.012
+[2024-09-14 15:05:55,066][    INFO] Iters: 138, Total loss: 0.012
+[2024-09-14 15:06:00,511][    INFO] Iters: 161, Total loss: 0.012
+[2024-09-14 15:06:05,832][    INFO] Iters: 184, Total loss: 0.012
+[2024-09-14 15:06:49,571][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.90
+[2024-09-14 15:06:49,571][    INFO] ***** Evaluation ***** >>>> Changed IoU: 80.99
+[2024-09-14 15:06:49,571][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.95
+
+[2024-09-14 15:06:50,136][    INFO] ===========> Epoch: 58, LR: 0.0000002, Previous best Changed IoU: 81.05, Overall Accuracy: 98.95
+[2024-09-14 15:06:50,608][    INFO] Iters: 0, Total loss: 0.012
+[2024-09-14 15:06:56,515][    INFO] Iters: 23, Total loss: 0.011
+[2024-09-14 15:07:02,320][    INFO] Iters: 46, Total loss: 0.011
+[2024-09-14 15:07:07,986][    INFO] Iters: 69, Total loss: 0.011
+[2024-09-14 15:07:13,611][    INFO] Iters: 92, Total loss: 0.012
+[2024-09-14 15:07:19,216][    INFO] Iters: 115, Total loss: 0.012
+[2024-09-14 15:07:24,619][    INFO] Iters: 138, Total loss: 0.012
+[2024-09-14 15:07:30,080][    INFO] Iters: 161, Total loss: 0.012
+[2024-09-14 15:07:35,553][    INFO] Iters: 184, Total loss: 0.012
+[2024-09-14 15:08:19,029][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.90
+[2024-09-14 15:08:19,029][    INFO] ***** Evaluation ***** >>>> Changed IoU: 80.95
+[2024-09-14 15:08:19,029][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.95
+
+[2024-09-14 15:08:19,625][    INFO] ===========> Epoch: 59, LR: 0.0000001, Previous best Changed IoU: 81.05, Overall Accuracy: 98.95
+[2024-09-14 15:08:20,082][    INFO] Iters: 0, Total loss: 0.007
+[2024-09-14 15:08:25,710][    INFO] Iters: 23, Total loss: 0.012
+[2024-09-14 15:08:31,043][    INFO] Iters: 46, Total loss: 0.012
+[2024-09-14 15:08:37,349][    INFO] Iters: 69, Total loss: 0.012
+[2024-09-14 15:08:42,587][    INFO] Iters: 92, Total loss: 0.011
+[2024-09-14 15:08:47,843][    INFO] Iters: 115, Total loss: 0.012
+[2024-09-14 15:08:53,042][    INFO] Iters: 138, Total loss: 0.012
+[2024-09-14 15:08:58,232][    INFO] Iters: 161, Total loss: 0.012
+[2024-09-14 15:09:03,404][    INFO] Iters: 184, Total loss: 0.012
+[2024-09-14 15:09:47,153][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.90
+[2024-09-14 15:09:47,153][    INFO] ***** Evaluation ***** >>>> Changed IoU: 80.96
+[2024-09-14 15:09:47,153][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.94
+

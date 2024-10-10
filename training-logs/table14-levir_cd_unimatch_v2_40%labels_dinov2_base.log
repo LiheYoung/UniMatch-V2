@@ -1,0 +1,862 @@
+[2024-09-14 15:41:44,608][    INFO] {'backbone': 'dinov2_base',
+ 'batch_size': 8,
+ 'conf_thresh': 0.95,
+ 'config': 'configs/levir.yaml',
+ 'crop_size': 252,
+ 'data_root': '/home/bingxing2/lihe/data/LEVIR-CD',
+ 'dataset': 'levir',
+ 'epochs': 60,
+ 'labeled_id_path': 'splits/levir/40%/labeled.txt',
+ 'local_rank': 0,
+ 'lock_backbone': False,
+ 'lr': 5e-06,
+ 'lr_multi': 40.0,
+ 'model': 'dpt',
+ 'nclass': 2,
+ 'ngpus': 1,
+ 'port': 25874,
+ 'save_path': 'exp/levir/unimatch_v2/dinov2_base/40%',
+ 'unlabeled_id_path': 'splits/levir/40%/unlabeled.txt'}
+
+[2024-09-14 15:41:49,748][    INFO] Total params: 97.5M
+
+[2024-09-14 15:41:50,620][    INFO] ===========> Epoch: 0, LR: 0.0000050, Previous best Changed IoU: 0.00, Overall Accuracy: 0.00 @epoch-0, EMA: Changed IoU: 0.00, Overall Accuracy: 0.00 @epoch-0
+[2024-09-14 15:41:58,669][    INFO] Iters: 0, Total loss: 0.354, Loss x: 0.709, Loss s: 0.000, Mask ratio: 0.000
+[2024-09-14 15:42:52,073][    INFO] Iters: 66, Total loss: 0.115, Loss x: 0.219, Loss s: 0.012, Mask ratio: 0.748
+[2024-09-14 15:43:45,442][    INFO] Iters: 132, Total loss: 0.081, Loss x: 0.153, Loss s: 0.009, Mask ratio: 0.813
+[2024-09-14 15:44:38,818][    INFO] Iters: 198, Total loss: 0.065, Loss x: 0.122, Loss s: 0.008, Mask ratio: 0.849
+[2024-09-14 15:45:32,235][    INFO] Iters: 264, Total loss: 0.058, Loss x: 0.108, Loss s: 0.007, Mask ratio: 0.860
+[2024-09-14 15:46:25,675][    INFO] Iters: 330, Total loss: 0.053, Loss x: 0.098, Loss s: 0.007, Mask ratio: 0.872
+[2024-09-14 15:47:19,081][    INFO] Iters: 396, Total loss: 0.048, Loss x: 0.089, Loss s: 0.007, Mask ratio: 0.881
+[2024-09-14 15:48:12,481][    INFO] Iters: 462, Total loss: 0.045, Loss x: 0.083, Loss s: 0.007, Mask ratio: 0.888
+[2024-09-14 15:49:05,884][    INFO] Iters: 528, Total loss: 0.042, Loss x: 0.078, Loss s: 0.007, Mask ratio: 0.894
+[2024-09-14 15:50:36,257][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 97.89, EMA: 97.68
+[2024-09-14 15:50:36,257][    INFO] ***** Evaluation ***** >>>> Changed IoU: 69.19: EMA: 63.83
+[2024-09-14 15:50:36,257][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 97.99, EMA: 97.78
+
+[2024-09-14 15:50:39,574][    INFO] ===========> Epoch: 1, LR: 0.0000049, Previous best Changed IoU: 69.19, Overall Accuracy: 97.99 @epoch-0, EMA: Changed IoU: 63.83, Overall Accuracy: 97.78 @epoch-0
+[2024-09-14 15:50:41,029][    INFO] Iters: 0, Total loss: 0.020, Loss x: 0.033, Loss s: 0.006, Mask ratio: 0.961
+[2024-09-14 15:51:34,398][    INFO] Iters: 66, Total loss: 0.021, Loss x: 0.036, Loss s: 0.006, Mask ratio: 0.944
+[2024-09-14 15:52:27,764][    INFO] Iters: 132, Total loss: 0.021, Loss x: 0.035, Loss s: 0.006, Mask ratio: 0.944
+[2024-09-14 15:53:21,120][    INFO] Iters: 198, Total loss: 0.021, Loss x: 0.036, Loss s: 0.006, Mask ratio: 0.943
+[2024-09-14 15:54:14,573][    INFO] Iters: 264, Total loss: 0.021, Loss x: 0.037, Loss s: 0.006, Mask ratio: 0.942
+[2024-09-14 15:55:08,009][    INFO] Iters: 330, Total loss: 0.021, Loss x: 0.036, Loss s: 0.006, Mask ratio: 0.943
+[2024-09-14 15:56:01,487][    INFO] Iters: 396, Total loss: 0.021, Loss x: 0.035, Loss s: 0.006, Mask ratio: 0.942
+[2024-09-14 15:56:54,975][    INFO] Iters: 462, Total loss: 0.021, Loss x: 0.035, Loss s: 0.006, Mask ratio: 0.944
+[2024-09-14 15:57:48,347][    INFO] Iters: 528, Total loss: 0.020, Loss x: 0.035, Loss s: 0.006, Mask ratio: 0.945
+[2024-09-14 15:59:19,085][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.24, EMA: 98.38
+[2024-09-14 15:59:19,085][    INFO] ***** Evaluation ***** >>>> Changed IoU: 69.56: EMA: 73.53
+[2024-09-14 15:59:19,085][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.30, EMA: 98.45
+
+[2024-09-14 15:59:22,875][    INFO] ===========> Epoch: 2, LR: 0.0000048, Previous best Changed IoU: 69.56, Overall Accuracy: 98.30 @epoch-1, EMA: Changed IoU: 73.53, Overall Accuracy: 98.45 @epoch-1
+[2024-09-14 15:59:24,289][    INFO] Iters: 0, Total loss: 0.006, Loss x: 0.012, Loss s: 0.000, Mask ratio: 1.000
+[2024-09-14 16:00:17,686][    INFO] Iters: 66, Total loss: 0.018, Loss x: 0.031, Loss s: 0.005, Mask ratio: 0.956
+[2024-09-14 16:01:11,126][    INFO] Iters: 132, Total loss: 0.018, Loss x: 0.030, Loss s: 0.005, Mask ratio: 0.951
+[2024-09-14 16:02:04,597][    INFO] Iters: 198, Total loss: 0.017, Loss x: 0.028, Loss s: 0.005, Mask ratio: 0.953
+[2024-09-14 16:02:58,071][    INFO] Iters: 264, Total loss: 0.016, Loss x: 0.028, Loss s: 0.005, Mask ratio: 0.953
+[2024-09-14 16:03:51,597][    INFO] Iters: 330, Total loss: 0.017, Loss x: 0.029, Loss s: 0.005, Mask ratio: 0.954
+[2024-09-14 16:04:45,107][    INFO] Iters: 396, Total loss: 0.017, Loss x: 0.029, Loss s: 0.005, Mask ratio: 0.954
+[2024-09-14 16:05:38,553][    INFO] Iters: 462, Total loss: 0.017, Loss x: 0.029, Loss s: 0.005, Mask ratio: 0.954
+[2024-09-14 16:06:32,058][    INFO] Iters: 528, Total loss: 0.017, Loss x: 0.029, Loss s: 0.005, Mask ratio: 0.954
+[2024-09-14 16:08:01,803][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.62, EMA: 98.62
+[2024-09-14 16:08:01,803][    INFO] ***** Evaluation ***** >>>> Changed IoU: 76.29: EMA: 76.89
+[2024-09-14 16:08:01,803][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.68, EMA: 98.68
+
+[2024-09-14 16:08:05,344][    INFO] ===========> Epoch: 3, LR: 0.0000048, Previous best Changed IoU: 76.29, Overall Accuracy: 98.68 @epoch-2, EMA: Changed IoU: 76.89, Overall Accuracy: 98.68 @epoch-2
+[2024-09-14 16:08:06,760][    INFO] Iters: 0, Total loss: 0.008, Loss x: 0.015, Loss s: 0.001, Mask ratio: 0.955
+[2024-09-14 16:09:00,188][    INFO] Iters: 66, Total loss: 0.015, Loss x: 0.026, Loss s: 0.004, Mask ratio: 0.963
+[2024-09-14 16:09:53,622][    INFO] Iters: 132, Total loss: 0.015, Loss x: 0.026, Loss s: 0.004, Mask ratio: 0.960
+[2024-09-14 16:10:47,029][    INFO] Iters: 198, Total loss: 0.015, Loss x: 0.026, Loss s: 0.004, Mask ratio: 0.958
+[2024-09-14 16:11:40,445][    INFO] Iters: 264, Total loss: 0.015, Loss x: 0.026, Loss s: 0.004, Mask ratio: 0.958
+[2024-09-14 16:12:33,867][    INFO] Iters: 330, Total loss: 0.015, Loss x: 0.026, Loss s: 0.004, Mask ratio: 0.958
+[2024-09-14 16:13:27,312][    INFO] Iters: 396, Total loss: 0.015, Loss x: 0.026, Loss s: 0.004, Mask ratio: 0.958
+[2024-09-14 16:14:20,729][    INFO] Iters: 462, Total loss: 0.015, Loss x: 0.025, Loss s: 0.004, Mask ratio: 0.958
+[2024-09-14 16:15:14,152][    INFO] Iters: 528, Total loss: 0.015, Loss x: 0.025, Loss s: 0.004, Mask ratio: 0.958
+[2024-09-14 16:16:44,447][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.69, EMA: 98.72
+[2024-09-14 16:16:44,448][    INFO] ***** Evaluation ***** >>>> Changed IoU: 78.24: EMA: 78.40
+[2024-09-14 16:16:44,448][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.75, EMA: 98.78
+
+[2024-09-14 16:16:48,014][    INFO] ===========> Epoch: 4, LR: 0.0000047, Previous best Changed IoU: 78.24, Overall Accuracy: 98.75 @epoch-3, EMA: Changed IoU: 78.40, Overall Accuracy: 98.78 @epoch-3
+[2024-09-14 16:16:49,428][    INFO] Iters: 0, Total loss: 0.028, Loss x: 0.052, Loss s: 0.003, Mask ratio: 0.968
+[2024-09-14 16:17:42,931][    INFO] Iters: 66, Total loss: 0.013, Loss x: 0.022, Loss s: 0.004, Mask ratio: 0.963
+[2024-09-14 16:18:36,462][    INFO] Iters: 132, Total loss: 0.014, Loss x: 0.024, Loss s: 0.004, Mask ratio: 0.959
+[2024-09-14 16:19:29,988][    INFO] Iters: 198, Total loss: 0.014, Loss x: 0.024, Loss s: 0.004, Mask ratio: 0.960
+[2024-09-14 16:20:23,467][    INFO] Iters: 264, Total loss: 0.015, Loss x: 0.025, Loss s: 0.004, Mask ratio: 0.959
+[2024-09-14 16:21:16,918][    INFO] Iters: 330, Total loss: 0.014, Loss x: 0.025, Loss s: 0.004, Mask ratio: 0.959
+[2024-09-14 16:22:10,389][    INFO] Iters: 396, Total loss: 0.014, Loss x: 0.025, Loss s: 0.004, Mask ratio: 0.960
+[2024-09-14 16:23:03,852][    INFO] Iters: 462, Total loss: 0.014, Loss x: 0.024, Loss s: 0.004, Mask ratio: 0.960
+[2024-09-14 16:23:57,280][    INFO] Iters: 528, Total loss: 0.014, Loss x: 0.024, Loss s: 0.004, Mask ratio: 0.960
+[2024-09-14 16:25:27,976][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.76, EMA: 98.79
+[2024-09-14 16:25:27,976][    INFO] ***** Evaluation ***** >>>> Changed IoU: 78.89: EMA: 79.36
+[2024-09-14 16:25:27,976][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.82, EMA: 98.84
+
+[2024-09-14 16:25:32,154][    INFO] ===========> Epoch: 5, LR: 0.0000046, Previous best Changed IoU: 78.89, Overall Accuracy: 98.82 @epoch-4, EMA: Changed IoU: 79.36, Overall Accuracy: 98.84 @epoch-4
+[2024-09-14 16:25:33,633][    INFO] Iters: 0, Total loss: 0.007, Loss x: 0.012, Loss s: 0.001, Mask ratio: 0.960
+[2024-09-14 16:26:27,040][    INFO] Iters: 66, Total loss: 0.013, Loss x: 0.021, Loss s: 0.005, Mask ratio: 0.959
+[2024-09-14 16:27:20,468][    INFO] Iters: 132, Total loss: 0.015, Loss x: 0.025, Loss s: 0.005, Mask ratio: 0.958
+[2024-09-14 16:28:13,835][    INFO] Iters: 198, Total loss: 0.014, Loss x: 0.024, Loss s: 0.004, Mask ratio: 0.960
+[2024-09-14 16:29:07,208][    INFO] Iters: 264, Total loss: 0.014, Loss x: 0.024, Loss s: 0.004, Mask ratio: 0.961
+[2024-09-14 16:30:00,572][    INFO] Iters: 330, Total loss: 0.014, Loss x: 0.023, Loss s: 0.004, Mask ratio: 0.961
+[2024-09-14 16:30:53,952][    INFO] Iters: 396, Total loss: 0.014, Loss x: 0.023, Loss s: 0.004, Mask ratio: 0.961
+[2024-09-14 16:31:47,332][    INFO] Iters: 462, Total loss: 0.014, Loss x: 0.024, Loss s: 0.005, Mask ratio: 0.961
+[2024-09-14 16:32:40,730][    INFO] Iters: 528, Total loss: 0.014, Loss x: 0.024, Loss s: 0.005, Mask ratio: 0.961
+[2024-09-14 16:34:11,376][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.77, EMA: 98.82
+[2024-09-14 16:34:11,376][    INFO] ***** Evaluation ***** >>>> Changed IoU: 79.38: EMA: 80.05
+[2024-09-14 16:34:11,376][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.83, EMA: 98.88
+
+[2024-09-14 16:34:15,019][    INFO] ===========> Epoch: 6, LR: 0.0000045, Previous best Changed IoU: 79.38, Overall Accuracy: 98.83 @epoch-5, EMA: Changed IoU: 80.05, Overall Accuracy: 98.88 @epoch-5
+[2024-09-14 16:34:16,431][    INFO] Iters: 0, Total loss: 0.001, Loss x: 0.000, Loss s: 0.003, Mask ratio: 0.953
+[2024-09-14 16:35:09,799][    INFO] Iters: 66, Total loss: 0.015, Loss x: 0.024, Loss s: 0.005, Mask ratio: 0.957
+[2024-09-14 16:36:03,179][    INFO] Iters: 132, Total loss: 0.014, Loss x: 0.023, Loss s: 0.005, Mask ratio: 0.960
+[2024-09-14 16:36:56,561][    INFO] Iters: 198, Total loss: 0.013, Loss x: 0.022, Loss s: 0.004, Mask ratio: 0.962
+[2024-09-14 16:37:49,927][    INFO] Iters: 264, Total loss: 0.013, Loss x: 0.022, Loss s: 0.004, Mask ratio: 0.963
+[2024-09-14 16:38:43,320][    INFO] Iters: 330, Total loss: 0.013, Loss x: 0.022, Loss s: 0.004, Mask ratio: 0.963
+[2024-09-14 16:39:36,711][    INFO] Iters: 396, Total loss: 0.013, Loss x: 0.022, Loss s: 0.004, Mask ratio: 0.963
+[2024-09-14 16:40:30,121][    INFO] Iters: 462, Total loss: 0.012, Loss x: 0.021, Loss s: 0.004, Mask ratio: 0.964
+[2024-09-14 16:41:23,516][    INFO] Iters: 528, Total loss: 0.013, Loss x: 0.022, Loss s: 0.004, Mask ratio: 0.964
+[2024-09-14 16:42:54,728][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.86, EMA: 98.87
+[2024-09-14 16:42:54,728][    INFO] ***** Evaluation ***** >>>> Changed IoU: 80.49: EMA: 80.75
+[2024-09-14 16:42:54,728][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.91, EMA: 98.92
+
+[2024-09-14 16:42:58,295][    INFO] ===========> Epoch: 7, LR: 0.0000045, Previous best Changed IoU: 80.49, Overall Accuracy: 98.91 @epoch-6, EMA: Changed IoU: 80.75, Overall Accuracy: 98.92 @epoch-6
+[2024-09-14 16:42:59,704][    INFO] Iters: 0, Total loss: 0.015, Loss x: 0.023, Loss s: 0.007, Mask ratio: 0.939
+[2024-09-14 16:43:53,076][    INFO] Iters: 66, Total loss: 0.011, Loss x: 0.019, Loss s: 0.004, Mask ratio: 0.968
+[2024-09-14 16:44:46,510][    INFO] Iters: 132, Total loss: 0.012, Loss x: 0.020, Loss s: 0.004, Mask ratio: 0.965
+[2024-09-14 16:45:39,928][    INFO] Iters: 198, Total loss: 0.012, Loss x: 0.020, Loss s: 0.003, Mask ratio: 0.963
+[2024-09-14 16:46:33,363][    INFO] Iters: 264, Total loss: 0.012, Loss x: 0.020, Loss s: 0.003, Mask ratio: 0.964
+[2024-09-14 16:47:26,825][    INFO] Iters: 330, Total loss: 0.012, Loss x: 0.020, Loss s: 0.003, Mask ratio: 0.965
+[2024-09-14 16:48:20,184][    INFO] Iters: 396, Total loss: 0.012, Loss x: 0.020, Loss s: 0.004, Mask ratio: 0.964
+[2024-09-14 16:49:13,543][    INFO] Iters: 462, Total loss: 0.012, Loss x: 0.021, Loss s: 0.004, Mask ratio: 0.964
+[2024-09-14 16:50:06,935][    INFO] Iters: 528, Total loss: 0.012, Loss x: 0.021, Loss s: 0.004, Mask ratio: 0.965
+[2024-09-14 16:51:37,524][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.84, EMA: 98.90
+[2024-09-14 16:51:37,524][    INFO] ***** Evaluation ***** >>>> Changed IoU: 79.38: EMA: 81.19
+[2024-09-14 16:51:37,524][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.89, EMA: 98.95
+
+[2024-09-14 16:51:41,326][    INFO] ===========> Epoch: 8, LR: 0.0000044, Previous best Changed IoU: 80.49, Overall Accuracy: 98.91 @epoch-6, EMA: Changed IoU: 81.19, Overall Accuracy: 98.95 @epoch-7
+[2024-09-14 16:51:42,773][    INFO] Iters: 0, Total loss: 0.011, Loss x: 0.021, Loss s: 0.001, Mask ratio: 0.981
+[2024-09-14 16:52:36,187][    INFO] Iters: 66, Total loss: 0.012, Loss x: 0.021, Loss s: 0.003, Mask ratio: 0.967
+[2024-09-14 16:53:29,610][    INFO] Iters: 132, Total loss: 0.012, Loss x: 0.020, Loss s: 0.003, Mask ratio: 0.966
+[2024-09-14 16:54:23,018][    INFO] Iters: 198, Total loss: 0.012, Loss x: 0.020, Loss s: 0.003, Mask ratio: 0.965
+[2024-09-14 16:55:16,485][    INFO] Iters: 264, Total loss: 0.012, Loss x: 0.020, Loss s: 0.003, Mask ratio: 0.966
+[2024-09-14 16:56:09,941][    INFO] Iters: 330, Total loss: 0.012, Loss x: 0.020, Loss s: 0.003, Mask ratio: 0.965
+[2024-09-14 16:57:03,394][    INFO] Iters: 396, Total loss: 0.012, Loss x: 0.020, Loss s: 0.003, Mask ratio: 0.965
+[2024-09-14 16:57:56,814][    INFO] Iters: 462, Total loss: 0.012, Loss x: 0.020, Loss s: 0.003, Mask ratio: 0.966
+[2024-09-14 16:58:50,178][    INFO] Iters: 528, Total loss: 0.012, Loss x: 0.020, Loss s: 0.003, Mask ratio: 0.966
+[2024-09-14 17:00:21,198][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 97.98, EMA: 98.94
+[2024-09-14 17:00:21,198][    INFO] ***** Evaluation ***** >>>> Changed IoU: 63.24: EMA: 81.68
+[2024-09-14 17:00:21,198][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.05, EMA: 98.99
+
+[2024-09-14 17:00:24,757][    INFO] ===========> Epoch: 9, LR: 0.0000043, Previous best Changed IoU: 80.49, Overall Accuracy: 98.91 @epoch-6, EMA: Changed IoU: 81.68, Overall Accuracy: 98.99 @epoch-8
+[2024-09-14 17:00:26,209][    INFO] Iters: 0, Total loss: 0.030, Loss x: 0.057, Loss s: 0.004, Mask ratio: 0.959
+[2024-09-14 17:01:19,602][    INFO] Iters: 66, Total loss: 0.033, Loss x: 0.058, Loss s: 0.008, Mask ratio: 0.948
+[2024-09-14 17:02:12,989][    INFO] Iters: 132, Total loss: 0.024, Loss x: 0.042, Loss s: 0.006, Mask ratio: 0.957
+[2024-09-14 17:03:06,414][    INFO] Iters: 198, Total loss: 0.020, Loss x: 0.034, Loss s: 0.006, Mask ratio: 0.959
+[2024-09-14 17:03:59,782][    INFO] Iters: 264, Total loss: 0.018, Loss x: 0.031, Loss s: 0.005, Mask ratio: 0.961
+[2024-09-14 17:04:53,151][    INFO] Iters: 330, Total loss: 0.017, Loss x: 0.028, Loss s: 0.005, Mask ratio: 0.961
+[2024-09-14 17:05:46,509][    INFO] Iters: 396, Total loss: 0.016, Loss x: 0.027, Loss s: 0.005, Mask ratio: 0.963
+[2024-09-14 17:06:39,879][    INFO] Iters: 462, Total loss: 0.015, Loss x: 0.026, Loss s: 0.005, Mask ratio: 0.963
+[2024-09-14 17:07:33,269][    INFO] Iters: 528, Total loss: 0.015, Loss x: 0.025, Loss s: 0.004, Mask ratio: 0.964
+[2024-09-14 17:09:04,721][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.88, EMA: 98.90
+[2024-09-14 17:09:04,722][    INFO] ***** Evaluation ***** >>>> Changed IoU: 80.71: EMA: 81.25
+[2024-09-14 17:09:04,722][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.93, EMA: 98.95
+
+[2024-09-14 17:09:06,514][    INFO] ===========> Epoch: 10, LR: 0.0000042, Previous best Changed IoU: 80.71, Overall Accuracy: 98.93 @epoch-9, EMA: Changed IoU: 81.68, Overall Accuracy: 98.99 @epoch-8
+[2024-09-14 17:09:07,916][    INFO] Iters: 0, Total loss: 0.009, Loss x: 0.014, Loss s: 0.005, Mask ratio: 0.969
+[2024-09-14 17:10:01,285][    INFO] Iters: 66, Total loss: 0.012, Loss x: 0.021, Loss s: 0.003, Mask ratio: 0.971
+[2024-09-14 17:10:54,701][    INFO] Iters: 132, Total loss: 0.011, Loss x: 0.020, Loss s: 0.003, Mask ratio: 0.969
+[2024-09-14 17:11:48,119][    INFO] Iters: 198, Total loss: 0.011, Loss x: 0.019, Loss s: 0.003, Mask ratio: 0.969
+[2024-09-14 17:12:41,536][    INFO] Iters: 264, Total loss: 0.012, Loss x: 0.020, Loss s: 0.003, Mask ratio: 0.968
+[2024-09-14 17:13:34,917][    INFO] Iters: 330, Total loss: 0.011, Loss x: 0.019, Loss s: 0.003, Mask ratio: 0.968
+[2024-09-14 17:14:28,298][    INFO] Iters: 396, Total loss: 0.011, Loss x: 0.019, Loss s: 0.003, Mask ratio: 0.968
+[2024-09-14 17:15:21,658][    INFO] Iters: 462, Total loss: 0.011, Loss x: 0.019, Loss s: 0.003, Mask ratio: 0.968
+[2024-09-14 17:16:15,018][    INFO] Iters: 528, Total loss: 0.011, Loss x: 0.019, Loss s: 0.003, Mask ratio: 0.967
+[2024-09-14 17:17:45,917][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.92, EMA: 98.95
+[2024-09-14 17:17:45,917][    INFO] ***** Evaluation ***** >>>> Changed IoU: 81.43: EMA: 81.93
+[2024-09-14 17:17:45,917][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.97, EMA: 99.00
+
+[2024-09-14 17:17:49,634][    INFO] ===========> Epoch: 11, LR: 0.0000042, Previous best Changed IoU: 81.43, Overall Accuracy: 98.97 @epoch-10, EMA: Changed IoU: 81.93, Overall Accuracy: 99.00 @epoch-10
+[2024-09-14 17:17:51,057][    INFO] Iters: 0, Total loss: 0.001, Loss x: 0.002, Loss s: 0.001, Mask ratio: 0.983
+[2024-09-14 17:18:44,472][    INFO] Iters: 66, Total loss: 0.010, Loss x: 0.017, Loss s: 0.003, Mask ratio: 0.970
+[2024-09-14 17:19:37,901][    INFO] Iters: 132, Total loss: 0.010, Loss x: 0.018, Loss s: 0.003, Mask ratio: 0.970
+[2024-09-14 17:20:31,365][    INFO] Iters: 198, Total loss: 0.010, Loss x: 0.018, Loss s: 0.003, Mask ratio: 0.970
+[2024-09-14 17:21:24,848][    INFO] Iters: 264, Total loss: 0.010, Loss x: 0.018, Loss s: 0.003, Mask ratio: 0.970
+[2024-09-14 17:22:18,358][    INFO] Iters: 330, Total loss: 0.010, Loss x: 0.018, Loss s: 0.003, Mask ratio: 0.969
+[2024-09-14 17:23:11,873][    INFO] Iters: 396, Total loss: 0.011, Loss x: 0.018, Loss s: 0.003, Mask ratio: 0.969
+[2024-09-14 17:24:05,336][    INFO] Iters: 462, Total loss: 0.010, Loss x: 0.018, Loss s: 0.003, Mask ratio: 0.969
+[2024-09-14 17:24:58,780][    INFO] Iters: 528, Total loss: 0.010, Loss x: 0.018, Loss s: 0.003, Mask ratio: 0.968
+[2024-09-14 17:26:28,606][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.95, EMA: 98.97
+[2024-09-14 17:26:28,607][    INFO] ***** Evaluation ***** >>>> Changed IoU: 81.61: EMA: 82.22
+[2024-09-14 17:26:28,607][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.99, EMA: 99.02
+
+[2024-09-14 17:26:32,070][    INFO] ===========> Epoch: 12, LR: 0.0000041, Previous best Changed IoU: 81.61, Overall Accuracy: 98.99 @epoch-11, EMA: Changed IoU: 82.22, Overall Accuracy: 99.02 @epoch-11
+[2024-09-14 17:26:33,485][    INFO] Iters: 0, Total loss: 0.021, Loss x: 0.041, Loss s: 0.002, Mask ratio: 0.946
+[2024-09-14 17:27:26,900][    INFO] Iters: 66, Total loss: 0.010, Loss x: 0.018, Loss s: 0.002, Mask ratio: 0.969
+[2024-09-14 17:28:20,307][    INFO] Iters: 132, Total loss: 0.010, Loss x: 0.018, Loss s: 0.003, Mask ratio: 0.967
+[2024-09-14 17:29:13,713][    INFO] Iters: 198, Total loss: 0.010, Loss x: 0.018, Loss s: 0.003, Mask ratio: 0.968
+[2024-09-14 17:30:07,152][    INFO] Iters: 264, Total loss: 0.010, Loss x: 0.018, Loss s: 0.003, Mask ratio: 0.968
+[2024-09-14 17:31:00,571][    INFO] Iters: 330, Total loss: 0.010, Loss x: 0.018, Loss s: 0.003, Mask ratio: 0.968
+[2024-09-14 17:31:54,026][    INFO] Iters: 396, Total loss: 0.010, Loss x: 0.018, Loss s: 0.003, Mask ratio: 0.968
+[2024-09-14 17:32:47,439][    INFO] Iters: 462, Total loss: 0.010, Loss x: 0.018, Loss s: 0.003, Mask ratio: 0.968
+[2024-09-14 17:33:40,863][    INFO] Iters: 528, Total loss: 0.010, Loss x: 0.017, Loss s: 0.003, Mask ratio: 0.968
+[2024-09-14 17:35:11,205][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.97, EMA: 98.99
+[2024-09-14 17:35:11,206][    INFO] ***** Evaluation ***** >>>> Changed IoU: 82.02: EMA: 82.53
+[2024-09-14 17:35:11,206][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 99.02, EMA: 99.04
+
+[2024-09-14 17:35:15,038][    INFO] ===========> Epoch: 13, LR: 0.0000040, Previous best Changed IoU: 82.02, Overall Accuracy: 99.02 @epoch-12, EMA: Changed IoU: 82.53, Overall Accuracy: 99.04 @epoch-12
+[2024-09-14 17:35:16,471][    INFO] Iters: 0, Total loss: 0.005, Loss x: 0.006, Loss s: 0.003, Mask ratio: 0.960
+[2024-09-14 17:36:09,869][    INFO] Iters: 66, Total loss: 0.012, Loss x: 0.021, Loss s: 0.003, Mask ratio: 0.967
+[2024-09-14 17:37:03,263][    INFO] Iters: 132, Total loss: 0.011, Loss x: 0.019, Loss s: 0.003, Mask ratio: 0.965
+[2024-09-14 17:37:56,657][    INFO] Iters: 198, Total loss: 0.011, Loss x: 0.018, Loss s: 0.003, Mask ratio: 0.966
+[2024-09-14 17:38:50,026][    INFO] Iters: 264, Total loss: 0.010, Loss x: 0.018, Loss s: 0.003, Mask ratio: 0.967
+[2024-09-14 17:39:43,382][    INFO] Iters: 330, Total loss: 0.010, Loss x: 0.018, Loss s: 0.003, Mask ratio: 0.968
+[2024-09-14 17:40:36,917][    INFO] Iters: 396, Total loss: 0.010, Loss x: 0.018, Loss s: 0.003, Mask ratio: 0.969
+[2024-09-14 17:41:30,311][    INFO] Iters: 462, Total loss: 0.010, Loss x: 0.018, Loss s: 0.003, Mask ratio: 0.969
+[2024-09-14 17:42:23,740][    INFO] Iters: 528, Total loss: 0.010, Loss x: 0.017, Loss s: 0.003, Mask ratio: 0.969
+[2024-09-14 17:43:53,689][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.94, EMA: 99.00
+[2024-09-14 17:43:53,689][    INFO] ***** Evaluation ***** >>>> Changed IoU: 81.88: EMA: 82.77
+[2024-09-14 17:43:53,689][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 98.99, EMA: 99.05
+
+[2024-09-14 17:43:57,326][    INFO] ===========> Epoch: 14, LR: 0.0000039, Previous best Changed IoU: 82.02, Overall Accuracy: 99.02 @epoch-12, EMA: Changed IoU: 82.77, Overall Accuracy: 99.05 @epoch-13
+[2024-09-14 17:43:58,772][    INFO] Iters: 0, Total loss: 0.013, Loss x: 0.024, Loss s: 0.003, Mask ratio: 0.981
+[2024-09-14 17:44:52,198][    INFO] Iters: 66, Total loss: 0.010, Loss x: 0.016, Loss s: 0.003, Mask ratio: 0.970
+[2024-09-14 17:45:45,602][    INFO] Iters: 132, Total loss: 0.009, Loss x: 0.016, Loss s: 0.002, Mask ratio: 0.972
+[2024-09-14 17:46:38,939][    INFO] Iters: 198, Total loss: 0.010, Loss x: 0.017, Loss s: 0.002, Mask ratio: 0.972
+[2024-09-14 17:47:32,286][    INFO] Iters: 264, Total loss: 0.010, Loss x: 0.017, Loss s: 0.003, Mask ratio: 0.971
+[2024-09-14 17:48:25,631][    INFO] Iters: 330, Total loss: 0.010, Loss x: 0.017, Loss s: 0.003, Mask ratio: 0.969
+[2024-09-14 17:49:19,002][    INFO] Iters: 396, Total loss: 0.010, Loss x: 0.018, Loss s: 0.003, Mask ratio: 0.968
+[2024-09-14 17:50:12,406][    INFO] Iters: 462, Total loss: 0.011, Loss x: 0.018, Loss s: 0.003, Mask ratio: 0.969
+[2024-09-14 17:51:05,794][    INFO] Iters: 528, Total loss: 0.011, Loss x: 0.018, Loss s: 0.003, Mask ratio: 0.969
+[2024-09-14 17:52:39,018][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.96, EMA: 99.01
+[2024-09-14 17:52:39,018][    INFO] ***** Evaluation ***** >>>> Changed IoU: 82.21: EMA: 82.96
+[2024-09-14 17:52:39,019][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 99.01, EMA: 99.06
+
+[2024-09-14 17:52:42,569][    INFO] ===========> Epoch: 15, LR: 0.0000039, Previous best Changed IoU: 82.21, Overall Accuracy: 99.01 @epoch-14, EMA: Changed IoU: 82.96, Overall Accuracy: 99.06 @epoch-14
+[2024-09-14 17:52:43,993][    INFO] Iters: 0, Total loss: 0.012, Loss x: 0.024, Loss s: 0.000, Mask ratio: 0.996
+[2024-09-14 17:53:37,447][    INFO] Iters: 66, Total loss: 0.010, Loss x: 0.017, Loss s: 0.003, Mask ratio: 0.973
+[2024-09-14 17:54:30,834][    INFO] Iters: 132, Total loss: 0.010, Loss x: 0.017, Loss s: 0.003, Mask ratio: 0.970
+[2024-09-14 17:55:24,251][    INFO] Iters: 198, Total loss: 0.010, Loss x: 0.017, Loss s: 0.003, Mask ratio: 0.969
+[2024-09-14 17:56:17,691][    INFO] Iters: 264, Total loss: 0.010, Loss x: 0.017, Loss s: 0.003, Mask ratio: 0.969
+[2024-09-14 17:57:11,192][    INFO] Iters: 330, Total loss: 0.010, Loss x: 0.017, Loss s: 0.003, Mask ratio: 0.969
+[2024-09-14 17:58:04,736][    INFO] Iters: 396, Total loss: 0.010, Loss x: 0.017, Loss s: 0.003, Mask ratio: 0.969
+[2024-09-14 17:58:58,255][    INFO] Iters: 462, Total loss: 0.010, Loss x: 0.017, Loss s: 0.003, Mask ratio: 0.970
+[2024-09-14 17:59:51,778][    INFO] Iters: 528, Total loss: 0.010, Loss x: 0.017, Loss s: 0.003, Mask ratio: 0.970
+[2024-09-14 18:01:22,447][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.96, EMA: 99.02
+[2024-09-14 18:01:22,447][    INFO] ***** Evaluation ***** >>>> Changed IoU: 81.68: EMA: 83.05
+[2024-09-14 18:01:22,447][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 99.01, EMA: 99.07
+
+[2024-09-14 18:01:26,170][    INFO] ===========> Epoch: 16, LR: 0.0000038, Previous best Changed IoU: 82.21, Overall Accuracy: 99.01 @epoch-14, EMA: Changed IoU: 83.05, Overall Accuracy: 99.07 @epoch-15
+[2024-09-14 18:01:27,644][    INFO] Iters: 0, Total loss: 0.004, Loss x: 0.007, Loss s: 0.000, Mask ratio: 0.978
+[2024-09-14 18:02:21,078][    INFO] Iters: 66, Total loss: 0.010, Loss x: 0.016, Loss s: 0.003, Mask ratio: 0.970
+[2024-09-14 18:03:14,487][    INFO] Iters: 132, Total loss: 0.009, Loss x: 0.016, Loss s: 0.003, Mask ratio: 0.970
+[2024-09-14 18:04:07,886][    INFO] Iters: 198, Total loss: 0.009, Loss x: 0.016, Loss s: 0.003, Mask ratio: 0.969
+[2024-09-14 18:05:01,278][    INFO] Iters: 264, Total loss: 0.009, Loss x: 0.016, Loss s: 0.003, Mask ratio: 0.969
+[2024-09-14 18:05:54,670][    INFO] Iters: 330, Total loss: 0.010, Loss x: 0.017, Loss s: 0.003, Mask ratio: 0.969
+[2024-09-14 18:06:48,082][    INFO] Iters: 396, Total loss: 0.010, Loss x: 0.016, Loss s: 0.003, Mask ratio: 0.970
+[2024-09-14 18:07:41,455][    INFO] Iters: 462, Total loss: 0.010, Loss x: 0.017, Loss s: 0.003, Mask ratio: 0.970
+[2024-09-14 18:08:34,825][    INFO] Iters: 528, Total loss: 0.010, Loss x: 0.017, Loss s: 0.003, Mask ratio: 0.970
+[2024-09-14 18:10:03,676][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.96, EMA: 99.02
+[2024-09-14 18:10:03,676][    INFO] ***** Evaluation ***** >>>> Changed IoU: 82.11: EMA: 83.08
+[2024-09-14 18:10:03,676][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 99.01, EMA: 99.07
+
+[2024-09-14 18:10:07,161][    INFO] ===========> Epoch: 17, LR: 0.0000037, Previous best Changed IoU: 82.21, Overall Accuracy: 99.01 @epoch-14, EMA: Changed IoU: 83.08, Overall Accuracy: 99.07 @epoch-16
+[2024-09-14 18:10:08,593][    INFO] Iters: 0, Total loss: 0.005, Loss x: 0.009, Loss s: 0.001, Mask ratio: 0.960
+[2024-09-14 18:11:01,973][    INFO] Iters: 66, Total loss: 0.009, Loss x: 0.016, Loss s: 0.003, Mask ratio: 0.971
+[2024-09-14 18:11:55,383][    INFO] Iters: 132, Total loss: 0.009, Loss x: 0.016, Loss s: 0.002, Mask ratio: 0.971
+[2024-09-14 18:12:48,814][    INFO] Iters: 198, Total loss: 0.009, Loss x: 0.016, Loss s: 0.003, Mask ratio: 0.971
+[2024-09-14 18:13:42,223][    INFO] Iters: 264, Total loss: 0.009, Loss x: 0.016, Loss s: 0.003, Mask ratio: 0.971
+[2024-09-14 18:14:35,674][    INFO] Iters: 330, Total loss: 0.009, Loss x: 0.016, Loss s: 0.003, Mask ratio: 0.971
+[2024-09-14 18:15:29,129][    INFO] Iters: 396, Total loss: 0.009, Loss x: 0.016, Loss s: 0.003, Mask ratio: 0.971
+[2024-09-14 18:16:22,591][    INFO] Iters: 462, Total loss: 0.009, Loss x: 0.016, Loss s: 0.003, Mask ratio: 0.971
+[2024-09-14 18:17:15,995][    INFO] Iters: 528, Total loss: 0.009, Loss x: 0.016, Loss s: 0.003, Mask ratio: 0.971
+[2024-09-14 18:18:47,031][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 99.01, EMA: 99.02
+[2024-09-14 18:18:47,032][    INFO] ***** Evaluation ***** >>>> Changed IoU: 82.57: EMA: 83.10
+[2024-09-14 18:18:47,032][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 99.05, EMA: 99.07
+
+[2024-09-14 18:18:50,783][    INFO] ===========> Epoch: 18, LR: 0.0000036, Previous best Changed IoU: 82.57, Overall Accuracy: 99.05 @epoch-17, EMA: Changed IoU: 83.10, Overall Accuracy: 99.07 @epoch-17
+[2024-09-14 18:18:52,239][    INFO] Iters: 0, Total loss: 0.009, Loss x: 0.017, Loss s: 0.001, Mask ratio: 0.982
+[2024-09-14 18:19:45,706][    INFO] Iters: 66, Total loss: 0.009, Loss x: 0.016, Loss s: 0.002, Mask ratio: 0.973
+[2024-09-14 18:20:39,118][    INFO] Iters: 132, Total loss: 0.010, Loss x: 0.017, Loss s: 0.003, Mask ratio: 0.971
+[2024-09-14 18:21:32,509][    INFO] Iters: 198, Total loss: 0.010, Loss x: 0.017, Loss s: 0.003, Mask ratio: 0.970
+[2024-09-14 18:22:25,907][    INFO] Iters: 264, Total loss: 0.009, Loss x: 0.016, Loss s: 0.002, Mask ratio: 0.971
+[2024-09-14 18:23:19,328][    INFO] Iters: 330, Total loss: 0.009, Loss x: 0.016, Loss s: 0.002, Mask ratio: 0.970
+[2024-09-14 18:24:12,701][    INFO] Iters: 396, Total loss: 0.009, Loss x: 0.016, Loss s: 0.002, Mask ratio: 0.971
+[2024-09-14 18:25:06,143][    INFO] Iters: 462, Total loss: 0.009, Loss x: 0.016, Loss s: 0.002, Mask ratio: 0.971
+[2024-09-14 18:25:59,581][    INFO] Iters: 528, Total loss: 0.009, Loss x: 0.016, Loss s: 0.002, Mask ratio: 0.971
+[2024-09-14 18:27:30,816][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 99.00, EMA: 99.03
+[2024-09-14 18:27:30,816][    INFO] ***** Evaluation ***** >>>> Changed IoU: 82.69: EMA: 83.19
+[2024-09-14 18:27:30,816][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 99.04, EMA: 99.08
+
+[2024-09-14 18:27:34,497][    INFO] ===========> Epoch: 19, LR: 0.0000035, Previous best Changed IoU: 82.69, Overall Accuracy: 99.04 @epoch-18, EMA: Changed IoU: 83.19, Overall Accuracy: 99.08 @epoch-18
+[2024-09-14 18:27:35,919][    INFO] Iters: 0, Total loss: 0.010, Loss x: 0.019, Loss s: 0.002, Mask ratio: 0.971
+[2024-09-14 18:28:29,280][    INFO] Iters: 66, Total loss: 0.009, Loss x: 0.016, Loss s: 0.002, Mask ratio: 0.973
+[2024-09-14 18:29:22,758][    INFO] Iters: 132, Total loss: 0.009, Loss x: 0.015, Loss s: 0.002, Mask ratio: 0.972
+[2024-09-14 18:30:16,279][    INFO] Iters: 198, Total loss: 0.009, Loss x: 0.015, Loss s: 0.002, Mask ratio: 0.972
+[2024-09-14 18:31:09,703][    INFO] Iters: 264, Total loss: 0.009, Loss x: 0.015, Loss s: 0.002, Mask ratio: 0.972
+[2024-09-14 18:32:03,329][    INFO] Iters: 330, Total loss: 0.009, Loss x: 0.016, Loss s: 0.002, Mask ratio: 0.972
+[2024-09-14 18:32:56,937][    INFO] Iters: 396, Total loss: 0.009, Loss x: 0.016, Loss s: 0.002, Mask ratio: 0.971
+[2024-09-14 18:33:50,380][    INFO] Iters: 462, Total loss: 0.009, Loss x: 0.016, Loss s: 0.002, Mask ratio: 0.971
+[2024-09-14 18:34:43,867][    INFO] Iters: 528, Total loss: 0.009, Loss x: 0.016, Loss s: 0.002, Mask ratio: 0.971
+[2024-09-14 18:36:15,039][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 99.00, EMA: 99.04
+[2024-09-14 18:36:15,039][    INFO] ***** Evaluation ***** >>>> Changed IoU: 82.24: EMA: 83.33
+[2024-09-14 18:36:15,039][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 99.04, EMA: 99.08
+
+[2024-09-14 18:36:18,695][    INFO] ===========> Epoch: 20, LR: 0.0000035, Previous best Changed IoU: 82.69, Overall Accuracy: 99.04 @epoch-18, EMA: Changed IoU: 83.33, Overall Accuracy: 99.08 @epoch-19
+[2024-09-14 18:36:20,164][    INFO] Iters: 0, Total loss: 0.014, Loss x: 0.027, Loss s: 0.000, Mask ratio: 0.993
+[2024-09-14 18:37:13,565][    INFO] Iters: 66, Total loss: 0.011, Loss x: 0.019, Loss s: 0.002, Mask ratio: 0.974
+[2024-09-14 18:38:07,055][    INFO] Iters: 132, Total loss: 0.010, Loss x: 0.018, Loss s: 0.002, Mask ratio: 0.972
+[2024-09-14 18:39:00,444][    INFO] Iters: 198, Total loss: 0.009, Loss x: 0.016, Loss s: 0.002, Mask ratio: 0.972
+[2024-09-14 18:39:53,839][    INFO] Iters: 264, Total loss: 0.009, Loss x: 0.016, Loss s: 0.002, Mask ratio: 0.971
+[2024-09-14 18:40:48,835][    INFO] Iters: 330, Total loss: 0.009, Loss x: 0.016, Loss s: 0.002, Mask ratio: 0.972
+[2024-09-14 18:41:42,248][    INFO] Iters: 396, Total loss: 0.009, Loss x: 0.015, Loss s: 0.002, Mask ratio: 0.972
+[2024-09-14 18:42:35,691][    INFO] Iters: 462, Total loss: 0.009, Loss x: 0.015, Loss s: 0.002, Mask ratio: 0.972
+[2024-09-14 18:43:29,123][    INFO] Iters: 528, Total loss: 0.009, Loss x: 0.015, Loss s: 0.002, Mask ratio: 0.972
+[2024-09-14 18:45:00,145][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 99.03, EMA: 99.05
+[2024-09-14 18:45:00,145][    INFO] ***** Evaluation ***** >>>> Changed IoU: 82.89: EMA: 83.50
+[2024-09-14 18:45:00,145][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 99.07, EMA: 99.09
+
+[2024-09-14 18:45:03,952][    INFO] ===========> Epoch: 21, LR: 0.0000034, Previous best Changed IoU: 82.89, Overall Accuracy: 99.07 @epoch-20, EMA: Changed IoU: 83.50, Overall Accuracy: 99.09 @epoch-20
+[2024-09-14 18:45:05,379][    INFO] Iters: 0, Total loss: 0.012, Loss x: 0.023, Loss s: 0.000, Mask ratio: 0.998
+[2024-09-14 18:45:58,783][    INFO] Iters: 66, Total loss: 0.008, Loss x: 0.014, Loss s: 0.002, Mask ratio: 0.971
+[2024-09-14 18:46:52,209][    INFO] Iters: 132, Total loss: 0.009, Loss x: 0.015, Loss s: 0.002, Mask ratio: 0.972
+[2024-09-14 18:47:45,638][    INFO] Iters: 198, Total loss: 0.009, Loss x: 0.015, Loss s: 0.002, Mask ratio: 0.972
+[2024-09-14 18:48:39,072][    INFO] Iters: 264, Total loss: 0.009, Loss x: 0.015, Loss s: 0.002, Mask ratio: 0.972
+[2024-09-14 18:49:32,489][    INFO] Iters: 330, Total loss: 0.009, Loss x: 0.015, Loss s: 0.002, Mask ratio: 0.972
+[2024-09-14 18:50:25,868][    INFO] Iters: 396, Total loss: 0.009, Loss x: 0.015, Loss s: 0.002, Mask ratio: 0.973
+[2024-09-14 18:51:19,286][    INFO] Iters: 462, Total loss: 0.009, Loss x: 0.015, Loss s: 0.002, Mask ratio: 0.972
+[2024-09-14 18:52:12,668][    INFO] Iters: 528, Total loss: 0.009, Loss x: 0.015, Loss s: 0.002, Mask ratio: 0.972
+[2024-09-14 18:53:43,853][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 99.01, EMA: 99.06
+[2024-09-14 18:53:43,853][    INFO] ***** Evaluation ***** >>>> Changed IoU: 82.84: EMA: 83.60
+[2024-09-14 18:53:43,853][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 99.05, EMA: 99.10
+
+[2024-09-14 18:53:47,522][    INFO] ===========> Epoch: 22, LR: 0.0000033, Previous best Changed IoU: 82.89, Overall Accuracy: 99.07 @epoch-20, EMA: Changed IoU: 83.60, Overall Accuracy: 99.10 @epoch-21
+[2024-09-14 18:53:48,976][    INFO] Iters: 0, Total loss: 0.007, Loss x: 0.009, Loss s: 0.005, Mask ratio: 0.905
+[2024-09-14 18:54:42,346][    INFO] Iters: 66, Total loss: 0.009, Loss x: 0.016, Loss s: 0.003, Mask ratio: 0.971
+[2024-09-14 18:55:35,712][    INFO] Iters: 132, Total loss: 0.009, Loss x: 0.015, Loss s: 0.003, Mask ratio: 0.972
+[2024-09-14 18:56:29,110][    INFO] Iters: 198, Total loss: 0.009, Loss x: 0.016, Loss s: 0.002, Mask ratio: 0.973
+[2024-09-14 18:57:22,505][    INFO] Iters: 264, Total loss: 0.009, Loss x: 0.016, Loss s: 0.002, Mask ratio: 0.973
+[2024-09-14 18:58:15,902][    INFO] Iters: 330, Total loss: 0.009, Loss x: 0.015, Loss s: 0.002, Mask ratio: 0.972
+[2024-09-14 18:59:09,303][    INFO] Iters: 396, Total loss: 0.009, Loss x: 0.015, Loss s: 0.002, Mask ratio: 0.972
+[2024-09-14 19:00:04,643][    INFO] Iters: 462, Total loss: 0.009, Loss x: 0.015, Loss s: 0.002, Mask ratio: 0.972
+[2024-09-14 19:00:58,082][    INFO] Iters: 528, Total loss: 0.009, Loss x: 0.015, Loss s: 0.002, Mask ratio: 0.972
+[2024-09-14 19:02:29,394][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 99.03, EMA: 99.06
+[2024-09-14 19:02:29,394][    INFO] ***** Evaluation ***** >>>> Changed IoU: 83.21: EMA: 83.59
+[2024-09-14 19:02:29,394][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 99.07, EMA: 99.10
+
+[2024-09-14 19:02:31,265][    INFO] ===========> Epoch: 23, LR: 0.0000032, Previous best Changed IoU: 83.21, Overall Accuracy: 99.07 @epoch-22, EMA: Changed IoU: 83.60, Overall Accuracy: 99.10 @epoch-21
+[2024-09-14 19:02:32,675][    INFO] Iters: 0, Total loss: 0.014, Loss x: 0.028, Loss s: 0.001, Mask ratio: 0.980
+[2024-09-14 19:03:26,096][    INFO] Iters: 66, Total loss: 0.010, Loss x: 0.017, Loss s: 0.003, Mask ratio: 0.970
+[2024-09-14 19:04:19,550][    INFO] Iters: 132, Total loss: 0.009, Loss x: 0.016, Loss s: 0.003, Mask ratio: 0.970
+[2024-09-14 19:05:13,119][    INFO] Iters: 198, Total loss: 0.009, Loss x: 0.016, Loss s: 0.003, Mask ratio: 0.972
+[2024-09-14 19:06:06,604][    INFO] Iters: 264, Total loss: 0.009, Loss x: 0.015, Loss s: 0.003, Mask ratio: 0.972
+[2024-09-14 19:07:00,106][    INFO] Iters: 330, Total loss: 0.009, Loss x: 0.015, Loss s: 0.003, Mask ratio: 0.973
+[2024-09-14 19:07:53,636][    INFO] Iters: 396, Total loss: 0.009, Loss x: 0.015, Loss s: 0.003, Mask ratio: 0.972
+[2024-09-14 19:08:47,250][    INFO] Iters: 462, Total loss: 0.009, Loss x: 0.015, Loss s: 0.003, Mask ratio: 0.972
+[2024-09-14 19:09:40,786][    INFO] Iters: 528, Total loss: 0.009, Loss x: 0.015, Loss s: 0.003, Mask ratio: 0.972
+[2024-09-14 19:11:12,409][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 99.04, EMA: 99.06
+[2024-09-14 19:11:12,410][    INFO] ***** Evaluation ***** >>>> Changed IoU: 83.37: EMA: 83.67
+[2024-09-14 19:11:12,410][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 99.08, EMA: 99.10
+
+[2024-09-14 19:11:16,220][    INFO] ===========> Epoch: 24, LR: 0.0000032, Previous best Changed IoU: 83.37, Overall Accuracy: 99.08 @epoch-23, EMA: Changed IoU: 83.67, Overall Accuracy: 99.10 @epoch-23
+[2024-09-14 19:11:17,664][    INFO] Iters: 0, Total loss: 0.006, Loss x: 0.010, Loss s: 0.002, Mask ratio: 0.971
+[2024-09-14 19:12:11,046][    INFO] Iters: 66, Total loss: 0.009, Loss x: 0.015, Loss s: 0.003, Mask ratio: 0.970
+[2024-09-14 19:13:04,408][    INFO] Iters: 132, Total loss: 0.009, Loss x: 0.015, Loss s: 0.003, Mask ratio: 0.968
+[2024-09-14 19:13:57,792][    INFO] Iters: 198, Total loss: 0.009, Loss x: 0.015, Loss s: 0.003, Mask ratio: 0.970
+[2024-09-14 19:14:51,315][    INFO] Iters: 264, Total loss: 0.009, Loss x: 0.015, Loss s: 0.003, Mask ratio: 0.971
+[2024-09-14 19:15:44,733][    INFO] Iters: 330, Total loss: 0.009, Loss x: 0.015, Loss s: 0.003, Mask ratio: 0.971
+[2024-09-14 19:16:38,129][    INFO] Iters: 396, Total loss: 0.009, Loss x: 0.015, Loss s: 0.003, Mask ratio: 0.972
+[2024-09-14 19:17:31,523][    INFO] Iters: 462, Total loss: 0.009, Loss x: 0.015, Loss s: 0.003, Mask ratio: 0.972
+[2024-09-14 19:18:24,928][    INFO] Iters: 528, Total loss: 0.009, Loss x: 0.015, Loss s: 0.002, Mask ratio: 0.973
+[2024-09-14 19:19:55,560][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 99.03, EMA: 99.05
+[2024-09-14 19:19:55,560][    INFO] ***** Evaluation ***** >>>> Changed IoU: 83.18: EMA: 83.46
+[2024-09-14 19:19:55,560][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 99.07, EMA: 99.09
+
+[2024-09-14 19:19:57,403][    INFO] ===========> Epoch: 25, LR: 0.0000031, Previous best Changed IoU: 83.37, Overall Accuracy: 99.08 @epoch-23, EMA: Changed IoU: 83.67, Overall Accuracy: 99.10 @epoch-23
+[2024-09-14 19:19:59,796][    INFO] Iters: 0, Total loss: 0.018, Loss x: 0.033, Loss s: 0.004, Mask ratio: 0.986
+[2024-09-14 19:20:53,200][    INFO] Iters: 66, Total loss: 0.008, Loss x: 0.015, Loss s: 0.002, Mask ratio: 0.970
+[2024-09-14 19:21:46,575][    INFO] Iters: 132, Total loss: 0.009, Loss x: 0.015, Loss s: 0.002, Mask ratio: 0.971
+[2024-09-14 19:22:39,955][    INFO] Iters: 198, Total loss: 0.009, Loss x: 0.016, Loss s: 0.002, Mask ratio: 0.972
+[2024-09-14 19:23:33,364][    INFO] Iters: 264, Total loss: 0.009, Loss x: 0.015, Loss s: 0.002, Mask ratio: 0.972
+[2024-09-14 19:24:26,739][    INFO] Iters: 330, Total loss: 0.009, Loss x: 0.015, Loss s: 0.002, Mask ratio: 0.972
+[2024-09-14 19:25:20,102][    INFO] Iters: 396, Total loss: 0.009, Loss x: 0.015, Loss s: 0.002, Mask ratio: 0.972
+[2024-09-14 19:26:13,486][    INFO] Iters: 462, Total loss: 0.009, Loss x: 0.015, Loss s: 0.002, Mask ratio: 0.972
+[2024-09-14 19:27:07,080][    INFO] Iters: 528, Total loss: 0.009, Loss x: 0.015, Loss s: 0.002, Mask ratio: 0.972
+[2024-09-14 19:28:38,113][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 99.04, EMA: 99.05
+[2024-09-14 19:28:38,113][    INFO] ***** Evaluation ***** >>>> Changed IoU: 83.20: EMA: 83.53
+[2024-09-14 19:28:38,113][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 99.08, EMA: 99.10
+
+[2024-09-14 19:28:39,921][    INFO] ===========> Epoch: 26, LR: 0.0000030, Previous best Changed IoU: 83.37, Overall Accuracy: 99.08 @epoch-23, EMA: Changed IoU: 83.67, Overall Accuracy: 99.10 @epoch-23
+[2024-09-14 19:28:41,361][    INFO] Iters: 0, Total loss: 0.004, Loss x: 0.007, Loss s: 0.001, Mask ratio: 0.994
+[2024-09-14 19:29:34,825][    INFO] Iters: 66, Total loss: 0.008, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.972
+[2024-09-14 19:30:28,285][    INFO] Iters: 132, Total loss: 0.008, Loss x: 0.014, Loss s: 0.002, Mask ratio: 0.972
+[2024-09-14 19:31:21,761][    INFO] Iters: 198, Total loss: 0.008, Loss x: 0.014, Loss s: 0.002, Mask ratio: 0.972
+[2024-09-14 19:32:15,258][    INFO] Iters: 264, Total loss: 0.008, Loss x: 0.014, Loss s: 0.002, Mask ratio: 0.973
+[2024-09-14 19:33:08,735][    INFO] Iters: 330, Total loss: 0.008, Loss x: 0.014, Loss s: 0.002, Mask ratio: 0.973
+[2024-09-14 19:34:02,261][    INFO] Iters: 396, Total loss: 0.008, Loss x: 0.014, Loss s: 0.002, Mask ratio: 0.973
+[2024-09-14 19:34:55,734][    INFO] Iters: 462, Total loss: 0.008, Loss x: 0.014, Loss s: 0.002, Mask ratio: 0.973
+[2024-09-14 19:35:49,194][    INFO] Iters: 528, Total loss: 0.008, Loss x: 0.014, Loss s: 0.002, Mask ratio: 0.973
+[2024-09-14 19:37:20,120][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 99.02, EMA: 99.06
+[2024-09-14 19:37:20,120][    INFO] ***** Evaluation ***** >>>> Changed IoU: 82.69: EMA: 83.58
+[2024-09-14 19:37:20,120][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 99.07, EMA: 99.10
+
+[2024-09-14 19:37:21,965][    INFO] ===========> Epoch: 27, LR: 0.0000029, Previous best Changed IoU: 83.37, Overall Accuracy: 99.08 @epoch-23, EMA: Changed IoU: 83.67, Overall Accuracy: 99.10 @epoch-23
+[2024-09-14 19:37:23,409][    INFO] Iters: 0, Total loss: 0.015, Loss x: 0.026, Loss s: 0.003, Mask ratio: 0.969
+[2024-09-14 19:38:16,854][    INFO] Iters: 66, Total loss: 0.008, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.975
+[2024-09-14 19:39:10,474][    INFO] Iters: 132, Total loss: 0.008, Loss x: 0.014, Loss s: 0.002, Mask ratio: 0.976
+[2024-09-14 19:40:04,080][    INFO] Iters: 198, Total loss: 0.008, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.975
+[2024-09-14 19:40:57,524][    INFO] Iters: 264, Total loss: 0.008, Loss x: 0.014, Loss s: 0.002, Mask ratio: 0.974
+[2024-09-14 19:41:50,905][    INFO] Iters: 330, Total loss: 0.008, Loss x: 0.014, Loss s: 0.002, Mask ratio: 0.974
+[2024-09-14 19:42:44,317][    INFO] Iters: 396, Total loss: 0.008, Loss x: 0.014, Loss s: 0.002, Mask ratio: 0.974
+[2024-09-14 19:43:37,751][    INFO] Iters: 462, Total loss: 0.008, Loss x: 0.014, Loss s: 0.002, Mask ratio: 0.974
+[2024-09-14 19:44:31,167][    INFO] Iters: 528, Total loss: 0.008, Loss x: 0.014, Loss s: 0.002, Mask ratio: 0.973
+[2024-09-14 19:46:01,257][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 99.03, EMA: 99.07
+[2024-09-14 19:46:01,257][    INFO] ***** Evaluation ***** >>>> Changed IoU: 82.79: EMA: 83.74
+[2024-09-14 19:46:01,257][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 99.07, EMA: 99.11
+
+[2024-09-14 19:46:05,005][    INFO] ===========> Epoch: 28, LR: 0.0000028, Previous best Changed IoU: 83.37, Overall Accuracy: 99.08 @epoch-23, EMA: Changed IoU: 83.74, Overall Accuracy: 99.11 @epoch-27
+[2024-09-14 19:46:06,439][    INFO] Iters: 0, Total loss: 0.004, Loss x: 0.002, Loss s: 0.006, Mask ratio: 0.931
+[2024-09-14 19:46:59,916][    INFO] Iters: 66, Total loss: 0.008, Loss x: 0.014, Loss s: 0.003, Mask ratio: 0.972
+[2024-09-14 19:47:53,400][    INFO] Iters: 132, Total loss: 0.008, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.972
+[2024-09-14 19:48:46,857][    INFO] Iters: 198, Total loss: 0.008, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.972
+[2024-09-14 19:49:40,332][    INFO] Iters: 264, Total loss: 0.008, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.973
+[2024-09-14 19:50:33,783][    INFO] Iters: 330, Total loss: 0.008, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.973
+[2024-09-14 19:51:27,221][    INFO] Iters: 396, Total loss: 0.008, Loss x: 0.014, Loss s: 0.002, Mask ratio: 0.973
+[2024-09-14 19:52:20,602][    INFO] Iters: 462, Total loss: 0.008, Loss x: 0.014, Loss s: 0.002, Mask ratio: 0.974
+[2024-09-14 19:53:13,952][    INFO] Iters: 528, Total loss: 0.008, Loss x: 0.014, Loss s: 0.002, Mask ratio: 0.974
+[2024-09-14 19:54:43,496][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 99.04, EMA: 99.07
+[2024-09-14 19:54:43,497][    INFO] ***** Evaluation ***** >>>> Changed IoU: 83.41: EMA: 83.76
+[2024-09-14 19:54:43,497][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 99.09, EMA: 99.11
+
+[2024-09-14 19:54:47,212][    INFO] ===========> Epoch: 29, LR: 0.0000028, Previous best Changed IoU: 83.41, Overall Accuracy: 99.09 @epoch-28, EMA: Changed IoU: 83.76, Overall Accuracy: 99.11 @epoch-28
+[2024-09-14 19:54:48,659][    INFO] Iters: 0, Total loss: 0.008, Loss x: 0.017, Loss s: 0.000, Mask ratio: 0.996
+[2024-09-14 19:55:42,075][    INFO] Iters: 66, Total loss: 0.008, Loss x: 0.014, Loss s: 0.002, Mask ratio: 0.975
+[2024-09-14 19:56:35,575][    INFO] Iters: 132, Total loss: 0.008, Loss x: 0.014, Loss s: 0.002, Mask ratio: 0.975
+[2024-09-14 19:57:29,034][    INFO] Iters: 198, Total loss: 0.008, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.974
+[2024-09-14 19:58:22,415][    INFO] Iters: 264, Total loss: 0.008, Loss x: 0.014, Loss s: 0.002, Mask ratio: 0.974
+[2024-09-14 19:59:15,747][    INFO] Iters: 330, Total loss: 0.008, Loss x: 0.014, Loss s: 0.002, Mask ratio: 0.974
+[2024-09-14 20:00:09,111][    INFO] Iters: 396, Total loss: 0.008, Loss x: 0.014, Loss s: 0.002, Mask ratio: 0.974
+[2024-09-14 20:01:02,472][    INFO] Iters: 462, Total loss: 0.008, Loss x: 0.014, Loss s: 0.002, Mask ratio: 0.974
+[2024-09-14 20:01:55,834][    INFO] Iters: 528, Total loss: 0.008, Loss x: 0.014, Loss s: 0.002, Mask ratio: 0.974
+[2024-09-14 20:03:27,336][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 98.99, EMA: 99.07
+[2024-09-14 20:03:27,336][    INFO] ***** Evaluation ***** >>>> Changed IoU: 81.92: EMA: 83.73
+[2024-09-14 20:03:27,337][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 99.03, EMA: 99.11
+
+[2024-09-14 20:03:29,307][    INFO] ===========> Epoch: 30, LR: 0.0000027, Previous best Changed IoU: 83.41, Overall Accuracy: 99.09 @epoch-28, EMA: Changed IoU: 83.76, Overall Accuracy: 99.11 @epoch-28
+[2024-09-14 20:03:30,705][    INFO] Iters: 0, Total loss: 0.010, Loss x: 0.015, Loss s: 0.004, Mask ratio: 0.971
+[2024-09-14 20:04:24,095][    INFO] Iters: 66, Total loss: 0.009, Loss x: 0.016, Loss s: 0.002, Mask ratio: 0.972
+[2024-09-14 20:05:17,543][    INFO] Iters: 132, Total loss: 0.009, Loss x: 0.015, Loss s: 0.002, Mask ratio: 0.972
+[2024-09-14 20:06:11,101][    INFO] Iters: 198, Total loss: 0.009, Loss x: 0.015, Loss s: 0.002, Mask ratio: 0.972
+[2024-09-14 20:07:04,621][    INFO] Iters: 264, Total loss: 0.010, Loss x: 0.017, Loss s: 0.003, Mask ratio: 0.971
+[2024-09-14 20:07:58,134][    INFO] Iters: 330, Total loss: 0.009, Loss x: 0.016, Loss s: 0.003, Mask ratio: 0.972
+[2024-09-14 20:08:51,624][    INFO] Iters: 396, Total loss: 0.009, Loss x: 0.016, Loss s: 0.003, Mask ratio: 0.972
+[2024-09-14 20:09:45,153][    INFO] Iters: 462, Total loss: 0.009, Loss x: 0.015, Loss s: 0.003, Mask ratio: 0.972
+[2024-09-14 20:10:38,589][    INFO] Iters: 528, Total loss: 0.009, Loss x: 0.015, Loss s: 0.003, Mask ratio: 0.973
+[2024-09-14 20:12:08,515][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 99.06, EMA: 99.07
+[2024-09-14 20:12:08,515][    INFO] ***** Evaluation ***** >>>> Changed IoU: 83.68: EMA: 83.88
+[2024-09-14 20:12:08,515][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 99.10, EMA: 99.11
+
+[2024-09-14 20:12:12,318][    INFO] ===========> Epoch: 31, LR: 0.0000026, Previous best Changed IoU: 83.68, Overall Accuracy: 99.10 @epoch-30, EMA: Changed IoU: 83.88, Overall Accuracy: 99.11 @epoch-30
+[2024-09-14 20:12:13,756][    INFO] Iters: 0, Total loss: 0.004, Loss x: 0.007, Loss s: 0.001, Mask ratio: 0.968
+[2024-09-14 20:13:07,123][    INFO] Iters: 66, Total loss: 0.008, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.975
+[2024-09-14 20:14:00,498][    INFO] Iters: 132, Total loss: 0.008, Loss x: 0.014, Loss s: 0.002, Mask ratio: 0.974
+[2024-09-14 20:14:53,897][    INFO] Iters: 198, Total loss: 0.008, Loss x: 0.014, Loss s: 0.002, Mask ratio: 0.975
+[2024-09-14 20:15:47,217][    INFO] Iters: 264, Total loss: 0.008, Loss x: 0.014, Loss s: 0.002, Mask ratio: 0.975
+[2024-09-14 20:16:40,581][    INFO] Iters: 330, Total loss: 0.008, Loss x: 0.014, Loss s: 0.002, Mask ratio: 0.974
+[2024-09-14 20:17:33,929][    INFO] Iters: 396, Total loss: 0.008, Loss x: 0.014, Loss s: 0.002, Mask ratio: 0.974
+[2024-09-14 20:18:27,299][    INFO] Iters: 462, Total loss: 0.008, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.974
+[2024-09-14 20:19:20,745][    INFO] Iters: 528, Total loss: 0.008, Loss x: 0.014, Loss s: 0.002, Mask ratio: 0.974
+[2024-09-14 20:20:50,800][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 99.07, EMA: 99.08
+[2024-09-14 20:20:50,800][    INFO] ***** Evaluation ***** >>>> Changed IoU: 83.85: EMA: 84.06
+[2024-09-14 20:20:50,800][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 99.11, EMA: 99.13
+
+[2024-09-14 20:20:54,325][    INFO] ===========> Epoch: 32, LR: 0.0000025, Previous best Changed IoU: 83.85, Overall Accuracy: 99.11 @epoch-31, EMA: Changed IoU: 84.06, Overall Accuracy: 99.13 @epoch-31
+[2024-09-14 20:20:55,765][    INFO] Iters: 0, Total loss: 0.009, Loss x: 0.015, Loss s: 0.004, Mask ratio: 0.942
+[2024-09-14 20:21:49,123][    INFO] Iters: 66, Total loss: 0.008, Loss x: 0.014, Loss s: 0.002, Mask ratio: 0.973
+[2024-09-14 20:22:42,559][    INFO] Iters: 132, Total loss: 0.008, Loss x: 0.014, Loss s: 0.002, Mask ratio: 0.974
+[2024-09-14 20:23:35,996][    INFO] Iters: 198, Total loss: 0.008, Loss x: 0.014, Loss s: 0.002, Mask ratio: 0.975
+[2024-09-14 20:24:29,366][    INFO] Iters: 264, Total loss: 0.008, Loss x: 0.014, Loss s: 0.002, Mask ratio: 0.974
+[2024-09-14 20:25:22,737][    INFO] Iters: 330, Total loss: 0.008, Loss x: 0.014, Loss s: 0.002, Mask ratio: 0.974
+[2024-09-14 20:26:16,102][    INFO] Iters: 396, Total loss: 0.008, Loss x: 0.014, Loss s: 0.002, Mask ratio: 0.974
+[2024-09-14 20:27:09,516][    INFO] Iters: 462, Total loss: 0.008, Loss x: 0.014, Loss s: 0.002, Mask ratio: 0.975
+[2024-09-14 20:28:02,924][    INFO] Iters: 528, Total loss: 0.008, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.975
+[2024-09-14 20:29:32,145][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 99.06, EMA: 99.09
+[2024-09-14 20:29:32,145][    INFO] ***** Evaluation ***** >>>> Changed IoU: 83.65: EMA: 84.12
+[2024-09-14 20:29:32,145][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 99.11, EMA: 99.13
+
+[2024-09-14 20:29:35,617][    INFO] ===========> Epoch: 33, LR: 0.0000024, Previous best Changed IoU: 83.85, Overall Accuracy: 99.11 @epoch-31, EMA: Changed IoU: 84.12, Overall Accuracy: 99.13 @epoch-32
+[2024-09-14 20:29:37,054][    INFO] Iters: 0, Total loss: 0.005, Loss x: 0.009, Loss s: 0.001, Mask ratio: 0.980
+[2024-09-14 20:30:30,431][    INFO] Iters: 66, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.977
+[2024-09-14 20:31:23,870][    INFO] Iters: 132, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.975
+[2024-09-14 20:32:17,316][    INFO] Iters: 198, Total loss: 0.008, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.975
+[2024-09-14 20:33:10,810][    INFO] Iters: 264, Total loss: 0.008, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.974
+[2024-09-14 20:34:04,316][    INFO] Iters: 330, Total loss: 0.008, Loss x: 0.014, Loss s: 0.002, Mask ratio: 0.975
+[2024-09-14 20:34:57,797][    INFO] Iters: 396, Total loss: 0.008, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.974
+[2024-09-14 20:35:51,279][    INFO] Iters: 462, Total loss: 0.008, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.975
+[2024-09-14 20:36:44,683][    INFO] Iters: 528, Total loss: 0.008, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.974
+[2024-09-14 20:38:14,262][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 99.05, EMA: 99.09
+[2024-09-14 20:38:14,262][    INFO] ***** Evaluation ***** >>>> Changed IoU: 83.82: EMA: 84.08
+[2024-09-14 20:38:14,262][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 99.10, EMA: 99.13
+
+[2024-09-14 20:38:16,165][    INFO] ===========> Epoch: 34, LR: 0.0000024, Previous best Changed IoU: 83.85, Overall Accuracy: 99.11 @epoch-31, EMA: Changed IoU: 84.12, Overall Accuracy: 99.13 @epoch-32
+[2024-09-14 20:38:17,599][    INFO] Iters: 0, Total loss: 0.009, Loss x: 0.018, Loss s: 0.000, Mask ratio: 0.994
+[2024-09-14 20:39:10,963][    INFO] Iters: 66, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.974
+[2024-09-14 20:40:04,352][    INFO] Iters: 132, Total loss: 0.008, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.973
+[2024-09-14 20:40:57,750][    INFO] Iters: 198, Total loss: 0.008, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.974
+[2024-09-14 20:41:51,250][    INFO] Iters: 264, Total loss: 0.008, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.975
+[2024-09-14 20:42:44,731][    INFO] Iters: 330, Total loss: 0.007, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.975
+[2024-09-14 20:43:38,225][    INFO] Iters: 396, Total loss: 0.008, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.975
+[2024-09-14 20:44:31,755][    INFO] Iters: 462, Total loss: 0.008, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.975
+[2024-09-14 20:45:25,231][    INFO] Iters: 528, Total loss: 0.008, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.975
+[2024-09-14 20:46:54,565][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 99.06, EMA: 99.09
+[2024-09-14 20:46:54,566][    INFO] ***** Evaluation ***** >>>> Changed IoU: 83.66: EMA: 84.11
+[2024-09-14 20:46:54,566][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 99.10, EMA: 99.13
+
+[2024-09-14 20:46:56,371][    INFO] ===========> Epoch: 35, LR: 0.0000023, Previous best Changed IoU: 83.85, Overall Accuracy: 99.11 @epoch-31, EMA: Changed IoU: 84.12, Overall Accuracy: 99.13 @epoch-32
+[2024-09-14 20:46:57,782][    INFO] Iters: 0, Total loss: 0.014, Loss x: 0.025, Loss s: 0.003, Mask ratio: 0.947
+[2024-09-14 20:47:51,157][    INFO] Iters: 66, Total loss: 0.008, Loss x: 0.014, Loss s: 0.002, Mask ratio: 0.975
+[2024-09-14 20:48:44,535][    INFO] Iters: 132, Total loss: 0.008, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.976
+[2024-09-14 20:49:37,896][    INFO] Iters: 198, Total loss: 0.008, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.975
+[2024-09-14 20:50:31,244][    INFO] Iters: 264, Total loss: 0.008, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.975
+[2024-09-14 20:51:24,584][    INFO] Iters: 330, Total loss: 0.008, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.975
+[2024-09-14 20:52:17,936][    INFO] Iters: 396, Total loss: 0.008, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.975
+[2024-09-14 20:53:11,340][    INFO] Iters: 462, Total loss: 0.007, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.975
+[2024-09-14 20:54:04,756][    INFO] Iters: 528, Total loss: 0.007, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.975
+[2024-09-14 20:55:35,260][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 99.07, EMA: 99.09
+[2024-09-14 20:55:35,261][    INFO] ***** Evaluation ***** >>>> Changed IoU: 83.75: EMA: 84.07
+[2024-09-14 20:55:35,261][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 99.11, EMA: 99.13
+
+[2024-09-14 20:55:37,095][    INFO] ===========> Epoch: 36, LR: 0.0000022, Previous best Changed IoU: 83.85, Overall Accuracy: 99.11 @epoch-31, EMA: Changed IoU: 84.12, Overall Accuracy: 99.13 @epoch-32
+[2024-09-14 20:55:38,524][    INFO] Iters: 0, Total loss: 0.004, Loss x: 0.007, Loss s: 0.000, Mask ratio: 0.993
+[2024-09-14 20:56:31,874][    INFO] Iters: 66, Total loss: 0.008, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.975
+[2024-09-14 20:57:25,223][    INFO] Iters: 132, Total loss: 0.007, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.976
+[2024-09-14 20:58:18,582][    INFO] Iters: 198, Total loss: 0.007, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.976
+[2024-09-14 20:59:11,951][    INFO] Iters: 264, Total loss: 0.007, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.976
+[2024-09-14 21:00:05,319][    INFO] Iters: 330, Total loss: 0.007, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.976
+[2024-09-14 21:00:58,723][    INFO] Iters: 396, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.976
+[2024-09-14 21:01:52,078][    INFO] Iters: 462, Total loss: 0.007, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.976
+[2024-09-14 21:02:45,454][    INFO] Iters: 528, Total loss: 0.007, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.975
+[2024-09-14 21:04:15,417][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 99.08, EMA: 99.09
+[2024-09-14 21:04:15,417][    INFO] ***** Evaluation ***** >>>> Changed IoU: 84.04: EMA: 84.18
+[2024-09-14 21:04:15,417][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 99.12, EMA: 99.14
+
+[2024-09-14 21:04:18,907][    INFO] ===========> Epoch: 37, LR: 0.0000021, Previous best Changed IoU: 84.04, Overall Accuracy: 99.12 @epoch-36, EMA: Changed IoU: 84.18, Overall Accuracy: 99.14 @epoch-36
+[2024-09-14 21:04:20,282][    INFO] Iters: 0, Total loss: 0.003, Loss x: 0.005, Loss s: 0.001, Mask ratio: 0.981
+[2024-09-14 21:05:13,676][    INFO] Iters: 66, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.975
+[2024-09-14 21:06:07,032][    INFO] Iters: 132, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.975
+[2024-09-14 21:07:00,421][    INFO] Iters: 198, Total loss: 0.007, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.975
+[2024-09-14 21:07:53,831][    INFO] Iters: 264, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.975
+[2024-09-14 21:08:47,242][    INFO] Iters: 330, Total loss: 0.007, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.975
+[2024-09-14 21:09:40,580][    INFO] Iters: 396, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.975
+[2024-09-14 21:10:33,971][    INFO] Iters: 462, Total loss: 0.007, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.975
+[2024-09-14 21:11:27,311][    INFO] Iters: 528, Total loss: 0.007, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.975
+[2024-09-14 21:12:56,759][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 99.08, EMA: 99.10
+[2024-09-14 21:12:56,759][    INFO] ***** Evaluation ***** >>>> Changed IoU: 83.95: EMA: 84.22
+[2024-09-14 21:12:56,759][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 99.12, EMA: 99.14
+
+[2024-09-14 21:13:00,072][    INFO] ===========> Epoch: 38, LR: 0.0000020, Previous best Changed IoU: 84.04, Overall Accuracy: 99.12 @epoch-36, EMA: Changed IoU: 84.22, Overall Accuracy: 99.14 @epoch-37
+[2024-09-14 21:13:01,482][    INFO] Iters: 0, Total loss: 0.007, Loss x: 0.011, Loss s: 0.003, Mask ratio: 0.968
+[2024-09-14 21:13:54,869][    INFO] Iters: 66, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.978
+[2024-09-14 21:14:48,244][    INFO] Iters: 132, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.976
+[2024-09-14 21:15:41,602][    INFO] Iters: 198, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.976
+[2024-09-14 21:16:34,980][    INFO] Iters: 264, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.976
+[2024-09-14 21:17:28,349][    INFO] Iters: 330, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.977
+[2024-09-14 21:18:21,737][    INFO] Iters: 396, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.976
+[2024-09-14 21:19:15,131][    INFO] Iters: 462, Total loss: 0.007, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.976
+[2024-09-14 21:20:08,548][    INFO] Iters: 528, Total loss: 0.007, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.976
+[2024-09-14 21:21:38,391][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 99.07, EMA: 99.09
+[2024-09-14 21:21:38,391][    INFO] ***** Evaluation ***** >>>> Changed IoU: 83.78: EMA: 84.15
+[2024-09-14 21:21:38,391][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 99.11, EMA: 99.13
+
+[2024-09-14 21:21:40,438][    INFO] ===========> Epoch: 39, LR: 0.0000019, Previous best Changed IoU: 84.04, Overall Accuracy: 99.12 @epoch-36, EMA: Changed IoU: 84.22, Overall Accuracy: 99.14 @epoch-37
+[2024-09-14 21:21:41,855][    INFO] Iters: 0, Total loss: 0.014, Loss x: 0.027, Loss s: 0.001, Mask ratio: 0.991
+[2024-09-14 21:22:35,240][    INFO] Iters: 66, Total loss: 0.008, Loss x: 0.014, Loss s: 0.002, Mask ratio: 0.975
+[2024-09-14 21:23:28,645][    INFO] Iters: 132, Total loss: 0.008, Loss x: 0.014, Loss s: 0.002, Mask ratio: 0.975
+[2024-09-14 21:24:22,031][    INFO] Iters: 198, Total loss: 0.008, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.976
+[2024-09-14 21:25:15,415][    INFO] Iters: 264, Total loss: 0.007, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.976
+[2024-09-14 21:26:08,811][    INFO] Iters: 330, Total loss: 0.007, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.976
+[2024-09-14 21:27:02,300][    INFO] Iters: 396, Total loss: 0.007, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.976
+[2024-09-14 21:27:55,751][    INFO] Iters: 462, Total loss: 0.007, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.976
+[2024-09-14 21:28:49,146][    INFO] Iters: 528, Total loss: 0.007, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.976
+[2024-09-14 21:30:18,647][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 99.07, EMA: 99.09
+[2024-09-14 21:30:18,647][    INFO] ***** Evaluation ***** >>>> Changed IoU: 83.95: EMA: 84.21
+[2024-09-14 21:30:18,647][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 99.11, EMA: 99.14
+
+[2024-09-14 21:30:20,573][    INFO] ===========> Epoch: 40, LR: 0.0000019, Previous best Changed IoU: 84.04, Overall Accuracy: 99.12 @epoch-36, EMA: Changed IoU: 84.22, Overall Accuracy: 99.14 @epoch-37
+[2024-09-14 21:30:21,976][    INFO] Iters: 0, Total loss: 0.004, Loss x: 0.006, Loss s: 0.002, Mask ratio: 0.968
+[2024-09-14 21:31:15,378][    INFO] Iters: 66, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.975
+[2024-09-14 21:32:08,815][    INFO] Iters: 132, Total loss: 0.007, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.973
+[2024-09-14 21:33:02,219][    INFO] Iters: 198, Total loss: 0.008, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.974
+[2024-09-14 21:33:55,581][    INFO] Iters: 264, Total loss: 0.007, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.975
+[2024-09-14 21:34:48,940][    INFO] Iters: 330, Total loss: 0.007, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.975
+[2024-09-14 21:35:42,300][    INFO] Iters: 396, Total loss: 0.007, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.976
+[2024-09-14 21:36:35,677][    INFO] Iters: 462, Total loss: 0.007, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.976
+[2024-09-14 21:37:29,045][    INFO] Iters: 528, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.976
+[2024-09-14 21:38:58,689][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 99.08, EMA: 99.10
+[2024-09-14 21:38:58,689][    INFO] ***** Evaluation ***** >>>> Changed IoU: 83.89: EMA: 84.24
+[2024-09-14 21:38:58,689][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 99.12, EMA: 99.14
+
+[2024-09-14 21:39:02,339][    INFO] ===========> Epoch: 41, LR: 0.0000018, Previous best Changed IoU: 84.04, Overall Accuracy: 99.12 @epoch-36, EMA: Changed IoU: 84.24, Overall Accuracy: 99.14 @epoch-40
+[2024-09-14 21:39:03,775][    INFO] Iters: 0, Total loss: 0.005, Loss x: 0.010, Loss s: 0.001, Mask ratio: 0.994
+[2024-09-14 21:39:57,180][    INFO] Iters: 66, Total loss: 0.007, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.977
+[2024-09-14 21:40:50,596][    INFO] Iters: 132, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.976
+[2024-09-14 21:41:44,014][    INFO] Iters: 198, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.975
+[2024-09-14 21:42:37,437][    INFO] Iters: 264, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.976
+[2024-09-14 21:43:30,814][    INFO] Iters: 330, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.976
+[2024-09-14 21:44:24,190][    INFO] Iters: 396, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.977
+[2024-09-14 21:45:17,550][    INFO] Iters: 462, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.977
+[2024-09-14 21:46:11,011][    INFO] Iters: 528, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.976
+[2024-09-14 21:47:40,507][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 99.10, EMA: 99.10
+[2024-09-14 21:47:40,507][    INFO] ***** Evaluation ***** >>>> Changed IoU: 84.06: EMA: 84.29
+[2024-09-14 21:47:40,507][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 99.14, EMA: 99.14
+
+[2024-09-14 21:47:43,994][    INFO] ===========> Epoch: 42, LR: 0.0000017, Previous best Changed IoU: 84.06, Overall Accuracy: 99.14 @epoch-41, EMA: Changed IoU: 84.29, Overall Accuracy: 99.14 @epoch-41
+[2024-09-14 21:47:45,392][    INFO] Iters: 0, Total loss: 0.007, Loss x: 0.011, Loss s: 0.003, Mask ratio: 0.989
+[2024-09-14 21:48:38,759][    INFO] Iters: 66, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.980
+[2024-09-14 21:49:32,194][    INFO] Iters: 132, Total loss: 0.007, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.978
+[2024-09-14 21:50:25,647][    INFO] Iters: 198, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.977
+[2024-09-14 21:51:19,101][    INFO] Iters: 264, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.977
+[2024-09-14 21:52:12,547][    INFO] Iters: 330, Total loss: 0.007, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.977
+[2024-09-14 21:53:05,940][    INFO] Iters: 396, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.977
+[2024-09-14 21:53:59,344][    INFO] Iters: 462, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.977
+[2024-09-14 21:54:52,748][    INFO] Iters: 528, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.977
+[2024-09-14 21:56:22,736][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 99.09, EMA: 99.10
+[2024-09-14 21:56:22,736][    INFO] ***** Evaluation ***** >>>> Changed IoU: 84.20: EMA: 84.32
+[2024-09-14 21:56:22,736][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 99.13, EMA: 99.14
+
+[2024-09-14 21:56:26,630][    INFO] ===========> Epoch: 43, LR: 0.0000016, Previous best Changed IoU: 84.20, Overall Accuracy: 99.13 @epoch-42, EMA: Changed IoU: 84.32, Overall Accuracy: 99.14 @epoch-42
+[2024-09-14 21:56:28,084][    INFO] Iters: 0, Total loss: 0.011, Loss x: 0.021, Loss s: 0.001, Mask ratio: 0.979
+[2024-09-14 21:57:21,465][    INFO] Iters: 66, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.975
+[2024-09-14 21:58:14,850][    INFO] Iters: 132, Total loss: 0.008, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.977
+[2024-09-14 21:59:08,248][    INFO] Iters: 198, Total loss: 0.007, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.977
+[2024-09-14 22:00:01,625][    INFO] Iters: 264, Total loss: 0.007, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.977
+[2024-09-14 22:00:55,003][    INFO] Iters: 330, Total loss: 0.007, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.977
+[2024-09-14 22:01:48,390][    INFO] Iters: 396, Total loss: 0.007, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.977
+[2024-09-14 22:02:41,800][    INFO] Iters: 462, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.976
+[2024-09-14 22:03:35,173][    INFO] Iters: 528, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.976
+[2024-09-14 22:05:04,516][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 99.07, EMA: 99.09
+[2024-09-14 22:05:04,517][    INFO] ***** Evaluation ***** >>>> Changed IoU: 83.88: EMA: 84.18
+[2024-09-14 22:05:04,517][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 99.12, EMA: 99.13
+
+[2024-09-14 22:05:07,064][    INFO] ===========> Epoch: 44, LR: 0.0000015, Previous best Changed IoU: 84.20, Overall Accuracy: 99.13 @epoch-42, EMA: Changed IoU: 84.32, Overall Accuracy: 99.14 @epoch-42
+[2024-09-14 22:05:08,522][    INFO] Iters: 0, Total loss: 0.021, Loss x: 0.041, Loss s: 0.001, Mask ratio: 0.958
+[2024-09-14 22:06:01,872][    INFO] Iters: 66, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.973
+[2024-09-14 22:06:55,268][    INFO] Iters: 132, Total loss: 0.007, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.976
+[2024-09-14 22:07:48,643][    INFO] Iters: 198, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.978
+[2024-09-14 22:08:42,029][    INFO] Iters: 264, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.978
+[2024-09-14 22:09:35,434][    INFO] Iters: 330, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.977
+[2024-09-14 22:10:28,838][    INFO] Iters: 396, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.977
+[2024-09-14 22:11:22,226][    INFO] Iters: 462, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.977
+[2024-09-14 22:12:15,632][    INFO] Iters: 528, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.977
+[2024-09-14 22:13:45,338][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 99.05, EMA: 99.09
+[2024-09-14 22:13:45,338][    INFO] ***** Evaluation ***** >>>> Changed IoU: 83.34: EMA: 84.17
+[2024-09-14 22:13:45,338][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 99.10, EMA: 99.13
+
+[2024-09-14 22:13:47,256][    INFO] ===========> Epoch: 45, LR: 0.0000014, Previous best Changed IoU: 84.20, Overall Accuracy: 99.13 @epoch-42, EMA: Changed IoU: 84.32, Overall Accuracy: 99.14 @epoch-42
+[2024-09-14 22:13:48,677][    INFO] Iters: 0, Total loss: 0.003, Loss x: 0.006, Loss s: 0.000, Mask ratio: 0.993
+[2024-09-14 22:14:42,139][    INFO] Iters: 66, Total loss: 0.008, Loss x: 0.013, Loss s: 0.002, Mask ratio: 0.975
+[2024-09-14 22:15:35,640][    INFO] Iters: 132, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.978
+[2024-09-14 22:16:29,095][    INFO] Iters: 198, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.977
+[2024-09-14 22:17:22,467][    INFO] Iters: 264, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.977
+[2024-09-14 22:18:15,842][    INFO] Iters: 330, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.977
+[2024-09-14 22:19:09,262][    INFO] Iters: 396, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.977
+[2024-09-14 22:20:02,675][    INFO] Iters: 462, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.977
+[2024-09-14 22:20:56,081][    INFO] Iters: 528, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.977
+[2024-09-14 22:22:25,815][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 99.07, EMA: 99.09
+[2024-09-14 22:22:25,815][    INFO] ***** Evaluation ***** >>>> Changed IoU: 83.83: EMA: 84.06
+[2024-09-14 22:22:25,815][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 99.11, EMA: 99.13
+
+[2024-09-14 22:22:28,094][    INFO] ===========> Epoch: 46, LR: 0.0000013, Previous best Changed IoU: 84.20, Overall Accuracy: 99.13 @epoch-42, EMA: Changed IoU: 84.32, Overall Accuracy: 99.14 @epoch-42
+[2024-09-14 22:22:29,530][    INFO] Iters: 0, Total loss: 0.002, Loss x: 0.003, Loss s: 0.000, Mask ratio: 0.984
+[2024-09-14 22:23:22,931][    INFO] Iters: 66, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.979
+[2024-09-14 22:24:16,337][    INFO] Iters: 132, Total loss: 0.006, Loss x: 0.011, Loss s: 0.001, Mask ratio: 0.980
+[2024-09-14 22:25:09,717][    INFO] Iters: 198, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.979
+[2024-09-14 22:26:03,124][    INFO] Iters: 264, Total loss: 0.007, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.978
+[2024-09-14 22:26:56,505][    INFO] Iters: 330, Total loss: 0.007, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.978
+[2024-09-14 22:27:49,884][    INFO] Iters: 396, Total loss: 0.007, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.977
+[2024-09-14 22:28:43,290][    INFO] Iters: 462, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.977
+[2024-09-14 22:29:36,669][    INFO] Iters: 528, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.977
+[2024-09-14 22:31:06,591][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 99.08, EMA: 99.09
+[2024-09-14 22:31:06,591][    INFO] ***** Evaluation ***** >>>> Changed IoU: 84.00: EMA: 84.15
+[2024-09-14 22:31:06,591][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 99.12, EMA: 99.13
+
+[2024-09-14 22:31:08,578][    INFO] ===========> Epoch: 47, LR: 0.0000013, Previous best Changed IoU: 84.20, Overall Accuracy: 99.13 @epoch-42, EMA: Changed IoU: 84.32, Overall Accuracy: 99.14 @epoch-42
+[2024-09-14 22:31:10,024][    INFO] Iters: 0, Total loss: 0.018, Loss x: 0.030, Loss s: 0.006, Mask ratio: 0.979
+[2024-09-14 22:32:03,411][    INFO] Iters: 66, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.976
+[2024-09-14 22:32:56,796][    INFO] Iters: 132, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.978
+[2024-09-14 22:33:50,211][    INFO] Iters: 198, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.978
+[2024-09-14 22:34:43,647][    INFO] Iters: 264, Total loss: 0.007, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.978
+[2024-09-14 22:35:37,044][    INFO] Iters: 330, Total loss: 0.007, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.977
+[2024-09-14 22:36:30,440][    INFO] Iters: 396, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.977
+[2024-09-14 22:37:23,839][    INFO] Iters: 462, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.978
+[2024-09-14 22:38:17,253][    INFO] Iters: 528, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.977
+[2024-09-14 22:39:47,158][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 99.08, EMA: 99.10
+[2024-09-14 22:39:47,158][    INFO] ***** Evaluation ***** >>>> Changed IoU: 83.92: EMA: 84.18
+[2024-09-14 22:39:47,158][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 99.12, EMA: 99.14
+
+[2024-09-14 22:39:49,339][    INFO] ===========> Epoch: 48, LR: 0.0000012, Previous best Changed IoU: 84.20, Overall Accuracy: 99.13 @epoch-42, EMA: Changed IoU: 84.32, Overall Accuracy: 99.14 @epoch-42
+[2024-09-14 22:39:50,769][    INFO] Iters: 0, Total loss: 0.010, Loss x: 0.019, Loss s: 0.002, Mask ratio: 0.982
+[2024-09-14 22:40:44,147][    INFO] Iters: 66, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.980
+[2024-09-14 22:41:37,552][    INFO] Iters: 132, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.979
+[2024-09-14 22:42:30,949][    INFO] Iters: 198, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.977
+[2024-09-14 22:43:24,291][    INFO] Iters: 264, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.977
+[2024-09-14 22:44:17,632][    INFO] Iters: 330, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.978
+[2024-09-14 22:45:10,960][    INFO] Iters: 396, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.978
+[2024-09-14 22:46:04,344][    INFO] Iters: 462, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.977
+[2024-09-14 22:46:57,730][    INFO] Iters: 528, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.978
+[2024-09-14 22:48:27,983][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 99.10, EMA: 99.10
+[2024-09-14 22:48:27,983][    INFO] ***** Evaluation ***** >>>> Changed IoU: 84.19: EMA: 84.26
+[2024-09-14 22:48:27,983][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 99.14, EMA: 99.14
+
+[2024-09-14 22:48:29,835][    INFO] ===========> Epoch: 49, LR: 0.0000011, Previous best Changed IoU: 84.20, Overall Accuracy: 99.13 @epoch-42, EMA: Changed IoU: 84.32, Overall Accuracy: 99.14 @epoch-42
+[2024-09-14 22:48:31,281][    INFO] Iters: 0, Total loss: 0.001, Loss x: 0.001, Loss s: 0.001, Mask ratio: 0.995
+[2024-09-14 22:49:24,603][    INFO] Iters: 66, Total loss: 0.007, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.976
+[2024-09-14 22:50:17,962][    INFO] Iters: 132, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.976
+[2024-09-14 22:51:11,318][    INFO] Iters: 198, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.976
+[2024-09-14 22:52:04,719][    INFO] Iters: 264, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.977
+[2024-09-14 22:52:58,128][    INFO] Iters: 330, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.977
+[2024-09-14 22:53:51,534][    INFO] Iters: 396, Total loss: 0.007, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.977
+[2024-09-14 22:54:44,920][    INFO] Iters: 462, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.978
+[2024-09-14 22:55:38,320][    INFO] Iters: 528, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.978
+[2024-09-14 22:57:08,170][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 99.09, EMA: 99.10
+[2024-09-14 22:57:08,171][    INFO] ***** Evaluation ***** >>>> Changed IoU: 84.14: EMA: 84.31
+[2024-09-14 22:57:08,171][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 99.13, EMA: 99.14
+
+[2024-09-14 22:57:10,262][    INFO] ===========> Epoch: 50, LR: 0.0000010, Previous best Changed IoU: 84.20, Overall Accuracy: 99.13 @epoch-42, EMA: Changed IoU: 84.32, Overall Accuracy: 99.14 @epoch-42
+[2024-09-14 22:57:11,699][    INFO] Iters: 0, Total loss: 0.008, Loss x: 0.016, Loss s: 0.001, Mask ratio: 0.992
+[2024-09-14 22:58:05,099][    INFO] Iters: 66, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.976
+[2024-09-14 22:58:58,563][    INFO] Iters: 132, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.976
+[2024-09-14 22:59:51,974][    INFO] Iters: 198, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.978
+[2024-09-14 23:00:45,416][    INFO] Iters: 264, Total loss: 0.007, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.978
+[2024-09-14 23:01:38,876][    INFO] Iters: 330, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.978
+[2024-09-14 23:02:32,287][    INFO] Iters: 396, Total loss: 0.007, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.978
+[2024-09-14 23:03:25,707][    INFO] Iters: 462, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.978
+[2024-09-14 23:04:19,113][    INFO] Iters: 528, Total loss: 0.007, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.978
+[2024-09-14 23:05:48,817][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 99.09, EMA: 99.10
+[2024-09-14 23:05:48,817][    INFO] ***** Evaluation ***** >>>> Changed IoU: 84.31: EMA: 84.31
+[2024-09-14 23:05:48,817][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 99.14, EMA: 99.14
+
+[2024-09-14 23:05:50,634][    INFO] ===========> Epoch: 51, LR: 0.0000009, Previous best Changed IoU: 84.31, Overall Accuracy: 99.14 @epoch-50, EMA: Changed IoU: 84.32, Overall Accuracy: 99.14 @epoch-42
+[2024-09-14 23:05:52,083][    INFO] Iters: 0, Total loss: 0.011, Loss x: 0.021, Loss s: 0.000, Mask ratio: 0.966
+[2024-09-14 23:06:45,484][    INFO] Iters: 66, Total loss: 0.007, Loss x: 0.012, Loss s: 0.001, Mask ratio: 0.979
+[2024-09-14 23:07:38,895][    INFO] Iters: 132, Total loss: 0.007, Loss x: 0.012, Loss s: 0.002, Mask ratio: 0.978
+[2024-09-14 23:08:32,290][    INFO] Iters: 198, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.979
+[2024-09-14 23:09:25,684][    INFO] Iters: 264, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.978
+[2024-09-14 23:10:19,088][    INFO] Iters: 330, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.979
+[2024-09-14 23:11:12,499][    INFO] Iters: 396, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.979
+[2024-09-14 23:12:05,928][    INFO] Iters: 462, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.979
+[2024-09-14 23:12:59,339][    INFO] Iters: 528, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.978
+[2024-09-14 23:14:29,296][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 99.08, EMA: 99.10
+[2024-09-14 23:14:29,296][    INFO] ***** Evaluation ***** >>>> Changed IoU: 84.02: EMA: 84.31
+[2024-09-14 23:14:29,296][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 99.12, EMA: 99.14
+
+[2024-09-14 23:14:31,126][    INFO] ===========> Epoch: 52, LR: 0.0000008, Previous best Changed IoU: 84.31, Overall Accuracy: 99.14 @epoch-50, EMA: Changed IoU: 84.32, Overall Accuracy: 99.14 @epoch-42
+[2024-09-14 23:14:32,553][    INFO] Iters: 0, Total loss: 0.005, Loss x: 0.010, Loss s: 0.000, Mask ratio: 0.994
+[2024-09-14 23:15:25,893][    INFO] Iters: 66, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.978
+[2024-09-14 23:16:19,276][    INFO] Iters: 132, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.979
+[2024-09-14 23:17:12,670][    INFO] Iters: 198, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.978
+[2024-09-14 23:18:06,062][    INFO] Iters: 264, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.978
+[2024-09-14 23:18:59,444][    INFO] Iters: 330, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.979
+[2024-09-14 23:19:52,834][    INFO] Iters: 396, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.978
+[2024-09-14 23:20:46,244][    INFO] Iters: 462, Total loss: 0.007, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.978
+[2024-09-14 23:21:39,686][    INFO] Iters: 528, Total loss: 0.007, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.978
+[2024-09-14 23:23:10,189][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 99.10, EMA: 99.10
+[2024-09-14 23:23:10,189][    INFO] ***** Evaluation ***** >>>> Changed IoU: 84.33: EMA: 84.29
+[2024-09-14 23:23:10,189][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 99.14, EMA: 99.14
+
+[2024-09-14 23:23:12,101][    INFO] ===========> Epoch: 53, LR: 0.0000007, Previous best Changed IoU: 84.33, Overall Accuracy: 99.14 @epoch-52, EMA: Changed IoU: 84.32, Overall Accuracy: 99.14 @epoch-42
+[2024-09-14 23:23:13,555][    INFO] Iters: 0, Total loss: 0.002, Loss x: 0.002, Loss s: 0.003, Mask ratio: 0.971
+[2024-09-14 23:24:06,990][    INFO] Iters: 66, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.980
+[2024-09-14 23:25:00,425][    INFO] Iters: 132, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.978
+[2024-09-14 23:25:53,822][    INFO] Iters: 198, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.979
+[2024-09-14 23:26:47,259][    INFO] Iters: 264, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.978
+[2024-09-14 23:27:40,709][    INFO] Iters: 330, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.979
+[2024-09-14 23:28:34,095][    INFO] Iters: 396, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.978
+[2024-09-14 23:29:27,546][    INFO] Iters: 462, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.979
+[2024-09-14 23:30:20,999][    INFO] Iters: 528, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.979
+[2024-09-14 23:31:50,790][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 99.10, EMA: 99.10
+[2024-09-14 23:31:50,790][    INFO] ***** Evaluation ***** >>>> Changed IoU: 84.29: EMA: 84.23
+[2024-09-14 23:31:50,790][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 99.15, EMA: 99.14
+
+[2024-09-14 23:31:52,622][    INFO] ===========> Epoch: 54, LR: 0.0000006, Previous best Changed IoU: 84.33, Overall Accuracy: 99.14 @epoch-52, EMA: Changed IoU: 84.32, Overall Accuracy: 99.14 @epoch-42
+[2024-09-14 23:31:54,051][    INFO] Iters: 0, Total loss: 0.005, Loss x: 0.009, Loss s: 0.001, Mask ratio: 0.992
+[2024-09-14 23:32:47,388][    INFO] Iters: 66, Total loss: 0.006, Loss x: 0.010, Loss s: 0.002, Mask ratio: 0.980
+[2024-09-14 23:33:40,758][    INFO] Iters: 132, Total loss: 0.006, Loss x: 0.010, Loss s: 0.002, Mask ratio: 0.978
+[2024-09-14 23:34:34,126][    INFO] Iters: 198, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.979
+[2024-09-14 23:35:27,492][    INFO] Iters: 264, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.979
+[2024-09-14 23:36:20,863][    INFO] Iters: 330, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.979
+[2024-09-14 23:37:14,230][    INFO] Iters: 396, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.979
+[2024-09-14 23:38:07,562][    INFO] Iters: 462, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.979
+[2024-09-14 23:39:00,893][    INFO] Iters: 528, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.979
+[2024-09-14 23:40:31,157][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 99.10, EMA: 99.10
+[2024-09-14 23:40:31,157][    INFO] ***** Evaluation ***** >>>> Changed IoU: 84.16: EMA: 84.27
+[2024-09-14 23:40:31,157][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 99.14, EMA: 99.14
+
+[2024-09-14 23:40:32,892][    INFO] ===========> Epoch: 55, LR: 0.0000005, Previous best Changed IoU: 84.33, Overall Accuracy: 99.14 @epoch-52, EMA: Changed IoU: 84.32, Overall Accuracy: 99.14 @epoch-42
+[2024-09-14 23:40:34,325][    INFO] Iters: 0, Total loss: 0.005, Loss x: 0.009, Loss s: 0.002, Mask ratio: 0.964
+[2024-09-14 23:41:27,725][    INFO] Iters: 66, Total loss: 0.006, Loss x: 0.010, Loss s: 0.002, Mask ratio: 0.976
+[2024-09-14 23:42:21,214][    INFO] Iters: 132, Total loss: 0.006, Loss x: 0.010, Loss s: 0.002, Mask ratio: 0.977
+[2024-09-14 23:43:14,624][    INFO] Iters: 198, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.977
+[2024-09-14 23:44:08,003][    INFO] Iters: 264, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.978
+[2024-09-14 23:45:01,411][    INFO] Iters: 330, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.979
+[2024-09-14 23:45:54,843][    INFO] Iters: 396, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.978
+[2024-09-14 23:46:48,273][    INFO] Iters: 462, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.978
+[2024-09-14 23:47:41,847][    INFO] Iters: 528, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.979
+[2024-09-14 23:49:12,312][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 99.09, EMA: 99.10
+[2024-09-14 23:49:12,312][    INFO] ***** Evaluation ***** >>>> Changed IoU: 84.07: EMA: 84.26
+[2024-09-14 23:49:12,312][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 99.14, EMA: 99.14
+
+[2024-09-14 23:49:14,097][    INFO] ===========> Epoch: 56, LR: 0.0000004, Previous best Changed IoU: 84.33, Overall Accuracy: 99.14 @epoch-52, EMA: Changed IoU: 84.32, Overall Accuracy: 99.14 @epoch-42
+[2024-09-14 23:49:15,482][    INFO] Iters: 0, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.972
+[2024-09-14 23:50:08,946][    INFO] Iters: 66, Total loss: 0.006, Loss x: 0.010, Loss s: 0.002, Mask ratio: 0.977
+[2024-09-14 23:51:02,330][    INFO] Iters: 132, Total loss: 0.006, Loss x: 0.010, Loss s: 0.002, Mask ratio: 0.977
+[2024-09-14 23:51:55,731][    INFO] Iters: 198, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.978
+[2024-09-14 23:52:49,171][    INFO] Iters: 264, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.979
+[2024-09-14 23:53:42,567][    INFO] Iters: 330, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.979
+[2024-09-14 23:54:35,962][    INFO] Iters: 396, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.979
+[2024-09-14 23:55:29,368][    INFO] Iters: 462, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.979
+[2024-09-14 23:56:22,731][    INFO] Iters: 528, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.979
+[2024-09-14 23:57:52,732][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 99.10, EMA: 99.09
+[2024-09-14 23:57:52,732][    INFO] ***** Evaluation ***** >>>> Changed IoU: 84.20: EMA: 84.17
+[2024-09-14 23:57:52,732][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 99.14, EMA: 99.14
+
+[2024-09-14 23:57:54,471][    INFO] ===========> Epoch: 57, LR: 0.0000003, Previous best Changed IoU: 84.33, Overall Accuracy: 99.14 @epoch-52, EMA: Changed IoU: 84.32, Overall Accuracy: 99.14 @epoch-42
+[2024-09-14 23:57:55,917][    INFO] Iters: 0, Total loss: 0.000, Loss x: 0.000, Loss s: 0.000, Mask ratio: 0.994
+[2024-09-14 23:58:49,322][    INFO] Iters: 66, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.977
+[2024-09-14 23:59:42,745][    INFO] Iters: 132, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.978
+[2024-09-15 00:00:36,170][    INFO] Iters: 198, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.978
+[2024-09-15 00:01:29,570][    INFO] Iters: 264, Total loss: 0.006, Loss x: 0.010, Loss s: 0.002, Mask ratio: 0.978
+[2024-09-15 00:02:22,940][    INFO] Iters: 330, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.978
+[2024-09-15 00:03:16,340][    INFO] Iters: 396, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.978
+[2024-09-15 00:04:09,711][    INFO] Iters: 462, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.979
+[2024-09-15 00:05:03,097][    INFO] Iters: 528, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.979
+[2024-09-15 00:06:32,719][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 99.10, EMA: 99.10
+[2024-09-15 00:06:32,719][    INFO] ***** Evaluation ***** >>>> Changed IoU: 84.29: EMA: 84.19
+[2024-09-15 00:06:32,719][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 99.14, EMA: 99.14
+
+[2024-09-15 00:06:34,821][    INFO] ===========> Epoch: 58, LR: 0.0000002, Previous best Changed IoU: 84.33, Overall Accuracy: 99.14 @epoch-52, EMA: Changed IoU: 84.32, Overall Accuracy: 99.14 @epoch-42
+[2024-09-15 00:06:36,223][    INFO] Iters: 0, Total loss: 0.004, Loss x: 0.007, Loss s: 0.000, Mask ratio: 0.991
+[2024-09-15 00:07:29,573][    INFO] Iters: 66, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.979
+[2024-09-15 00:08:23,012][    INFO] Iters: 132, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.978
+[2024-09-15 00:09:16,405][    INFO] Iters: 198, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.979
+[2024-09-15 00:10:09,764][    INFO] Iters: 264, Total loss: 0.006, Loss x: 0.010, Loss s: 0.002, Mask ratio: 0.979
+[2024-09-15 00:11:03,116][    INFO] Iters: 330, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.979
+[2024-09-15 00:11:56,476][    INFO] Iters: 396, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.980
+[2024-09-15 00:12:49,831][    INFO] Iters: 462, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.979
+[2024-09-15 00:13:43,185][    INFO] Iters: 528, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.979
+[2024-09-15 00:15:13,140][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 99.10, EMA: 99.10
+[2024-09-15 00:15:13,140][    INFO] ***** Evaluation ***** >>>> Changed IoU: 84.22: EMA: 84.23
+[2024-09-15 00:15:13,140][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 99.14, EMA: 99.14
+
+[2024-09-15 00:15:15,260][    INFO] ===========> Epoch: 59, LR: 0.0000001, Previous best Changed IoU: 84.33, Overall Accuracy: 99.14 @epoch-52, EMA: Changed IoU: 84.32, Overall Accuracy: 99.14 @epoch-42
+[2024-09-15 00:15:16,698][    INFO] Iters: 0, Total loss: 0.001, Loss x: 0.001, Loss s: 0.001, Mask ratio: 0.996
+[2024-09-15 00:16:10,090][    INFO] Iters: 66, Total loss: 0.006, Loss x: 0.010, Loss s: 0.002, Mask ratio: 0.980
+[2024-09-15 00:17:03,502][    INFO] Iters: 132, Total loss: 0.006, Loss x: 0.010, Loss s: 0.002, Mask ratio: 0.979
+[2024-09-15 00:17:56,877][    INFO] Iters: 198, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.978
+[2024-09-15 00:18:50,237][    INFO] Iters: 264, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.979
+[2024-09-15 00:19:43,631][    INFO] Iters: 330, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.978
+[2024-09-15 00:20:36,966][    INFO] Iters: 396, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.979
+[2024-09-15 00:21:30,356][    INFO] Iters: 462, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.979
+[2024-09-15 00:22:23,729][    INFO] Iters: 528, Total loss: 0.006, Loss x: 0.011, Loss s: 0.002, Mask ratio: 0.979
+[2024-09-15 00:23:53,830][    INFO] ***** Evaluation ***** >>>> Unchanged IoU: 99.10, EMA: 99.10
+[2024-09-15 00:23:53,830][    INFO] ***** Evaluation ***** >>>> Changed IoU: 84.18: EMA: 84.21
+[2024-09-15 00:23:53,830][    INFO] ***** Evaluation ***** >>>> Overall Accuracy: 99.14, EMA: 99.14
+
