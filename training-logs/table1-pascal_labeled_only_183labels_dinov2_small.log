@@ -1,0 +1,2003 @@
+[2024-08-26 13:38:26,276][    INFO] {'backbone': 'dinov2_small',
+ 'batch_size': 8,
+ 'conf_thresh': 0.95,
+ 'config': 'configs/pascal.yaml',
+ 'criterion': {'kwargs': {'ignore_index': 255}, 'name': 'CELoss'},
+ 'crop_size': 518,
+ 'data_root': '/mnt/petrelfs/lihe/data/PASCAL',
+ 'dataset': 'pascal',
+ 'epochs': 60,
+ 'labeled_id_path': 'splits/pascal/183/labeled.txt',
+ 'local_rank': 0,
+ 'lock_backbone': False,
+ 'lr': 5e-06,
+ 'lr_multi': 40.0,
+ 'model': 'dpt',
+ 'nclass': 21,
+ 'ngpus': 4,
+ 'port': 27179,
+ 'save_path': 'exp/pascal/supervised/dinov2_small/183',
+ 'unlabeled_id_path': 'splits/pascal/183/unlabeled.txt'}
+
+[2024-08-26 13:38:27,112][    INFO] Total params: 24.8M
+
+[2024-08-26 13:41:21,754][    INFO] ===========> Epoch: 0, LR: 0.00001, Previous best: 0.00
+[2024-08-26 13:41:26,708][    INFO] Iters: 0, Total loss: 3.109
+[2024-08-26 13:41:29,763][    INFO] Iters: 11, Total loss: 1.885
+[2024-08-26 13:41:32,680][    INFO] Iters: 22, Total loss: 1.522
+[2024-08-26 13:41:35,593][    INFO] Iters: 33, Total loss: 1.277
+[2024-08-26 13:41:38,506][    INFO] Iters: 44, Total loss: 1.107
+[2024-08-26 13:41:41,420][    INFO] Iters: 55, Total loss: 0.970
+[2024-08-26 13:41:44,349][    INFO] Iters: 66, Total loss: 0.854
+[2024-08-26 13:41:47,264][    INFO] Iters: 77, Total loss: 0.782
+[2024-08-26 13:41:50,185][    INFO] Iters: 88, Total loss: 0.713
+[2024-08-26 13:42:21,935][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 92.53
+[2024-08-26 13:42:21,935][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 76.48
+[2024-08-26 13:42:21,935][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 19.20
+[2024-08-26 13:42:21,935][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 82.55
+[2024-08-26 13:42:21,935][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 28.17
+[2024-08-26 13:42:21,935][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 68.33
+[2024-08-26 13:42:21,935][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 82.08
+[2024-08-26 13:42:21,935][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 72.82
+[2024-08-26 13:42:21,935][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 83.07
+[2024-08-26 13:42:21,935][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 27.13
+[2024-08-26 13:42:21,935][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 7.36
+[2024-08-26 13:42:21,935][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 33.89
+[2024-08-26 13:42:21,935][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 67.87
+[2024-08-26 13:42:21,935][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 71.26
+[2024-08-26 13:42:21,935][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 75.07
+[2024-08-26 13:42:21,935][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 82.29
+[2024-08-26 13:42:21,935][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 28.67
+[2024-08-26 13:42:21,935][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 29.75
+[2024-08-26 13:42:21,935][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 14.92
+[2024-08-26 13:42:21,935][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 69.74
+[2024-08-26 13:42:21,935][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 67.02
+[2024-08-26 13:42:21,935][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 56.20
+
+[2024-08-26 13:42:24,559][    INFO] ===========> Epoch: 1, LR: 0.00000, Previous best: 56.20
+[2024-08-26 13:42:25,130][    INFO] Iters: 0, Total loss: 0.121
+[2024-08-26 13:42:28,041][    INFO] Iters: 11, Total loss: 0.144
+[2024-08-26 13:42:30,944][    INFO] Iters: 22, Total loss: 0.137
+[2024-08-26 13:42:33,854][    INFO] Iters: 33, Total loss: 0.127
+[2024-08-26 13:42:36,776][    INFO] Iters: 44, Total loss: 0.115
+[2024-08-26 13:42:39,689][    INFO] Iters: 55, Total loss: 0.109
+[2024-08-26 13:42:42,604][    INFO] Iters: 66, Total loss: 0.104
+[2024-08-26 13:42:45,512][    INFO] Iters: 77, Total loss: 0.101
+[2024-08-26 13:42:48,423][    INFO] Iters: 88, Total loss: 0.097
+[2024-08-26 13:42:57,249][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 93.94
+[2024-08-26 13:42:57,249][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 82.84
+[2024-08-26 13:42:57,249][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 56.59
+[2024-08-26 13:42:57,249][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 88.62
+[2024-08-26 13:42:57,249][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 60.23
+[2024-08-26 13:42:57,249][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 72.04
+[2024-08-26 13:42:57,250][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 89.95
+[2024-08-26 13:42:57,250][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 80.77
+[2024-08-26 13:42:57,250][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 82.96
+[2024-08-26 13:42:57,250][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 34.42
+[2024-08-26 13:42:57,250][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 62.60
+[2024-08-26 13:42:57,250][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 45.72
+[2024-08-26 13:42:57,250][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 78.18
+[2024-08-26 13:42:57,250][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 77.00
+[2024-08-26 13:42:57,250][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 80.00
+[2024-08-26 13:42:57,250][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 84.12
+[2024-08-26 13:42:57,250][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 47.04
+[2024-08-26 13:42:57,250][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 62.60
+[2024-08-26 13:42:57,250][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 42.51
+[2024-08-26 13:42:57,250][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 76.78
+[2024-08-26 13:42:57,250][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 62.77
+[2024-08-26 13:42:57,250][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 69.60
+
+[2024-08-26 13:42:59,734][    INFO] ===========> Epoch: 2, LR: 0.00000, Previous best: 69.60
+[2024-08-26 13:43:00,313][    INFO] Iters: 0, Total loss: 0.056
+[2024-08-26 13:43:03,230][    INFO] Iters: 11, Total loss: 0.063
+[2024-08-26 13:43:06,141][    INFO] Iters: 22, Total loss: 0.057
+[2024-08-26 13:43:09,060][    INFO] Iters: 33, Total loss: 0.055
+[2024-08-26 13:43:11,980][    INFO] Iters: 44, Total loss: 0.054
+[2024-08-26 13:43:14,896][    INFO] Iters: 55, Total loss: 0.054
+[2024-08-26 13:43:17,805][    INFO] Iters: 66, Total loss: 0.055
+[2024-08-26 13:43:20,719][    INFO] Iters: 77, Total loss: 0.055
+[2024-08-26 13:43:23,631][    INFO] Iters: 88, Total loss: 0.054
+[2024-08-26 13:43:32,240][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 94.14
+[2024-08-26 13:43:32,240][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 82.16
+[2024-08-26 13:43:32,240][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 55.33
+[2024-08-26 13:43:32,240][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 90.38
+[2024-08-26 13:43:32,240][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 54.48
+[2024-08-26 13:43:32,240][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 77.23
+[2024-08-26 13:43:32,240][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 88.92
+[2024-08-26 13:43:32,240][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 81.62
+[2024-08-26 13:43:32,240][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 85.21
+[2024-08-26 13:43:32,240][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 35.20
+[2024-08-26 13:43:32,240][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 73.83
+[2024-08-26 13:43:32,240][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 50.78
+[2024-08-26 13:43:32,240][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 79.60
+[2024-08-26 13:43:32,240][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 80.08
+[2024-08-26 13:43:32,240][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 83.03
+[2024-08-26 13:43:32,240][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 84.65
+[2024-08-26 13:43:32,240][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 46.53
+[2024-08-26 13:43:32,240][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 71.34
+[2024-08-26 13:43:32,240][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 42.01
+[2024-08-26 13:43:32,240][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 75.39
+[2024-08-26 13:43:32,240][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 59.62
+[2024-08-26 13:43:32,240][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 71.02
+
+[2024-08-26 13:43:34,690][    INFO] ===========> Epoch: 3, LR: 0.00000, Previous best: 71.02
+[2024-08-26 13:43:35,265][    INFO] Iters: 0, Total loss: 0.022
+[2024-08-26 13:43:38,179][    INFO] Iters: 11, Total loss: 0.041
+[2024-08-26 13:43:41,085][    INFO] Iters: 22, Total loss: 0.043
+[2024-08-26 13:43:44,005][    INFO] Iters: 33, Total loss: 0.042
+[2024-08-26 13:43:46,927][    INFO] Iters: 44, Total loss: 0.042
+[2024-08-26 13:43:49,843][    INFO] Iters: 55, Total loss: 0.041
+[2024-08-26 13:43:52,753][    INFO] Iters: 66, Total loss: 0.041
+[2024-08-26 13:43:55,659][    INFO] Iters: 77, Total loss: 0.041
+[2024-08-26 13:43:58,568][    INFO] Iters: 88, Total loss: 0.040
+[2024-08-26 13:44:07,248][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 94.35
+[2024-08-26 13:44:07,249][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 87.08
+[2024-08-26 13:44:07,249][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 61.24
+[2024-08-26 13:44:07,249][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 89.66
+[2024-08-26 13:44:07,249][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 65.13
+[2024-08-26 13:44:07,249][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 77.07
+[2024-08-26 13:44:07,249][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 90.15
+[2024-08-26 13:44:07,249][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 81.40
+[2024-08-26 13:44:07,249][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 83.55
+[2024-08-26 13:44:07,249][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 36.15
+[2024-08-26 13:44:07,249][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 73.84
+[2024-08-26 13:44:07,249][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 44.70
+[2024-08-26 13:44:07,249][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 77.86
+[2024-08-26 13:44:07,249][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 79.42
+[2024-08-26 13:44:07,249][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 84.28
+[2024-08-26 13:44:07,249][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 85.90
+[2024-08-26 13:44:07,249][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 44.46
+[2024-08-26 13:44:07,249][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 71.05
+[2024-08-26 13:44:07,249][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 48.50
+[2024-08-26 13:44:07,249][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 79.47
+[2024-08-26 13:44:07,249][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 64.98
+[2024-08-26 13:44:07,249][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 72.39
+
+[2024-08-26 13:44:09,718][    INFO] ===========> Epoch: 4, LR: 0.00000, Previous best: 72.39
+[2024-08-26 13:44:10,297][    INFO] Iters: 0, Total loss: 0.044
+[2024-08-26 13:44:13,221][    INFO] Iters: 11, Total loss: 0.031
+[2024-08-26 13:44:16,127][    INFO] Iters: 22, Total loss: 0.033
+[2024-08-26 13:44:19,045][    INFO] Iters: 33, Total loss: 0.034
+[2024-08-26 13:44:21,956][    INFO] Iters: 44, Total loss: 0.032
+[2024-08-26 13:44:24,860][    INFO] Iters: 55, Total loss: 0.032
+[2024-08-26 13:44:27,762][    INFO] Iters: 66, Total loss: 0.032
+[2024-08-26 13:44:30,665][    INFO] Iters: 77, Total loss: 0.031
+[2024-08-26 13:44:33,586][    INFO] Iters: 88, Total loss: 0.031
+[2024-08-26 13:44:42,383][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 94.38
+[2024-08-26 13:44:42,384][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 88.56
+[2024-08-26 13:44:42,384][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 66.30
+[2024-08-26 13:44:42,384][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 90.79
+[2024-08-26 13:44:42,384][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 63.00
+[2024-08-26 13:44:42,384][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 78.04
+[2024-08-26 13:44:42,384][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 91.61
+[2024-08-26 13:44:42,384][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 82.92
+[2024-08-26 13:44:42,384][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 84.92
+[2024-08-26 13:44:42,384][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 34.75
+[2024-08-26 13:44:42,384][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 67.47
+[2024-08-26 13:44:42,384][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 43.56
+[2024-08-26 13:44:42,384][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 79.96
+[2024-08-26 13:44:42,384][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 75.09
+[2024-08-26 13:44:42,384][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 86.29
+[2024-08-26 13:44:42,384][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 87.25
+[2024-08-26 13:44:42,384][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 44.80
+[2024-08-26 13:44:42,384][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 69.30
+[2024-08-26 13:44:42,384][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 47.90
+[2024-08-26 13:44:42,384][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 77.44
+[2024-08-26 13:44:42,384][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 64.88
+[2024-08-26 13:44:42,384][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 72.34
+
+[2024-08-26 13:44:43,642][    INFO] ===========> Epoch: 5, LR: 0.00000, Previous best: 72.39
+[2024-08-26 13:44:44,206][    INFO] Iters: 0, Total loss: 0.024
+[2024-08-26 13:44:47,111][    INFO] Iters: 11, Total loss: 0.028
+[2024-08-26 13:44:50,009][    INFO] Iters: 22, Total loss: 0.028
+[2024-08-26 13:44:52,923][    INFO] Iters: 33, Total loss: 0.027
+[2024-08-26 13:44:55,837][    INFO] Iters: 44, Total loss: 0.027
+[2024-08-26 13:44:58,751][    INFO] Iters: 55, Total loss: 0.026
+[2024-08-26 13:45:01,661][    INFO] Iters: 66, Total loss: 0.026
+[2024-08-26 13:45:04,574][    INFO] Iters: 77, Total loss: 0.026
+[2024-08-26 13:45:07,481][    INFO] Iters: 88, Total loss: 0.026
+[2024-08-26 13:45:16,190][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 94.50
+[2024-08-26 13:45:16,190][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 89.17
+[2024-08-26 13:45:16,190][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 68.66
+[2024-08-26 13:45:16,190][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 90.85
+[2024-08-26 13:45:16,190][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 63.89
+[2024-08-26 13:45:16,190][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 79.73
+[2024-08-26 13:45:16,190][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 90.33
+[2024-08-26 13:45:16,190][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 82.14
+[2024-08-26 13:45:16,190][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 84.29
+[2024-08-26 13:45:16,190][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 34.93
+[2024-08-26 13:45:16,190][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 72.04
+[2024-08-26 13:45:16,190][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 41.46
+[2024-08-26 13:45:16,190][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 80.27
+[2024-08-26 13:45:16,190][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 75.72
+[2024-08-26 13:45:16,190][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 87.28
+[2024-08-26 13:45:16,190][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 87.23
+[2024-08-26 13:45:16,190][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 50.23
+[2024-08-26 13:45:16,190][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 72.54
+[2024-08-26 13:45:16,190][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 47.73
+[2024-08-26 13:45:16,190][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 78.39
+[2024-08-26 13:45:16,191][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 65.75
+[2024-08-26 13:45:16,191][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 73.20
+
+[2024-08-26 13:45:18,717][    INFO] ===========> Epoch: 6, LR: 0.00000, Previous best: 73.20
+[2024-08-26 13:45:19,311][    INFO] Iters: 0, Total loss: 0.019
+[2024-08-26 13:45:22,214][    INFO] Iters: 11, Total loss: 0.022
+[2024-08-26 13:45:25,112][    INFO] Iters: 22, Total loss: 0.024
+[2024-08-26 13:45:28,014][    INFO] Iters: 33, Total loss: 0.024
+[2024-08-26 13:45:30,914][    INFO] Iters: 44, Total loss: 0.024
+[2024-08-26 13:45:33,815][    INFO] Iters: 55, Total loss: 0.023
+[2024-08-26 13:45:36,710][    INFO] Iters: 66, Total loss: 0.023
+[2024-08-26 13:45:39,610][    INFO] Iters: 77, Total loss: 0.023
+[2024-08-26 13:45:42,519][    INFO] Iters: 88, Total loss: 0.024
+[2024-08-26 13:45:50,990][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 94.45
+[2024-08-26 13:45:50,990][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 88.92
+[2024-08-26 13:45:50,990][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 69.72
+[2024-08-26 13:45:50,990][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 90.38
+[2024-08-26 13:45:50,990][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 64.46
+[2024-08-26 13:45:50,991][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 77.82
+[2024-08-26 13:45:50,991][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 90.66
+[2024-08-26 13:45:50,991][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 83.89
+[2024-08-26 13:45:50,991][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 83.59
+[2024-08-26 13:45:50,991][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 35.92
+[2024-08-26 13:45:50,991][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 76.54
+[2024-08-26 13:45:50,991][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 39.87
+[2024-08-26 13:45:50,991][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 78.67
+[2024-08-26 13:45:50,991][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 81.33
+[2024-08-26 13:45:50,991][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 86.84
+[2024-08-26 13:45:50,991][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 87.93
+[2024-08-26 13:45:50,991][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 48.35
+[2024-08-26 13:45:50,991][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 72.92
+[2024-08-26 13:45:50,991][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 48.83
+[2024-08-26 13:45:50,991][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 79.69
+[2024-08-26 13:45:50,991][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 63.43
+[2024-08-26 13:45:50,991][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 73.53
+
+[2024-08-26 13:45:53,511][    INFO] ===========> Epoch: 7, LR: 0.00000, Previous best: 73.53
+[2024-08-26 13:45:54,098][    INFO] Iters: 0, Total loss: 0.020
+[2024-08-26 13:45:57,003][    INFO] Iters: 11, Total loss: 0.023
+[2024-08-26 13:45:59,901][    INFO] Iters: 22, Total loss: 0.023
+[2024-08-26 13:46:02,803][    INFO] Iters: 33, Total loss: 0.021
+[2024-08-26 13:46:05,703][    INFO] Iters: 44, Total loss: 0.021
+[2024-08-26 13:46:08,604][    INFO] Iters: 55, Total loss: 0.021
+[2024-08-26 13:46:11,503][    INFO] Iters: 66, Total loss: 0.021
+[2024-08-26 13:46:14,402][    INFO] Iters: 77, Total loss: 0.021
+[2024-08-26 13:46:17,301][    INFO] Iters: 88, Total loss: 0.021
+[2024-08-26 13:46:25,892][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 94.66
+[2024-08-26 13:46:25,892][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 90.52
+[2024-08-26 13:46:25,892][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 70.33
+[2024-08-26 13:46:25,892][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 90.76
+[2024-08-26 13:46:25,892][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 68.76
+[2024-08-26 13:46:25,892][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 79.94
+[2024-08-26 13:46:25,892][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 90.53
+[2024-08-26 13:46:25,892][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 84.27
+[2024-08-26 13:46:25,892][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 84.95
+[2024-08-26 13:46:25,892][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 36.74
+[2024-08-26 13:46:25,892][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 75.03
+[2024-08-26 13:46:25,892][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 43.67
+[2024-08-26 13:46:25,892][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 80.28
+[2024-08-26 13:46:25,893][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 80.34
+[2024-08-26 13:46:25,893][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 87.84
+[2024-08-26 13:46:25,893][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 88.39
+[2024-08-26 13:46:25,893][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 49.59
+[2024-08-26 13:46:25,893][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 73.21
+[2024-08-26 13:46:25,893][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 46.73
+[2024-08-26 13:46:25,893][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 81.70
+[2024-08-26 13:46:25,893][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 64.44
+[2024-08-26 13:46:25,893][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 74.41
+
+[2024-08-26 13:46:28,491][    INFO] ===========> Epoch: 8, LR: 0.00000, Previous best: 74.41
+[2024-08-26 13:46:29,093][    INFO] Iters: 0, Total loss: 0.016
+[2024-08-26 13:46:31,997][    INFO] Iters: 11, Total loss: 0.021
+[2024-08-26 13:46:34,899][    INFO] Iters: 22, Total loss: 0.021
+[2024-08-26 13:46:37,803][    INFO] Iters: 33, Total loss: 0.021
+[2024-08-26 13:46:40,705][    INFO] Iters: 44, Total loss: 0.021
+[2024-08-26 13:46:43,606][    INFO] Iters: 55, Total loss: 0.022
+[2024-08-26 13:46:46,514][    INFO] Iters: 66, Total loss: 0.040
+[2024-08-26 13:46:49,416][    INFO] Iters: 77, Total loss: 0.105
+[2024-08-26 13:46:52,322][    INFO] Iters: 88, Total loss: 0.129
+[2024-08-26 13:47:00,904][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 92.81
+[2024-08-26 13:47:00,904][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 58.11
+[2024-08-26 13:47:00,904][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 49.07
+[2024-08-26 13:47:00,904][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 82.20
+[2024-08-26 13:47:00,904][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 24.02
+[2024-08-26 13:47:00,904][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 73.01
+[2024-08-26 13:47:00,904][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 62.52
+[2024-08-26 13:47:00,904][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 63.78
+[2024-08-26 13:47:00,904][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 59.61
+[2024-08-26 13:47:00,904][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 29.84
+[2024-08-26 13:47:00,904][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 0.08
+[2024-08-26 13:47:00,904][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 33.60
+[2024-08-26 13:47:00,904][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 64.80
+[2024-08-26 13:47:00,904][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 71.80
+[2024-08-26 13:47:00,904][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 67.80
+[2024-08-26 13:47:00,904][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 81.24
+[2024-08-26 13:47:00,904][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 27.56
+[2024-08-26 13:47:00,904][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 5.86
+[2024-08-26 13:47:00,904][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 38.73
+[2024-08-26 13:47:00,904][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 20.14
+[2024-08-26 13:47:00,904][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 50.79
+[2024-08-26 13:47:00,904][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 50.35
+
+[2024-08-26 13:47:02,172][    INFO] ===========> Epoch: 9, LR: 0.00000, Previous best: 74.41
+[2024-08-26 13:47:02,735][    INFO] Iters: 0, Total loss: 0.144
+[2024-08-26 13:47:05,640][    INFO] Iters: 11, Total loss: 0.113
+[2024-08-26 13:47:08,549][    INFO] Iters: 22, Total loss: 0.096
+[2024-08-26 13:47:11,455][    INFO] Iters: 33, Total loss: 0.082
+[2024-08-26 13:47:14,358][    INFO] Iters: 44, Total loss: 0.076
+[2024-08-26 13:47:17,263][    INFO] Iters: 55, Total loss: 0.068
+[2024-08-26 13:47:20,166][    INFO] Iters: 66, Total loss: 0.061
+[2024-08-26 13:47:23,075][    INFO] Iters: 77, Total loss: 0.056
+[2024-08-26 13:47:25,985][    INFO] Iters: 88, Total loss: 0.053
+[2024-08-26 13:47:34,626][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 94.72
+[2024-08-26 13:47:34,626][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 87.87
+[2024-08-26 13:47:34,626][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 69.39
+[2024-08-26 13:47:34,626][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 91.83
+[2024-08-26 13:47:34,627][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 66.41
+[2024-08-26 13:47:34,627][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 76.46
+[2024-08-26 13:47:34,627][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 89.17
+[2024-08-26 13:47:34,627][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 80.61
+[2024-08-26 13:47:34,627][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 86.39
+[2024-08-26 13:47:34,627][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 41.82
+[2024-08-26 13:47:34,627][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 69.60
+[2024-08-26 13:47:34,627][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 43.25
+[2024-08-26 13:47:34,627][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 81.07
+[2024-08-26 13:47:34,627][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 79.47
+[2024-08-26 13:47:34,627][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 82.87
+[2024-08-26 13:47:34,627][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 86.97
+[2024-08-26 13:47:34,627][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 53.28
+[2024-08-26 13:47:34,627][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 59.36
+[2024-08-26 13:47:34,627][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 51.10
+[2024-08-26 13:47:34,627][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 79.77
+[2024-08-26 13:47:34,627][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 62.72
+[2024-08-26 13:47:34,627][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 73.05
+
+[2024-08-26 13:47:35,876][    INFO] ===========> Epoch: 10, LR: 0.00000, Previous best: 74.41
+[2024-08-26 13:47:36,438][    INFO] Iters: 0, Total loss: 0.035
+[2024-08-26 13:47:39,343][    INFO] Iters: 11, Total loss: 0.028
+[2024-08-26 13:47:42,240][    INFO] Iters: 22, Total loss: 0.024
+[2024-08-26 13:47:45,140][    INFO] Iters: 33, Total loss: 0.025
+[2024-08-26 13:47:48,042][    INFO] Iters: 44, Total loss: 0.026
+[2024-08-26 13:47:50,943][    INFO] Iters: 55, Total loss: 0.026
+[2024-08-26 13:47:53,840][    INFO] Iters: 66, Total loss: 0.025
+[2024-08-26 13:47:56,744][    INFO] Iters: 77, Total loss: 0.026
+[2024-08-26 13:47:59,647][    INFO] Iters: 88, Total loss: 0.025
+[2024-08-26 13:48:08,114][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 94.72
+[2024-08-26 13:48:08,114][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 88.77
+[2024-08-26 13:48:08,114][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 68.59
+[2024-08-26 13:48:08,114][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 91.90
+[2024-08-26 13:48:08,114][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 68.52
+[2024-08-26 13:48:08,114][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 77.13
+[2024-08-26 13:48:08,114][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 89.28
+[2024-08-26 13:48:08,114][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 80.97
+[2024-08-26 13:48:08,114][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 87.82
+[2024-08-26 13:48:08,114][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 42.62
+[2024-08-26 13:48:08,114][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 73.10
+[2024-08-26 13:48:08,114][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 43.47
+[2024-08-26 13:48:08,115][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 82.79
+[2024-08-26 13:48:08,115][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 80.09
+[2024-08-26 13:48:08,115][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 83.66
+[2024-08-26 13:48:08,115][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 86.72
+[2024-08-26 13:48:08,115][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 51.52
+[2024-08-26 13:48:08,115][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 63.26
+[2024-08-26 13:48:08,115][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 52.47
+[2024-08-26 13:48:08,115][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 80.98
+[2024-08-26 13:48:08,115][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 62.87
+[2024-08-26 13:48:08,115][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 73.87
+
+[2024-08-26 13:48:09,341][    INFO] ===========> Epoch: 11, LR: 0.00000, Previous best: 74.41
+[2024-08-26 13:48:09,896][    INFO] Iters: 0, Total loss: 0.037
+[2024-08-26 13:48:12,805][    INFO] Iters: 11, Total loss: 0.026
+[2024-08-26 13:48:15,706][    INFO] Iters: 22, Total loss: 0.023
+[2024-08-26 13:48:18,615][    INFO] Iters: 33, Total loss: 0.022
+[2024-08-26 13:48:21,521][    INFO] Iters: 44, Total loss: 0.023
+[2024-08-26 13:48:24,423][    INFO] Iters: 55, Total loss: 0.022
+[2024-08-26 13:48:27,328][    INFO] Iters: 66, Total loss: 0.023
+[2024-08-26 13:48:30,233][    INFO] Iters: 77, Total loss: 0.022
+[2024-08-26 13:48:33,138][    INFO] Iters: 88, Total loss: 0.022
+[2024-08-26 13:48:41,802][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 94.80
+[2024-08-26 13:48:41,802][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 89.32
+[2024-08-26 13:48:41,802][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 68.44
+[2024-08-26 13:48:41,802][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 92.25
+[2024-08-26 13:48:41,802][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 68.46
+[2024-08-26 13:48:41,802][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 78.62
+[2024-08-26 13:48:41,802][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 89.32
+[2024-08-26 13:48:41,802][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 82.02
+[2024-08-26 13:48:41,802][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 88.58
+[2024-08-26 13:48:41,802][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 42.38
+[2024-08-26 13:48:41,802][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 74.37
+[2024-08-26 13:48:41,802][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 43.83
+[2024-08-26 13:48:41,802][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 84.12
+[2024-08-26 13:48:41,802][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 79.30
+[2024-08-26 13:48:41,802][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 84.34
+[2024-08-26 13:48:41,802][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 87.70
+[2024-08-26 13:48:41,802][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 51.23
+[2024-08-26 13:48:41,802][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 64.03
+[2024-08-26 13:48:41,802][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 52.00
+[2024-08-26 13:48:41,802][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 81.91
+[2024-08-26 13:48:41,802][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 64.20
+[2024-08-26 13:48:41,802][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 74.34
+
+[2024-08-26 13:48:43,075][    INFO] ===========> Epoch: 12, LR: 0.00000, Previous best: 74.41
+[2024-08-26 13:48:43,638][    INFO] Iters: 0, Total loss: 0.021
+[2024-08-26 13:48:46,544][    INFO] Iters: 11, Total loss: 0.021
+[2024-08-26 13:48:49,445][    INFO] Iters: 22, Total loss: 0.021
+[2024-08-26 13:48:52,355][    INFO] Iters: 33, Total loss: 0.019
+[2024-08-26 13:48:55,261][    INFO] Iters: 44, Total loss: 0.020
+[2024-08-26 13:48:58,167][    INFO] Iters: 55, Total loss: 0.019
+[2024-08-26 13:49:01,067][    INFO] Iters: 66, Total loss: 0.020
+[2024-08-26 13:49:03,974][    INFO] Iters: 77, Total loss: 0.020
+[2024-08-26 13:49:06,887][    INFO] Iters: 88, Total loss: 0.019
+[2024-08-26 13:49:15,395][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 94.80
+[2024-08-26 13:49:15,395][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 89.28
+[2024-08-26 13:49:15,395][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 70.25
+[2024-08-26 13:49:15,395][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 92.42
+[2024-08-26 13:49:15,395][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 67.82
+[2024-08-26 13:49:15,395][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 79.86
+[2024-08-26 13:49:15,395][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 88.73
+[2024-08-26 13:49:15,395][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 81.59
+[2024-08-26 13:49:15,395][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 89.26
+[2024-08-26 13:49:15,395][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 42.50
+[2024-08-26 13:49:15,395][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 74.27
+[2024-08-26 13:49:15,395][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 41.59
+[2024-08-26 13:49:15,395][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 84.60
+[2024-08-26 13:49:15,395][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 79.55
+[2024-08-26 13:49:15,395][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 85.32
+[2024-08-26 13:49:15,395][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 87.75
+[2024-08-26 13:49:15,395][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 50.76
+[2024-08-26 13:49:15,395][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 64.72
+[2024-08-26 13:49:15,395][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 54.74
+[2024-08-26 13:49:15,395][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 81.00
+[2024-08-26 13:49:15,395][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 64.83
+[2024-08-26 13:49:15,395][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 74.55
+
+[2024-08-26 13:49:17,996][    INFO] ===========> Epoch: 13, LR: 0.00000, Previous best: 74.55
+[2024-08-26 13:49:18,576][    INFO] Iters: 0, Total loss: 0.015
+[2024-08-26 13:49:21,484][    INFO] Iters: 11, Total loss: 0.017
+[2024-08-26 13:49:24,381][    INFO] Iters: 22, Total loss: 0.019
+[2024-08-26 13:49:27,284][    INFO] Iters: 33, Total loss: 0.017
+[2024-08-26 13:49:30,185][    INFO] Iters: 44, Total loss: 0.018
+[2024-08-26 13:49:33,084][    INFO] Iters: 55, Total loss: 0.018
+[2024-08-26 13:49:35,977][    INFO] Iters: 66, Total loss: 0.018
+[2024-08-26 13:49:38,876][    INFO] Iters: 77, Total loss: 0.018
+[2024-08-26 13:49:41,779][    INFO] Iters: 88, Total loss: 0.018
+[2024-08-26 13:49:50,332][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 94.88
+[2024-08-26 13:49:50,332][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 89.89
+[2024-08-26 13:49:50,332][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 69.09
+[2024-08-26 13:49:50,332][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 92.51
+[2024-08-26 13:49:50,332][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 69.47
+[2024-08-26 13:49:50,332][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 79.38
+[2024-08-26 13:49:50,332][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 90.39
+[2024-08-26 13:49:50,332][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 82.52
+[2024-08-26 13:49:50,332][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 88.96
+[2024-08-26 13:49:50,332][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 42.26
+[2024-08-26 13:49:50,332][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 75.44
+[2024-08-26 13:49:50,332][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 44.11
+[2024-08-26 13:49:50,332][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 84.46
+[2024-08-26 13:49:50,332][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 79.73
+[2024-08-26 13:49:50,332][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 85.01
+[2024-08-26 13:49:50,332][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 87.75
+[2024-08-26 13:49:50,332][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 49.88
+[2024-08-26 13:49:50,332][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 67.01
+[2024-08-26 13:49:50,332][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 52.70
+[2024-08-26 13:49:50,332][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 83.15
+[2024-08-26 13:49:50,332][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 65.40
+[2024-08-26 13:49:50,332][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 74.95
+
+[2024-08-26 13:49:52,794][    INFO] ===========> Epoch: 14, LR: 0.00000, Previous best: 74.95
+[2024-08-26 13:49:53,375][    INFO] Iters: 0, Total loss: 0.011
+[2024-08-26 13:49:56,282][    INFO] Iters: 11, Total loss: 0.018
+[2024-08-26 13:49:59,181][    INFO] Iters: 22, Total loss: 0.019
+[2024-08-26 13:50:02,100][    INFO] Iters: 33, Total loss: 0.018
+[2024-08-26 13:50:05,003][    INFO] Iters: 44, Total loss: 0.018
+[2024-08-26 13:50:07,908][    INFO] Iters: 55, Total loss: 0.017
+[2024-08-26 13:50:10,814][    INFO] Iters: 66, Total loss: 0.018
+[2024-08-26 13:50:13,721][    INFO] Iters: 77, Total loss: 0.018
+[2024-08-26 13:50:16,625][    INFO] Iters: 88, Total loss: 0.018
+[2024-08-26 13:50:25,077][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 94.87
+[2024-08-26 13:50:25,077][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 89.71
+[2024-08-26 13:50:25,077][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 69.76
+[2024-08-26 13:50:25,077][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 92.48
+[2024-08-26 13:50:25,077][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 67.91
+[2024-08-26 13:50:25,077][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 79.67
+[2024-08-26 13:50:25,077][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 89.66
+[2024-08-26 13:50:25,077][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 82.02
+[2024-08-26 13:50:25,077][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 89.00
+[2024-08-26 13:50:25,077][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 41.95
+[2024-08-26 13:50:25,077][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 74.80
+[2024-08-26 13:50:25,077][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 41.45
+[2024-08-26 13:50:25,077][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 84.58
+[2024-08-26 13:50:25,077][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 80.21
+[2024-08-26 13:50:25,077][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 85.14
+[2024-08-26 13:50:25,077][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 88.40
+[2024-08-26 13:50:25,077][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 47.34
+[2024-08-26 13:50:25,077][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 66.45
+[2024-08-26 13:50:25,077][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 53.64
+[2024-08-26 13:50:25,077][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 82.85
+[2024-08-26 13:50:25,077][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 66.34
+[2024-08-26 13:50:25,077][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 74.68
+
+[2024-08-26 13:50:26,391][    INFO] ===========> Epoch: 15, LR: 0.00000, Previous best: 74.95
+[2024-08-26 13:50:26,937][    INFO] Iters: 0, Total loss: 0.025
+[2024-08-26 13:50:29,837][    INFO] Iters: 11, Total loss: 0.016
+[2024-08-26 13:50:32,737][    INFO] Iters: 22, Total loss: 0.017
+[2024-08-26 13:50:35,637][    INFO] Iters: 33, Total loss: 0.017
+[2024-08-26 13:50:38,542][    INFO] Iters: 44, Total loss: 0.017
+[2024-08-26 13:50:41,443][    INFO] Iters: 55, Total loss: 0.017
+[2024-08-26 13:50:44,339][    INFO] Iters: 66, Total loss: 0.017
+[2024-08-26 13:50:47,245][    INFO] Iters: 77, Total loss: 0.017
+[2024-08-26 13:50:50,147][    INFO] Iters: 88, Total loss: 0.017
+[2024-08-26 13:50:58,577][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 94.90
+[2024-08-26 13:50:58,577][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 90.38
+[2024-08-26 13:50:58,577][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 69.35
+[2024-08-26 13:50:58,577][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 92.56
+[2024-08-26 13:50:58,577][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 68.18
+[2024-08-26 13:50:58,577][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 79.30
+[2024-08-26 13:50:58,577][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 89.87
+[2024-08-26 13:50:58,577][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 82.53
+[2024-08-26 13:50:58,577][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 89.48
+[2024-08-26 13:50:58,577][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 42.11
+[2024-08-26 13:50:58,577][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 74.63
+[2024-08-26 13:50:58,577][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 42.99
+[2024-08-26 13:50:58,577][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 85.13
+[2024-08-26 13:50:58,577][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 79.47
+[2024-08-26 13:50:58,577][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 85.50
+[2024-08-26 13:50:58,577][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 87.94
+[2024-08-26 13:50:58,577][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 51.49
+[2024-08-26 13:50:58,577][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 66.64
+[2024-08-26 13:50:58,577][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 54.33
+[2024-08-26 13:50:58,577][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 83.31
+[2024-08-26 13:50:58,577][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 65.05
+[2024-08-26 13:50:58,577][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 75.01
+
+[2024-08-26 13:51:01,027][    INFO] ===========> Epoch: 16, LR: 0.00000, Previous best: 75.01
+[2024-08-26 13:51:01,611][    INFO] Iters: 0, Total loss: 0.010
+[2024-08-26 13:51:04,513][    INFO] Iters: 11, Total loss: 0.017
+[2024-08-26 13:51:07,413][    INFO] Iters: 22, Total loss: 0.015
+[2024-08-26 13:51:10,315][    INFO] Iters: 33, Total loss: 0.015
+[2024-08-26 13:51:13,216][    INFO] Iters: 44, Total loss: 0.015
+[2024-08-26 13:51:16,114][    INFO] Iters: 55, Total loss: 0.015
+[2024-08-26 13:51:19,005][    INFO] Iters: 66, Total loss: 0.015
+[2024-08-26 13:51:21,912][    INFO] Iters: 77, Total loss: 0.015
+[2024-08-26 13:51:24,820][    INFO] Iters: 88, Total loss: 0.015
+[2024-08-26 13:51:33,291][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 94.95
+[2024-08-26 13:51:33,291][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 90.55
+[2024-08-26 13:51:33,291][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 68.89
+[2024-08-26 13:51:33,291][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 92.57
+[2024-08-26 13:51:33,291][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 68.22
+[2024-08-26 13:51:33,291][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 80.00
+[2024-08-26 13:51:33,291][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 90.69
+[2024-08-26 13:51:33,291][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 82.55
+[2024-08-26 13:51:33,291][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 89.25
+[2024-08-26 13:51:33,291][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 42.05
+[2024-08-26 13:51:33,291][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 75.44
+[2024-08-26 13:51:33,291][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 43.56
+[2024-08-26 13:51:33,291][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 85.18
+[2024-08-26 13:51:33,291][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 79.60
+[2024-08-26 13:51:33,292][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 85.05
+[2024-08-26 13:51:33,292][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 88.11
+[2024-08-26 13:51:33,292][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 51.71
+[2024-08-26 13:51:33,292][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 67.62
+[2024-08-26 13:51:33,292][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 52.71
+[2024-08-26 13:51:33,292][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 82.46
+[2024-08-26 13:51:33,292][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 65.21
+[2024-08-26 13:51:33,292][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 75.06
+
+[2024-08-26 13:51:35,741][    INFO] ===========> Epoch: 17, LR: 0.00000, Previous best: 75.06
+[2024-08-26 13:51:36,340][    INFO] Iters: 0, Total loss: 0.021
+[2024-08-26 13:51:39,239][    INFO] Iters: 11, Total loss: 0.013
+[2024-08-26 13:51:42,131][    INFO] Iters: 22, Total loss: 0.015
+[2024-08-26 13:51:45,026][    INFO] Iters: 33, Total loss: 0.014
+[2024-08-26 13:51:47,921][    INFO] Iters: 44, Total loss: 0.015
+[2024-08-26 13:51:50,818][    INFO] Iters: 55, Total loss: 0.015
+[2024-08-26 13:51:53,710][    INFO] Iters: 66, Total loss: 0.015
+[2024-08-26 13:51:56,609][    INFO] Iters: 77, Total loss: 0.015
+[2024-08-26 13:51:59,508][    INFO] Iters: 88, Total loss: 0.016
+[2024-08-26 13:52:08,025][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 95.01
+[2024-08-26 13:52:08,025][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 91.26
+[2024-08-26 13:52:08,025][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 68.71
+[2024-08-26 13:52:08,025][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 92.20
+[2024-08-26 13:52:08,025][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 69.47
+[2024-08-26 13:52:08,025][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 79.44
+[2024-08-26 13:52:08,025][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 89.93
+[2024-08-26 13:52:08,025][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 82.59
+[2024-08-26 13:52:08,025][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 89.26
+[2024-08-26 13:52:08,025][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 41.67
+[2024-08-26 13:52:08,025][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 75.68
+[2024-08-26 13:52:08,025][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 45.04
+[2024-08-26 13:52:08,025][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 85.06
+[2024-08-26 13:52:08,025][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 79.78
+[2024-08-26 13:52:08,025][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 85.59
+[2024-08-26 13:52:08,025][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 88.36
+[2024-08-26 13:52:08,025][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 51.47
+[2024-08-26 13:52:08,025][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 68.02
+[2024-08-26 13:52:08,025][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 54.22
+[2024-08-26 13:52:08,025][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 84.13
+[2024-08-26 13:52:08,025][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 65.48
+[2024-08-26 13:52:08,025][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 75.35
+
+[2024-08-26 13:52:10,458][    INFO] ===========> Epoch: 18, LR: 0.00000, Previous best: 75.35
+[2024-08-26 13:52:11,044][    INFO] Iters: 0, Total loss: 0.010
+[2024-08-26 13:52:13,949][    INFO] Iters: 11, Total loss: 0.014
+[2024-08-26 13:52:16,851][    INFO] Iters: 22, Total loss: 0.013
+[2024-08-26 13:52:19,757][    INFO] Iters: 33, Total loss: 0.013
+[2024-08-26 13:52:22,667][    INFO] Iters: 44, Total loss: 0.014
+[2024-08-26 13:52:25,576][    INFO] Iters: 55, Total loss: 0.014
+[2024-08-26 13:52:28,480][    INFO] Iters: 66, Total loss: 0.014
+[2024-08-26 13:52:31,383][    INFO] Iters: 77, Total loss: 0.014
+[2024-08-26 13:52:34,285][    INFO] Iters: 88, Total loss: 0.014
+[2024-08-26 13:52:42,774][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 94.98
+[2024-08-26 13:52:42,774][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 91.08
+[2024-08-26 13:52:42,774][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 70.34
+[2024-08-26 13:52:42,774][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 92.20
+[2024-08-26 13:52:42,774][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 67.61
+[2024-08-26 13:52:42,774][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 80.47
+[2024-08-26 13:52:42,774][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 89.81
+[2024-08-26 13:52:42,774][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 82.20
+[2024-08-26 13:52:42,774][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 89.38
+[2024-08-26 13:52:42,774][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 41.73
+[2024-08-26 13:52:42,774][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 75.37
+[2024-08-26 13:52:42,774][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 41.55
+[2024-08-26 13:52:42,774][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 85.31
+[2024-08-26 13:52:42,774][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 80.70
+[2024-08-26 13:52:42,774][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 85.86
+[2024-08-26 13:52:42,774][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 88.65
+[2024-08-26 13:52:42,774][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 48.66
+[2024-08-26 13:52:42,774][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 68.26
+[2024-08-26 13:52:42,774][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 52.78
+[2024-08-26 13:52:42,774][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 84.77
+[2024-08-26 13:52:42,774][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 65.81
+[2024-08-26 13:52:42,774][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 75.12
+
+[2024-08-26 13:52:44,061][    INFO] ===========> Epoch: 19, LR: 0.00000, Previous best: 75.35
+[2024-08-26 13:52:44,633][    INFO] Iters: 0, Total loss: 0.018
+[2024-08-26 13:52:47,536][    INFO] Iters: 11, Total loss: 0.016
+[2024-08-26 13:52:50,432][    INFO] Iters: 22, Total loss: 0.015
+[2024-08-26 13:52:53,336][    INFO] Iters: 33, Total loss: 0.015
+[2024-08-26 13:52:56,238][    INFO] Iters: 44, Total loss: 0.014
+[2024-08-26 13:52:59,145][    INFO] Iters: 55, Total loss: 0.014
+[2024-08-26 13:53:02,043][    INFO] Iters: 66, Total loss: 0.014
+[2024-08-26 13:53:04,945][    INFO] Iters: 77, Total loss: 0.014
+[2024-08-26 13:53:07,846][    INFO] Iters: 88, Total loss: 0.014
+[2024-08-26 13:53:16,301][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 95.04
+[2024-08-26 13:53:16,301][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 91.19
+[2024-08-26 13:53:16,301][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 70.62
+[2024-08-26 13:53:16,301][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 92.30
+[2024-08-26 13:53:16,301][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 70.35
+[2024-08-26 13:53:16,301][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 80.83
+[2024-08-26 13:53:16,301][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 90.50
+[2024-08-26 13:53:16,301][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 83.17
+[2024-08-26 13:53:16,301][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 89.19
+[2024-08-26 13:53:16,301][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 41.56
+[2024-08-26 13:53:16,301][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 74.95
+[2024-08-26 13:53:16,302][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 42.58
+[2024-08-26 13:53:16,302][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 85.27
+[2024-08-26 13:53:16,302][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 80.52
+[2024-08-26 13:53:16,302][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 86.92
+[2024-08-26 13:53:16,302][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 89.02
+[2024-08-26 13:53:16,302][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 51.43
+[2024-08-26 13:53:16,302][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 67.05
+[2024-08-26 13:53:16,302][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 52.96
+[2024-08-26 13:53:16,302][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 84.49
+[2024-08-26 13:53:16,302][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 65.77
+[2024-08-26 13:53:16,302][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 75.51
+
+[2024-08-26 13:53:18,906][    INFO] ===========> Epoch: 20, LR: 0.00000, Previous best: 75.51
+[2024-08-26 13:53:19,501][    INFO] Iters: 0, Total loss: 0.018
+[2024-08-26 13:53:22,412][    INFO] Iters: 11, Total loss: 0.014
+[2024-08-26 13:53:25,323][    INFO] Iters: 22, Total loss: 0.014
+[2024-08-26 13:53:28,239][    INFO] Iters: 33, Total loss: 0.013
+[2024-08-26 13:53:31,153][    INFO] Iters: 44, Total loss: 0.013
+[2024-08-26 13:53:34,068][    INFO] Iters: 55, Total loss: 0.013
+[2024-08-26 13:53:36,979][    INFO] Iters: 66, Total loss: 0.014
+[2024-08-26 13:53:39,893][    INFO] Iters: 77, Total loss: 0.014
+[2024-08-26 13:53:42,811][    INFO] Iters: 88, Total loss: 0.014
+[2024-08-26 13:53:51,294][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 95.04
+[2024-08-26 13:53:51,294][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 91.13
+[2024-08-26 13:53:51,294][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 69.78
+[2024-08-26 13:53:51,294][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 92.17
+[2024-08-26 13:53:51,294][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 70.15
+[2024-08-26 13:53:51,294][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 80.28
+[2024-08-26 13:53:51,294][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 90.70
+[2024-08-26 13:53:51,294][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 83.72
+[2024-08-26 13:53:51,294][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 88.93
+[2024-08-26 13:53:51,294][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 41.16
+[2024-08-26 13:53:51,294][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 75.27
+[2024-08-26 13:53:51,294][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 41.47
+[2024-08-26 13:53:51,294][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 85.15
+[2024-08-26 13:53:51,294][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 81.38
+[2024-08-26 13:53:51,294][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 87.09
+[2024-08-26 13:53:51,294][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 89.02
+[2024-08-26 13:53:51,294][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 51.33
+[2024-08-26 13:53:51,294][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 68.04
+[2024-08-26 13:53:51,294][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 52.40
+[2024-08-26 13:53:51,294][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 84.79
+[2024-08-26 13:53:51,294][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 65.60
+[2024-08-26 13:53:51,294][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 75.46
+
+[2024-08-26 13:53:52,562][    INFO] ===========> Epoch: 21, LR: 0.00000, Previous best: 75.51
+[2024-08-26 13:53:53,117][    INFO] Iters: 0, Total loss: 0.016
+[2024-08-26 13:53:56,025][    INFO] Iters: 11, Total loss: 0.011
+[2024-08-26 13:53:58,930][    INFO] Iters: 22, Total loss: 0.013
+[2024-08-26 13:54:01,831][    INFO] Iters: 33, Total loss: 0.012
+[2024-08-26 13:54:04,735][    INFO] Iters: 44, Total loss: 0.013
+[2024-08-26 13:54:07,637][    INFO] Iters: 55, Total loss: 0.013
+[2024-08-26 13:54:10,531][    INFO] Iters: 66, Total loss: 0.013
+[2024-08-26 13:54:13,434][    INFO] Iters: 77, Total loss: 0.013
+[2024-08-26 13:54:16,332][    INFO] Iters: 88, Total loss: 0.013
+[2024-08-26 13:54:24,997][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 95.01
+[2024-08-26 13:54:24,997][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 91.51
+[2024-08-26 13:54:24,997][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 70.55
+[2024-08-26 13:54:24,997][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 92.04
+[2024-08-26 13:54:24,997][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 70.00
+[2024-08-26 13:54:24,997][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 79.85
+[2024-08-26 13:54:24,997][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 91.26
+[2024-08-26 13:54:24,997][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 83.90
+[2024-08-26 13:54:24,997][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 88.66
+[2024-08-26 13:54:24,997][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 41.41
+[2024-08-26 13:54:24,997][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 74.68
+[2024-08-26 13:54:24,997][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 42.61
+[2024-08-26 13:54:24,997][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 84.76
+[2024-08-26 13:54:24,997][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 80.75
+[2024-08-26 13:54:24,997][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 86.86
+[2024-08-26 13:54:24,997][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 88.66
+[2024-08-26 13:54:24,997][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 47.19
+[2024-08-26 13:54:24,997][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 67.20
+[2024-08-26 13:54:24,997][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 52.13
+[2024-08-26 13:54:24,997][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 84.19
+[2024-08-26 13:54:24,997][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 66.76
+[2024-08-26 13:54:24,997][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 75.24
+
+[2024-08-26 13:54:26,233][    INFO] ===========> Epoch: 22, LR: 0.00000, Previous best: 75.51
+[2024-08-26 13:54:26,793][    INFO] Iters: 0, Total loss: 0.014
+[2024-08-26 13:54:29,695][    INFO] Iters: 11, Total loss: 0.013
+[2024-08-26 13:54:32,594][    INFO] Iters: 22, Total loss: 0.013
+[2024-08-26 13:54:35,506][    INFO] Iters: 33, Total loss: 0.013
+[2024-08-26 13:54:38,418][    INFO] Iters: 44, Total loss: 0.013
+[2024-08-26 13:54:41,336][    INFO] Iters: 55, Total loss: 0.013
+[2024-08-26 13:54:44,239][    INFO] Iters: 66, Total loss: 0.012
+[2024-08-26 13:54:47,146][    INFO] Iters: 77, Total loss: 0.012
+[2024-08-26 13:54:50,054][    INFO] Iters: 88, Total loss: 0.012
+[2024-08-26 13:54:58,632][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 95.07
+[2024-08-26 13:54:58,632][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 91.36
+[2024-08-26 13:54:58,632][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 70.01
+[2024-08-26 13:54:58,632][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 91.69
+[2024-08-26 13:54:58,632][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 71.13
+[2024-08-26 13:54:58,632][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 79.49
+[2024-08-26 13:54:58,632][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 90.95
+[2024-08-26 13:54:58,632][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 84.73
+[2024-08-26 13:54:58,632][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 88.81
+[2024-08-26 13:54:58,632][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 41.29
+[2024-08-26 13:54:58,632][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 75.19
+[2024-08-26 13:54:58,632][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 42.31
+[2024-08-26 13:54:58,632][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 84.84
+[2024-08-26 13:54:58,632][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 80.77
+[2024-08-26 13:54:58,632][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 87.16
+[2024-08-26 13:54:58,632][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 88.98
+[2024-08-26 13:54:58,632][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 52.57
+[2024-08-26 13:54:58,632][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 67.99
+[2024-08-26 13:54:58,632][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 52.90
+[2024-08-26 13:54:58,632][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 85.13
+[2024-08-26 13:54:58,632][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 65.77
+[2024-08-26 13:54:58,633][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 75.63
+
+[2024-08-26 13:55:01,126][    INFO] ===========> Epoch: 23, LR: 0.00000, Previous best: 75.63
+[2024-08-26 13:55:01,709][    INFO] Iters: 0, Total loss: 0.022
+[2024-08-26 13:55:04,613][    INFO] Iters: 11, Total loss: 0.013
+[2024-08-26 13:55:07,511][    INFO] Iters: 22, Total loss: 0.014
+[2024-08-26 13:55:10,414][    INFO] Iters: 33, Total loss: 0.012
+[2024-08-26 13:55:13,315][    INFO] Iters: 44, Total loss: 0.012
+[2024-08-26 13:55:16,220][    INFO] Iters: 55, Total loss: 0.012
+[2024-08-26 13:55:19,117][    INFO] Iters: 66, Total loss: 0.012
+[2024-08-26 13:55:22,022][    INFO] Iters: 77, Total loss: 0.012
+[2024-08-26 13:55:24,934][    INFO] Iters: 88, Total loss: 0.012
+[2024-08-26 13:55:33,431][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 95.08
+[2024-08-26 13:55:33,431][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 91.48
+[2024-08-26 13:55:33,431][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 68.37
+[2024-08-26 13:55:33,431][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 91.66
+[2024-08-26 13:55:33,431][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 69.89
+[2024-08-26 13:55:33,431][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 79.80
+[2024-08-26 13:55:33,431][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 90.79
+[2024-08-26 13:55:33,431][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 83.61
+[2024-08-26 13:55:33,431][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 88.76
+[2024-08-26 13:55:33,431][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 41.67
+[2024-08-26 13:55:33,431][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 74.41
+[2024-08-26 13:55:33,431][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 43.62
+[2024-08-26 13:55:33,431][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 84.89
+[2024-08-26 13:55:33,431][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 81.02
+[2024-08-26 13:55:33,431][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 87.15
+[2024-08-26 13:55:33,431][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 88.64
+[2024-08-26 13:55:33,431][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 50.45
+[2024-08-26 13:55:33,431][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 67.84
+[2024-08-26 13:55:33,431][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 53.18
+[2024-08-26 13:55:33,431][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 85.34
+[2024-08-26 13:55:33,431][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 66.60
+[2024-08-26 13:55:33,431][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 75.44
+
+[2024-08-26 13:55:34,682][    INFO] ===========> Epoch: 24, LR: 0.00000, Previous best: 75.63
+[2024-08-26 13:55:35,252][    INFO] Iters: 0, Total loss: 0.013
+[2024-08-26 13:55:38,168][    INFO] Iters: 11, Total loss: 0.011
+[2024-08-26 13:55:41,075][    INFO] Iters: 22, Total loss: 0.011
+[2024-08-26 13:55:43,972][    INFO] Iters: 33, Total loss: 0.011
+[2024-08-26 13:55:46,874][    INFO] Iters: 44, Total loss: 0.011
+[2024-08-26 13:55:49,784][    INFO] Iters: 55, Total loss: 0.011
+[2024-08-26 13:55:52,690][    INFO] Iters: 66, Total loss: 0.012
+[2024-08-26 13:55:55,596][    INFO] Iters: 77, Total loss: 0.012
+[2024-08-26 13:55:58,510][    INFO] Iters: 88, Total loss: 0.012
+[2024-08-26 13:56:07,261][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 95.04
+[2024-08-26 13:56:07,261][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 91.67
+[2024-08-26 13:56:07,261][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 69.24
+[2024-08-26 13:56:07,261][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 90.68
+[2024-08-26 13:56:07,261][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 69.93
+[2024-08-26 13:56:07,261][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 79.47
+[2024-08-26 13:56:07,261][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 90.72
+[2024-08-26 13:56:07,261][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 83.88
+[2024-08-26 13:56:07,261][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 89.08
+[2024-08-26 13:56:07,261][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 41.82
+[2024-08-26 13:56:07,261][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 74.72
+[2024-08-26 13:56:07,261][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 41.21
+[2024-08-26 13:56:07,261][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 85.39
+[2024-08-26 13:56:07,261][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 80.33
+[2024-08-26 13:56:07,261][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 87.26
+[2024-08-26 13:56:07,261][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 88.68
+[2024-08-26 13:56:07,261][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 52.82
+[2024-08-26 13:56:07,261][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 67.84
+[2024-08-26 13:56:07,261][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 52.20
+[2024-08-26 13:56:07,261][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 84.71
+[2024-08-26 13:56:07,261][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 66.72
+[2024-08-26 13:56:07,261][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 75.40
+
+[2024-08-26 13:56:08,510][    INFO] ===========> Epoch: 25, LR: 0.00000, Previous best: 75.63
+[2024-08-26 13:56:09,071][    INFO] Iters: 0, Total loss: 0.009
+[2024-08-26 13:56:11,981][    INFO] Iters: 11, Total loss: 0.011
+[2024-08-26 13:56:14,885][    INFO] Iters: 22, Total loss: 0.011
+[2024-08-26 13:56:17,796][    INFO] Iters: 33, Total loss: 0.011
+[2024-08-26 13:56:20,699][    INFO] Iters: 44, Total loss: 0.012
+[2024-08-26 13:56:23,613][    INFO] Iters: 55, Total loss: 0.012
+[2024-08-26 13:56:26,521][    INFO] Iters: 66, Total loss: 0.012
+[2024-08-26 13:56:29,434][    INFO] Iters: 77, Total loss: 0.012
+[2024-08-26 13:56:32,343][    INFO] Iters: 88, Total loss: 0.012
+[2024-08-26 13:56:40,828][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 95.02
+[2024-08-26 13:56:40,828][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 91.06
+[2024-08-26 13:56:40,828][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 70.26
+[2024-08-26 13:56:40,828][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 90.68
+[2024-08-26 13:56:40,828][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 69.25
+[2024-08-26 13:56:40,828][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 79.99
+[2024-08-26 13:56:40,828][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 90.74
+[2024-08-26 13:56:40,828][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 84.02
+[2024-08-26 13:56:40,828][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 88.77
+[2024-08-26 13:56:40,828][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 41.52
+[2024-08-26 13:56:40,828][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 74.31
+[2024-08-26 13:56:40,828][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 41.39
+[2024-08-26 13:56:40,828][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 85.15
+[2024-08-26 13:56:40,828][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 80.57
+[2024-08-26 13:56:40,828][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 87.35
+[2024-08-26 13:56:40,828][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 89.06
+[2024-08-26 13:56:40,829][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 49.11
+[2024-08-26 13:56:40,829][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 66.93
+[2024-08-26 13:56:40,829][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 50.74
+[2024-08-26 13:56:40,829][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 84.35
+[2024-08-26 13:56:40,829][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 67.65
+[2024-08-26 13:56:40,829][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 75.14
+
+[2024-08-26 13:56:42,087][    INFO] ===========> Epoch: 26, LR: 0.00000, Previous best: 75.63
+[2024-08-26 13:56:42,651][    INFO] Iters: 0, Total loss: 0.012
+[2024-08-26 13:56:45,555][    INFO] Iters: 11, Total loss: 0.012
+[2024-08-26 13:56:48,456][    INFO] Iters: 22, Total loss: 0.012
+[2024-08-26 13:56:51,363][    INFO] Iters: 33, Total loss: 0.012
+[2024-08-26 13:56:54,267][    INFO] Iters: 44, Total loss: 0.011
+[2024-08-26 13:56:57,167][    INFO] Iters: 55, Total loss: 0.011
+[2024-08-26 13:57:00,072][    INFO] Iters: 66, Total loss: 0.011
+[2024-08-26 13:57:02,977][    INFO] Iters: 77, Total loss: 0.011
+[2024-08-26 13:57:05,874][    INFO] Iters: 88, Total loss: 0.010
+[2024-08-26 13:57:14,519][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 95.05
+[2024-08-26 13:57:14,519][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 91.67
+[2024-08-26 13:57:14,519][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 70.25
+[2024-08-26 13:57:14,519][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 90.68
+[2024-08-26 13:57:14,519][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 70.13
+[2024-08-26 13:57:14,519][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 79.98
+[2024-08-26 13:57:14,519][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 90.86
+[2024-08-26 13:57:14,519][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 83.92
+[2024-08-26 13:57:14,519][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 88.60
+[2024-08-26 13:57:14,519][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 41.02
+[2024-08-26 13:57:14,519][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 74.70
+[2024-08-26 13:57:14,520][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 41.97
+[2024-08-26 13:57:14,520][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 84.80
+[2024-08-26 13:57:14,520][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 80.50
+[2024-08-26 13:57:14,520][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 87.18
+[2024-08-26 13:57:14,520][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 88.99
+[2024-08-26 13:57:14,520][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 50.00
+[2024-08-26 13:57:14,520][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 67.41
+[2024-08-26 13:57:14,520][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 51.48
+[2024-08-26 13:57:14,520][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 84.16
+[2024-08-26 13:57:14,520][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 66.77
+[2024-08-26 13:57:14,520][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 75.24
+
+[2024-08-26 13:57:15,758][    INFO] ===========> Epoch: 27, LR: 0.00000, Previous best: 75.63
+[2024-08-26 13:57:16,317][    INFO] Iters: 0, Total loss: 0.006
+[2024-08-26 13:57:19,220][    INFO] Iters: 11, Total loss: 0.011
+[2024-08-26 13:57:22,130][    INFO] Iters: 22, Total loss: 0.012
+[2024-08-26 13:57:25,037][    INFO] Iters: 33, Total loss: 0.011
+[2024-08-26 13:57:27,948][    INFO] Iters: 44, Total loss: 0.011
+[2024-08-26 13:57:30,854][    INFO] Iters: 55, Total loss: 0.011
+[2024-08-26 13:57:33,755][    INFO] Iters: 66, Total loss: 0.011
+[2024-08-26 13:57:36,663][    INFO] Iters: 77, Total loss: 0.011
+[2024-08-26 13:57:39,571][    INFO] Iters: 88, Total loss: 0.011
+[2024-08-26 13:57:48,175][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 95.04
+[2024-08-26 13:57:48,176][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 91.78
+[2024-08-26 13:57:48,176][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 68.94
+[2024-08-26 13:57:48,176][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 89.46
+[2024-08-26 13:57:48,176][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 70.45
+[2024-08-26 13:57:48,176][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 79.93
+[2024-08-26 13:57:48,176][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 91.59
+[2024-08-26 13:57:48,176][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 85.69
+[2024-08-26 13:57:48,176][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 88.50
+[2024-08-26 13:57:48,176][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 41.16
+[2024-08-26 13:57:48,176][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 73.62
+[2024-08-26 13:57:48,176][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 42.33
+[2024-08-26 13:57:48,176][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 84.71
+[2024-08-26 13:57:48,176][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 80.59
+[2024-08-26 13:57:48,176][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 87.35
+[2024-08-26 13:57:48,176][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 89.12
+[2024-08-26 13:57:48,176][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 51.40
+[2024-08-26 13:57:48,176][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 66.38
+[2024-08-26 13:57:48,176][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 50.60
+[2024-08-26 13:57:48,176][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 85.71
+[2024-08-26 13:57:48,176][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 67.34
+[2024-08-26 13:57:48,176][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 75.32
+
+[2024-08-26 13:57:49,458][    INFO] ===========> Epoch: 28, LR: 0.00000, Previous best: 75.63
+[2024-08-26 13:57:50,028][    INFO] Iters: 0, Total loss: 0.011
+[2024-08-26 13:57:52,931][    INFO] Iters: 11, Total loss: 0.012
+[2024-08-26 13:57:55,830][    INFO] Iters: 22, Total loss: 0.012
+[2024-08-26 13:57:58,730][    INFO] Iters: 33, Total loss: 0.011
+[2024-08-26 13:58:01,640][    INFO] Iters: 44, Total loss: 0.011
+[2024-08-26 13:58:04,556][    INFO] Iters: 55, Total loss: 0.011
+[2024-08-26 13:58:07,468][    INFO] Iters: 66, Total loss: 0.011
+[2024-08-26 13:58:10,383][    INFO] Iters: 77, Total loss: 0.011
+[2024-08-26 13:58:13,300][    INFO] Iters: 88, Total loss: 0.011
+[2024-08-26 13:58:21,884][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 94.94
+[2024-08-26 13:58:21,885][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 91.29
+[2024-08-26 13:58:21,885][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 69.60
+[2024-08-26 13:58:21,885][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 89.01
+[2024-08-26 13:58:21,885][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 68.36
+[2024-08-26 13:58:21,885][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 80.04
+[2024-08-26 13:58:21,885][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 90.22
+[2024-08-26 13:58:21,885][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 84.94
+[2024-08-26 13:58:21,885][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 88.51
+[2024-08-26 13:58:21,885][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 40.68
+[2024-08-26 13:58:21,885][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 74.57
+[2024-08-26 13:58:21,885][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 40.43
+[2024-08-26 13:58:21,885][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 84.69
+[2024-08-26 13:58:21,885][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 80.34
+[2024-08-26 13:58:21,885][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 87.48
+[2024-08-26 13:58:21,885][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 88.90
+[2024-08-26 13:58:21,885][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 49.65
+[2024-08-26 13:58:21,885][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 66.94
+[2024-08-26 13:58:21,885][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 49.78
+[2024-08-26 13:58:21,885][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 84.00
+[2024-08-26 13:58:21,885][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 66.06
+[2024-08-26 13:58:21,885][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 74.78
+
+[2024-08-26 13:58:23,154][    INFO] ===========> Epoch: 29, LR: 0.00000, Previous best: 75.63
+[2024-08-26 13:58:23,724][    INFO] Iters: 0, Total loss: 0.009
+[2024-08-26 13:58:26,636][    INFO] Iters: 11, Total loss: 0.010
+[2024-08-26 13:58:29,538][    INFO] Iters: 22, Total loss: 0.010
+[2024-08-26 13:58:32,447][    INFO] Iters: 33, Total loss: 0.009
+[2024-08-26 13:58:35,359][    INFO] Iters: 44, Total loss: 0.010
+[2024-08-26 13:58:38,267][    INFO] Iters: 55, Total loss: 0.010
+[2024-08-26 13:58:41,170][    INFO] Iters: 66, Total loss: 0.010
+[2024-08-26 13:58:44,078][    INFO] Iters: 77, Total loss: 0.010
+[2024-08-26 13:58:46,983][    INFO] Iters: 88, Total loss: 0.009
+[2024-08-26 13:58:55,558][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 94.99
+[2024-08-26 13:58:55,558][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 92.01
+[2024-08-26 13:58:55,558][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 68.34
+[2024-08-26 13:58:55,558][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 88.90
+[2024-08-26 13:58:55,558][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 72.20
+[2024-08-26 13:58:55,558][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 78.85
+[2024-08-26 13:58:55,558][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 91.28
+[2024-08-26 13:58:55,558][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 85.02
+[2024-08-26 13:58:55,558][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 88.79
+[2024-08-26 13:58:55,558][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 40.48
+[2024-08-26 13:58:55,558][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 72.87
+[2024-08-26 13:58:55,558][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 35.16
+[2024-08-26 13:58:55,558][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 85.79
+[2024-08-26 13:58:55,558][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 80.44
+[2024-08-26 13:58:55,558][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 88.09
+[2024-08-26 13:58:55,558][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 89.23
+[2024-08-26 13:58:55,558][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 49.82
+[2024-08-26 13:58:55,558][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 65.65
+[2024-08-26 13:58:55,558][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 50.08
+[2024-08-26 13:58:55,558][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 84.58
+[2024-08-26 13:58:55,558][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 67.55
+[2024-08-26 13:58:55,558][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 74.77
+
+[2024-08-26 13:58:56,814][    INFO] ===========> Epoch: 30, LR: 0.00000, Previous best: 75.63
+[2024-08-26 13:58:57,372][    INFO] Iters: 0, Total loss: 0.011
+[2024-08-26 13:59:00,282][    INFO] Iters: 11, Total loss: 0.010
+[2024-08-26 13:59:03,195][    INFO] Iters: 22, Total loss: 0.009
+[2024-08-26 13:59:06,107][    INFO] Iters: 33, Total loss: 0.009
+[2024-08-26 13:59:09,019][    INFO] Iters: 44, Total loss: 0.009
+[2024-08-26 13:59:11,929][    INFO] Iters: 55, Total loss: 0.010
+[2024-08-26 13:59:14,831][    INFO] Iters: 66, Total loss: 0.010
+[2024-08-26 13:59:17,738][    INFO] Iters: 77, Total loss: 0.010
+[2024-08-26 13:59:20,649][    INFO] Iters: 88, Total loss: 0.010
+[2024-08-26 13:59:29,410][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 95.03
+[2024-08-26 13:59:29,410][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 91.51
+[2024-08-26 13:59:29,410][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 69.18
+[2024-08-26 13:59:29,410][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 88.98
+[2024-08-26 13:59:29,410][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 71.34
+[2024-08-26 13:59:29,410][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 79.47
+[2024-08-26 13:59:29,410][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 91.65
+[2024-08-26 13:59:29,410][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 85.25
+[2024-08-26 13:59:29,410][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 89.18
+[2024-08-26 13:59:29,410][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 40.27
+[2024-08-26 13:59:29,410][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 74.17
+[2024-08-26 13:59:29,410][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 40.73
+[2024-08-26 13:59:29,410][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 85.75
+[2024-08-26 13:59:29,410][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 80.27
+[2024-08-26 13:59:29,410][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 87.99
+[2024-08-26 13:59:29,410][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 89.44
+[2024-08-26 13:59:29,410][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 49.01
+[2024-08-26 13:59:29,410][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 66.48
+[2024-08-26 13:59:29,410][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 50.67
+[2024-08-26 13:59:29,410][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 83.96
+[2024-08-26 13:59:29,410][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 67.46
+[2024-08-26 13:59:29,410][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 75.13
+
+[2024-08-26 13:59:30,687][    INFO] ===========> Epoch: 31, LR: 0.00000, Previous best: 75.63
+[2024-08-26 13:59:31,261][    INFO] Iters: 0, Total loss: 0.004
+[2024-08-26 13:59:34,165][    INFO] Iters: 11, Total loss: 0.007
+[2024-08-26 13:59:37,060][    INFO] Iters: 22, Total loss: 0.009
+[2024-08-26 13:59:39,972][    INFO] Iters: 33, Total loss: 0.009
+[2024-08-26 13:59:42,872][    INFO] Iters: 44, Total loss: 0.009
+[2024-08-26 13:59:45,772][    INFO] Iters: 55, Total loss: 0.009
+[2024-08-26 13:59:48,668][    INFO] Iters: 66, Total loss: 0.009
+[2024-08-26 13:59:51,569][    INFO] Iters: 77, Total loss: 0.009
+[2024-08-26 13:59:54,476][    INFO] Iters: 88, Total loss: 0.009
+[2024-08-26 14:00:03,053][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 94.98
+[2024-08-26 14:00:03,053][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 91.46
+[2024-08-26 14:00:03,053][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 69.84
+[2024-08-26 14:00:03,053][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 88.53
+[2024-08-26 14:00:03,053][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 70.13
+[2024-08-26 14:00:03,053][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 79.72
+[2024-08-26 14:00:03,053][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 91.70
+[2024-08-26 14:00:03,053][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 84.74
+[2024-08-26 14:00:03,053][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 88.32
+[2024-08-26 14:00:03,053][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 40.42
+[2024-08-26 14:00:03,053][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 73.44
+[2024-08-26 14:00:03,053][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 40.41
+[2024-08-26 14:00:03,053][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 85.25
+[2024-08-26 14:00:03,053][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 80.03
+[2024-08-26 14:00:03,053][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 87.75
+[2024-08-26 14:00:03,053][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 88.88
+[2024-08-26 14:00:03,053][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 49.46
+[2024-08-26 14:00:03,053][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 66.12
+[2024-08-26 14:00:03,053][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 50.29
+[2024-08-26 14:00:03,053][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 83.84
+[2024-08-26 14:00:03,054][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 66.28
+[2024-08-26 14:00:03,054][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 74.84
+
+[2024-08-26 14:00:04,294][    INFO] ===========> Epoch: 32, LR: 0.00000, Previous best: 75.63
+[2024-08-26 14:00:04,855][    INFO] Iters: 0, Total loss: 0.014
+[2024-08-26 14:00:07,755][    INFO] Iters: 11, Total loss: 0.009
+[2024-08-26 14:00:10,650][    INFO] Iters: 22, Total loss: 0.009
+[2024-08-26 14:00:13,551][    INFO] Iters: 33, Total loss: 0.009
+[2024-08-26 14:00:16,451][    INFO] Iters: 44, Total loss: 0.009
+[2024-08-26 14:00:19,347][    INFO] Iters: 55, Total loss: 0.009
+[2024-08-26 14:00:22,244][    INFO] Iters: 66, Total loss: 0.009
+[2024-08-26 14:00:25,145][    INFO] Iters: 77, Total loss: 0.009
+[2024-08-26 14:00:28,046][    INFO] Iters: 88, Total loss: 0.009
+[2024-08-26 14:00:36,430][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 94.99
+[2024-08-26 14:00:36,430][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 91.68
+[2024-08-26 14:00:36,430][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 69.67
+[2024-08-26 14:00:36,430][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 88.26
+[2024-08-26 14:00:36,430][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 70.39
+[2024-08-26 14:00:36,430][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 79.87
+[2024-08-26 14:00:36,430][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 91.13
+[2024-08-26 14:00:36,430][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 84.47
+[2024-08-26 14:00:36,430][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 87.89
+[2024-08-26 14:00:36,430][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 39.88
+[2024-08-26 14:00:36,431][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 74.74
+[2024-08-26 14:00:36,431][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 39.66
+[2024-08-26 14:00:36,431][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 85.06
+[2024-08-26 14:00:36,431][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 80.72
+[2024-08-26 14:00:36,431][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 88.37
+[2024-08-26 14:00:36,431][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 88.95
+[2024-08-26 14:00:36,431][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 48.14
+[2024-08-26 14:00:36,431][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 65.76
+[2024-08-26 14:00:36,431][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 49.45
+[2024-08-26 14:00:36,431][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 83.97
+[2024-08-26 14:00:36,431][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 66.34
+[2024-08-26 14:00:36,431][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 74.73
+
+[2024-08-26 14:00:37,691][    INFO] ===========> Epoch: 33, LR: 0.00000, Previous best: 75.63
+[2024-08-26 14:00:38,289][    INFO] Iters: 0, Total loss: 0.010
+[2024-08-26 14:00:41,191][    INFO] Iters: 11, Total loss: 0.010
+[2024-08-26 14:00:44,092][    INFO] Iters: 22, Total loss: 0.010
+[2024-08-26 14:00:46,994][    INFO] Iters: 33, Total loss: 0.010
+[2024-08-26 14:00:49,899][    INFO] Iters: 44, Total loss: 0.009
+[2024-08-26 14:00:52,801][    INFO] Iters: 55, Total loss: 0.009
+[2024-08-26 14:00:55,698][    INFO] Iters: 66, Total loss: 0.009
+[2024-08-26 14:00:58,600][    INFO] Iters: 77, Total loss: 0.009
+[2024-08-26 14:01:01,506][    INFO] Iters: 88, Total loss: 0.009
+[2024-08-26 14:01:09,959][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 95.09
+[2024-08-26 14:01:09,959][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 91.91
+[2024-08-26 14:01:09,959][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 69.57
+[2024-08-26 14:01:09,959][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 88.24
+[2024-08-26 14:01:09,959][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 71.01
+[2024-08-26 14:01:09,959][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 79.76
+[2024-08-26 14:01:09,959][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 91.21
+[2024-08-26 14:01:09,959][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 85.28
+[2024-08-26 14:01:09,959][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 88.02
+[2024-08-26 14:01:09,959][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 40.41
+[2024-08-26 14:01:09,959][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 73.68
+[2024-08-26 14:01:09,959][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 41.35
+[2024-08-26 14:01:09,959][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 85.48
+[2024-08-26 14:01:09,959][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 80.48
+[2024-08-26 14:01:09,959][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 88.60
+[2024-08-26 14:01:09,959][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 89.33
+[2024-08-26 14:01:09,959][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 51.47
+[2024-08-26 14:01:09,959][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 64.75
+[2024-08-26 14:01:09,959][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 51.43
+[2024-08-26 14:01:09,959][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 84.85
+[2024-08-26 14:01:09,959][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 66.20
+[2024-08-26 14:01:09,959][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 75.15
+
+[2024-08-26 14:01:11,229][    INFO] ===========> Epoch: 34, LR: 0.00000, Previous best: 75.63
+[2024-08-26 14:01:11,790][    INFO] Iters: 0, Total loss: 0.010
+[2024-08-26 14:01:14,697][    INFO] Iters: 11, Total loss: 0.012
+[2024-08-26 14:01:17,597][    INFO] Iters: 22, Total loss: 0.012
+[2024-08-26 14:01:20,501][    INFO] Iters: 33, Total loss: 0.011
+[2024-08-26 14:01:23,407][    INFO] Iters: 44, Total loss: 0.010
+[2024-08-26 14:01:26,307][    INFO] Iters: 55, Total loss: 0.010
+[2024-08-26 14:01:29,208][    INFO] Iters: 66, Total loss: 0.010
+[2024-08-26 14:01:32,111][    INFO] Iters: 77, Total loss: 0.010
+[2024-08-26 14:01:35,016][    INFO] Iters: 88, Total loss: 0.010
+[2024-08-26 14:01:43,578][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 95.03
+[2024-08-26 14:01:43,578][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 91.43
+[2024-08-26 14:01:43,578][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 70.43
+[2024-08-26 14:01:43,578][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 88.03
+[2024-08-26 14:01:43,578][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 69.29
+[2024-08-26 14:01:43,578][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 81.19
+[2024-08-26 14:01:43,578][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 91.77
+[2024-08-26 14:01:43,578][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 85.04
+[2024-08-26 14:01:43,578][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 87.79
+[2024-08-26 14:01:43,578][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 38.60
+[2024-08-26 14:01:43,578][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 71.87
+[2024-08-26 14:01:43,578][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 42.04
+[2024-08-26 14:01:43,578][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 85.09
+[2024-08-26 14:01:43,578][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 80.38
+[2024-08-26 14:01:43,578][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 88.80
+[2024-08-26 14:01:43,578][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 89.43
+[2024-08-26 14:01:43,578][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 48.07
+[2024-08-26 14:01:43,578][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 63.48
+[2024-08-26 14:01:43,579][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 48.60
+[2024-08-26 14:01:43,579][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 84.25
+[2024-08-26 14:01:43,579][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 66.51
+[2024-08-26 14:01:43,579][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 74.62
+
+[2024-08-26 14:01:44,829][    INFO] ===========> Epoch: 35, LR: 0.00000, Previous best: 75.63
+[2024-08-26 14:01:45,387][    INFO] Iters: 0, Total loss: 0.004
+[2024-08-26 14:01:48,282][    INFO] Iters: 11, Total loss: 0.009
+[2024-08-26 14:01:51,178][    INFO] Iters: 22, Total loss: 0.010
+[2024-08-26 14:01:54,081][    INFO] Iters: 33, Total loss: 0.010
+[2024-08-26 14:01:56,986][    INFO] Iters: 44, Total loss: 0.010
+[2024-08-26 14:01:59,888][    INFO] Iters: 55, Total loss: 0.009
+[2024-08-26 14:02:02,786][    INFO] Iters: 66, Total loss: 0.009
+[2024-08-26 14:02:05,689][    INFO] Iters: 77, Total loss: 0.009
+[2024-08-26 14:02:08,590][    INFO] Iters: 88, Total loss: 0.009
+[2024-08-26 14:02:17,201][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 95.01
+[2024-08-26 14:02:17,201][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 91.48
+[2024-08-26 14:02:17,201][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 70.06
+[2024-08-26 14:02:17,201][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 88.56
+[2024-08-26 14:02:17,201][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 70.26
+[2024-08-26 14:02:17,201][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 80.08
+[2024-08-26 14:02:17,201][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 92.06
+[2024-08-26 14:02:17,201][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 84.90
+[2024-08-26 14:02:17,201][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 87.83
+[2024-08-26 14:02:17,201][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 39.84
+[2024-08-26 14:02:17,201][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 73.49
+[2024-08-26 14:02:17,201][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 40.55
+[2024-08-26 14:02:17,201][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 84.53
+[2024-08-26 14:02:17,201][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 80.16
+[2024-08-26 14:02:17,201][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 88.48
+[2024-08-26 14:02:17,201][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 88.82
+[2024-08-26 14:02:17,201][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 46.71
+[2024-08-26 14:02:17,201][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 65.68
+[2024-08-26 14:02:17,201][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 50.42
+[2024-08-26 14:02:17,201][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 84.17
+[2024-08-26 14:02:17,201][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 66.51
+[2024-08-26 14:02:17,201][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 74.74
+
+[2024-08-26 14:02:18,450][    INFO] ===========> Epoch: 36, LR: 0.00000, Previous best: 75.63
+[2024-08-26 14:02:19,068][    INFO] Iters: 0, Total loss: 0.005
+[2024-08-26 14:02:21,970][    INFO] Iters: 11, Total loss: 0.009
+[2024-08-26 14:02:24,867][    INFO] Iters: 22, Total loss: 0.009
+[2024-08-26 14:02:27,772][    INFO] Iters: 33, Total loss: 0.009
+[2024-08-26 14:02:30,683][    INFO] Iters: 44, Total loss: 0.008
+[2024-08-26 14:02:33,586][    INFO] Iters: 55, Total loss: 0.008
+[2024-08-26 14:02:36,486][    INFO] Iters: 66, Total loss: 0.008
+[2024-08-26 14:02:39,391][    INFO] Iters: 77, Total loss: 0.008
+[2024-08-26 14:02:42,294][    INFO] Iters: 88, Total loss: 0.008
+[2024-08-26 14:02:50,848][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 95.01
+[2024-08-26 14:02:50,848][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 91.87
+[2024-08-26 14:02:50,848][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 68.81
+[2024-08-26 14:02:50,848][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 88.81
+[2024-08-26 14:02:50,848][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 71.01
+[2024-08-26 14:02:50,848][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 79.99
+[2024-08-26 14:02:50,848][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 91.70
+[2024-08-26 14:02:50,848][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 84.33
+[2024-08-26 14:02:50,848][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 87.96
+[2024-08-26 14:02:50,848][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 40.10
+[2024-08-26 14:02:50,848][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 72.97
+[2024-08-26 14:02:50,848][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 40.49
+[2024-08-26 14:02:50,848][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 85.22
+[2024-08-26 14:02:50,848][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 80.21
+[2024-08-26 14:02:50,848][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 88.64
+[2024-08-26 14:02:50,848][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 89.11
+[2024-08-26 14:02:50,848][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 49.53
+[2024-08-26 14:02:50,848][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 64.98
+[2024-08-26 14:02:50,849][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 51.39
+[2024-08-26 14:02:50,849][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 83.04
+[2024-08-26 14:02:50,849][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 66.72
+[2024-08-26 14:02:50,849][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 74.85
+
+[2024-08-26 14:02:52,081][    INFO] ===========> Epoch: 37, LR: 0.00000, Previous best: 75.63
+[2024-08-26 14:02:52,651][    INFO] Iters: 0, Total loss: 0.005
+[2024-08-26 14:02:55,548][    INFO] Iters: 11, Total loss: 0.010
+[2024-08-26 14:02:58,446][    INFO] Iters: 22, Total loss: 0.009
+[2024-08-26 14:03:01,366][    INFO] Iters: 33, Total loss: 0.009
+[2024-08-26 14:03:04,282][    INFO] Iters: 44, Total loss: 0.009
+[2024-08-26 14:03:07,197][    INFO] Iters: 55, Total loss: 0.009
+[2024-08-26 14:03:10,107][    INFO] Iters: 66, Total loss: 0.009
+[2024-08-26 14:03:13,018][    INFO] Iters: 77, Total loss: 0.009
+[2024-08-26 14:03:15,927][    INFO] Iters: 88, Total loss: 0.009
+[2024-08-26 14:03:24,369][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 94.93
+[2024-08-26 14:03:24,369][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 91.52
+[2024-08-26 14:03:24,369][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 69.96
+[2024-08-26 14:03:24,369][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 87.68
+[2024-08-26 14:03:24,369][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 70.66
+[2024-08-26 14:03:24,369][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 79.78
+[2024-08-26 14:03:24,369][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 91.65
+[2024-08-26 14:03:24,369][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 85.22
+[2024-08-26 14:03:24,369][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 87.89
+[2024-08-26 14:03:24,369][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 39.91
+[2024-08-26 14:03:24,369][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 71.49
+[2024-08-26 14:03:24,369][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 38.67
+[2024-08-26 14:03:24,369][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 84.99
+[2024-08-26 14:03:24,369][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 79.90
+[2024-08-26 14:03:24,369][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 88.53
+[2024-08-26 14:03:24,369][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 88.42
+[2024-08-26 14:03:24,369][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 49.50
+[2024-08-26 14:03:24,369][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 64.20
+[2024-08-26 14:03:24,369][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 50.92
+[2024-08-26 14:03:24,369][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 83.15
+[2024-08-26 14:03:24,369][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 66.32
+[2024-08-26 14:03:24,369][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 74.54
+
+[2024-08-26 14:03:25,612][    INFO] ===========> Epoch: 38, LR: 0.00000, Previous best: 75.63
+[2024-08-26 14:03:26,176][    INFO] Iters: 0, Total loss: 0.015
+[2024-08-26 14:03:29,074][    INFO] Iters: 11, Total loss: 0.008
+[2024-08-26 14:03:31,969][    INFO] Iters: 22, Total loss: 0.008
+[2024-08-26 14:03:34,872][    INFO] Iters: 33, Total loss: 0.008
+[2024-08-26 14:03:37,771][    INFO] Iters: 44, Total loss: 0.008
+[2024-08-26 14:03:40,668][    INFO] Iters: 55, Total loss: 0.008
+[2024-08-26 14:03:43,561][    INFO] Iters: 66, Total loss: 0.008
+[2024-08-26 14:03:46,459][    INFO] Iters: 77, Total loss: 0.008
+[2024-08-26 14:03:49,355][    INFO] Iters: 88, Total loss: 0.008
+[2024-08-26 14:03:57,818][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 94.96
+[2024-08-26 14:03:57,818][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 91.67
+[2024-08-26 14:03:57,818][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 68.77
+[2024-08-26 14:03:57,818][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 87.13
+[2024-08-26 14:03:57,818][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 69.37
+[2024-08-26 14:03:57,818][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 79.54
+[2024-08-26 14:03:57,818][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 91.42
+[2024-08-26 14:03:57,818][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 84.71
+[2024-08-26 14:03:57,818][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 87.44
+[2024-08-26 14:03:57,818][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 39.49
+[2024-08-26 14:03:57,818][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 72.39
+[2024-08-26 14:03:57,818][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 40.26
+[2024-08-26 14:03:57,818][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 84.56
+[2024-08-26 14:03:57,818][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 79.99
+[2024-08-26 14:03:57,818][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 88.23
+[2024-08-26 14:03:57,818][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 88.61
+[2024-08-26 14:03:57,818][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 47.64
+[2024-08-26 14:03:57,818][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 65.14
+[2024-08-26 14:03:57,819][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 50.46
+[2024-08-26 14:03:57,819][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 84.20
+[2024-08-26 14:03:57,819][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 67.22
+[2024-08-26 14:03:57,819][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 74.44
+
+[2024-08-26 14:03:59,053][    INFO] ===========> Epoch: 39, LR: 0.00000, Previous best: 75.63
+[2024-08-26 14:03:59,633][    INFO] Iters: 0, Total loss: 0.007
+[2024-08-26 14:04:02,533][    INFO] Iters: 11, Total loss: 0.008
+[2024-08-26 14:04:05,429][    INFO] Iters: 22, Total loss: 0.008
+[2024-08-26 14:04:08,329][    INFO] Iters: 33, Total loss: 0.008
+[2024-08-26 14:04:11,232][    INFO] Iters: 44, Total loss: 0.008
+[2024-08-26 14:04:14,135][    INFO] Iters: 55, Total loss: 0.008
+[2024-08-26 14:04:17,034][    INFO] Iters: 66, Total loss: 0.008
+[2024-08-26 14:04:19,936][    INFO] Iters: 77, Total loss: 0.008
+[2024-08-26 14:04:22,837][    INFO] Iters: 88, Total loss: 0.008
+[2024-08-26 14:04:31,255][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 95.00
+[2024-08-26 14:04:31,255][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 91.62
+[2024-08-26 14:04:31,255][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 69.57
+[2024-08-26 14:04:31,255][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 87.48
+[2024-08-26 14:04:31,255][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 69.68
+[2024-08-26 14:04:31,255][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 80.07
+[2024-08-26 14:04:31,255][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 91.34
+[2024-08-26 14:04:31,255][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 85.85
+[2024-08-26 14:04:31,255][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 87.94
+[2024-08-26 14:04:31,255][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 39.25
+[2024-08-26 14:04:31,255][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 71.75
+[2024-08-26 14:04:31,255][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 41.09
+[2024-08-26 14:04:31,255][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 84.83
+[2024-08-26 14:04:31,255][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 80.20
+[2024-08-26 14:04:31,255][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 88.99
+[2024-08-26 14:04:31,255][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 88.89
+[2024-08-26 14:04:31,255][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 48.17
+[2024-08-26 14:04:31,255][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 63.80
+[2024-08-26 14:04:31,255][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 49.76
+[2024-08-26 14:04:31,255][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 84.62
+[2024-08-26 14:04:31,255][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 67.46
+[2024-08-26 14:04:31,255][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 74.64
+
+[2024-08-26 14:04:32,481][    INFO] ===========> Epoch: 40, LR: 0.00000, Previous best: 75.63
+[2024-08-26 14:04:33,036][    INFO] Iters: 0, Total loss: 0.007
+[2024-08-26 14:04:35,934][    INFO] Iters: 11, Total loss: 0.008
+[2024-08-26 14:04:38,827][    INFO] Iters: 22, Total loss: 0.008
+[2024-08-26 14:04:41,722][    INFO] Iters: 33, Total loss: 0.008
+[2024-08-26 14:04:44,623][    INFO] Iters: 44, Total loss: 0.008
+[2024-08-26 14:04:47,521][    INFO] Iters: 55, Total loss: 0.008
+[2024-08-26 14:04:50,412][    INFO] Iters: 66, Total loss: 0.008
+[2024-08-26 14:04:53,309][    INFO] Iters: 77, Total loss: 0.008
+[2024-08-26 14:04:56,205][    INFO] Iters: 88, Total loss: 0.008
+[2024-08-26 14:05:04,613][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 94.95
+[2024-08-26 14:05:04,613][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 91.54
+[2024-08-26 14:05:04,613][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 70.69
+[2024-08-26 14:05:04,613][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 88.85
+[2024-08-26 14:05:04,613][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 70.84
+[2024-08-26 14:05:04,614][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 80.35
+[2024-08-26 14:05:04,614][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 91.81
+[2024-08-26 14:05:04,614][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 85.53
+[2024-08-26 14:05:04,614][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 88.85
+[2024-08-26 14:05:04,614][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 40.03
+[2024-08-26 14:05:04,614][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 71.81
+[2024-08-26 14:05:04,614][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 39.28
+[2024-08-26 14:05:04,614][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 86.01
+[2024-08-26 14:05:04,614][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 80.00
+[2024-08-26 14:05:04,614][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 88.66
+[2024-08-26 14:05:04,614][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 89.39
+[2024-08-26 14:05:04,614][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 43.88
+[2024-08-26 14:05:04,614][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 61.72
+[2024-08-26 14:05:04,614][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 50.46
+[2024-08-26 14:05:04,614][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 84.13
+[2024-08-26 14:05:04,614][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 66.16
+[2024-08-26 14:05:04,614][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 74.52
+
+[2024-08-26 14:05:05,867][    INFO] ===========> Epoch: 41, LR: 0.00000, Previous best: 75.63
+[2024-08-26 14:05:06,421][    INFO] Iters: 0, Total loss: 0.013
+[2024-08-26 14:05:09,319][    INFO] Iters: 11, Total loss: 0.009
+[2024-08-26 14:05:12,212][    INFO] Iters: 22, Total loss: 0.009
+[2024-08-26 14:05:15,107][    INFO] Iters: 33, Total loss: 0.009
+[2024-08-26 14:05:18,004][    INFO] Iters: 44, Total loss: 0.009
+[2024-08-26 14:05:20,904][    INFO] Iters: 55, Total loss: 0.008
+[2024-08-26 14:05:23,798][    INFO] Iters: 66, Total loss: 0.008
+[2024-08-26 14:05:26,699][    INFO] Iters: 77, Total loss: 0.008
+[2024-08-26 14:05:29,597][    INFO] Iters: 88, Total loss: 0.008
+[2024-08-26 14:05:37,986][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 95.03
+[2024-08-26 14:05:37,986][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 91.69
+[2024-08-26 14:05:37,986][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 70.38
+[2024-08-26 14:05:37,986][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 87.90
+[2024-08-26 14:05:37,986][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 71.18
+[2024-08-26 14:05:37,986][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 79.77
+[2024-08-26 14:05:37,986][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 90.90
+[2024-08-26 14:05:37,986][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 84.99
+[2024-08-26 14:05:37,986][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 88.34
+[2024-08-26 14:05:37,986][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 40.18
+[2024-08-26 14:05:37,986][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 72.10
+[2024-08-26 14:05:37,986][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 39.13
+[2024-08-26 14:05:37,986][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 85.44
+[2024-08-26 14:05:37,986][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 80.41
+[2024-08-26 14:05:37,986][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 89.01
+[2024-08-26 14:05:37,986][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 88.97
+[2024-08-26 14:05:37,986][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 48.82
+[2024-08-26 14:05:37,986][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 64.24
+[2024-08-26 14:05:37,986][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 50.48
+[2024-08-26 14:05:37,986][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 84.81
+[2024-08-26 14:05:37,986][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 66.99
+[2024-08-26 14:05:37,986][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 74.80
+
+[2024-08-26 14:05:39,260][    INFO] ===========> Epoch: 42, LR: 0.00000, Previous best: 75.63
+[2024-08-26 14:05:39,816][    INFO] Iters: 0, Total loss: 0.004
+[2024-08-26 14:05:42,716][    INFO] Iters: 11, Total loss: 0.006
+[2024-08-26 14:05:45,610][    INFO] Iters: 22, Total loss: 0.007
+[2024-08-26 14:05:48,508][    INFO] Iters: 33, Total loss: 0.007
+[2024-08-26 14:05:51,408][    INFO] Iters: 44, Total loss: 0.007
+[2024-08-26 14:05:54,307][    INFO] Iters: 55, Total loss: 0.007
+[2024-08-26 14:05:57,204][    INFO] Iters: 66, Total loss: 0.008
+[2024-08-26 14:06:00,100][    INFO] Iters: 77, Total loss: 0.008
+[2024-08-26 14:06:02,998][    INFO] Iters: 88, Total loss: 0.008
+[2024-08-26 14:06:11,402][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 95.01
+[2024-08-26 14:06:11,402][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 91.66
+[2024-08-26 14:06:11,402][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 70.35
+[2024-08-26 14:06:11,402][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 88.45
+[2024-08-26 14:06:11,402][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 70.31
+[2024-08-26 14:06:11,402][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 79.27
+[2024-08-26 14:06:11,402][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 92.00
+[2024-08-26 14:06:11,402][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 85.50
+[2024-08-26 14:06:11,402][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 87.82
+[2024-08-26 14:06:11,402][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 40.23
+[2024-08-26 14:06:11,402][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 72.65
+[2024-08-26 14:06:11,402][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 39.86
+[2024-08-26 14:06:11,402][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 85.15
+[2024-08-26 14:06:11,402][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 80.24
+[2024-08-26 14:06:11,402][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 88.85
+[2024-08-26 14:06:11,402][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 89.26
+[2024-08-26 14:06:11,402][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 48.33
+[2024-08-26 14:06:11,402][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 64.72
+[2024-08-26 14:06:11,402][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 47.88
+[2024-08-26 14:06:11,402][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 83.60
+[2024-08-26 14:06:11,402][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 67.46
+[2024-08-26 14:06:11,402][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 74.70
+
+[2024-08-26 14:06:12,639][    INFO] ===========> Epoch: 43, LR: 0.00000, Previous best: 75.63
+[2024-08-26 14:06:13,228][    INFO] Iters: 0, Total loss: 0.008
+[2024-08-26 14:06:16,130][    INFO] Iters: 11, Total loss: 0.007
+[2024-08-26 14:06:19,027][    INFO] Iters: 22, Total loss: 0.007
+[2024-08-26 14:06:21,927][    INFO] Iters: 33, Total loss: 0.007
+[2024-08-26 14:06:24,827][    INFO] Iters: 44, Total loss: 0.007
+[2024-08-26 14:06:27,726][    INFO] Iters: 55, Total loss: 0.007
+[2024-08-26 14:06:30,625][    INFO] Iters: 66, Total loss: 0.007
+[2024-08-26 14:06:33,530][    INFO] Iters: 77, Total loss: 0.007
+[2024-08-26 14:06:36,434][    INFO] Iters: 88, Total loss: 0.007
+[2024-08-26 14:06:44,824][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 95.06
+[2024-08-26 14:06:44,824][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 91.51
+[2024-08-26 14:06:44,824][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 69.70
+[2024-08-26 14:06:44,824][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 88.28
+[2024-08-26 14:06:44,824][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 69.53
+[2024-08-26 14:06:44,824][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 79.75
+[2024-08-26 14:06:44,824][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 91.70
+[2024-08-26 14:06:44,824][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 86.14
+[2024-08-26 14:06:44,824][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 88.13
+[2024-08-26 14:06:44,824][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 40.41
+[2024-08-26 14:06:44,824][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 70.64
+[2024-08-26 14:06:44,824][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 40.48
+[2024-08-26 14:06:44,824][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 85.38
+[2024-08-26 14:06:44,824][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 79.93
+[2024-08-26 14:06:44,824][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 88.85
+[2024-08-26 14:06:44,824][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 88.81
+[2024-08-26 14:06:44,824][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 50.33
+[2024-08-26 14:06:44,824][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 63.60
+[2024-08-26 14:06:44,824][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 50.80
+[2024-08-26 14:06:44,824][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 84.87
+[2024-08-26 14:06:44,824][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 67.70
+[2024-08-26 14:06:44,824][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 74.84
+
+[2024-08-26 14:06:46,116][    INFO] ===========> Epoch: 44, LR: 0.00000, Previous best: 75.63
+[2024-08-26 14:06:46,703][    INFO] Iters: 0, Total loss: 0.010
+[2024-08-26 14:06:49,608][    INFO] Iters: 11, Total loss: 0.008
+[2024-08-26 14:06:52,510][    INFO] Iters: 22, Total loss: 0.008
+[2024-08-26 14:06:55,411][    INFO] Iters: 33, Total loss: 0.008
+[2024-08-26 14:06:58,315][    INFO] Iters: 44, Total loss: 0.008
+[2024-08-26 14:07:01,217][    INFO] Iters: 55, Total loss: 0.007
+[2024-08-26 14:07:04,115][    INFO] Iters: 66, Total loss: 0.007
+[2024-08-26 14:07:07,018][    INFO] Iters: 77, Total loss: 0.007
+[2024-08-26 14:07:09,921][    INFO] Iters: 88, Total loss: 0.007
+[2024-08-26 14:07:18,317][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 94.96
+[2024-08-26 14:07:18,317][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 91.54
+[2024-08-26 14:07:18,317][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 69.95
+[2024-08-26 14:07:18,317][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 88.06
+[2024-08-26 14:07:18,317][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 69.54
+[2024-08-26 14:07:18,317][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 79.74
+[2024-08-26 14:07:18,317][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 91.76
+[2024-08-26 14:07:18,317][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 85.88
+[2024-08-26 14:07:18,317][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 88.25
+[2024-08-26 14:07:18,317][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 39.50
+[2024-08-26 14:07:18,317][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 71.88
+[2024-08-26 14:07:18,317][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 39.24
+[2024-08-26 14:07:18,317][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 85.61
+[2024-08-26 14:07:18,317][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 80.29
+[2024-08-26 14:07:18,317][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 89.02
+[2024-08-26 14:07:18,317][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 88.61
+[2024-08-26 14:07:18,317][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 46.19
+[2024-08-26 14:07:18,317][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 64.00
+[2024-08-26 14:07:18,317][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 49.25
+[2024-08-26 14:07:18,317][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 84.05
+[2024-08-26 14:07:18,317][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 68.06
+[2024-08-26 14:07:18,317][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 74.54
+
+[2024-08-26 14:07:19,623][    INFO] ===========> Epoch: 45, LR: 0.00000, Previous best: 75.63
+[2024-08-26 14:07:20,189][    INFO] Iters: 0, Total loss: 0.003
+[2024-08-26 14:07:23,092][    INFO] Iters: 11, Total loss: 0.006
+[2024-08-26 14:07:25,990][    INFO] Iters: 22, Total loss: 0.006
+[2024-08-26 14:07:28,889][    INFO] Iters: 33, Total loss: 0.006
+[2024-08-26 14:07:31,788][    INFO] Iters: 44, Total loss: 0.007
+[2024-08-26 14:07:34,685][    INFO] Iters: 55, Total loss: 0.006
+[2024-08-26 14:07:37,579][    INFO] Iters: 66, Total loss: 0.007
+[2024-08-26 14:07:40,477][    INFO] Iters: 77, Total loss: 0.007
+[2024-08-26 14:07:43,375][    INFO] Iters: 88, Total loss: 0.007
+[2024-08-26 14:07:51,752][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 95.04
+[2024-08-26 14:07:51,753][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 91.43
+[2024-08-26 14:07:51,753][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 70.16
+[2024-08-26 14:07:51,753][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 87.96
+[2024-08-26 14:07:51,753][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 69.92
+[2024-08-26 14:07:51,753][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 80.22
+[2024-08-26 14:07:51,753][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 92.01
+[2024-08-26 14:07:51,753][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 85.83
+[2024-08-26 14:07:51,753][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 88.16
+[2024-08-26 14:07:51,753][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 39.90
+[2024-08-26 14:07:51,753][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 72.01
+[2024-08-26 14:07:51,753][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 41.11
+[2024-08-26 14:07:51,753][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 85.13
+[2024-08-26 14:07:51,753][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 80.16
+[2024-08-26 14:07:51,753][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 88.90
+[2024-08-26 14:07:51,753][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 88.71
+[2024-08-26 14:07:51,753][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 48.41
+[2024-08-26 14:07:51,753][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 65.23
+[2024-08-26 14:07:51,753][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 49.35
+[2024-08-26 14:07:51,753][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 84.67
+[2024-08-26 14:07:51,753][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 67.68
+[2024-08-26 14:07:51,753][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 74.86
+
+[2024-08-26 14:07:53,023][    INFO] ===========> Epoch: 46, LR: 0.00000, Previous best: 75.63
+[2024-08-26 14:07:53,575][    INFO] Iters: 0, Total loss: 0.002
+[2024-08-26 14:07:56,471][    INFO] Iters: 11, Total loss: 0.007
+[2024-08-26 14:07:59,365][    INFO] Iters: 22, Total loss: 0.007
+[2024-08-26 14:08:02,263][    INFO] Iters: 33, Total loss: 0.007
+[2024-08-26 14:08:05,159][    INFO] Iters: 44, Total loss: 0.006
+[2024-08-26 14:08:08,056][    INFO] Iters: 55, Total loss: 0.006
+[2024-08-26 14:08:10,948][    INFO] Iters: 66, Total loss: 0.006
+[2024-08-26 14:08:13,843][    INFO] Iters: 77, Total loss: 0.006
+[2024-08-26 14:08:16,738][    INFO] Iters: 88, Total loss: 0.006
+[2024-08-26 14:08:25,135][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 95.00
+[2024-08-26 14:08:25,135][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 91.41
+[2024-08-26 14:08:25,135][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 70.42
+[2024-08-26 14:08:25,135][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 88.22
+[2024-08-26 14:08:25,135][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 68.91
+[2024-08-26 14:08:25,135][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 80.25
+[2024-08-26 14:08:25,135][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 91.95
+[2024-08-26 14:08:25,135][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 85.26
+[2024-08-26 14:08:25,135][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 88.27
+[2024-08-26 14:08:25,135][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 39.80
+[2024-08-26 14:08:25,135][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 71.77
+[2024-08-26 14:08:25,135][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 40.02
+[2024-08-26 14:08:25,136][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 85.38
+[2024-08-26 14:08:25,136][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 80.15
+[2024-08-26 14:08:25,136][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 88.85
+[2024-08-26 14:08:25,136][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 88.96
+[2024-08-26 14:08:25,136][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 47.21
+[2024-08-26 14:08:25,136][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 64.39
+[2024-08-26 14:08:25,136][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 50.26
+[2024-08-26 14:08:25,136][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 83.91
+[2024-08-26 14:08:25,136][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 67.96
+[2024-08-26 14:08:25,136][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 74.68
+
+[2024-08-26 14:08:26,449][    INFO] ===========> Epoch: 47, LR: 0.00000, Previous best: 75.63
+[2024-08-26 14:08:27,019][    INFO] Iters: 0, Total loss: 0.005
+[2024-08-26 14:08:29,913][    INFO] Iters: 11, Total loss: 0.007
+[2024-08-26 14:08:32,805][    INFO] Iters: 22, Total loss: 0.006
+[2024-08-26 14:08:35,697][    INFO] Iters: 33, Total loss: 0.007
+[2024-08-26 14:08:38,589][    INFO] Iters: 44, Total loss: 0.007
+[2024-08-26 14:08:41,482][    INFO] Iters: 55, Total loss: 0.007
+[2024-08-26 14:08:44,369][    INFO] Iters: 66, Total loss: 0.007
+[2024-08-26 14:08:47,271][    INFO] Iters: 77, Total loss: 0.006
+[2024-08-26 14:08:50,165][    INFO] Iters: 88, Total loss: 0.007
+[2024-08-26 14:08:58,648][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 95.03
+[2024-08-26 14:08:58,648][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 91.51
+[2024-08-26 14:08:58,648][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 67.67
+[2024-08-26 14:08:58,648][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 88.11
+[2024-08-26 14:08:58,648][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 69.89
+[2024-08-26 14:08:58,648][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 79.95
+[2024-08-26 14:08:58,648][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 92.19
+[2024-08-26 14:08:58,648][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 84.66
+[2024-08-26 14:08:58,648][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 87.82
+[2024-08-26 14:08:58,648][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 39.78
+[2024-08-26 14:08:58,648][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 70.54
+[2024-08-26 14:08:58,648][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 40.82
+[2024-08-26 14:08:58,648][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 84.87
+[2024-08-26 14:08:58,648][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 80.32
+[2024-08-26 14:08:58,648][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 88.73
+[2024-08-26 14:08:58,648][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 88.55
+[2024-08-26 14:08:58,648][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 48.56
+[2024-08-26 14:08:58,648][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 63.34
+[2024-08-26 14:08:58,648][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 49.01
+[2024-08-26 14:08:58,648][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 84.18
+[2024-08-26 14:08:58,648][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 67.22
+[2024-08-26 14:08:58,648][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 74.42
+
+[2024-08-26 14:08:59,947][    INFO] ===========> Epoch: 48, LR: 0.00000, Previous best: 75.63
+[2024-08-26 14:09:00,525][    INFO] Iters: 0, Total loss: 0.011
+[2024-08-26 14:09:03,420][    INFO] Iters: 11, Total loss: 0.007
+[2024-08-26 14:09:06,331][    INFO] Iters: 22, Total loss: 0.007
+[2024-08-26 14:09:09,226][    INFO] Iters: 33, Total loss: 0.008
+[2024-08-26 14:09:12,122][    INFO] Iters: 44, Total loss: 0.007
+[2024-08-26 14:09:15,019][    INFO] Iters: 55, Total loss: 0.007
+[2024-08-26 14:09:17,911][    INFO] Iters: 66, Total loss: 0.007
+[2024-08-26 14:09:20,807][    INFO] Iters: 77, Total loss: 0.007
+[2024-08-26 14:09:23,709][    INFO] Iters: 88, Total loss: 0.007
+[2024-08-26 14:09:32,260][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 94.99
+[2024-08-26 14:09:32,260][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 91.51
+[2024-08-26 14:09:32,260][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 69.82
+[2024-08-26 14:09:32,260][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 87.59
+[2024-08-26 14:09:32,260][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 70.15
+[2024-08-26 14:09:32,260][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 80.07
+[2024-08-26 14:09:32,260][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 91.52
+[2024-08-26 14:09:32,260][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 85.50
+[2024-08-26 14:09:32,260][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 87.53
+[2024-08-26 14:09:32,260][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 39.59
+[2024-08-26 14:09:32,260][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 70.84
+[2024-08-26 14:09:32,260][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 40.01
+[2024-08-26 14:09:32,260][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 84.97
+[2024-08-26 14:09:32,260][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 80.02
+[2024-08-26 14:09:32,260][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 88.74
+[2024-08-26 14:09:32,260][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 88.39
+[2024-08-26 14:09:32,260][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 47.83
+[2024-08-26 14:09:32,260][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 63.44
+[2024-08-26 14:09:32,260][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 49.62
+[2024-08-26 14:09:32,260][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 84.85
+[2024-08-26 14:09:32,260][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 67.55
+[2024-08-26 14:09:32,260][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 74.50
+
+[2024-08-26 14:09:33,524][    INFO] ===========> Epoch: 49, LR: 0.00000, Previous best: 75.63
+[2024-08-26 14:09:34,131][    INFO] Iters: 0, Total loss: 0.008
+[2024-08-26 14:09:37,036][    INFO] Iters: 11, Total loss: 0.008
+[2024-08-26 14:09:39,927][    INFO] Iters: 22, Total loss: 0.007
+[2024-08-26 14:09:42,825][    INFO] Iters: 33, Total loss: 0.007
+[2024-08-26 14:09:45,721][    INFO] Iters: 44, Total loss: 0.007
+[2024-08-26 14:09:48,618][    INFO] Iters: 55, Total loss: 0.007
+[2024-08-26 14:09:51,511][    INFO] Iters: 66, Total loss: 0.007
+[2024-08-26 14:09:54,414][    INFO] Iters: 77, Total loss: 0.007
+[2024-08-26 14:09:57,324][    INFO] Iters: 88, Total loss: 0.007
+[2024-08-26 14:10:06,007][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 94.97
+[2024-08-26 14:10:06,007][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 91.64
+[2024-08-26 14:10:06,007][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 70.13
+[2024-08-26 14:10:06,007][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 87.72
+[2024-08-26 14:10:06,007][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 69.16
+[2024-08-26 14:10:06,007][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 80.44
+[2024-08-26 14:10:06,007][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 91.63
+[2024-08-26 14:10:06,007][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 85.49
+[2024-08-26 14:10:06,007][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 88.07
+[2024-08-26 14:10:06,007][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 39.75
+[2024-08-26 14:10:06,007][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 68.97
+[2024-08-26 14:10:06,007][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 39.56
+[2024-08-26 14:10:06,007][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 85.42
+[2024-08-26 14:10:06,007][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 80.01
+[2024-08-26 14:10:06,008][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 89.02
+[2024-08-26 14:10:06,008][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 89.03
+[2024-08-26 14:10:06,008][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 43.31
+[2024-08-26 14:10:06,008][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 61.53
+[2024-08-26 14:10:06,008][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 49.06
+[2024-08-26 14:10:06,008][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 84.06
+[2024-08-26 14:10:06,008][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 67.20
+[2024-08-26 14:10:06,008][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 74.10
+
+[2024-08-26 14:10:07,278][    INFO] ===========> Epoch: 50, LR: 0.00000, Previous best: 75.63
+[2024-08-26 14:10:07,839][    INFO] Iters: 0, Total loss: 0.009
+[2024-08-26 14:10:10,734][    INFO] Iters: 11, Total loss: 0.008
+[2024-08-26 14:10:13,632][    INFO] Iters: 22, Total loss: 0.008
+[2024-08-26 14:10:16,536][    INFO] Iters: 33, Total loss: 0.008
+[2024-08-26 14:10:19,436][    INFO] Iters: 44, Total loss: 0.007
+[2024-08-26 14:10:22,332][    INFO] Iters: 55, Total loss: 0.007
+[2024-08-26 14:10:25,228][    INFO] Iters: 66, Total loss: 0.007
+[2024-08-26 14:10:28,123][    INFO] Iters: 77, Total loss: 0.007
+[2024-08-26 14:10:31,026][    INFO] Iters: 88, Total loss: 0.007
+[2024-08-26 14:10:39,500][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 94.97
+[2024-08-26 14:10:39,500][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 91.56
+[2024-08-26 14:10:39,500][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 70.20
+[2024-08-26 14:10:39,500][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 88.15
+[2024-08-26 14:10:39,500][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 69.29
+[2024-08-26 14:10:39,500][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 80.84
+[2024-08-26 14:10:39,500][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 92.02
+[2024-08-26 14:10:39,500][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 85.59
+[2024-08-26 14:10:39,500][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 88.09
+[2024-08-26 14:10:39,500][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 39.63
+[2024-08-26 14:10:39,500][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 70.32
+[2024-08-26 14:10:39,500][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 40.81
+[2024-08-26 14:10:39,500][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 85.31
+[2024-08-26 14:10:39,500][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 79.91
+[2024-08-26 14:10:39,500][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 88.93
+[2024-08-26 14:10:39,501][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 88.93
+[2024-08-26 14:10:39,501][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 46.45
+[2024-08-26 14:10:39,501][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 62.96
+[2024-08-26 14:10:39,501][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 48.20
+[2024-08-26 14:10:39,501][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 84.12
+[2024-08-26 14:10:39,501][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 66.89
+[2024-08-26 14:10:39,501][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 74.44
+
+[2024-08-26 14:10:40,768][    INFO] ===========> Epoch: 51, LR: 0.00000, Previous best: 75.63
+[2024-08-26 14:10:41,339][    INFO] Iters: 0, Total loss: 0.002
+[2024-08-26 14:10:44,243][    INFO] Iters: 11, Total loss: 0.007
+[2024-08-26 14:10:47,145][    INFO] Iters: 22, Total loss: 0.007
+[2024-08-26 14:10:50,046][    INFO] Iters: 33, Total loss: 0.006
+[2024-08-26 14:10:52,948][    INFO] Iters: 44, Total loss: 0.007
+[2024-08-26 14:10:55,845][    INFO] Iters: 55, Total loss: 0.007
+[2024-08-26 14:10:58,738][    INFO] Iters: 66, Total loss: 0.007
+[2024-08-26 14:11:01,637][    INFO] Iters: 77, Total loss: 0.007
+[2024-08-26 14:11:04,537][    INFO] Iters: 88, Total loss: 0.007
+[2024-08-26 14:11:13,257][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 95.00
+[2024-08-26 14:11:13,257][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 91.58
+[2024-08-26 14:11:13,257][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 69.94
+[2024-08-26 14:11:13,257][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 87.19
+[2024-08-26 14:11:13,257][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 68.97
+[2024-08-26 14:11:13,257][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 80.74
+[2024-08-26 14:11:13,257][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 91.85
+[2024-08-26 14:11:13,257][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 85.53
+[2024-08-26 14:11:13,257][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 87.61
+[2024-08-26 14:11:13,257][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 39.41
+[2024-08-26 14:11:13,257][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 70.87
+[2024-08-26 14:11:13,257][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 40.70
+[2024-08-26 14:11:13,257][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 84.82
+[2024-08-26 14:11:13,257][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 79.95
+[2024-08-26 14:11:13,258][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 89.08
+[2024-08-26 14:11:13,258][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 88.29
+[2024-08-26 14:11:13,258][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 48.68
+[2024-08-26 14:11:13,258][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 63.66
+[2024-08-26 14:11:13,258][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 49.06
+[2024-08-26 14:11:13,258][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 84.48
+[2024-08-26 14:11:13,258][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 67.25
+[2024-08-26 14:11:13,258][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 74.51
+
+[2024-08-26 14:11:14,516][    INFO] ===========> Epoch: 52, LR: 0.00000, Previous best: 75.63
+[2024-08-26 14:11:15,082][    INFO] Iters: 0, Total loss: 0.016
+[2024-08-26 14:11:17,983][    INFO] Iters: 11, Total loss: 0.008
+[2024-08-26 14:11:20,878][    INFO] Iters: 22, Total loss: 0.008
+[2024-08-26 14:11:23,775][    INFO] Iters: 33, Total loss: 0.007
+[2024-08-26 14:11:26,675][    INFO] Iters: 44, Total loss: 0.007
+[2024-08-26 14:11:29,570][    INFO] Iters: 55, Total loss: 0.007
+[2024-08-26 14:11:32,467][    INFO] Iters: 66, Total loss: 0.007
+[2024-08-26 14:11:35,363][    INFO] Iters: 77, Total loss: 0.007
+[2024-08-26 14:11:38,259][    INFO] Iters: 88, Total loss: 0.007
+[2024-08-26 14:11:46,841][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 95.01
+[2024-08-26 14:11:46,841][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 91.53
+[2024-08-26 14:11:46,841][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 70.14
+[2024-08-26 14:11:46,842][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 87.02
+[2024-08-26 14:11:46,842][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 70.88
+[2024-08-26 14:11:46,842][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 80.70
+[2024-08-26 14:11:46,842][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 91.79
+[2024-08-26 14:11:46,842][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 85.84
+[2024-08-26 14:11:46,842][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 87.65
+[2024-08-26 14:11:46,842][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 39.26
+[2024-08-26 14:11:46,842][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 71.10
+[2024-08-26 14:11:46,842][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 40.79
+[2024-08-26 14:11:46,842][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 84.81
+[2024-08-26 14:11:46,842][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 79.79
+[2024-08-26 14:11:46,842][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 88.72
+[2024-08-26 14:11:46,842][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 88.79
+[2024-08-26 14:11:46,842][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 46.43
+[2024-08-26 14:11:46,842][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 63.71
+[2024-08-26 14:11:46,842][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 48.43
+[2024-08-26 14:11:46,842][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 84.90
+[2024-08-26 14:11:46,842][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 67.00
+[2024-08-26 14:11:46,842][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 74.49
+
+[2024-08-26 14:11:48,105][    INFO] ===========> Epoch: 53, LR: 0.00000, Previous best: 75.63
+[2024-08-26 14:11:48,663][    INFO] Iters: 0, Total loss: 0.013
+[2024-08-26 14:11:51,562][    INFO] Iters: 11, Total loss: 0.006
+[2024-08-26 14:11:54,455][    INFO] Iters: 22, Total loss: 0.006
+[2024-08-26 14:11:57,353][    INFO] Iters: 33, Total loss: 0.006
+[2024-08-26 14:12:00,249][    INFO] Iters: 44, Total loss: 0.006
+[2024-08-26 14:12:03,147][    INFO] Iters: 55, Total loss: 0.006
+[2024-08-26 14:12:06,041][    INFO] Iters: 66, Total loss: 0.006
+[2024-08-26 14:12:08,938][    INFO] Iters: 77, Total loss: 0.006
+[2024-08-26 14:12:11,834][    INFO] Iters: 88, Total loss: 0.006
+[2024-08-26 14:12:20,285][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 94.99
+[2024-08-26 14:12:20,285][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 91.00
+[2024-08-26 14:12:20,285][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 70.03
+[2024-08-26 14:12:20,285][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 87.54
+[2024-08-26 14:12:20,285][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 69.93
+[2024-08-26 14:12:20,285][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 80.48
+[2024-08-26 14:12:20,285][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 91.89
+[2024-08-26 14:12:20,285][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 85.65
+[2024-08-26 14:12:20,285][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 87.79
+[2024-08-26 14:12:20,285][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 39.25
+[2024-08-26 14:12:20,285][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 70.45
+[2024-08-26 14:12:20,285][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 39.29
+[2024-08-26 14:12:20,285][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 84.91
+[2024-08-26 14:12:20,285][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 79.75
+[2024-08-26 14:12:20,285][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 88.70
+[2024-08-26 14:12:20,285][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 88.79
+[2024-08-26 14:12:20,285][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 47.84
+[2024-08-26 14:12:20,285][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 63.33
+[2024-08-26 14:12:20,285][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 48.11
+[2024-08-26 14:12:20,285][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 84.94
+[2024-08-26 14:12:20,285][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 67.80
+[2024-08-26 14:12:20,285][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 74.40
+
+[2024-08-26 14:12:21,630][    INFO] ===========> Epoch: 54, LR: 0.00000, Previous best: 75.63
+[2024-08-26 14:12:22,212][    INFO] Iters: 0, Total loss: 0.005
+[2024-08-26 14:12:25,108][    INFO] Iters: 11, Total loss: 0.005
+[2024-08-26 14:12:28,002][    INFO] Iters: 22, Total loss: 0.006
+[2024-08-26 14:12:30,902][    INFO] Iters: 33, Total loss: 0.006
+[2024-08-26 14:12:33,798][    INFO] Iters: 44, Total loss: 0.006
+[2024-08-26 14:12:36,703][    INFO] Iters: 55, Total loss: 0.006
+[2024-08-26 14:12:39,595][    INFO] Iters: 66, Total loss: 0.006
+[2024-08-26 14:12:42,497][    INFO] Iters: 77, Total loss: 0.006
+[2024-08-26 14:12:45,397][    INFO] Iters: 88, Total loss: 0.006
+[2024-08-26 14:12:53,887][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 95.00
+[2024-08-26 14:12:53,887][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 91.51
+[2024-08-26 14:12:53,887][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 70.04
+[2024-08-26 14:12:53,887][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 87.47
+[2024-08-26 14:12:53,887][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 70.29
+[2024-08-26 14:12:53,887][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 80.64
+[2024-08-26 14:12:53,887][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 91.74
+[2024-08-26 14:12:53,887][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 85.76
+[2024-08-26 14:12:53,887][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 87.85
+[2024-08-26 14:12:53,887][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 39.52
+[2024-08-26 14:12:53,887][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 70.74
+[2024-08-26 14:12:53,887][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 40.30
+[2024-08-26 14:12:53,887][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 84.99
+[2024-08-26 14:12:53,887][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 79.78
+[2024-08-26 14:12:53,887][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 88.86
+[2024-08-26 14:12:53,887][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 88.68
+[2024-08-26 14:12:53,887][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 47.08
+[2024-08-26 14:12:53,887][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 63.22
+[2024-08-26 14:12:53,887][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 48.75
+[2024-08-26 14:12:53,887][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 84.78
+[2024-08-26 14:12:53,887][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 67.48
+[2024-08-26 14:12:53,887][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 74.50
+
+[2024-08-26 14:12:55,267][    INFO] ===========> Epoch: 55, LR: 0.00000, Previous best: 75.63
+[2024-08-26 14:12:55,853][    INFO] Iters: 0, Total loss: 0.004
+[2024-08-26 14:12:58,749][    INFO] Iters: 11, Total loss: 0.007
+[2024-08-26 14:13:01,643][    INFO] Iters: 22, Total loss: 0.006
+[2024-08-26 14:13:04,540][    INFO] Iters: 33, Total loss: 0.006
+[2024-08-26 14:13:07,439][    INFO] Iters: 44, Total loss: 0.006
+[2024-08-26 14:13:10,335][    INFO] Iters: 55, Total loss: 0.006
+[2024-08-26 14:13:13,244][    INFO] Iters: 66, Total loss: 0.006
+[2024-08-26 14:13:16,139][    INFO] Iters: 77, Total loss: 0.006
+[2024-08-26 14:13:19,037][    INFO] Iters: 88, Total loss: 0.006
+[2024-08-26 14:13:27,489][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 95.02
+[2024-08-26 14:13:27,489][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 91.45
+[2024-08-26 14:13:27,489][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 69.72
+[2024-08-26 14:13:27,489][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 87.15
+[2024-08-26 14:13:27,489][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 69.88
+[2024-08-26 14:13:27,489][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 80.40
+[2024-08-26 14:13:27,489][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 91.76
+[2024-08-26 14:13:27,489][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 85.90
+[2024-08-26 14:13:27,489][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 87.75
+[2024-08-26 14:13:27,489][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 39.95
+[2024-08-26 14:13:27,489][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 70.73
+[2024-08-26 14:13:27,489][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 41.65
+[2024-08-26 14:13:27,489][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 84.97
+[2024-08-26 14:13:27,489][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 79.86
+[2024-08-26 14:13:27,489][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 88.96
+[2024-08-26 14:13:27,489][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 88.69
+[2024-08-26 14:13:27,489][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 48.49
+[2024-08-26 14:13:27,489][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 63.39
+[2024-08-26 14:13:27,489][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 49.52
+[2024-08-26 14:13:27,489][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 84.70
+[2024-08-26 14:13:27,489][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 67.27
+[2024-08-26 14:13:27,489][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 74.63
+
+[2024-08-26 14:13:28,840][    INFO] ===========> Epoch: 56, LR: 0.00000, Previous best: 75.63
+[2024-08-26 14:13:29,422][    INFO] Iters: 0, Total loss: 0.005
+[2024-08-26 14:13:32,331][    INFO] Iters: 11, Total loss: 0.005
+[2024-08-26 14:13:35,232][    INFO] Iters: 22, Total loss: 0.006
+[2024-08-26 14:13:38,137][    INFO] Iters: 33, Total loss: 0.006
+[2024-08-26 14:13:41,036][    INFO] Iters: 44, Total loss: 0.006
+[2024-08-26 14:13:43,939][    INFO] Iters: 55, Total loss: 0.006
+[2024-08-26 14:13:46,841][    INFO] Iters: 66, Total loss: 0.006
+[2024-08-26 14:13:49,743][    INFO] Iters: 77, Total loss: 0.006
+[2024-08-26 14:13:52,639][    INFO] Iters: 88, Total loss: 0.006
+[2024-08-26 14:14:01,295][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 95.00
+[2024-08-26 14:14:01,295][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 91.39
+[2024-08-26 14:14:01,295][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 69.82
+[2024-08-26 14:14:01,295][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 87.19
+[2024-08-26 14:14:01,295][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 69.93
+[2024-08-26 14:14:01,295][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 80.63
+[2024-08-26 14:14:01,295][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 91.95
+[2024-08-26 14:14:01,295][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 85.74
+[2024-08-26 14:14:01,295][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 87.70
+[2024-08-26 14:14:01,295][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 39.67
+[2024-08-26 14:14:01,295][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 70.59
+[2024-08-26 14:14:01,295][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 40.71
+[2024-08-26 14:14:01,295][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 84.85
+[2024-08-26 14:14:01,295][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 79.80
+[2024-08-26 14:14:01,295][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 88.94
+[2024-08-26 14:14:01,295][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 88.74
+[2024-08-26 14:14:01,295][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 47.24
+[2024-08-26 14:14:01,295][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 63.07
+[2024-08-26 14:14:01,295][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 49.34
+[2024-08-26 14:14:01,295][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 84.82
+[2024-08-26 14:14:01,295][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 67.44
+[2024-08-26 14:14:01,295][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 74.50
+
+[2024-08-26 14:14:02,544][    INFO] ===========> Epoch: 57, LR: 0.00000, Previous best: 75.63
+[2024-08-26 14:14:03,153][    INFO] Iters: 0, Total loss: 0.004
+[2024-08-26 14:14:06,049][    INFO] Iters: 11, Total loss: 0.007
+[2024-08-26 14:14:08,941][    INFO] Iters: 22, Total loss: 0.007
+[2024-08-26 14:14:11,847][    INFO] Iters: 33, Total loss: 0.007
+[2024-08-26 14:14:14,742][    INFO] Iters: 44, Total loss: 0.007
+[2024-08-26 14:14:17,640][    INFO] Iters: 55, Total loss: 0.007
+[2024-08-26 14:14:20,533][    INFO] Iters: 66, Total loss: 0.007
+[2024-08-26 14:14:23,426][    INFO] Iters: 77, Total loss: 0.006
+[2024-08-26 14:14:26,323][    INFO] Iters: 88, Total loss: 0.007
+[2024-08-26 14:14:34,792][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 95.00
+[2024-08-26 14:14:34,792][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 91.50
+[2024-08-26 14:14:34,792][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 69.22
+[2024-08-26 14:14:34,792][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 87.70
+[2024-08-26 14:14:34,792][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 70.04
+[2024-08-26 14:14:34,792][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 80.62
+[2024-08-26 14:14:34,792][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 91.88
+[2024-08-26 14:14:34,792][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 85.49
+[2024-08-26 14:14:34,792][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 87.90
+[2024-08-26 14:14:34,792][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 39.49
+[2024-08-26 14:14:34,792][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 70.72
+[2024-08-26 14:14:34,792][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 40.49
+[2024-08-26 14:14:34,792][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 85.02
+[2024-08-26 14:14:34,792][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 79.93
+[2024-08-26 14:14:34,792][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 88.94
+[2024-08-26 14:14:34,792][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 88.82
+[2024-08-26 14:14:34,792][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 46.98
+[2024-08-26 14:14:34,792][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 63.13
+[2024-08-26 14:14:34,792][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 48.85
+[2024-08-26 14:14:34,792][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 84.52
+[2024-08-26 14:14:34,792][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 67.82
+[2024-08-26 14:14:34,792][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 74.48
+
+[2024-08-26 14:14:36,019][    INFO] ===========> Epoch: 58, LR: 0.00000, Previous best: 75.63
+[2024-08-26 14:14:36,581][    INFO] Iters: 0, Total loss: 0.003
+[2024-08-26 14:14:39,479][    INFO] Iters: 11, Total loss: 0.006
+[2024-08-26 14:14:42,373][    INFO] Iters: 22, Total loss: 0.006
+[2024-08-26 14:14:45,271][    INFO] Iters: 33, Total loss: 0.006
+[2024-08-26 14:14:48,165][    INFO] Iters: 44, Total loss: 0.006
+[2024-08-26 14:14:51,064][    INFO] Iters: 55, Total loss: 0.006
+[2024-08-26 14:14:53,956][    INFO] Iters: 66, Total loss: 0.006
+[2024-08-26 14:14:56,854][    INFO] Iters: 77, Total loss: 0.006
+[2024-08-26 14:14:59,763][    INFO] Iters: 88, Total loss: 0.006
+[2024-08-26 14:15:08,445][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 95.02
+[2024-08-26 14:15:08,445][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 91.41
+[2024-08-26 14:15:08,445][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 69.31
+[2024-08-26 14:15:08,445][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 87.62
+[2024-08-26 14:15:08,445][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 69.88
+[2024-08-26 14:15:08,445][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 80.60
+[2024-08-26 14:15:08,445][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 91.57
+[2024-08-26 14:15:08,445][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 85.53
+[2024-08-26 14:15:08,445][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 87.72
+[2024-08-26 14:15:08,445][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 39.50
+[2024-08-26 14:15:08,445][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 70.87
+[2024-08-26 14:15:08,445][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 40.83
+[2024-08-26 14:15:08,445][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 84.85
+[2024-08-26 14:15:08,445][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 79.92
+[2024-08-26 14:15:08,445][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 88.94
+[2024-08-26 14:15:08,445][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 88.76
+[2024-08-26 14:15:08,445][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 47.46
+[2024-08-26 14:15:08,445][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 63.28
+[2024-08-26 14:15:08,446][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 49.00
+[2024-08-26 14:15:08,446][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 85.39
+[2024-08-26 14:15:08,446][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 67.55
+[2024-08-26 14:15:08,446][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 74.52
+
+[2024-08-26 14:15:09,707][    INFO] ===========> Epoch: 59, LR: 0.00000, Previous best: 75.63
+[2024-08-26 14:15:10,292][    INFO] Iters: 0, Total loss: 0.006
+[2024-08-26 14:15:13,192][    INFO] Iters: 11, Total loss: 0.006
+[2024-08-26 14:15:16,096][    INFO] Iters: 22, Total loss: 0.006
+[2024-08-26 14:15:18,994][    INFO] Iters: 33, Total loss: 0.006
+[2024-08-26 14:15:21,894][    INFO] Iters: 44, Total loss: 0.006
+[2024-08-26 14:15:24,791][    INFO] Iters: 55, Total loss: 0.006
+[2024-08-26 14:15:27,683][    INFO] Iters: 66, Total loss: 0.006
+[2024-08-26 14:15:30,578][    INFO] Iters: 77, Total loss: 0.006
+[2024-08-26 14:15:33,478][    INFO] Iters: 88, Total loss: 0.006
+[2024-08-26 14:15:41,929][    INFO] ***** Evaluation ***** >>>> Class [0 background] IoU: 95.03
+[2024-08-26 14:15:41,929][    INFO] ***** Evaluation ***** >>>> Class [1 aeroplane] IoU: 91.45
+[2024-08-26 14:15:41,929][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 69.17
+[2024-08-26 14:15:41,929][    INFO] ***** Evaluation ***** >>>> Class [3 bird] IoU: 87.57
+[2024-08-26 14:15:41,929][    INFO] ***** Evaluation ***** >>>> Class [4 boat] IoU: 70.01
+[2024-08-26 14:15:41,929][    INFO] ***** Evaluation ***** >>>> Class [5 bottle] IoU: 80.52
+[2024-08-26 14:15:41,929][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 91.51
+[2024-08-26 14:15:41,929][    INFO] ***** Evaluation ***** >>>> Class [7 car] IoU: 85.64
+[2024-08-26 14:15:41,929][    INFO] ***** Evaluation ***** >>>> Class [8 cat] IoU: 87.70
+[2024-08-26 14:15:41,929][    INFO] ***** Evaluation ***** >>>> Class [9 chair] IoU: 39.57
+[2024-08-26 14:15:41,929][    INFO] ***** Evaluation ***** >>>> Class [10 cow] IoU: 71.13
+[2024-08-26 14:15:41,929][    INFO] ***** Evaluation ***** >>>> Class [11 dining table] IoU: 41.07
+[2024-08-26 14:15:41,929][    INFO] ***** Evaluation ***** >>>> Class [12 dog] IoU: 84.82
+[2024-08-26 14:15:41,929][    INFO] ***** Evaluation ***** >>>> Class [13 horse] IoU: 79.91
+[2024-08-26 14:15:41,929][    INFO] ***** Evaluation ***** >>>> Class [14 motorbike] IoU: 88.97
+[2024-08-26 14:15:41,929][    INFO] ***** Evaluation ***** >>>> Class [15 person] IoU: 88.72
+[2024-08-26 14:15:41,929][    INFO] ***** Evaluation ***** >>>> Class [16 potted plant] IoU: 47.57
+[2024-08-26 14:15:41,929][    INFO] ***** Evaluation ***** >>>> Class [17 sheep] IoU: 63.51
+[2024-08-26 14:15:41,929][    INFO] ***** Evaluation ***** >>>> Class [18 sofa] IoU: 49.00
+[2024-08-26 14:15:41,929][    INFO] ***** Evaluation ***** >>>> Class [19 train] IoU: 85.58
+[2024-08-26 14:15:41,929][    INFO] ***** Evaluation ***** >>>> Class [20 tv/monitor] IoU: 67.74
+[2024-08-26 14:15:41,929][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 74.58
+

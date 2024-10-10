@@ -15,7 +15,7 @@ class="center">
 
 ## Results
 
-**We provide the [training log of each reported value](https://github.com/LiheYoung/UniMatch-V2/blob/main/training-logs). You can refer to them during reproducing. We also provide all the [checkpoints]((https://github.com/LiheYoung/UniMatch-V2/blob/main/training-logs)) of our core experiments.**
+**We provide the [training log of each reported value](https://github.com/LiheYoung/UniMatch-V2/blob/main/training-logs). You can refer to them during reproducing. We also provide all the [checkpoints](https://github.com/LiheYoung/UniMatch-V2/blob/main/training-logs) of our core experiments.**
 
 ### Pascal VOC 2012
 

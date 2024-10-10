@@ -1,0 +1,1883 @@
+[2024-08-26 20:32:53,396][    INFO] {'backbone': 'dinov2_small',
+ 'batch_size': 8,
+ 'conf_thresh': 0.95,
+ 'config': 'configs/coco.yaml',
+ 'criterion': {'kwargs': {'ignore_index': 255}, 'name': 'CELoss'},
+ 'crop_size': 518,
+ 'data_root': '/home/bingxing2/lihe/data/COCO',
+ 'dataset': 'coco',
+ 'epochs': 20,
+ 'labeled_id_path': 'splits/coco/1_128/labeled.txt',
+ 'local_rank': 0,
+ 'lock_backbone': False,
+ 'lr': 5e-06,
+ 'lr_multi': 40.0,
+ 'model': 'dpt',
+ 'nclass': 81,
+ 'ngpus': 4,
+ 'port': 25834,
+ 'save_path': 'exp/coco/supervised/dinov2_small/1_128',
+ 'unlabeled_id_path': 'splits/coco/1_128/unlabeled.txt'}
+
+[2024-08-26 20:32:54,704][    INFO] Total params: 24.8M
+
+[2024-08-26 20:32:56,146][    INFO] ===========> Epoch: 0, LR: 0.0000050, Previous best: 0.00
+[2024-08-26 20:32:58,738][    INFO] Iters: 0, Total loss: 4.354
+[2024-08-26 20:33:32,744][    INFO] Iters: 117, Total loss: 1.317
+[2024-08-26 20:34:06,694][    INFO] Iters: 234, Total loss: 0.998
+[2024-08-26 20:34:40,653][    INFO] Iters: 351, Total loss: 0.812
+[2024-08-26 20:35:14,619][    INFO] Iters: 468, Total loss: 0.691
+[2024-08-26 20:35:48,581][    INFO] Iters: 585, Total loss: 0.610
+[2024-08-26 20:36:22,540][    INFO] Iters: 702, Total loss: 0.547
+[2024-08-26 20:36:56,497][    INFO] Iters: 819, Total loss: 0.499
+[2024-08-26 20:37:30,449][    INFO] Iters: 936, Total loss: 0.462
+[2024-08-26 20:39:05,125][    INFO] ***** Evaluation ***** >>>> Class [0 void] IoU: 86.39
+[2024-08-26 20:39:05,125][    INFO] ***** Evaluation ***** >>>> Class [1 person] IoU: 77.23
+[2024-08-26 20:39:05,125][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 52.86
+[2024-08-26 20:39:05,125][    INFO] ***** Evaluation ***** >>>> Class [3 car] IoU: 46.78
+[2024-08-26 20:39:05,125][    INFO] ***** Evaluation ***** >>>> Class [4 motorcycle] IoU: 70.25
+[2024-08-26 20:39:05,125][    INFO] ***** Evaluation ***** >>>> Class [5 airplane] IoU: 70.25
+[2024-08-26 20:39:05,125][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 67.04
+[2024-08-26 20:39:05,125][    INFO] ***** Evaluation ***** >>>> Class [7 train] IoU: 67.07
+[2024-08-26 20:39:05,125][    INFO] ***** Evaluation ***** >>>> Class [8 truck] IoU: 40.45
+[2024-08-26 20:39:05,125][    INFO] ***** Evaluation ***** >>>> Class [9 boat] IoU: 45.39
+[2024-08-26 20:39:05,125][    INFO] ***** Evaluation ***** >>>> Class [10 traffic light] IoU: 33.25
+[2024-08-26 20:39:05,125][    INFO] ***** Evaluation ***** >>>> Class [11 fire hydrant] IoU: 67.59
+[2024-08-26 20:39:05,125][    INFO] ***** Evaluation ***** >>>> Class [12 stop sign] IoU: 65.16
+[2024-08-26 20:39:05,125][    INFO] ***** Evaluation ***** >>>> Class [13 parking meter] IoU: 31.29
+[2024-08-26 20:39:05,125][    INFO] ***** Evaluation ***** >>>> Class [14 bench] IoU: 25.25
+[2024-08-26 20:39:05,125][    INFO] ***** Evaluation ***** >>>> Class [15 bird] IoU: 55.63
+[2024-08-26 20:39:05,125][    INFO] ***** Evaluation ***** >>>> Class [16 cat] IoU: 71.54
+[2024-08-26 20:39:05,125][    INFO] ***** Evaluation ***** >>>> Class [17 dog] IoU: 66.72
+[2024-08-26 20:39:05,125][    INFO] ***** Evaluation ***** >>>> Class [18 horse] IoU: 68.63
+[2024-08-26 20:39:05,125][    INFO] ***** Evaluation ***** >>>> Class [19 sheep] IoU: 68.34
+[2024-08-26 20:39:05,125][    INFO] ***** Evaluation ***** >>>> Class [20 cow] IoU: 64.94
+[2024-08-26 20:39:05,125][    INFO] ***** Evaluation ***** >>>> Class [21 elephant] IoU: 78.62
+[2024-08-26 20:39:05,126][    INFO] ***** Evaluation ***** >>>> Class [22 bear] IoU: 49.12
+[2024-08-26 20:39:05,126][    INFO] ***** Evaluation ***** >>>> Class [23 zebra] IoU: 83.53
+[2024-08-26 20:39:05,126][    INFO] ***** Evaluation ***** >>>> Class [24 giraffe] IoU: 78.06
+[2024-08-26 20:39:05,126][    INFO] ***** Evaluation ***** >>>> Class [25 backpack] IoU: 4.40
+[2024-08-26 20:39:05,126][    INFO] ***** Evaluation ***** >>>> Class [26 umbrella] IoU: 61.65
+[2024-08-26 20:39:05,126][    INFO] ***** Evaluation ***** >>>> Class [27 handbag] IoU: 8.27
+[2024-08-26 20:39:05,126][    INFO] ***** Evaluation ***** >>>> Class [28 tie] IoU: 9.47
+[2024-08-26 20:39:05,126][    INFO] ***** Evaluation ***** >>>> Class [29 suitcase] IoU: 43.94
+[2024-08-26 20:39:05,126][    INFO] ***** Evaluation ***** >>>> Class [30 frisbee] IoU: 15.14
+[2024-08-26 20:39:05,126][    INFO] ***** Evaluation ***** >>>> Class [31 skis] IoU: 0.00
+[2024-08-26 20:39:05,126][    INFO] ***** Evaluation ***** >>>> Class [32 snowboard] IoU: 0.30
+[2024-08-26 20:39:05,126][    INFO] ***** Evaluation ***** >>>> Class [33 sports ball] IoU: 0.88
+[2024-08-26 20:39:05,126][    INFO] ***** Evaluation ***** >>>> Class [34 kite] IoU: 27.21
+[2024-08-26 20:39:05,126][    INFO] ***** Evaluation ***** >>>> Class [35 baseball bat] IoU: 0.00
+[2024-08-26 20:39:05,126][    INFO] ***** Evaluation ***** >>>> Class [36 baseball glove] IoU: 1.89
+[2024-08-26 20:39:05,126][    INFO] ***** Evaluation ***** >>>> Class [37 skateboard] IoU: 4.19
+[2024-08-26 20:39:05,126][    INFO] ***** Evaluation ***** >>>> Class [38 surfboard] IoU: 39.38
+[2024-08-26 20:39:05,126][    INFO] ***** Evaluation ***** >>>> Class [39 tennis racket] IoU: 27.62
+[2024-08-26 20:39:05,126][    INFO] ***** Evaluation ***** >>>> Class [40 bottle] IoU: 25.44
+[2024-08-26 20:39:05,126][    INFO] ***** Evaluation ***** >>>> Class [41 wine glass] IoU: 0.31
+[2024-08-26 20:39:05,126][    INFO] ***** Evaluation ***** >>>> Class [42 cup] IoU: 35.79
+[2024-08-26 20:39:05,126][    INFO] ***** Evaluation ***** >>>> Class [43 fork] IoU: 0.00
+[2024-08-26 20:39:05,126][    INFO] ***** Evaluation ***** >>>> Class [44 knife] IoU: 0.00
+[2024-08-26 20:39:05,126][    INFO] ***** Evaluation ***** >>>> Class [45 spoon] IoU: 0.00
+[2024-08-26 20:39:05,126][    INFO] ***** Evaluation ***** >>>> Class [46 bowl] IoU: 20.10
+[2024-08-26 20:39:05,126][    INFO] ***** Evaluation ***** >>>> Class [47 banana] IoU: 47.70
+[2024-08-26 20:39:05,126][    INFO] ***** Evaluation ***** >>>> Class [48 apple] IoU: 6.53
+[2024-08-26 20:39:05,126][    INFO] ***** Evaluation ***** >>>> Class [49 sandwich] IoU: 26.55
+[2024-08-26 20:39:05,127][    INFO] ***** Evaluation ***** >>>> Class [50 orange] IoU: 28.15
+[2024-08-26 20:39:05,127][    INFO] ***** Evaluation ***** >>>> Class [51 broccoli] IoU: 5.63
+[2024-08-26 20:39:05,127][    INFO] ***** Evaluation ***** >>>> Class [52 carrot] IoU: 17.14
+[2024-08-26 20:39:05,127][    INFO] ***** Evaluation ***** >>>> Class [53 hot dog] IoU: 28.94
+[2024-08-26 20:39:05,127][    INFO] ***** Evaluation ***** >>>> Class [54 pizza] IoU: 52.69
+[2024-08-26 20:39:05,127][    INFO] ***** Evaluation ***** >>>> Class [55 donut] IoU: 53.46
+[2024-08-26 20:39:05,127][    INFO] ***** Evaluation ***** >>>> Class [56 cake] IoU: 41.17
+[2024-08-26 20:39:05,127][    INFO] ***** Evaluation ***** >>>> Class [57 chair] IoU: 23.70
+[2024-08-26 20:39:05,127][    INFO] ***** Evaluation ***** >>>> Class [58 couch] IoU: 42.23
+[2024-08-26 20:39:05,127][    INFO] ***** Evaluation ***** >>>> Class [59 potted plant] IoU: 9.67
+[2024-08-26 20:39:05,127][    INFO] ***** Evaluation ***** >>>> Class [60 bed] IoU: 45.38
+[2024-08-26 20:39:05,127][    INFO] ***** Evaluation ***** >>>> Class [61 dining table] IoU: 32.24
+[2024-08-26 20:39:05,127][    INFO] ***** Evaluation ***** >>>> Class [62 toilet] IoU: 56.74
+[2024-08-26 20:39:05,127][    INFO] ***** Evaluation ***** >>>> Class [63 tv] IoU: 47.79
+[2024-08-26 20:39:05,127][    INFO] ***** Evaluation ***** >>>> Class [64 laptop] IoU: 56.04
+[2024-08-26 20:39:05,127][    INFO] ***** Evaluation ***** >>>> Class [65 mouse] IoU: 0.00
+[2024-08-26 20:39:05,127][    INFO] ***** Evaluation ***** >>>> Class [66 remote] IoU: 31.95
+[2024-08-26 20:39:05,127][    INFO] ***** Evaluation ***** >>>> Class [67 keyboard] IoU: 48.60
+[2024-08-26 20:39:05,127][    INFO] ***** Evaluation ***** >>>> Class [68 cell phone] IoU: 49.51
+[2024-08-26 20:39:05,127][    INFO] ***** Evaluation ***** >>>> Class [69 microwave] IoU: 19.51
+[2024-08-26 20:39:05,127][    INFO] ***** Evaluation ***** >>>> Class [70 oven] IoU: 19.39
+[2024-08-26 20:39:05,127][    INFO] ***** Evaluation ***** >>>> Class [71 toaster] IoU: 0.00
+[2024-08-26 20:39:05,127][    INFO] ***** Evaluation ***** >>>> Class [72 sink] IoU: 27.36
+[2024-08-26 20:39:05,127][    INFO] ***** Evaluation ***** >>>> Class [73 refrigerator] IoU: 49.70
+[2024-08-26 20:39:05,127][    INFO] ***** Evaluation ***** >>>> Class [74 book] IoU: 33.31
+[2024-08-26 20:39:05,127][    INFO] ***** Evaluation ***** >>>> Class [75 clock] IoU: 59.77
+[2024-08-26 20:39:05,127][    INFO] ***** Evaluation ***** >>>> Class [76 vase] IoU: 37.86
+[2024-08-26 20:39:05,128][    INFO] ***** Evaluation ***** >>>> Class [77 scissors] IoU: 19.65
+[2024-08-26 20:39:05,128][    INFO] ***** Evaluation ***** >>>> Class [78 teddy bear] IoU: 60.73
+[2024-08-26 20:39:05,128][    INFO] ***** Evaluation ***** >>>> Class [79 hair drier] IoU: 0.00
+[2024-08-26 20:39:05,128][    INFO] ***** Evaluation ***** >>>> Class [80 toothbrush] IoU: 0.00
+[2024-08-26 20:39:05,128][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 36.25
+
+[2024-08-26 20:39:06,100][    INFO] ===========> Epoch: 1, LR: 0.0000048, Previous best: 36.25
+[2024-08-26 20:39:06,650][    INFO] Iters: 0, Total loss: 0.212
+[2024-08-26 20:39:40,577][    INFO] Iters: 117, Total loss: 0.188
+[2024-08-26 20:40:14,527][    INFO] Iters: 234, Total loss: 0.177
+[2024-08-26 20:40:48,483][    INFO] Iters: 351, Total loss: 0.170
+[2024-08-26 20:41:22,484][    INFO] Iters: 468, Total loss: 0.164
+[2024-08-26 20:41:56,480][    INFO] Iters: 585, Total loss: 0.163
+[2024-08-26 20:42:30,475][    INFO] Iters: 702, Total loss: 0.168
+[2024-08-26 20:43:04,471][    INFO] Iters: 819, Total loss: 0.171
+[2024-08-26 20:43:38,458][    INFO] Iters: 936, Total loss: 0.167
+[2024-08-26 20:44:21,732][    INFO] ***** Evaluation ***** >>>> Class [0 void] IoU: 87.13
+[2024-08-26 20:44:21,733][    INFO] ***** Evaluation ***** >>>> Class [1 person] IoU: 79.53
+[2024-08-26 20:44:21,733][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 56.24
+[2024-08-26 20:44:21,733][    INFO] ***** Evaluation ***** >>>> Class [3 car] IoU: 47.53
+[2024-08-26 20:44:21,733][    INFO] ***** Evaluation ***** >>>> Class [4 motorcycle] IoU: 71.93
+[2024-08-26 20:44:21,733][    INFO] ***** Evaluation ***** >>>> Class [5 airplane] IoU: 71.14
+[2024-08-26 20:44:21,733][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 69.13
+[2024-08-26 20:44:21,733][    INFO] ***** Evaluation ***** >>>> Class [7 train] IoU: 69.31
+[2024-08-26 20:44:21,733][    INFO] ***** Evaluation ***** >>>> Class [8 truck] IoU: 39.14
+[2024-08-26 20:44:21,733][    INFO] ***** Evaluation ***** >>>> Class [9 boat] IoU: 56.23
+[2024-08-26 20:44:21,733][    INFO] ***** Evaluation ***** >>>> Class [10 traffic light] IoU: 33.48
+[2024-08-26 20:44:21,733][    INFO] ***** Evaluation ***** >>>> Class [11 fire hydrant] IoU: 71.07
+[2024-08-26 20:44:21,733][    INFO] ***** Evaluation ***** >>>> Class [12 stop sign] IoU: 75.97
+[2024-08-26 20:44:21,733][    INFO] ***** Evaluation ***** >>>> Class [13 parking meter] IoU: 29.66
+[2024-08-26 20:44:21,733][    INFO] ***** Evaluation ***** >>>> Class [14 bench] IoU: 39.95
+[2024-08-26 20:44:21,733][    INFO] ***** Evaluation ***** >>>> Class [15 bird] IoU: 59.49
+[2024-08-26 20:44:21,733][    INFO] ***** Evaluation ***** >>>> Class [16 cat] IoU: 75.51
+[2024-08-26 20:44:21,733][    INFO] ***** Evaluation ***** >>>> Class [17 dog] IoU: 64.81
+[2024-08-26 20:44:21,733][    INFO] ***** Evaluation ***** >>>> Class [18 horse] IoU: 69.79
+[2024-08-26 20:44:21,733][    INFO] ***** Evaluation ***** >>>> Class [19 sheep] IoU: 67.58
+[2024-08-26 20:44:21,733][    INFO] ***** Evaluation ***** >>>> Class [20 cow] IoU: 54.72
+[2024-08-26 20:44:21,733][    INFO] ***** Evaluation ***** >>>> Class [21 elephant] IoU: 85.04
+[2024-08-26 20:44:21,733][    INFO] ***** Evaluation ***** >>>> Class [22 bear] IoU: 72.64
+[2024-08-26 20:44:21,733][    INFO] ***** Evaluation ***** >>>> Class [23 zebra] IoU: 84.99
+[2024-08-26 20:44:21,733][    INFO] ***** Evaluation ***** >>>> Class [24 giraffe] IoU: 79.78
+[2024-08-26 20:44:21,733][    INFO] ***** Evaluation ***** >>>> Class [25 backpack] IoU: 10.32
+[2024-08-26 20:44:21,734][    INFO] ***** Evaluation ***** >>>> Class [26 umbrella] IoU: 66.15
+[2024-08-26 20:44:21,734][    INFO] ***** Evaluation ***** >>>> Class [27 handbag] IoU: 13.98
+[2024-08-26 20:44:21,734][    INFO] ***** Evaluation ***** >>>> Class [28 tie] IoU: 1.81
+[2024-08-26 20:44:21,734][    INFO] ***** Evaluation ***** >>>> Class [29 suitcase] IoU: 40.06
+[2024-08-26 20:44:21,734][    INFO] ***** Evaluation ***** >>>> Class [30 frisbee] IoU: 18.98
+[2024-08-26 20:44:21,734][    INFO] ***** Evaluation ***** >>>> Class [31 skis] IoU: 14.53
+[2024-08-26 20:44:21,734][    INFO] ***** Evaluation ***** >>>> Class [32 snowboard] IoU: 3.48
+[2024-08-26 20:44:21,734][    INFO] ***** Evaluation ***** >>>> Class [33 sports ball] IoU: 23.46
+[2024-08-26 20:44:21,734][    INFO] ***** Evaluation ***** >>>> Class [34 kite] IoU: 38.20
+[2024-08-26 20:44:21,734][    INFO] ***** Evaluation ***** >>>> Class [35 baseball bat] IoU: 0.00
+[2024-08-26 20:44:21,734][    INFO] ***** Evaluation ***** >>>> Class [36 baseball glove] IoU: 32.44
+[2024-08-26 20:44:21,734][    INFO] ***** Evaluation ***** >>>> Class [37 skateboard] IoU: 11.23
+[2024-08-26 20:44:21,734][    INFO] ***** Evaluation ***** >>>> Class [38 surfboard] IoU: 46.62
+[2024-08-26 20:44:21,734][    INFO] ***** Evaluation ***** >>>> Class [39 tennis racket] IoU: 44.98
+[2024-08-26 20:44:21,734][    INFO] ***** Evaluation ***** >>>> Class [40 bottle] IoU: 25.14
+[2024-08-26 20:44:21,734][    INFO] ***** Evaluation ***** >>>> Class [41 wine glass] IoU: 21.66
+[2024-08-26 20:44:21,734][    INFO] ***** Evaluation ***** >>>> Class [42 cup] IoU: 37.95
+[2024-08-26 20:44:21,734][    INFO] ***** Evaluation ***** >>>> Class [43 fork] IoU: 2.85
+[2024-08-26 20:44:21,734][    INFO] ***** Evaluation ***** >>>> Class [44 knife] IoU: 9.81
+[2024-08-26 20:44:21,734][    INFO] ***** Evaluation ***** >>>> Class [45 spoon] IoU: 0.00
+[2024-08-26 20:44:21,734][    INFO] ***** Evaluation ***** >>>> Class [46 bowl] IoU: 22.04
+[2024-08-26 20:44:21,734][    INFO] ***** Evaluation ***** >>>> Class [47 banana] IoU: 52.47
+[2024-08-26 20:44:21,734][    INFO] ***** Evaluation ***** >>>> Class [48 apple] IoU: 25.39
+[2024-08-26 20:44:21,734][    INFO] ***** Evaluation ***** >>>> Class [49 sandwich] IoU: 35.39
+[2024-08-26 20:44:21,734][    INFO] ***** Evaluation ***** >>>> Class [50 orange] IoU: 15.17
+[2024-08-26 20:44:21,734][    INFO] ***** Evaluation ***** >>>> Class [51 broccoli] IoU: 20.83
+[2024-08-26 20:44:21,734][    INFO] ***** Evaluation ***** >>>> Class [52 carrot] IoU: 17.37
+[2024-08-26 20:44:21,735][    INFO] ***** Evaluation ***** >>>> Class [53 hot dog] IoU: 37.58
+[2024-08-26 20:44:21,735][    INFO] ***** Evaluation ***** >>>> Class [54 pizza] IoU: 57.81
+[2024-08-26 20:44:21,735][    INFO] ***** Evaluation ***** >>>> Class [55 donut] IoU: 42.36
+[2024-08-26 20:44:21,735][    INFO] ***** Evaluation ***** >>>> Class [56 cake] IoU: 36.98
+[2024-08-26 20:44:21,735][    INFO] ***** Evaluation ***** >>>> Class [57 chair] IoU: 30.47
+[2024-08-26 20:44:21,735][    INFO] ***** Evaluation ***** >>>> Class [58 couch] IoU: 47.70
+[2024-08-26 20:44:21,735][    INFO] ***** Evaluation ***** >>>> Class [59 potted plant] IoU: 17.08
+[2024-08-26 20:44:21,735][    INFO] ***** Evaluation ***** >>>> Class [60 bed] IoU: 48.89
+[2024-08-26 20:44:21,735][    INFO] ***** Evaluation ***** >>>> Class [61 dining table] IoU: 32.74
+[2024-08-26 20:44:21,735][    INFO] ***** Evaluation ***** >>>> Class [62 toilet] IoU: 62.88
+[2024-08-26 20:44:21,735][    INFO] ***** Evaluation ***** >>>> Class [63 tv] IoU: 47.88
+[2024-08-26 20:44:21,735][    INFO] ***** Evaluation ***** >>>> Class [64 laptop] IoU: 60.94
+[2024-08-26 20:44:21,735][    INFO] ***** Evaluation ***** >>>> Class [65 mouse] IoU: 1.27
+[2024-08-26 20:44:21,735][    INFO] ***** Evaluation ***** >>>> Class [66 remote] IoU: 19.65
+[2024-08-26 20:44:21,735][    INFO] ***** Evaluation ***** >>>> Class [67 keyboard] IoU: 51.61
+[2024-08-26 20:44:21,735][    INFO] ***** Evaluation ***** >>>> Class [68 cell phone] IoU: 43.79
+[2024-08-26 20:44:21,735][    INFO] ***** Evaluation ***** >>>> Class [69 microwave] IoU: 21.80
+[2024-08-26 20:44:21,735][    INFO] ***** Evaluation ***** >>>> Class [70 oven] IoU: 28.40
+[2024-08-26 20:44:21,735][    INFO] ***** Evaluation ***** >>>> Class [71 toaster] IoU: 0.00
+[2024-08-26 20:44:21,735][    INFO] ***** Evaluation ***** >>>> Class [72 sink] IoU: 35.56
+[2024-08-26 20:44:21,735][    INFO] ***** Evaluation ***** >>>> Class [73 refrigerator] IoU: 55.21
+[2024-08-26 20:44:21,735][    INFO] ***** Evaluation ***** >>>> Class [74 book] IoU: 36.00
+[2024-08-26 20:44:21,735][    INFO] ***** Evaluation ***** >>>> Class [75 clock] IoU: 57.89
+[2024-08-26 20:44:21,735][    INFO] ***** Evaluation ***** >>>> Class [76 vase] IoU: 37.40
+[2024-08-26 20:44:21,735][    INFO] ***** Evaluation ***** >>>> Class [77 scissors] IoU: 62.58
+[2024-08-26 20:44:21,735][    INFO] ***** Evaluation ***** >>>> Class [78 teddy bear] IoU: 66.28
+[2024-08-26 20:44:21,735][    INFO] ***** Evaluation ***** >>>> Class [79 hair drier] IoU: 0.11
+[2024-08-26 20:44:21,736][    INFO] ***** Evaluation ***** >>>> Class [80 toothbrush] IoU: 0.00
+[2024-08-26 20:44:21,736][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 40.80
+
+[2024-08-26 20:44:22,776][    INFO] ===========> Epoch: 2, LR: 0.0000045, Previous best: 40.80
+[2024-08-26 20:44:23,271][    INFO] Iters: 0, Total loss: 0.118
+[2024-08-26 20:44:57,234][    INFO] Iters: 117, Total loss: 0.147
+[2024-08-26 20:45:31,218][    INFO] Iters: 234, Total loss: 0.137
+[2024-08-26 20:46:05,203][    INFO] Iters: 351, Total loss: 0.135
+[2024-08-26 20:46:39,193][    INFO] Iters: 468, Total loss: 0.135
+[2024-08-26 20:47:13,185][    INFO] Iters: 585, Total loss: 0.141
+[2024-08-26 20:47:47,177][    INFO] Iters: 702, Total loss: 0.144
+[2024-08-26 20:48:21,175][    INFO] Iters: 819, Total loss: 0.142
+[2024-08-26 20:48:55,157][    INFO] Iters: 936, Total loss: 0.139
+[2024-08-26 20:49:38,509][    INFO] ***** Evaluation ***** >>>> Class [0 void] IoU: 87.44
+[2024-08-26 20:49:38,509][    INFO] ***** Evaluation ***** >>>> Class [1 person] IoU: 79.63
+[2024-08-26 20:49:38,509][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 55.85
+[2024-08-26 20:49:38,509][    INFO] ***** Evaluation ***** >>>> Class [3 car] IoU: 45.49
+[2024-08-26 20:49:38,509][    INFO] ***** Evaluation ***** >>>> Class [4 motorcycle] IoU: 75.19
+[2024-08-26 20:49:38,509][    INFO] ***** Evaluation ***** >>>> Class [5 airplane] IoU: 71.97
+[2024-08-26 20:49:38,509][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 71.85
+[2024-08-26 20:49:38,510][    INFO] ***** Evaluation ***** >>>> Class [7 train] IoU: 71.17
+[2024-08-26 20:49:38,510][    INFO] ***** Evaluation ***** >>>> Class [8 truck] IoU: 41.52
+[2024-08-26 20:49:38,510][    INFO] ***** Evaluation ***** >>>> Class [9 boat] IoU: 57.14
+[2024-08-26 20:49:38,510][    INFO] ***** Evaluation ***** >>>> Class [10 traffic light] IoU: 31.93
+[2024-08-26 20:49:38,510][    INFO] ***** Evaluation ***** >>>> Class [11 fire hydrant] IoU: 73.26
+[2024-08-26 20:49:38,510][    INFO] ***** Evaluation ***** >>>> Class [12 stop sign] IoU: 75.09
+[2024-08-26 20:49:38,510][    INFO] ***** Evaluation ***** >>>> Class [13 parking meter] IoU: 41.39
+[2024-08-26 20:49:38,510][    INFO] ***** Evaluation ***** >>>> Class [14 bench] IoU: 39.49
+[2024-08-26 20:49:38,510][    INFO] ***** Evaluation ***** >>>> Class [15 bird] IoU: 56.98
+[2024-08-26 20:49:38,510][    INFO] ***** Evaluation ***** >>>> Class [16 cat] IoU: 76.07
+[2024-08-26 20:49:38,510][    INFO] ***** Evaluation ***** >>>> Class [17 dog] IoU: 70.10
+[2024-08-26 20:49:38,510][    INFO] ***** Evaluation ***** >>>> Class [18 horse] IoU: 67.59
+[2024-08-26 20:49:38,510][    INFO] ***** Evaluation ***** >>>> Class [19 sheep] IoU: 68.70
+[2024-08-26 20:49:38,510][    INFO] ***** Evaluation ***** >>>> Class [20 cow] IoU: 62.32
+[2024-08-26 20:49:38,510][    INFO] ***** Evaluation ***** >>>> Class [21 elephant] IoU: 84.99
+[2024-08-26 20:49:38,510][    INFO] ***** Evaluation ***** >>>> Class [22 bear] IoU: 65.61
+[2024-08-26 20:49:38,510][    INFO] ***** Evaluation ***** >>>> Class [23 zebra] IoU: 84.52
+[2024-08-26 20:49:38,510][    INFO] ***** Evaluation ***** >>>> Class [24 giraffe] IoU: 79.79
+[2024-08-26 20:49:38,510][    INFO] ***** Evaluation ***** >>>> Class [25 backpack] IoU: 12.49
+[2024-08-26 20:49:38,510][    INFO] ***** Evaluation ***** >>>> Class [26 umbrella] IoU: 68.26
+[2024-08-26 20:49:38,510][    INFO] ***** Evaluation ***** >>>> Class [27 handbag] IoU: 10.49
+[2024-08-26 20:49:38,510][    INFO] ***** Evaluation ***** >>>> Class [28 tie] IoU: 5.55
+[2024-08-26 20:49:38,510][    INFO] ***** Evaluation ***** >>>> Class [29 suitcase] IoU: 43.36
+[2024-08-26 20:49:38,510][    INFO] ***** Evaluation ***** >>>> Class [30 frisbee] IoU: 26.97
+[2024-08-26 20:49:38,510][    INFO] ***** Evaluation ***** >>>> Class [31 skis] IoU: 8.07
+[2024-08-26 20:49:38,510][    INFO] ***** Evaluation ***** >>>> Class [32 snowboard] IoU: 3.02
+[2024-08-26 20:49:38,510][    INFO] ***** Evaluation ***** >>>> Class [33 sports ball] IoU: 26.04
+[2024-08-26 20:49:38,511][    INFO] ***** Evaluation ***** >>>> Class [34 kite] IoU: 35.88
+[2024-08-26 20:49:38,511][    INFO] ***** Evaluation ***** >>>> Class [35 baseball bat] IoU: 0.29
+[2024-08-26 20:49:38,511][    INFO] ***** Evaluation ***** >>>> Class [36 baseball glove] IoU: 37.11
+[2024-08-26 20:49:38,511][    INFO] ***** Evaluation ***** >>>> Class [37 skateboard] IoU: 12.12
+[2024-08-26 20:49:38,511][    INFO] ***** Evaluation ***** >>>> Class [38 surfboard] IoU: 45.87
+[2024-08-26 20:49:38,511][    INFO] ***** Evaluation ***** >>>> Class [39 tennis racket] IoU: 46.48
+[2024-08-26 20:49:38,511][    INFO] ***** Evaluation ***** >>>> Class [40 bottle] IoU: 30.43
+[2024-08-26 20:49:38,511][    INFO] ***** Evaluation ***** >>>> Class [41 wine glass] IoU: 15.84
+[2024-08-26 20:49:38,511][    INFO] ***** Evaluation ***** >>>> Class [42 cup] IoU: 39.00
+[2024-08-26 20:49:38,511][    INFO] ***** Evaluation ***** >>>> Class [43 fork] IoU: 5.93
+[2024-08-26 20:49:38,511][    INFO] ***** Evaluation ***** >>>> Class [44 knife] IoU: 10.15
+[2024-08-26 20:49:38,511][    INFO] ***** Evaluation ***** >>>> Class [45 spoon] IoU: 2.72
+[2024-08-26 20:49:38,511][    INFO] ***** Evaluation ***** >>>> Class [46 bowl] IoU: 21.09
+[2024-08-26 20:49:38,511][    INFO] ***** Evaluation ***** >>>> Class [47 banana] IoU: 51.33
+[2024-08-26 20:49:38,511][    INFO] ***** Evaluation ***** >>>> Class [48 apple] IoU: 27.12
+[2024-08-26 20:49:38,511][    INFO] ***** Evaluation ***** >>>> Class [49 sandwich] IoU: 39.76
+[2024-08-26 20:49:38,511][    INFO] ***** Evaluation ***** >>>> Class [50 orange] IoU: 32.82
+[2024-08-26 20:49:38,511][    INFO] ***** Evaluation ***** >>>> Class [51 broccoli] IoU: 20.64
+[2024-08-26 20:49:38,511][    INFO] ***** Evaluation ***** >>>> Class [52 carrot] IoU: 18.28
+[2024-08-26 20:49:38,511][    INFO] ***** Evaluation ***** >>>> Class [53 hot dog] IoU: 41.28
+[2024-08-26 20:49:38,511][    INFO] ***** Evaluation ***** >>>> Class [54 pizza] IoU: 61.57
+[2024-08-26 20:49:38,511][    INFO] ***** Evaluation ***** >>>> Class [55 donut] IoU: 49.07
+[2024-08-26 20:49:38,511][    INFO] ***** Evaluation ***** >>>> Class [56 cake] IoU: 37.93
+[2024-08-26 20:49:38,511][    INFO] ***** Evaluation ***** >>>> Class [57 chair] IoU: 36.51
+[2024-08-26 20:49:38,511][    INFO] ***** Evaluation ***** >>>> Class [58 couch] IoU: 50.28
+[2024-08-26 20:49:38,511][    INFO] ***** Evaluation ***** >>>> Class [59 potted plant] IoU: 17.23
+[2024-08-26 20:49:38,511][    INFO] ***** Evaluation ***** >>>> Class [60 bed] IoU: 48.81
+[2024-08-26 20:49:38,512][    INFO] ***** Evaluation ***** >>>> Class [61 dining table] IoU: 33.11
+[2024-08-26 20:49:38,512][    INFO] ***** Evaluation ***** >>>> Class [62 toilet] IoU: 65.78
+[2024-08-26 20:49:38,512][    INFO] ***** Evaluation ***** >>>> Class [63 tv] IoU: 48.66
+[2024-08-26 20:49:38,512][    INFO] ***** Evaluation ***** >>>> Class [64 laptop] IoU: 60.35
+[2024-08-26 20:49:38,512][    INFO] ***** Evaluation ***** >>>> Class [65 mouse] IoU: 15.61
+[2024-08-26 20:49:38,512][    INFO] ***** Evaluation ***** >>>> Class [66 remote] IoU: 32.11
+[2024-08-26 20:49:38,512][    INFO] ***** Evaluation ***** >>>> Class [67 keyboard] IoU: 53.77
+[2024-08-26 20:49:38,512][    INFO] ***** Evaluation ***** >>>> Class [68 cell phone] IoU: 45.65
+[2024-08-26 20:49:38,512][    INFO] ***** Evaluation ***** >>>> Class [69 microwave] IoU: 18.44
+[2024-08-26 20:49:38,512][    INFO] ***** Evaluation ***** >>>> Class [70 oven] IoU: 31.78
+[2024-08-26 20:49:38,512][    INFO] ***** Evaluation ***** >>>> Class [71 toaster] IoU: 0.00
+[2024-08-26 20:49:38,512][    INFO] ***** Evaluation ***** >>>> Class [72 sink] IoU: 36.94
+[2024-08-26 20:49:38,512][    INFO] ***** Evaluation ***** >>>> Class [73 refrigerator] IoU: 53.84
+[2024-08-26 20:49:38,512][    INFO] ***** Evaluation ***** >>>> Class [74 book] IoU: 35.79
+[2024-08-26 20:49:38,512][    INFO] ***** Evaluation ***** >>>> Class [75 clock] IoU: 60.52
+[2024-08-26 20:49:38,512][    INFO] ***** Evaluation ***** >>>> Class [76 vase] IoU: 38.01
+[2024-08-26 20:49:38,512][    INFO] ***** Evaluation ***** >>>> Class [77 scissors] IoU: 58.62
+[2024-08-26 20:49:38,512][    INFO] ***** Evaluation ***** >>>> Class [78 teddy bear] IoU: 63.13
+[2024-08-26 20:49:38,512][    INFO] ***** Evaluation ***** >>>> Class [79 hair drier] IoU: 0.00
+[2024-08-26 20:49:38,512][    INFO] ***** Evaluation ***** >>>> Class [80 toothbrush] IoU: 0.00
+[2024-08-26 20:49:38,512][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 42.31
+
+[2024-08-26 20:49:39,521][    INFO] ===========> Epoch: 3, LR: 0.0000043, Previous best: 42.31
+[2024-08-26 20:49:40,032][    INFO] Iters: 0, Total loss: 0.118
+[2024-08-26 20:50:14,000][    INFO] Iters: 117, Total loss: 0.117
+[2024-08-26 20:50:47,977][    INFO] Iters: 234, Total loss: 0.121
+[2024-08-26 20:51:21,976][    INFO] Iters: 351, Total loss: 0.122
+[2024-08-26 20:51:55,975][    INFO] Iters: 468, Total loss: 0.120
+[2024-08-26 20:52:29,970][    INFO] Iters: 585, Total loss: 0.118
+[2024-08-26 20:53:03,957][    INFO] Iters: 702, Total loss: 0.117
+[2024-08-26 20:53:37,953][    INFO] Iters: 819, Total loss: 0.115
+[2024-08-26 20:54:11,940][    INFO] Iters: 936, Total loss: 0.115
+[2024-08-26 20:54:55,134][    INFO] ***** Evaluation ***** >>>> Class [0 void] IoU: 87.03
+[2024-08-26 20:54:55,134][    INFO] ***** Evaluation ***** >>>> Class [1 person] IoU: 79.59
+[2024-08-26 20:54:55,134][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 52.22
+[2024-08-26 20:54:55,134][    INFO] ***** Evaluation ***** >>>> Class [3 car] IoU: 47.04
+[2024-08-26 20:54:55,134][    INFO] ***** Evaluation ***** >>>> Class [4 motorcycle] IoU: 73.25
+[2024-08-26 20:54:55,134][    INFO] ***** Evaluation ***** >>>> Class [5 airplane] IoU: 75.69
+[2024-08-26 20:54:55,134][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 68.72
+[2024-08-26 20:54:55,135][    INFO] ***** Evaluation ***** >>>> Class [7 train] IoU: 65.48
+[2024-08-26 20:54:55,135][    INFO] ***** Evaluation ***** >>>> Class [8 truck] IoU: 40.76
+[2024-08-26 20:54:55,135][    INFO] ***** Evaluation ***** >>>> Class [9 boat] IoU: 56.72
+[2024-08-26 20:54:55,135][    INFO] ***** Evaluation ***** >>>> Class [10 traffic light] IoU: 36.18
+[2024-08-26 20:54:55,135][    INFO] ***** Evaluation ***** >>>> Class [11 fire hydrant] IoU: 72.82
+[2024-08-26 20:54:55,135][    INFO] ***** Evaluation ***** >>>> Class [12 stop sign] IoU: 76.49
+[2024-08-26 20:54:55,135][    INFO] ***** Evaluation ***** >>>> Class [13 parking meter] IoU: 42.19
+[2024-08-26 20:54:55,135][    INFO] ***** Evaluation ***** >>>> Class [14 bench] IoU: 40.34
+[2024-08-26 20:54:55,135][    INFO] ***** Evaluation ***** >>>> Class [15 bird] IoU: 53.86
+[2024-08-26 20:54:55,135][    INFO] ***** Evaluation ***** >>>> Class [16 cat] IoU: 73.50
+[2024-08-26 20:54:55,135][    INFO] ***** Evaluation ***** >>>> Class [17 dog] IoU: 66.80
+[2024-08-26 20:54:55,135][    INFO] ***** Evaluation ***** >>>> Class [18 horse] IoU: 71.16
+[2024-08-26 20:54:55,135][    INFO] ***** Evaluation ***** >>>> Class [19 sheep] IoU: 53.19
+[2024-08-26 20:54:55,135][    INFO] ***** Evaluation ***** >>>> Class [20 cow] IoU: 39.13
+[2024-08-26 20:54:55,135][    INFO] ***** Evaluation ***** >>>> Class [21 elephant] IoU: 84.58
+[2024-08-26 20:54:55,135][    INFO] ***** Evaluation ***** >>>> Class [22 bear] IoU: 64.10
+[2024-08-26 20:54:55,135][    INFO] ***** Evaluation ***** >>>> Class [23 zebra] IoU: 86.06
+[2024-08-26 20:54:55,135][    INFO] ***** Evaluation ***** >>>> Class [24 giraffe] IoU: 77.77
+[2024-08-26 20:54:55,135][    INFO] ***** Evaluation ***** >>>> Class [25 backpack] IoU: 14.60
+[2024-08-26 20:54:55,135][    INFO] ***** Evaluation ***** >>>> Class [26 umbrella] IoU: 65.85
+[2024-08-26 20:54:55,135][    INFO] ***** Evaluation ***** >>>> Class [27 handbag] IoU: 13.90
+[2024-08-26 20:54:55,135][    INFO] ***** Evaluation ***** >>>> Class [28 tie] IoU: 1.45
+[2024-08-26 20:54:55,135][    INFO] ***** Evaluation ***** >>>> Class [29 suitcase] IoU: 43.02
+[2024-08-26 20:54:55,135][    INFO] ***** Evaluation ***** >>>> Class [30 frisbee] IoU: 18.97
+[2024-08-26 20:54:55,135][    INFO] ***** Evaluation ***** >>>> Class [31 skis] IoU: 3.27
+[2024-08-26 20:54:55,135][    INFO] ***** Evaluation ***** >>>> Class [32 snowboard] IoU: 8.78
+[2024-08-26 20:54:55,135][    INFO] ***** Evaluation ***** >>>> Class [33 sports ball] IoU: 29.92
+[2024-08-26 20:54:55,136][    INFO] ***** Evaluation ***** >>>> Class [34 kite] IoU: 28.95
+[2024-08-26 20:54:55,136][    INFO] ***** Evaluation ***** >>>> Class [35 baseball bat] IoU: 2.76
+[2024-08-26 20:54:55,136][    INFO] ***** Evaluation ***** >>>> Class [36 baseball glove] IoU: 10.49
+[2024-08-26 20:54:55,136][    INFO] ***** Evaluation ***** >>>> Class [37 skateboard] IoU: 11.05
+[2024-08-26 20:54:55,136][    INFO] ***** Evaluation ***** >>>> Class [38 surfboard] IoU: 55.01
+[2024-08-26 20:54:55,136][    INFO] ***** Evaluation ***** >>>> Class [39 tennis racket] IoU: 45.96
+[2024-08-26 20:54:55,136][    INFO] ***** Evaluation ***** >>>> Class [40 bottle] IoU: 34.81
+[2024-08-26 20:54:55,136][    INFO] ***** Evaluation ***** >>>> Class [41 wine glass] IoU: 8.53
+[2024-08-26 20:54:55,136][    INFO] ***** Evaluation ***** >>>> Class [42 cup] IoU: 35.81
+[2024-08-26 20:54:55,136][    INFO] ***** Evaluation ***** >>>> Class [43 fork] IoU: 0.04
+[2024-08-26 20:54:55,136][    INFO] ***** Evaluation ***** >>>> Class [44 knife] IoU: 3.06
+[2024-08-26 20:54:55,136][    INFO] ***** Evaluation ***** >>>> Class [45 spoon] IoU: 0.06
+[2024-08-26 20:54:55,136][    INFO] ***** Evaluation ***** >>>> Class [46 bowl] IoU: 13.03
+[2024-08-26 20:54:55,136][    INFO] ***** Evaluation ***** >>>> Class [47 banana] IoU: 51.97
+[2024-08-26 20:54:55,136][    INFO] ***** Evaluation ***** >>>> Class [48 apple] IoU: 15.91
+[2024-08-26 20:54:55,136][    INFO] ***** Evaluation ***** >>>> Class [49 sandwich] IoU: 34.20
+[2024-08-26 20:54:55,136][    INFO] ***** Evaluation ***** >>>> Class [50 orange] IoU: 21.71
+[2024-08-26 20:54:55,136][    INFO] ***** Evaluation ***** >>>> Class [51 broccoli] IoU: 22.26
+[2024-08-26 20:54:55,136][    INFO] ***** Evaluation ***** >>>> Class [52 carrot] IoU: 11.65
+[2024-08-26 20:54:55,136][    INFO] ***** Evaluation ***** >>>> Class [53 hot dog] IoU: 38.52
+[2024-08-26 20:54:55,136][    INFO] ***** Evaluation ***** >>>> Class [54 pizza] IoU: 45.35
+[2024-08-26 20:54:55,136][    INFO] ***** Evaluation ***** >>>> Class [55 donut] IoU: 52.24
+[2024-08-26 20:54:55,136][    INFO] ***** Evaluation ***** >>>> Class [56 cake] IoU: 26.59
+[2024-08-26 20:54:55,136][    INFO] ***** Evaluation ***** >>>> Class [57 chair] IoU: 28.19
+[2024-08-26 20:54:55,136][    INFO] ***** Evaluation ***** >>>> Class [58 couch] IoU: 45.89
+[2024-08-26 20:54:55,136][    INFO] ***** Evaluation ***** >>>> Class [59 potted plant] IoU: 15.59
+[2024-08-26 20:54:55,136][    INFO] ***** Evaluation ***** >>>> Class [60 bed] IoU: 45.53
+[2024-08-26 20:54:55,136][    INFO] ***** Evaluation ***** >>>> Class [61 dining table] IoU: 31.59
+[2024-08-26 20:54:55,137][    INFO] ***** Evaluation ***** >>>> Class [62 toilet] IoU: 64.24
+[2024-08-26 20:54:55,137][    INFO] ***** Evaluation ***** >>>> Class [63 tv] IoU: 50.10
+[2024-08-26 20:54:55,137][    INFO] ***** Evaluation ***** >>>> Class [64 laptop] IoU: 60.69
+[2024-08-26 20:54:55,137][    INFO] ***** Evaluation ***** >>>> Class [65 mouse] IoU: 14.28
+[2024-08-26 20:54:55,137][    INFO] ***** Evaluation ***** >>>> Class [66 remote] IoU: 20.44
+[2024-08-26 20:54:55,137][    INFO] ***** Evaluation ***** >>>> Class [67 keyboard] IoU: 50.94
+[2024-08-26 20:54:55,137][    INFO] ***** Evaluation ***** >>>> Class [68 cell phone] IoU: 36.89
+[2024-08-26 20:54:55,137][    INFO] ***** Evaluation ***** >>>> Class [69 microwave] IoU: 13.61
+[2024-08-26 20:54:55,137][    INFO] ***** Evaluation ***** >>>> Class [70 oven] IoU: 4.85
+[2024-08-26 20:54:55,137][    INFO] ***** Evaluation ***** >>>> Class [71 toaster] IoU: 0.00
+[2024-08-26 20:54:55,137][    INFO] ***** Evaluation ***** >>>> Class [72 sink] IoU: 33.07
+[2024-08-26 20:54:55,137][    INFO] ***** Evaluation ***** >>>> Class [73 refrigerator] IoU: 47.63
+[2024-08-26 20:54:55,137][    INFO] ***** Evaluation ***** >>>> Class [74 book] IoU: 32.63
+[2024-08-26 20:54:55,137][    INFO] ***** Evaluation ***** >>>> Class [75 clock] IoU: 57.14
+[2024-08-26 20:54:55,137][    INFO] ***** Evaluation ***** >>>> Class [76 vase] IoU: 34.74
+[2024-08-26 20:54:55,137][    INFO] ***** Evaluation ***** >>>> Class [77 scissors] IoU: 28.28
+[2024-08-26 20:54:55,137][    INFO] ***** Evaluation ***** >>>> Class [78 teddy bear] IoU: 67.57
+[2024-08-26 20:54:55,137][    INFO] ***** Evaluation ***** >>>> Class [79 hair drier] IoU: 0.00
+[2024-08-26 20:54:55,137][    INFO] ***** Evaluation ***** >>>> Class [80 toothbrush] IoU: 0.89
+[2024-08-26 20:54:55,137][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 38.76
+
+[2024-08-26 20:54:55,659][    INFO] ===========> Epoch: 4, LR: 0.0000041, Previous best: 42.31
+[2024-08-26 20:54:56,156][    INFO] Iters: 0, Total loss: 0.176
+[2024-08-26 20:55:30,136][    INFO] Iters: 117, Total loss: 0.115
+[2024-08-26 20:56:04,127][    INFO] Iters: 234, Total loss: 0.108
+[2024-08-26 20:56:38,119][    INFO] Iters: 351, Total loss: 0.105
+[2024-08-26 20:57:12,118][    INFO] Iters: 468, Total loss: 0.104
+[2024-08-26 20:57:46,108][    INFO] Iters: 585, Total loss: 0.103
+[2024-08-26 20:58:20,096][    INFO] Iters: 702, Total loss: 0.102
+[2024-08-26 20:58:54,079][    INFO] Iters: 819, Total loss: 0.102
+[2024-08-26 20:59:28,062][    INFO] Iters: 936, Total loss: 0.102
+[2024-08-26 21:00:11,413][    INFO] ***** Evaluation ***** >>>> Class [0 void] IoU: 87.61
+[2024-08-26 21:00:11,413][    INFO] ***** Evaluation ***** >>>> Class [1 person] IoU: 80.12
+[2024-08-26 21:00:11,413][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 51.99
+[2024-08-26 21:00:11,413][    INFO] ***** Evaluation ***** >>>> Class [3 car] IoU: 48.19
+[2024-08-26 21:00:11,414][    INFO] ***** Evaluation ***** >>>> Class [4 motorcycle] IoU: 73.87
+[2024-08-26 21:00:11,414][    INFO] ***** Evaluation ***** >>>> Class [5 airplane] IoU: 75.08
+[2024-08-26 21:00:11,414][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 71.42
+[2024-08-26 21:00:11,414][    INFO] ***** Evaluation ***** >>>> Class [7 train] IoU: 68.99
+[2024-08-26 21:00:11,414][    INFO] ***** Evaluation ***** >>>> Class [8 truck] IoU: 41.93
+[2024-08-26 21:00:11,414][    INFO] ***** Evaluation ***** >>>> Class [9 boat] IoU: 59.82
+[2024-08-26 21:00:11,414][    INFO] ***** Evaluation ***** >>>> Class [10 traffic light] IoU: 42.71
+[2024-08-26 21:00:11,414][    INFO] ***** Evaluation ***** >>>> Class [11 fire hydrant] IoU: 74.19
+[2024-08-26 21:00:11,414][    INFO] ***** Evaluation ***** >>>> Class [12 stop sign] IoU: 76.17
+[2024-08-26 21:00:11,414][    INFO] ***** Evaluation ***** >>>> Class [13 parking meter] IoU: 47.48
+[2024-08-26 21:00:11,414][    INFO] ***** Evaluation ***** >>>> Class [14 bench] IoU: 40.09
+[2024-08-26 21:00:11,414][    INFO] ***** Evaluation ***** >>>> Class [15 bird] IoU: 61.20
+[2024-08-26 21:00:11,414][    INFO] ***** Evaluation ***** >>>> Class [16 cat] IoU: 75.36
+[2024-08-26 21:00:11,414][    INFO] ***** Evaluation ***** >>>> Class [17 dog] IoU: 69.96
+[2024-08-26 21:00:11,414][    INFO] ***** Evaluation ***** >>>> Class [18 horse] IoU: 68.51
+[2024-08-26 21:00:11,414][    INFO] ***** Evaluation ***** >>>> Class [19 sheep] IoU: 61.39
+[2024-08-26 21:00:11,414][    INFO] ***** Evaluation ***** >>>> Class [20 cow] IoU: 58.90
+[2024-08-26 21:00:11,414][    INFO] ***** Evaluation ***** >>>> Class [21 elephant] IoU: 85.89
+[2024-08-26 21:00:11,414][    INFO] ***** Evaluation ***** >>>> Class [22 bear] IoU: 58.87
+[2024-08-26 21:00:11,414][    INFO] ***** Evaluation ***** >>>> Class [23 zebra] IoU: 85.11
+[2024-08-26 21:00:11,414][    INFO] ***** Evaluation ***** >>>> Class [24 giraffe] IoU: 81.07
+[2024-08-26 21:00:11,414][    INFO] ***** Evaluation ***** >>>> Class [25 backpack] IoU: 13.12
+[2024-08-26 21:00:11,414][    INFO] ***** Evaluation ***** >>>> Class [26 umbrella] IoU: 68.66
+[2024-08-26 21:00:11,414][    INFO] ***** Evaluation ***** >>>> Class [27 handbag] IoU: 13.55
+[2024-08-26 21:00:11,414][    INFO] ***** Evaluation ***** >>>> Class [28 tie] IoU: 5.65
+[2024-08-26 21:00:11,414][    INFO] ***** Evaluation ***** >>>> Class [29 suitcase] IoU: 44.89
+[2024-08-26 21:00:11,415][    INFO] ***** Evaluation ***** >>>> Class [30 frisbee] IoU: 26.96
+[2024-08-26 21:00:11,415][    INFO] ***** Evaluation ***** >>>> Class [31 skis] IoU: 18.15
+[2024-08-26 21:00:11,415][    INFO] ***** Evaluation ***** >>>> Class [32 snowboard] IoU: 14.95
+[2024-08-26 21:00:11,415][    INFO] ***** Evaluation ***** >>>> Class [33 sports ball] IoU: 30.46
+[2024-08-26 21:00:11,415][    INFO] ***** Evaluation ***** >>>> Class [34 kite] IoU: 36.27
+[2024-08-26 21:00:11,415][    INFO] ***** Evaluation ***** >>>> Class [35 baseball bat] IoU: 7.86
+[2024-08-26 21:00:11,415][    INFO] ***** Evaluation ***** >>>> Class [36 baseball glove] IoU: 27.54
+[2024-08-26 21:00:11,415][    INFO] ***** Evaluation ***** >>>> Class [37 skateboard] IoU: 17.16
+[2024-08-26 21:00:11,415][    INFO] ***** Evaluation ***** >>>> Class [38 surfboard] IoU: 51.49
+[2024-08-26 21:00:11,415][    INFO] ***** Evaluation ***** >>>> Class [39 tennis racket] IoU: 47.06
+[2024-08-26 21:00:11,415][    INFO] ***** Evaluation ***** >>>> Class [40 bottle] IoU: 35.47
+[2024-08-26 21:00:11,415][    INFO] ***** Evaluation ***** >>>> Class [41 wine glass] IoU: 16.09
+[2024-08-26 21:00:11,415][    INFO] ***** Evaluation ***** >>>> Class [42 cup] IoU: 38.77
+[2024-08-26 21:00:11,415][    INFO] ***** Evaluation ***** >>>> Class [43 fork] IoU: 13.60
+[2024-08-26 21:00:11,415][    INFO] ***** Evaluation ***** >>>> Class [44 knife] IoU: 10.10
+[2024-08-26 21:00:11,415][    INFO] ***** Evaluation ***** >>>> Class [45 spoon] IoU: 3.44
+[2024-08-26 21:00:11,415][    INFO] ***** Evaluation ***** >>>> Class [46 bowl] IoU: 20.33
+[2024-08-26 21:00:11,415][    INFO] ***** Evaluation ***** >>>> Class [47 banana] IoU: 54.21
+[2024-08-26 21:00:11,415][    INFO] ***** Evaluation ***** >>>> Class [48 apple] IoU: 30.17
+[2024-08-26 21:00:11,415][    INFO] ***** Evaluation ***** >>>> Class [49 sandwich] IoU: 38.76
+[2024-08-26 21:00:11,415][    INFO] ***** Evaluation ***** >>>> Class [50 orange] IoU: 32.43
+[2024-08-26 21:00:11,415][    INFO] ***** Evaluation ***** >>>> Class [51 broccoli] IoU: 26.76
+[2024-08-26 21:00:11,415][    INFO] ***** Evaluation ***** >>>> Class [52 carrot] IoU: 17.11
+[2024-08-26 21:00:11,415][    INFO] ***** Evaluation ***** >>>> Class [53 hot dog] IoU: 40.01
+[2024-08-26 21:00:11,415][    INFO] ***** Evaluation ***** >>>> Class [54 pizza] IoU: 63.00
+[2024-08-26 21:00:11,415][    INFO] ***** Evaluation ***** >>>> Class [55 donut] IoU: 52.16
+[2024-08-26 21:00:11,415][    INFO] ***** Evaluation ***** >>>> Class [56 cake] IoU: 37.66
+[2024-08-26 21:00:11,416][    INFO] ***** Evaluation ***** >>>> Class [57 chair] IoU: 33.10
+[2024-08-26 21:00:11,416][    INFO] ***** Evaluation ***** >>>> Class [58 couch] IoU: 50.91
+[2024-08-26 21:00:11,416][    INFO] ***** Evaluation ***** >>>> Class [59 potted plant] IoU: 18.70
+[2024-08-26 21:00:11,416][    INFO] ***** Evaluation ***** >>>> Class [60 bed] IoU: 47.28
+[2024-08-26 21:00:11,416][    INFO] ***** Evaluation ***** >>>> Class [61 dining table] IoU: 31.18
+[2024-08-26 21:00:11,416][    INFO] ***** Evaluation ***** >>>> Class [62 toilet] IoU: 66.27
+[2024-08-26 21:00:11,416][    INFO] ***** Evaluation ***** >>>> Class [63 tv] IoU: 51.96
+[2024-08-26 21:00:11,416][    INFO] ***** Evaluation ***** >>>> Class [64 laptop] IoU: 61.51
+[2024-08-26 21:00:11,416][    INFO] ***** Evaluation ***** >>>> Class [65 mouse] IoU: 22.68
+[2024-08-26 21:00:11,416][    INFO] ***** Evaluation ***** >>>> Class [66 remote] IoU: 29.10
+[2024-08-26 21:00:11,416][    INFO] ***** Evaluation ***** >>>> Class [67 keyboard] IoU: 51.42
+[2024-08-26 21:00:11,416][    INFO] ***** Evaluation ***** >>>> Class [68 cell phone] IoU: 46.23
+[2024-08-26 21:00:11,416][    INFO] ***** Evaluation ***** >>>> Class [69 microwave] IoU: 18.34
+[2024-08-26 21:00:11,416][    INFO] ***** Evaluation ***** >>>> Class [70 oven] IoU: 33.64
+[2024-08-26 21:00:11,416][    INFO] ***** Evaluation ***** >>>> Class [71 toaster] IoU: 0.00
+[2024-08-26 21:00:11,416][    INFO] ***** Evaluation ***** >>>> Class [72 sink] IoU: 38.90
+[2024-08-26 21:00:11,416][    INFO] ***** Evaluation ***** >>>> Class [73 refrigerator] IoU: 55.44
+[2024-08-26 21:00:11,416][    INFO] ***** Evaluation ***** >>>> Class [74 book] IoU: 39.34
+[2024-08-26 21:00:11,416][    INFO] ***** Evaluation ***** >>>> Class [75 clock] IoU: 60.72
+[2024-08-26 21:00:11,416][    INFO] ***** Evaluation ***** >>>> Class [76 vase] IoU: 37.89
+[2024-08-26 21:00:11,416][    INFO] ***** Evaluation ***** >>>> Class [77 scissors] IoU: 45.31
+[2024-08-26 21:00:11,416][    INFO] ***** Evaluation ***** >>>> Class [78 teddy bear] IoU: 66.65
+[2024-08-26 21:00:11,416][    INFO] ***** Evaluation ***** >>>> Class [79 hair drier] IoU: 0.00
+[2024-08-26 21:00:11,416][    INFO] ***** Evaluation ***** >>>> Class [80 toothbrush] IoU: 1.74
+[2024-08-26 21:00:11,416][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 43.31
+
+[2024-08-26 21:00:12,424][    INFO] ===========> Epoch: 5, LR: 0.0000039, Previous best: 43.31
+[2024-08-26 21:00:12,933][    INFO] Iters: 0, Total loss: 0.119
+[2024-08-26 21:00:46,898][    INFO] Iters: 117, Total loss: 0.095
+[2024-08-26 21:01:20,890][    INFO] Iters: 234, Total loss: 0.093
+[2024-08-26 21:01:54,873][    INFO] Iters: 351, Total loss: 0.101
+[2024-08-26 21:02:28,861][    INFO] Iters: 468, Total loss: 0.099
+[2024-08-26 21:03:02,843][    INFO] Iters: 585, Total loss: 0.102
+[2024-08-26 21:03:36,823][    INFO] Iters: 702, Total loss: 0.107
+[2024-08-26 21:04:10,799][    INFO] Iters: 819, Total loss: 0.109
+[2024-08-26 21:04:44,783][    INFO] Iters: 936, Total loss: 0.108
+[2024-08-26 21:05:28,138][    INFO] ***** Evaluation ***** >>>> Class [0 void] IoU: 87.58
+[2024-08-26 21:05:28,138][    INFO] ***** Evaluation ***** >>>> Class [1 person] IoU: 80.05
+[2024-08-26 21:05:28,138][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 53.70
+[2024-08-26 21:05:28,138][    INFO] ***** Evaluation ***** >>>> Class [3 car] IoU: 47.94
+[2024-08-26 21:05:28,138][    INFO] ***** Evaluation ***** >>>> Class [4 motorcycle] IoU: 74.82
+[2024-08-26 21:05:28,138][    INFO] ***** Evaluation ***** >>>> Class [5 airplane] IoU: 74.93
+[2024-08-26 21:05:28,138][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 69.16
+[2024-08-26 21:05:28,138][    INFO] ***** Evaluation ***** >>>> Class [7 train] IoU: 68.31
+[2024-08-26 21:05:28,138][    INFO] ***** Evaluation ***** >>>> Class [8 truck] IoU: 40.15
+[2024-08-26 21:05:28,138][    INFO] ***** Evaluation ***** >>>> Class [9 boat] IoU: 59.63
+[2024-08-26 21:05:28,138][    INFO] ***** Evaluation ***** >>>> Class [10 traffic light] IoU: 42.67
+[2024-08-26 21:05:28,138][    INFO] ***** Evaluation ***** >>>> Class [11 fire hydrant] IoU: 74.74
+[2024-08-26 21:05:28,138][    INFO] ***** Evaluation ***** >>>> Class [12 stop sign] IoU: 79.10
+[2024-08-26 21:05:28,138][    INFO] ***** Evaluation ***** >>>> Class [13 parking meter] IoU: 51.35
+[2024-08-26 21:05:28,138][    INFO] ***** Evaluation ***** >>>> Class [14 bench] IoU: 41.97
+[2024-08-26 21:05:28,138][    INFO] ***** Evaluation ***** >>>> Class [15 bird] IoU: 61.99
+[2024-08-26 21:05:28,139][    INFO] ***** Evaluation ***** >>>> Class [16 cat] IoU: 73.51
+[2024-08-26 21:05:28,139][    INFO] ***** Evaluation ***** >>>> Class [17 dog] IoU: 67.92
+[2024-08-26 21:05:28,139][    INFO] ***** Evaluation ***** >>>> Class [18 horse] IoU: 64.66
+[2024-08-26 21:05:28,139][    INFO] ***** Evaluation ***** >>>> Class [19 sheep] IoU: 64.80
+[2024-08-26 21:05:28,139][    INFO] ***** Evaluation ***** >>>> Class [20 cow] IoU: 56.34
+[2024-08-26 21:05:28,139][    INFO] ***** Evaluation ***** >>>> Class [21 elephant] IoU: 86.92
+[2024-08-26 21:05:28,139][    INFO] ***** Evaluation ***** >>>> Class [22 bear] IoU: 69.57
+[2024-08-26 21:05:28,139][    INFO] ***** Evaluation ***** >>>> Class [23 zebra] IoU: 86.45
+[2024-08-26 21:05:28,139][    INFO] ***** Evaluation ***** >>>> Class [24 giraffe] IoU: 80.90
+[2024-08-26 21:05:28,139][    INFO] ***** Evaluation ***** >>>> Class [25 backpack] IoU: 11.18
+[2024-08-26 21:05:28,139][    INFO] ***** Evaluation ***** >>>> Class [26 umbrella] IoU: 68.67
+[2024-08-26 21:05:28,139][    INFO] ***** Evaluation ***** >>>> Class [27 handbag] IoU: 13.26
+[2024-08-26 21:05:28,139][    INFO] ***** Evaluation ***** >>>> Class [28 tie] IoU: 1.43
+[2024-08-26 21:05:28,139][    INFO] ***** Evaluation ***** >>>> Class [29 suitcase] IoU: 48.58
+[2024-08-26 21:05:28,139][    INFO] ***** Evaluation ***** >>>> Class [30 frisbee] IoU: 28.81
+[2024-08-26 21:05:28,139][    INFO] ***** Evaluation ***** >>>> Class [31 skis] IoU: 12.55
+[2024-08-26 21:05:28,139][    INFO] ***** Evaluation ***** >>>> Class [32 snowboard] IoU: 4.78
+[2024-08-26 21:05:28,139][    INFO] ***** Evaluation ***** >>>> Class [33 sports ball] IoU: 27.79
+[2024-08-26 21:05:28,139][    INFO] ***** Evaluation ***** >>>> Class [34 kite] IoU: 31.67
+[2024-08-26 21:05:28,139][    INFO] ***** Evaluation ***** >>>> Class [35 baseball bat] IoU: 7.13
+[2024-08-26 21:05:28,139][    INFO] ***** Evaluation ***** >>>> Class [36 baseball glove] IoU: 36.03
+[2024-08-26 21:05:28,139][    INFO] ***** Evaluation ***** >>>> Class [37 skateboard] IoU: 13.63
+[2024-08-26 21:05:28,139][    INFO] ***** Evaluation ***** >>>> Class [38 surfboard] IoU: 53.34
+[2024-08-26 21:05:28,139][    INFO] ***** Evaluation ***** >>>> Class [39 tennis racket] IoU: 45.26
+[2024-08-26 21:05:28,139][    INFO] ***** Evaluation ***** >>>> Class [40 bottle] IoU: 36.99
+[2024-08-26 21:05:28,139][    INFO] ***** Evaluation ***** >>>> Class [41 wine glass] IoU: 24.34
+[2024-08-26 21:05:28,139][    INFO] ***** Evaluation ***** >>>> Class [42 cup] IoU: 38.80
+[2024-08-26 21:05:28,140][    INFO] ***** Evaluation ***** >>>> Class [43 fork] IoU: 10.49
+[2024-08-26 21:05:28,140][    INFO] ***** Evaluation ***** >>>> Class [44 knife] IoU: 11.43
+[2024-08-26 21:05:28,140][    INFO] ***** Evaluation ***** >>>> Class [45 spoon] IoU: 2.81
+[2024-08-26 21:05:28,140][    INFO] ***** Evaluation ***** >>>> Class [46 bowl] IoU: 23.26
+[2024-08-26 21:05:28,140][    INFO] ***** Evaluation ***** >>>> Class [47 banana] IoU: 52.58
+[2024-08-26 21:05:28,140][    INFO] ***** Evaluation ***** >>>> Class [48 apple] IoU: 18.52
+[2024-08-26 21:05:28,140][    INFO] ***** Evaluation ***** >>>> Class [49 sandwich] IoU: 34.93
+[2024-08-26 21:05:28,140][    INFO] ***** Evaluation ***** >>>> Class [50 orange] IoU: 32.09
+[2024-08-26 21:05:28,140][    INFO] ***** Evaluation ***** >>>> Class [51 broccoli] IoU: 26.43
+[2024-08-26 21:05:28,140][    INFO] ***** Evaluation ***** >>>> Class [52 carrot] IoU: 17.10
+[2024-08-26 21:05:28,140][    INFO] ***** Evaluation ***** >>>> Class [53 hot dog] IoU: 39.97
+[2024-08-26 21:05:28,140][    INFO] ***** Evaluation ***** >>>> Class [54 pizza] IoU: 63.59
+[2024-08-26 21:05:28,140][    INFO] ***** Evaluation ***** >>>> Class [55 donut] IoU: 53.05
+[2024-08-26 21:05:28,140][    INFO] ***** Evaluation ***** >>>> Class [56 cake] IoU: 40.49
+[2024-08-26 21:05:28,140][    INFO] ***** Evaluation ***** >>>> Class [57 chair] IoU: 35.96
+[2024-08-26 21:05:28,140][    INFO] ***** Evaluation ***** >>>> Class [58 couch] IoU: 49.99
+[2024-08-26 21:05:28,140][    INFO] ***** Evaluation ***** >>>> Class [59 potted plant] IoU: 16.50
+[2024-08-26 21:05:28,140][    INFO] ***** Evaluation ***** >>>> Class [60 bed] IoU: 49.05
+[2024-08-26 21:05:28,140][    INFO] ***** Evaluation ***** >>>> Class [61 dining table] IoU: 33.41
+[2024-08-26 21:05:28,140][    INFO] ***** Evaluation ***** >>>> Class [62 toilet] IoU: 67.19
+[2024-08-26 21:05:28,140][    INFO] ***** Evaluation ***** >>>> Class [63 tv] IoU: 54.02
+[2024-08-26 21:05:28,140][    INFO] ***** Evaluation ***** >>>> Class [64 laptop] IoU: 59.97
+[2024-08-26 21:05:28,140][    INFO] ***** Evaluation ***** >>>> Class [65 mouse] IoU: 9.14
+[2024-08-26 21:05:28,140][    INFO] ***** Evaluation ***** >>>> Class [66 remote] IoU: 29.67
+[2024-08-26 21:05:28,140][    INFO] ***** Evaluation ***** >>>> Class [67 keyboard] IoU: 54.13
+[2024-08-26 21:05:28,140][    INFO] ***** Evaluation ***** >>>> Class [68 cell phone] IoU: 35.55
+[2024-08-26 21:05:28,140][    INFO] ***** Evaluation ***** >>>> Class [69 microwave] IoU: 7.69
+[2024-08-26 21:05:28,141][    INFO] ***** Evaluation ***** >>>> Class [70 oven] IoU: 35.09
+[2024-08-26 21:05:28,141][    INFO] ***** Evaluation ***** >>>> Class [71 toaster] IoU: 0.00
+[2024-08-26 21:05:28,141][    INFO] ***** Evaluation ***** >>>> Class [72 sink] IoU: 34.73
+[2024-08-26 21:05:28,141][    INFO] ***** Evaluation ***** >>>> Class [73 refrigerator] IoU: 56.77
+[2024-08-26 21:05:28,141][    INFO] ***** Evaluation ***** >>>> Class [74 book] IoU: 36.80
+[2024-08-26 21:05:28,141][    INFO] ***** Evaluation ***** >>>> Class [75 clock] IoU: 59.22
+[2024-08-26 21:05:28,141][    INFO] ***** Evaluation ***** >>>> Class [76 vase] IoU: 40.04
+[2024-08-26 21:05:28,141][    INFO] ***** Evaluation ***** >>>> Class [77 scissors] IoU: 51.24
+[2024-08-26 21:05:28,141][    INFO] ***** Evaluation ***** >>>> Class [78 teddy bear] IoU: 68.35
+[2024-08-26 21:05:28,141][    INFO] ***** Evaluation ***** >>>> Class [79 hair drier] IoU: 0.18
+[2024-08-26 21:05:28,141][    INFO] ***** Evaluation ***** >>>> Class [80 toothbrush] IoU: 0.00
+[2024-08-26 21:05:28,141][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 42.90
+
+[2024-08-26 21:05:28,652][    INFO] ===========> Epoch: 6, LR: 0.0000036, Previous best: 43.31
+[2024-08-26 21:05:29,148][    INFO] Iters: 0, Total loss: 0.111
+[2024-08-26 21:06:03,112][    INFO] Iters: 117, Total loss: 0.094
+[2024-08-26 21:06:37,096][    INFO] Iters: 234, Total loss: 0.091
+[2024-08-26 21:07:11,080][    INFO] Iters: 351, Total loss: 0.090
+[2024-08-26 21:07:45,055][    INFO] Iters: 468, Total loss: 0.088
+[2024-08-26 21:08:19,041][    INFO] Iters: 585, Total loss: 0.088
+[2024-08-26 21:08:53,022][    INFO] Iters: 702, Total loss: 0.087
+[2024-08-26 21:09:27,016][    INFO] Iters: 819, Total loss: 0.087
+[2024-08-26 21:10:01,001][    INFO] Iters: 936, Total loss: 0.086
+[2024-08-26 21:10:44,373][    INFO] ***** Evaluation ***** >>>> Class [0 void] IoU: 87.66
+[2024-08-26 21:10:44,373][    INFO] ***** Evaluation ***** >>>> Class [1 person] IoU: 80.29
+[2024-08-26 21:10:44,373][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 55.58
+[2024-08-26 21:10:44,373][    INFO] ***** Evaluation ***** >>>> Class [3 car] IoU: 48.17
+[2024-08-26 21:10:44,373][    INFO] ***** Evaluation ***** >>>> Class [4 motorcycle] IoU: 74.76
+[2024-08-26 21:10:44,373][    INFO] ***** Evaluation ***** >>>> Class [5 airplane] IoU: 76.21
+[2024-08-26 21:10:44,373][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 71.20
+[2024-08-26 21:10:44,373][    INFO] ***** Evaluation ***** >>>> Class [7 train] IoU: 69.44
+[2024-08-26 21:10:44,373][    INFO] ***** Evaluation ***** >>>> Class [8 truck] IoU: 42.36
+[2024-08-26 21:10:44,373][    INFO] ***** Evaluation ***** >>>> Class [9 boat] IoU: 59.26
+[2024-08-26 21:10:44,374][    INFO] ***** Evaluation ***** >>>> Class [10 traffic light] IoU: 43.46
+[2024-08-26 21:10:44,374][    INFO] ***** Evaluation ***** >>>> Class [11 fire hydrant] IoU: 76.69
+[2024-08-26 21:10:44,374][    INFO] ***** Evaluation ***** >>>> Class [12 stop sign] IoU: 79.98
+[2024-08-26 21:10:44,374][    INFO] ***** Evaluation ***** >>>> Class [13 parking meter] IoU: 53.32
+[2024-08-26 21:10:44,374][    INFO] ***** Evaluation ***** >>>> Class [14 bench] IoU: 41.28
+[2024-08-26 21:10:44,374][    INFO] ***** Evaluation ***** >>>> Class [15 bird] IoU: 62.89
+[2024-08-26 21:10:44,374][    INFO] ***** Evaluation ***** >>>> Class [16 cat] IoU: 76.17
+[2024-08-26 21:10:44,374][    INFO] ***** Evaluation ***** >>>> Class [17 dog] IoU: 71.36
+[2024-08-26 21:10:44,374][    INFO] ***** Evaluation ***** >>>> Class [18 horse] IoU: 71.31
+[2024-08-26 21:10:44,374][    INFO] ***** Evaluation ***** >>>> Class [19 sheep] IoU: 61.91
+[2024-08-26 21:10:44,374][    INFO] ***** Evaluation ***** >>>> Class [20 cow] IoU: 67.15
+[2024-08-26 21:10:44,374][    INFO] ***** Evaluation ***** >>>> Class [21 elephant] IoU: 86.94
+[2024-08-26 21:10:44,374][    INFO] ***** Evaluation ***** >>>> Class [22 bear] IoU: 51.02
+[2024-08-26 21:10:44,374][    INFO] ***** Evaluation ***** >>>> Class [23 zebra] IoU: 86.20
+[2024-08-26 21:10:44,374][    INFO] ***** Evaluation ***** >>>> Class [24 giraffe] IoU: 81.37
+[2024-08-26 21:10:44,374][    INFO] ***** Evaluation ***** >>>> Class [25 backpack] IoU: 12.11
+[2024-08-26 21:10:44,374][    INFO] ***** Evaluation ***** >>>> Class [26 umbrella] IoU: 69.17
+[2024-08-26 21:10:44,374][    INFO] ***** Evaluation ***** >>>> Class [27 handbag] IoU: 15.29
+[2024-08-26 21:10:44,374][    INFO] ***** Evaluation ***** >>>> Class [28 tie] IoU: 2.48
+[2024-08-26 21:10:44,374][    INFO] ***** Evaluation ***** >>>> Class [29 suitcase] IoU: 44.37
+[2024-08-26 21:10:44,374][    INFO] ***** Evaluation ***** >>>> Class [30 frisbee] IoU: 32.08
+[2024-08-26 21:10:44,374][    INFO] ***** Evaluation ***** >>>> Class [31 skis] IoU: 17.82
+[2024-08-26 21:10:44,374][    INFO] ***** Evaluation ***** >>>> Class [32 snowboard] IoU: 7.77
+[2024-08-26 21:10:44,374][    INFO] ***** Evaluation ***** >>>> Class [33 sports ball] IoU: 26.52
+[2024-08-26 21:10:44,374][    INFO] ***** Evaluation ***** >>>> Class [34 kite] IoU: 35.72
+[2024-08-26 21:10:44,374][    INFO] ***** Evaluation ***** >>>> Class [35 baseball bat] IoU: 13.66
+[2024-08-26 21:10:44,374][    INFO] ***** Evaluation ***** >>>> Class [36 baseball glove] IoU: 34.00
+[2024-08-26 21:10:44,375][    INFO] ***** Evaluation ***** >>>> Class [37 skateboard] IoU: 16.31
+[2024-08-26 21:10:44,375][    INFO] ***** Evaluation ***** >>>> Class [38 surfboard] IoU: 46.89
+[2024-08-26 21:10:44,375][    INFO] ***** Evaluation ***** >>>> Class [39 tennis racket] IoU: 48.10
+[2024-08-26 21:10:44,375][    INFO] ***** Evaluation ***** >>>> Class [40 bottle] IoU: 38.70
+[2024-08-26 21:10:44,375][    INFO] ***** Evaluation ***** >>>> Class [41 wine glass] IoU: 23.56
+[2024-08-26 21:10:44,375][    INFO] ***** Evaluation ***** >>>> Class [42 cup] IoU: 40.11
+[2024-08-26 21:10:44,375][    INFO] ***** Evaluation ***** >>>> Class [43 fork] IoU: 9.00
+[2024-08-26 21:10:44,375][    INFO] ***** Evaluation ***** >>>> Class [44 knife] IoU: 8.96
+[2024-08-26 21:10:44,375][    INFO] ***** Evaluation ***** >>>> Class [45 spoon] IoU: 5.53
+[2024-08-26 21:10:44,375][    INFO] ***** Evaluation ***** >>>> Class [46 bowl] IoU: 20.26
+[2024-08-26 21:10:44,375][    INFO] ***** Evaluation ***** >>>> Class [47 banana] IoU: 51.91
+[2024-08-26 21:10:44,375][    INFO] ***** Evaluation ***** >>>> Class [48 apple] IoU: 22.43
+[2024-08-26 21:10:44,375][    INFO] ***** Evaluation ***** >>>> Class [49 sandwich] IoU: 36.11
+[2024-08-26 21:10:44,375][    INFO] ***** Evaluation ***** >>>> Class [50 orange] IoU: 37.26
+[2024-08-26 21:10:44,375][    INFO] ***** Evaluation ***** >>>> Class [51 broccoli] IoU: 33.78
+[2024-08-26 21:10:44,375][    INFO] ***** Evaluation ***** >>>> Class [52 carrot] IoU: 18.67
+[2024-08-26 21:10:44,375][    INFO] ***** Evaluation ***** >>>> Class [53 hot dog] IoU: 41.13
+[2024-08-26 21:10:44,375][    INFO] ***** Evaluation ***** >>>> Class [54 pizza] IoU: 62.95
+[2024-08-26 21:10:44,375][    INFO] ***** Evaluation ***** >>>> Class [55 donut] IoU: 56.49
+[2024-08-26 21:10:44,375][    INFO] ***** Evaluation ***** >>>> Class [56 cake] IoU: 41.16
+[2024-08-26 21:10:44,375][    INFO] ***** Evaluation ***** >>>> Class [57 chair] IoU: 35.65
+[2024-08-26 21:10:44,375][    INFO] ***** Evaluation ***** >>>> Class [58 couch] IoU: 50.19
+[2024-08-26 21:10:44,375][    INFO] ***** Evaluation ***** >>>> Class [59 potted plant] IoU: 18.33
+[2024-08-26 21:10:44,375][    INFO] ***** Evaluation ***** >>>> Class [60 bed] IoU: 49.00
+[2024-08-26 21:10:44,375][    INFO] ***** Evaluation ***** >>>> Class [61 dining table] IoU: 33.65
+[2024-08-26 21:10:44,375][    INFO] ***** Evaluation ***** >>>> Class [62 toilet] IoU: 68.23
+[2024-08-26 21:10:44,375][    INFO] ***** Evaluation ***** >>>> Class [63 tv] IoU: 55.33
+[2024-08-26 21:10:44,375][    INFO] ***** Evaluation ***** >>>> Class [64 laptop] IoU: 63.12
+[2024-08-26 21:10:44,376][    INFO] ***** Evaluation ***** >>>> Class [65 mouse] IoU: 14.40
+[2024-08-26 21:10:44,376][    INFO] ***** Evaluation ***** >>>> Class [66 remote] IoU: 30.05
+[2024-08-26 21:10:44,376][    INFO] ***** Evaluation ***** >>>> Class [67 keyboard] IoU: 55.15
+[2024-08-26 21:10:44,376][    INFO] ***** Evaluation ***** >>>> Class [68 cell phone] IoU: 44.26
+[2024-08-26 21:10:44,376][    INFO] ***** Evaluation ***** >>>> Class [69 microwave] IoU: 10.70
+[2024-08-26 21:10:44,376][    INFO] ***** Evaluation ***** >>>> Class [70 oven] IoU: 32.20
+[2024-08-26 21:10:44,376][    INFO] ***** Evaluation ***** >>>> Class [71 toaster] IoU: 0.00
+[2024-08-26 21:10:44,376][    INFO] ***** Evaluation ***** >>>> Class [72 sink] IoU: 37.20
+[2024-08-26 21:10:44,376][    INFO] ***** Evaluation ***** >>>> Class [73 refrigerator] IoU: 53.77
+[2024-08-26 21:10:44,376][    INFO] ***** Evaluation ***** >>>> Class [74 book] IoU: 35.70
+[2024-08-26 21:10:44,376][    INFO] ***** Evaluation ***** >>>> Class [75 clock] IoU: 61.00
+[2024-08-26 21:10:44,376][    INFO] ***** Evaluation ***** >>>> Class [76 vase] IoU: 39.07
+[2024-08-26 21:10:44,376][    INFO] ***** Evaluation ***** >>>> Class [77 scissors] IoU: 52.84
+[2024-08-26 21:10:44,376][    INFO] ***** Evaluation ***** >>>> Class [78 teddy bear] IoU: 67.82
+[2024-08-26 21:10:44,376][    INFO] ***** Evaluation ***** >>>> Class [79 hair drier] IoU: 0.00
+[2024-08-26 21:10:44,376][    INFO] ***** Evaluation ***** >>>> Class [80 toothbrush] IoU: 1.35
+[2024-08-26 21:10:44,376][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 43.89
+
+[2024-08-26 21:10:45,347][    INFO] ===========> Epoch: 7, LR: 0.0000034, Previous best: 43.89
+[2024-08-26 21:10:45,836][    INFO] Iters: 0, Total loss: 0.052
+[2024-08-26 21:11:19,803][    INFO] Iters: 117, Total loss: 0.083
+[2024-08-26 21:11:53,778][    INFO] Iters: 234, Total loss: 0.083
+[2024-08-26 21:12:27,766][    INFO] Iters: 351, Total loss: 0.083
+[2024-08-26 21:13:01,743][    INFO] Iters: 468, Total loss: 0.082
+[2024-08-26 21:13:35,744][    INFO] Iters: 585, Total loss: 0.082
+[2024-08-26 21:14:09,727][    INFO] Iters: 702, Total loss: 0.082
+[2024-08-26 21:14:43,713][    INFO] Iters: 819, Total loss: 0.081
+[2024-08-26 21:15:17,728][    INFO] Iters: 936, Total loss: 0.081
+[2024-08-26 21:16:01,060][    INFO] ***** Evaluation ***** >>>> Class [0 void] IoU: 87.47
+[2024-08-26 21:16:01,060][    INFO] ***** Evaluation ***** >>>> Class [1 person] IoU: 80.03
+[2024-08-26 21:16:01,060][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 56.45
+[2024-08-26 21:16:01,060][    INFO] ***** Evaluation ***** >>>> Class [3 car] IoU: 47.10
+[2024-08-26 21:16:01,060][    INFO] ***** Evaluation ***** >>>> Class [4 motorcycle] IoU: 72.98
+[2024-08-26 21:16:01,060][    INFO] ***** Evaluation ***** >>>> Class [5 airplane] IoU: 73.19
+[2024-08-26 21:16:01,060][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 69.06
+[2024-08-26 21:16:01,060][    INFO] ***** Evaluation ***** >>>> Class [7 train] IoU: 66.21
+[2024-08-26 21:16:01,060][    INFO] ***** Evaluation ***** >>>> Class [8 truck] IoU: 41.12
+[2024-08-26 21:16:01,060][    INFO] ***** Evaluation ***** >>>> Class [9 boat] IoU: 53.55
+[2024-08-26 21:16:01,060][    INFO] ***** Evaluation ***** >>>> Class [10 traffic light] IoU: 42.31
+[2024-08-26 21:16:01,060][    INFO] ***** Evaluation ***** >>>> Class [11 fire hydrant] IoU: 72.82
+[2024-08-26 21:16:01,060][    INFO] ***** Evaluation ***** >>>> Class [12 stop sign] IoU: 84.16
+[2024-08-26 21:16:01,060][    INFO] ***** Evaluation ***** >>>> Class [13 parking meter] IoU: 44.81
+[2024-08-26 21:16:01,060][    INFO] ***** Evaluation ***** >>>> Class [14 bench] IoU: 39.65
+[2024-08-26 21:16:01,060][    INFO] ***** Evaluation ***** >>>> Class [15 bird] IoU: 63.74
+[2024-08-26 21:16:01,060][    INFO] ***** Evaluation ***** >>>> Class [16 cat] IoU: 72.36
+[2024-08-26 21:16:01,060][    INFO] ***** Evaluation ***** >>>> Class [17 dog] IoU: 69.49
+[2024-08-26 21:16:01,061][    INFO] ***** Evaluation ***** >>>> Class [18 horse] IoU: 69.83
+[2024-08-26 21:16:01,061][    INFO] ***** Evaluation ***** >>>> Class [19 sheep] IoU: 69.50
+[2024-08-26 21:16:01,061][    INFO] ***** Evaluation ***** >>>> Class [20 cow] IoU: 66.72
+[2024-08-26 21:16:01,061][    INFO] ***** Evaluation ***** >>>> Class [21 elephant] IoU: 86.94
+[2024-08-26 21:16:01,061][    INFO] ***** Evaluation ***** >>>> Class [22 bear] IoU: 60.36
+[2024-08-26 21:16:01,061][    INFO] ***** Evaluation ***** >>>> Class [23 zebra] IoU: 86.39
+[2024-08-26 21:16:01,061][    INFO] ***** Evaluation ***** >>>> Class [24 giraffe] IoU: 81.23
+[2024-08-26 21:16:01,061][    INFO] ***** Evaluation ***** >>>> Class [25 backpack] IoU: 12.68
+[2024-08-26 21:16:01,061][    INFO] ***** Evaluation ***** >>>> Class [26 umbrella] IoU: 68.02
+[2024-08-26 21:16:01,061][    INFO] ***** Evaluation ***** >>>> Class [27 handbag] IoU: 13.16
+[2024-08-26 21:16:01,061][    INFO] ***** Evaluation ***** >>>> Class [28 tie] IoU: 3.51
+[2024-08-26 21:16:01,061][    INFO] ***** Evaluation ***** >>>> Class [29 suitcase] IoU: 46.41
+[2024-08-26 21:16:01,061][    INFO] ***** Evaluation ***** >>>> Class [30 frisbee] IoU: 26.71
+[2024-08-26 21:16:01,061][    INFO] ***** Evaluation ***** >>>> Class [31 skis] IoU: 9.91
+[2024-08-26 21:16:01,061][    INFO] ***** Evaluation ***** >>>> Class [32 snowboard] IoU: 10.22
+[2024-08-26 21:16:01,061][    INFO] ***** Evaluation ***** >>>> Class [33 sports ball] IoU: 27.95
+[2024-08-26 21:16:01,061][    INFO] ***** Evaluation ***** >>>> Class [34 kite] IoU: 33.66
+[2024-08-26 21:16:01,061][    INFO] ***** Evaluation ***** >>>> Class [35 baseball bat] IoU: 16.75
+[2024-08-26 21:16:01,061][    INFO] ***** Evaluation ***** >>>> Class [36 baseball glove] IoU: 21.47
+[2024-08-26 21:16:01,061][    INFO] ***** Evaluation ***** >>>> Class [37 skateboard] IoU: 15.01
+[2024-08-26 21:16:01,061][    INFO] ***** Evaluation ***** >>>> Class [38 surfboard] IoU: 44.98
+[2024-08-26 21:16:01,061][    INFO] ***** Evaluation ***** >>>> Class [39 tennis racket] IoU: 47.95
+[2024-08-26 21:16:01,061][    INFO] ***** Evaluation ***** >>>> Class [40 bottle] IoU: 36.63
+[2024-08-26 21:16:01,061][    INFO] ***** Evaluation ***** >>>> Class [41 wine glass] IoU: 27.75
+[2024-08-26 21:16:01,061][    INFO] ***** Evaluation ***** >>>> Class [42 cup] IoU: 39.68
+[2024-08-26 21:16:01,061][    INFO] ***** Evaluation ***** >>>> Class [43 fork] IoU: 13.19
+[2024-08-26 21:16:01,062][    INFO] ***** Evaluation ***** >>>> Class [44 knife] IoU: 12.44
+[2024-08-26 21:16:01,062][    INFO] ***** Evaluation ***** >>>> Class [45 spoon] IoU: 7.56
+[2024-08-26 21:16:01,062][    INFO] ***** Evaluation ***** >>>> Class [46 bowl] IoU: 19.08
+[2024-08-26 21:16:01,062][    INFO] ***** Evaluation ***** >>>> Class [47 banana] IoU: 51.06
+[2024-08-26 21:16:01,062][    INFO] ***** Evaluation ***** >>>> Class [48 apple] IoU: 13.33
+[2024-08-26 21:16:01,062][    INFO] ***** Evaluation ***** >>>> Class [49 sandwich] IoU: 37.17
+[2024-08-26 21:16:01,062][    INFO] ***** Evaluation ***** >>>> Class [50 orange] IoU: 42.12
+[2024-08-26 21:16:01,062][    INFO] ***** Evaluation ***** >>>> Class [51 broccoli] IoU: 33.46
+[2024-08-26 21:16:01,062][    INFO] ***** Evaluation ***** >>>> Class [52 carrot] IoU: 24.72
+[2024-08-26 21:16:01,062][    INFO] ***** Evaluation ***** >>>> Class [53 hot dog] IoU: 40.59
+[2024-08-26 21:16:01,062][    INFO] ***** Evaluation ***** >>>> Class [54 pizza] IoU: 62.20
+[2024-08-26 21:16:01,062][    INFO] ***** Evaluation ***** >>>> Class [55 donut] IoU: 51.76
+[2024-08-26 21:16:01,062][    INFO] ***** Evaluation ***** >>>> Class [56 cake] IoU: 37.17
+[2024-08-26 21:16:01,062][    INFO] ***** Evaluation ***** >>>> Class [57 chair] IoU: 35.34
+[2024-08-26 21:16:01,062][    INFO] ***** Evaluation ***** >>>> Class [58 couch] IoU: 48.79
+[2024-08-26 21:16:01,062][    INFO] ***** Evaluation ***** >>>> Class [59 potted plant] IoU: 17.03
+[2024-08-26 21:16:01,062][    INFO] ***** Evaluation ***** >>>> Class [60 bed] IoU: 47.39
+[2024-08-26 21:16:01,062][    INFO] ***** Evaluation ***** >>>> Class [61 dining table] IoU: 31.50
+[2024-08-26 21:16:01,062][    INFO] ***** Evaluation ***** >>>> Class [62 toilet] IoU: 67.89
+[2024-08-26 21:16:01,062][    INFO] ***** Evaluation ***** >>>> Class [63 tv] IoU: 54.45
+[2024-08-26 21:16:01,062][    INFO] ***** Evaluation ***** >>>> Class [64 laptop] IoU: 60.51
+[2024-08-26 21:16:01,062][    INFO] ***** Evaluation ***** >>>> Class [65 mouse] IoU: 21.33
+[2024-08-26 21:16:01,062][    INFO] ***** Evaluation ***** >>>> Class [66 remote] IoU: 32.82
+[2024-08-26 21:16:01,062][    INFO] ***** Evaluation ***** >>>> Class [67 keyboard] IoU: 52.89
+[2024-08-26 21:16:01,062][    INFO] ***** Evaluation ***** >>>> Class [68 cell phone] IoU: 36.43
+[2024-08-26 21:16:01,062][    INFO] ***** Evaluation ***** >>>> Class [69 microwave] IoU: 16.10
+[2024-08-26 21:16:01,062][    INFO] ***** Evaluation ***** >>>> Class [70 oven] IoU: 28.89
+[2024-08-26 21:16:01,063][    INFO] ***** Evaluation ***** >>>> Class [71 toaster] IoU: 0.00
+[2024-08-26 21:16:01,063][    INFO] ***** Evaluation ***** >>>> Class [72 sink] IoU: 38.85
+[2024-08-26 21:16:01,063][    INFO] ***** Evaluation ***** >>>> Class [73 refrigerator] IoU: 48.10
+[2024-08-26 21:16:01,063][    INFO] ***** Evaluation ***** >>>> Class [74 book] IoU: 29.33
+[2024-08-26 21:16:01,063][    INFO] ***** Evaluation ***** >>>> Class [75 clock] IoU: 59.74
+[2024-08-26 21:16:01,063][    INFO] ***** Evaluation ***** >>>> Class [76 vase] IoU: 37.53
+[2024-08-26 21:16:01,063][    INFO] ***** Evaluation ***** >>>> Class [77 scissors] IoU: 40.83
+[2024-08-26 21:16:01,063][    INFO] ***** Evaluation ***** >>>> Class [78 teddy bear] IoU: 66.92
+[2024-08-26 21:16:01,063][    INFO] ***** Evaluation ***** >>>> Class [79 hair drier] IoU: 0.00
+[2024-08-26 21:16:01,063][    INFO] ***** Evaluation ***** >>>> Class [80 toothbrush] IoU: 1.83
+[2024-08-26 21:16:01,063][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 42.97
+
+[2024-08-26 21:16:01,590][    INFO] ===========> Epoch: 8, LR: 0.0000032, Previous best: 43.89
+[2024-08-26 21:16:02,096][    INFO] Iters: 0, Total loss: 0.038
+[2024-08-26 21:16:36,060][    INFO] Iters: 117, Total loss: 0.081
+[2024-08-26 21:17:10,056][    INFO] Iters: 234, Total loss: 0.080
+[2024-08-26 21:17:44,042][    INFO] Iters: 351, Total loss: 0.080
+[2024-08-26 21:18:18,042][    INFO] Iters: 468, Total loss: 0.079
+[2024-08-26 21:18:52,034][    INFO] Iters: 585, Total loss: 0.079
+[2024-08-26 21:19:26,031][    INFO] Iters: 702, Total loss: 0.078
+[2024-08-26 21:20:00,020][    INFO] Iters: 819, Total loss: 0.077
+[2024-08-26 21:20:34,023][    INFO] Iters: 936, Total loss: 0.077
+[2024-08-26 21:21:17,370][    INFO] ***** Evaluation ***** >>>> Class [0 void] IoU: 87.74
+[2024-08-26 21:21:17,370][    INFO] ***** Evaluation ***** >>>> Class [1 person] IoU: 80.25
+[2024-08-26 21:21:17,370][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 55.59
+[2024-08-26 21:21:17,370][    INFO] ***** Evaluation ***** >>>> Class [3 car] IoU: 49.52
+[2024-08-26 21:21:17,370][    INFO] ***** Evaluation ***** >>>> Class [4 motorcycle] IoU: 74.74
+[2024-08-26 21:21:17,370][    INFO] ***** Evaluation ***** >>>> Class [5 airplane] IoU: 73.58
+[2024-08-26 21:21:17,370][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 69.20
+[2024-08-26 21:21:17,370][    INFO] ***** Evaluation ***** >>>> Class [7 train] IoU: 68.50
+[2024-08-26 21:21:17,370][    INFO] ***** Evaluation ***** >>>> Class [8 truck] IoU: 43.07
+[2024-08-26 21:21:17,370][    INFO] ***** Evaluation ***** >>>> Class [9 boat] IoU: 58.36
+[2024-08-26 21:21:17,370][    INFO] ***** Evaluation ***** >>>> Class [10 traffic light] IoU: 43.33
+[2024-08-26 21:21:17,370][    INFO] ***** Evaluation ***** >>>> Class [11 fire hydrant] IoU: 75.64
+[2024-08-26 21:21:17,370][    INFO] ***** Evaluation ***** >>>> Class [12 stop sign] IoU: 81.07
+[2024-08-26 21:21:17,370][    INFO] ***** Evaluation ***** >>>> Class [13 parking meter] IoU: 44.95
+[2024-08-26 21:21:17,370][    INFO] ***** Evaluation ***** >>>> Class [14 bench] IoU: 40.03
+[2024-08-26 21:21:17,370][    INFO] ***** Evaluation ***** >>>> Class [15 bird] IoU: 64.29
+[2024-08-26 21:21:17,370][    INFO] ***** Evaluation ***** >>>> Class [16 cat] IoU: 77.27
+[2024-08-26 21:21:17,370][    INFO] ***** Evaluation ***** >>>> Class [17 dog] IoU: 70.02
+[2024-08-26 21:21:17,370][    INFO] ***** Evaluation ***** >>>> Class [18 horse] IoU: 72.17
+[2024-08-26 21:21:17,371][    INFO] ***** Evaluation ***** >>>> Class [19 sheep] IoU: 66.90
+[2024-08-26 21:21:17,371][    INFO] ***** Evaluation ***** >>>> Class [20 cow] IoU: 66.00
+[2024-08-26 21:21:17,371][    INFO] ***** Evaluation ***** >>>> Class [21 elephant] IoU: 87.71
+[2024-08-26 21:21:17,371][    INFO] ***** Evaluation ***** >>>> Class [22 bear] IoU: 62.55
+[2024-08-26 21:21:17,371][    INFO] ***** Evaluation ***** >>>> Class [23 zebra] IoU: 86.69
+[2024-08-26 21:21:17,371][    INFO] ***** Evaluation ***** >>>> Class [24 giraffe] IoU: 81.15
+[2024-08-26 21:21:17,371][    INFO] ***** Evaluation ***** >>>> Class [25 backpack] IoU: 13.19
+[2024-08-26 21:21:17,371][    INFO] ***** Evaluation ***** >>>> Class [26 umbrella] IoU: 69.76
+[2024-08-26 21:21:17,371][    INFO] ***** Evaluation ***** >>>> Class [27 handbag] IoU: 14.27
+[2024-08-26 21:21:17,371][    INFO] ***** Evaluation ***** >>>> Class [28 tie] IoU: 5.15
+[2024-08-26 21:21:17,371][    INFO] ***** Evaluation ***** >>>> Class [29 suitcase] IoU: 43.95
+[2024-08-26 21:21:17,371][    INFO] ***** Evaluation ***** >>>> Class [30 frisbee] IoU: 26.29
+[2024-08-26 21:21:17,371][    INFO] ***** Evaluation ***** >>>> Class [31 skis] IoU: 12.34
+[2024-08-26 21:21:17,371][    INFO] ***** Evaluation ***** >>>> Class [32 snowboard] IoU: 8.42
+[2024-08-26 21:21:17,371][    INFO] ***** Evaluation ***** >>>> Class [33 sports ball] IoU: 27.27
+[2024-08-26 21:21:17,371][    INFO] ***** Evaluation ***** >>>> Class [34 kite] IoU: 31.28
+[2024-08-26 21:21:17,371][    INFO] ***** Evaluation ***** >>>> Class [35 baseball bat] IoU: 12.15
+[2024-08-26 21:21:17,371][    INFO] ***** Evaluation ***** >>>> Class [36 baseball glove] IoU: 38.04
+[2024-08-26 21:21:17,371][    INFO] ***** Evaluation ***** >>>> Class [37 skateboard] IoU: 17.18
+[2024-08-26 21:21:17,371][    INFO] ***** Evaluation ***** >>>> Class [38 surfboard] IoU: 46.87
+[2024-08-26 21:21:17,371][    INFO] ***** Evaluation ***** >>>> Class [39 tennis racket] IoU: 46.85
+[2024-08-26 21:21:17,371][    INFO] ***** Evaluation ***** >>>> Class [40 bottle] IoU: 34.01
+[2024-08-26 21:21:17,371][    INFO] ***** Evaluation ***** >>>> Class [41 wine glass] IoU: 17.82
+[2024-08-26 21:21:17,371][    INFO] ***** Evaluation ***** >>>> Class [42 cup] IoU: 39.54
+[2024-08-26 21:21:17,371][    INFO] ***** Evaluation ***** >>>> Class [43 fork] IoU: 15.11
+[2024-08-26 21:21:17,371][    INFO] ***** Evaluation ***** >>>> Class [44 knife] IoU: 9.65
+[2024-08-26 21:21:17,371][    INFO] ***** Evaluation ***** >>>> Class [45 spoon] IoU: 0.52
+[2024-08-26 21:21:17,372][    INFO] ***** Evaluation ***** >>>> Class [46 bowl] IoU: 22.98
+[2024-08-26 21:21:17,372][    INFO] ***** Evaluation ***** >>>> Class [47 banana] IoU: 52.46
+[2024-08-26 21:21:17,372][    INFO] ***** Evaluation ***** >>>> Class [48 apple] IoU: 18.22
+[2024-08-26 21:21:17,372][    INFO] ***** Evaluation ***** >>>> Class [49 sandwich] IoU: 35.54
+[2024-08-26 21:21:17,372][    INFO] ***** Evaluation ***** >>>> Class [50 orange] IoU: 35.41
+[2024-08-26 21:21:17,372][    INFO] ***** Evaluation ***** >>>> Class [51 broccoli] IoU: 37.31
+[2024-08-26 21:21:17,372][    INFO] ***** Evaluation ***** >>>> Class [52 carrot] IoU: 22.38
+[2024-08-26 21:21:17,372][    INFO] ***** Evaluation ***** >>>> Class [53 hot dog] IoU: 42.40
+[2024-08-26 21:21:17,372][    INFO] ***** Evaluation ***** >>>> Class [54 pizza] IoU: 61.29
+[2024-08-26 21:21:17,372][    INFO] ***** Evaluation ***** >>>> Class [55 donut] IoU: 51.66
+[2024-08-26 21:21:17,372][    INFO] ***** Evaluation ***** >>>> Class [56 cake] IoU: 33.51
+[2024-08-26 21:21:17,372][    INFO] ***** Evaluation ***** >>>> Class [57 chair] IoU: 32.75
+[2024-08-26 21:21:17,372][    INFO] ***** Evaluation ***** >>>> Class [58 couch] IoU: 50.99
+[2024-08-26 21:21:17,372][    INFO] ***** Evaluation ***** >>>> Class [59 potted plant] IoU: 15.95
+[2024-08-26 21:21:17,372][    INFO] ***** Evaluation ***** >>>> Class [60 bed] IoU: 46.62
+[2024-08-26 21:21:17,372][    INFO] ***** Evaluation ***** >>>> Class [61 dining table] IoU: 31.27
+[2024-08-26 21:21:17,372][    INFO] ***** Evaluation ***** >>>> Class [62 toilet] IoU: 68.59
+[2024-08-26 21:21:17,372][    INFO] ***** Evaluation ***** >>>> Class [63 tv] IoU: 54.59
+[2024-08-26 21:21:17,372][    INFO] ***** Evaluation ***** >>>> Class [64 laptop] IoU: 63.28
+[2024-08-26 21:21:17,372][    INFO] ***** Evaluation ***** >>>> Class [65 mouse] IoU: 19.79
+[2024-08-26 21:21:17,372][    INFO] ***** Evaluation ***** >>>> Class [66 remote] IoU: 30.38
+[2024-08-26 21:21:17,372][    INFO] ***** Evaluation ***** >>>> Class [67 keyboard] IoU: 54.54
+[2024-08-26 21:21:17,372][    INFO] ***** Evaluation ***** >>>> Class [68 cell phone] IoU: 45.15
+[2024-08-26 21:21:17,372][    INFO] ***** Evaluation ***** >>>> Class [69 microwave] IoU: 22.05
+[2024-08-26 21:21:17,372][    INFO] ***** Evaluation ***** >>>> Class [70 oven] IoU: 33.26
+[2024-08-26 21:21:17,372][    INFO] ***** Evaluation ***** >>>> Class [71 toaster] IoU: 0.00
+[2024-08-26 21:21:17,372][    INFO] ***** Evaluation ***** >>>> Class [72 sink] IoU: 39.06
+[2024-08-26 21:21:17,373][    INFO] ***** Evaluation ***** >>>> Class [73 refrigerator] IoU: 50.69
+[2024-08-26 21:21:17,373][    INFO] ***** Evaluation ***** >>>> Class [74 book] IoU: 34.27
+[2024-08-26 21:21:17,373][    INFO] ***** Evaluation ***** >>>> Class [75 clock] IoU: 60.98
+[2024-08-26 21:21:17,373][    INFO] ***** Evaluation ***** >>>> Class [76 vase] IoU: 40.14
+[2024-08-26 21:21:17,373][    INFO] ***** Evaluation ***** >>>> Class [77 scissors] IoU: 51.13
+[2024-08-26 21:21:17,373][    INFO] ***** Evaluation ***** >>>> Class [78 teddy bear] IoU: 68.38
+[2024-08-26 21:21:17,373][    INFO] ***** Evaluation ***** >>>> Class [79 hair drier] IoU: 0.04
+[2024-08-26 21:21:17,373][    INFO] ***** Evaluation ***** >>>> Class [80 toothbrush] IoU: 2.68
+[2024-08-26 21:21:17,373][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 43.70
+
+[2024-08-26 21:21:17,900][    INFO] ===========> Epoch: 9, LR: 0.0000029, Previous best: 43.89
+[2024-08-26 21:21:18,408][    INFO] Iters: 0, Total loss: 0.065
+[2024-08-26 21:21:52,375][    INFO] Iters: 117, Total loss: 0.070
+[2024-08-26 21:22:26,359][    INFO] Iters: 234, Total loss: 0.072
+[2024-08-26 21:23:00,327][    INFO] Iters: 351, Total loss: 0.071
+[2024-08-26 21:23:34,311][    INFO] Iters: 468, Total loss: 0.075
+[2024-08-26 21:24:08,303][    INFO] Iters: 585, Total loss: 0.076
+[2024-08-26 21:24:42,279][    INFO] Iters: 702, Total loss: 0.076
+[2024-08-26 21:25:16,259][    INFO] Iters: 819, Total loss: 0.075
+[2024-08-26 21:25:50,241][    INFO] Iters: 936, Total loss: 0.075
+[2024-08-26 21:26:33,585][    INFO] ***** Evaluation ***** >>>> Class [0 void] IoU: 87.61
+[2024-08-26 21:26:33,585][    INFO] ***** Evaluation ***** >>>> Class [1 person] IoU: 80.59
+[2024-08-26 21:26:33,585][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 53.88
+[2024-08-26 21:26:33,585][    INFO] ***** Evaluation ***** >>>> Class [3 car] IoU: 50.33
+[2024-08-26 21:26:33,585][    INFO] ***** Evaluation ***** >>>> Class [4 motorcycle] IoU: 74.50
+[2024-08-26 21:26:33,585][    INFO] ***** Evaluation ***** >>>> Class [5 airplane] IoU: 73.02
+[2024-08-26 21:26:33,585][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 70.65
+[2024-08-26 21:26:33,585][    INFO] ***** Evaluation ***** >>>> Class [7 train] IoU: 70.15
+[2024-08-26 21:26:33,585][    INFO] ***** Evaluation ***** >>>> Class [8 truck] IoU: 43.26
+[2024-08-26 21:26:33,585][    INFO] ***** Evaluation ***** >>>> Class [9 boat] IoU: 57.88
+[2024-08-26 21:26:33,585][    INFO] ***** Evaluation ***** >>>> Class [10 traffic light] IoU: 43.53
+[2024-08-26 21:26:33,585][    INFO] ***** Evaluation ***** >>>> Class [11 fire hydrant] IoU: 75.21
+[2024-08-26 21:26:33,585][    INFO] ***** Evaluation ***** >>>> Class [12 stop sign] IoU: 74.96
+[2024-08-26 21:26:33,585][    INFO] ***** Evaluation ***** >>>> Class [13 parking meter] IoU: 45.65
+[2024-08-26 21:26:33,585][    INFO] ***** Evaluation ***** >>>> Class [14 bench] IoU: 37.78
+[2024-08-26 21:26:33,585][    INFO] ***** Evaluation ***** >>>> Class [15 bird] IoU: 64.13
+[2024-08-26 21:26:33,585][    INFO] ***** Evaluation ***** >>>> Class [16 cat] IoU: 77.25
+[2024-08-26 21:26:33,586][    INFO] ***** Evaluation ***** >>>> Class [17 dog] IoU: 70.42
+[2024-08-26 21:26:33,586][    INFO] ***** Evaluation ***** >>>> Class [18 horse] IoU: 70.98
+[2024-08-26 21:26:33,586][    INFO] ***** Evaluation ***** >>>> Class [19 sheep] IoU: 61.07
+[2024-08-26 21:26:33,586][    INFO] ***** Evaluation ***** >>>> Class [20 cow] IoU: 61.69
+[2024-08-26 21:26:33,586][    INFO] ***** Evaluation ***** >>>> Class [21 elephant] IoU: 87.28
+[2024-08-26 21:26:33,586][    INFO] ***** Evaluation ***** >>>> Class [22 bear] IoU: 63.35
+[2024-08-26 21:26:33,586][    INFO] ***** Evaluation ***** >>>> Class [23 zebra] IoU: 87.50
+[2024-08-26 21:26:33,586][    INFO] ***** Evaluation ***** >>>> Class [24 giraffe] IoU: 81.81
+[2024-08-26 21:26:33,586][    INFO] ***** Evaluation ***** >>>> Class [25 backpack] IoU: 13.08
+[2024-08-26 21:26:33,586][    INFO] ***** Evaluation ***** >>>> Class [26 umbrella] IoU: 69.76
+[2024-08-26 21:26:33,586][    INFO] ***** Evaluation ***** >>>> Class [27 handbag] IoU: 14.81
+[2024-08-26 21:26:33,586][    INFO] ***** Evaluation ***** >>>> Class [28 tie] IoU: 2.04
+[2024-08-26 21:26:33,586][    INFO] ***** Evaluation ***** >>>> Class [29 suitcase] IoU: 43.12
+[2024-08-26 21:26:33,586][    INFO] ***** Evaluation ***** >>>> Class [30 frisbee] IoU: 26.99
+[2024-08-26 21:26:33,586][    INFO] ***** Evaluation ***** >>>> Class [31 skis] IoU: 15.94
+[2024-08-26 21:26:33,586][    INFO] ***** Evaluation ***** >>>> Class [32 snowboard] IoU: 13.86
+[2024-08-26 21:26:33,586][    INFO] ***** Evaluation ***** >>>> Class [33 sports ball] IoU: 29.22
+[2024-08-26 21:26:33,586][    INFO] ***** Evaluation ***** >>>> Class [34 kite] IoU: 36.18
+[2024-08-26 21:26:33,586][    INFO] ***** Evaluation ***** >>>> Class [35 baseball bat] IoU: 16.40
+[2024-08-26 21:26:33,586][    INFO] ***** Evaluation ***** >>>> Class [36 baseball glove] IoU: 39.15
+[2024-08-26 21:26:33,586][    INFO] ***** Evaluation ***** >>>> Class [37 skateboard] IoU: 16.32
+[2024-08-26 21:26:33,586][    INFO] ***** Evaluation ***** >>>> Class [38 surfboard] IoU: 52.65
+[2024-08-26 21:26:33,586][    INFO] ***** Evaluation ***** >>>> Class [39 tennis racket] IoU: 49.32
+[2024-08-26 21:26:33,586][    INFO] ***** Evaluation ***** >>>> Class [40 bottle] IoU: 31.40
+[2024-08-26 21:26:33,586][    INFO] ***** Evaluation ***** >>>> Class [41 wine glass] IoU: 28.55
+[2024-08-26 21:26:33,586][    INFO] ***** Evaluation ***** >>>> Class [42 cup] IoU: 39.23
+[2024-08-26 21:26:33,586][    INFO] ***** Evaluation ***** >>>> Class [43 fork] IoU: 10.67
+[2024-08-26 21:26:33,587][    INFO] ***** Evaluation ***** >>>> Class [44 knife] IoU: 9.25
+[2024-08-26 21:26:33,587][    INFO] ***** Evaluation ***** >>>> Class [45 spoon] IoU: 6.37
+[2024-08-26 21:26:33,587][    INFO] ***** Evaluation ***** >>>> Class [46 bowl] IoU: 20.27
+[2024-08-26 21:26:33,587][    INFO] ***** Evaluation ***** >>>> Class [47 banana] IoU: 52.35
+[2024-08-26 21:26:33,587][    INFO] ***** Evaluation ***** >>>> Class [48 apple] IoU: 18.66
+[2024-08-26 21:26:33,587][    INFO] ***** Evaluation ***** >>>> Class [49 sandwich] IoU: 35.16
+[2024-08-26 21:26:33,587][    INFO] ***** Evaluation ***** >>>> Class [50 orange] IoU: 35.11
+[2024-08-26 21:26:33,587][    INFO] ***** Evaluation ***** >>>> Class [51 broccoli] IoU: 40.21
+[2024-08-26 21:26:33,587][    INFO] ***** Evaluation ***** >>>> Class [52 carrot] IoU: 23.80
+[2024-08-26 21:26:33,587][    INFO] ***** Evaluation ***** >>>> Class [53 hot dog] IoU: 41.89
+[2024-08-26 21:26:33,587][    INFO] ***** Evaluation ***** >>>> Class [54 pizza] IoU: 61.84
+[2024-08-26 21:26:33,587][    INFO] ***** Evaluation ***** >>>> Class [55 donut] IoU: 51.95
+[2024-08-26 21:26:33,587][    INFO] ***** Evaluation ***** >>>> Class [56 cake] IoU: 34.16
+[2024-08-26 21:26:33,587][    INFO] ***** Evaluation ***** >>>> Class [57 chair] IoU: 35.53
+[2024-08-26 21:26:33,587][    INFO] ***** Evaluation ***** >>>> Class [58 couch] IoU: 49.05
+[2024-08-26 21:26:33,587][    INFO] ***** Evaluation ***** >>>> Class [59 potted plant] IoU: 19.77
+[2024-08-26 21:26:33,587][    INFO] ***** Evaluation ***** >>>> Class [60 bed] IoU: 47.26
+[2024-08-26 21:26:33,587][    INFO] ***** Evaluation ***** >>>> Class [61 dining table] IoU: 32.26
+[2024-08-26 21:26:33,587][    INFO] ***** Evaluation ***** >>>> Class [62 toilet] IoU: 67.05
+[2024-08-26 21:26:33,587][    INFO] ***** Evaluation ***** >>>> Class [63 tv] IoU: 56.12
+[2024-08-26 21:26:33,587][    INFO] ***** Evaluation ***** >>>> Class [64 laptop] IoU: 62.67
+[2024-08-26 21:26:33,587][    INFO] ***** Evaluation ***** >>>> Class [65 mouse] IoU: 14.93
+[2024-08-26 21:26:33,587][    INFO] ***** Evaluation ***** >>>> Class [66 remote] IoU: 30.54
+[2024-08-26 21:26:33,587][    INFO] ***** Evaluation ***** >>>> Class [67 keyboard] IoU: 52.48
+[2024-08-26 21:26:33,587][    INFO] ***** Evaluation ***** >>>> Class [68 cell phone] IoU: 35.49
+[2024-08-26 21:26:33,587][    INFO] ***** Evaluation ***** >>>> Class [69 microwave] IoU: 12.61
+[2024-08-26 21:26:33,587][    INFO] ***** Evaluation ***** >>>> Class [70 oven] IoU: 29.07
+[2024-08-26 21:26:33,587][    INFO] ***** Evaluation ***** >>>> Class [71 toaster] IoU: 0.00
+[2024-08-26 21:26:33,588][    INFO] ***** Evaluation ***** >>>> Class [72 sink] IoU: 39.28
+[2024-08-26 21:26:33,588][    INFO] ***** Evaluation ***** >>>> Class [73 refrigerator] IoU: 48.25
+[2024-08-26 21:26:33,588][    INFO] ***** Evaluation ***** >>>> Class [74 book] IoU: 30.07
+[2024-08-26 21:26:33,588][    INFO] ***** Evaluation ***** >>>> Class [75 clock] IoU: 58.45
+[2024-08-26 21:26:33,588][    INFO] ***** Evaluation ***** >>>> Class [76 vase] IoU: 37.07
+[2024-08-26 21:26:33,588][    INFO] ***** Evaluation ***** >>>> Class [77 scissors] IoU: 51.43
+[2024-08-26 21:26:33,588][    INFO] ***** Evaluation ***** >>>> Class [78 teddy bear] IoU: 67.29
+[2024-08-26 21:26:33,588][    INFO] ***** Evaluation ***** >>>> Class [79 hair drier] IoU: 0.00
+[2024-08-26 21:26:33,588][    INFO] ***** Evaluation ***** >>>> Class [80 toothbrush] IoU: 4.85
+[2024-08-26 21:26:33,588][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 43.53
+
+[2024-08-26 21:26:34,121][    INFO] ===========> Epoch: 10, LR: 0.0000027, Previous best: 43.89
+[2024-08-26 21:26:34,619][    INFO] Iters: 0, Total loss: 0.050
+[2024-08-26 21:27:08,581][    INFO] Iters: 117, Total loss: 0.069
+[2024-08-26 21:27:42,556][    INFO] Iters: 234, Total loss: 0.067
+[2024-08-26 21:28:16,548][    INFO] Iters: 351, Total loss: 0.072
+[2024-08-26 21:28:50,527][    INFO] Iters: 468, Total loss: 0.072
+[2024-08-26 21:29:24,511][    INFO] Iters: 585, Total loss: 0.071
+[2024-08-26 21:29:58,474][    INFO] Iters: 702, Total loss: 0.071
+[2024-08-26 21:30:32,464][    INFO] Iters: 819, Total loss: 0.071
+[2024-08-26 21:31:06,444][    INFO] Iters: 936, Total loss: 0.071
+[2024-08-26 21:31:49,757][    INFO] ***** Evaluation ***** >>>> Class [0 void] IoU: 87.76
+[2024-08-26 21:31:49,757][    INFO] ***** Evaluation ***** >>>> Class [1 person] IoU: 80.47
+[2024-08-26 21:31:49,757][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 54.70
+[2024-08-26 21:31:49,757][    INFO] ***** Evaluation ***** >>>> Class [3 car] IoU: 49.32
+[2024-08-26 21:31:49,757][    INFO] ***** Evaluation ***** >>>> Class [4 motorcycle] IoU: 74.31
+[2024-08-26 21:31:49,758][    INFO] ***** Evaluation ***** >>>> Class [5 airplane] IoU: 72.24
+[2024-08-26 21:31:49,758][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 66.29
+[2024-08-26 21:31:49,758][    INFO] ***** Evaluation ***** >>>> Class [7 train] IoU: 69.75
+[2024-08-26 21:31:49,758][    INFO] ***** Evaluation ***** >>>> Class [8 truck] IoU: 41.13
+[2024-08-26 21:31:49,758][    INFO] ***** Evaluation ***** >>>> Class [9 boat] IoU: 58.18
+[2024-08-26 21:31:49,758][    INFO] ***** Evaluation ***** >>>> Class [10 traffic light] IoU: 40.15
+[2024-08-26 21:31:49,758][    INFO] ***** Evaluation ***** >>>> Class [11 fire hydrant] IoU: 74.90
+[2024-08-26 21:31:49,758][    INFO] ***** Evaluation ***** >>>> Class [12 stop sign] IoU: 79.57
+[2024-08-26 21:31:49,758][    INFO] ***** Evaluation ***** >>>> Class [13 parking meter] IoU: 46.56
+[2024-08-26 21:31:49,758][    INFO] ***** Evaluation ***** >>>> Class [14 bench] IoU: 41.06
+[2024-08-26 21:31:49,758][    INFO] ***** Evaluation ***** >>>> Class [15 bird] IoU: 63.41
+[2024-08-26 21:31:49,758][    INFO] ***** Evaluation ***** >>>> Class [16 cat] IoU: 79.11
+[2024-08-26 21:31:49,758][    INFO] ***** Evaluation ***** >>>> Class [17 dog] IoU: 70.94
+[2024-08-26 21:31:49,758][    INFO] ***** Evaluation ***** >>>> Class [18 horse] IoU: 72.66
+[2024-08-26 21:31:49,758][    INFO] ***** Evaluation ***** >>>> Class [19 sheep] IoU: 67.97
+[2024-08-26 21:31:49,758][    INFO] ***** Evaluation ***** >>>> Class [20 cow] IoU: 65.95
+[2024-08-26 21:31:49,758][    INFO] ***** Evaluation ***** >>>> Class [21 elephant] IoU: 86.77
+[2024-08-26 21:31:49,758][    INFO] ***** Evaluation ***** >>>> Class [22 bear] IoU: 77.42
+[2024-08-26 21:31:49,758][    INFO] ***** Evaluation ***** >>>> Class [23 zebra] IoU: 86.82
+[2024-08-26 21:31:49,758][    INFO] ***** Evaluation ***** >>>> Class [24 giraffe] IoU: 81.67
+[2024-08-26 21:31:49,758][    INFO] ***** Evaluation ***** >>>> Class [25 backpack] IoU: 13.85
+[2024-08-26 21:31:49,758][    INFO] ***** Evaluation ***** >>>> Class [26 umbrella] IoU: 69.88
+[2024-08-26 21:31:49,758][    INFO] ***** Evaluation ***** >>>> Class [27 handbag] IoU: 14.64
+[2024-08-26 21:31:49,758][    INFO] ***** Evaluation ***** >>>> Class [28 tie] IoU: 5.00
+[2024-08-26 21:31:49,758][    INFO] ***** Evaluation ***** >>>> Class [29 suitcase] IoU: 44.35
+[2024-08-26 21:31:49,758][    INFO] ***** Evaluation ***** >>>> Class [30 frisbee] IoU: 28.71
+[2024-08-26 21:31:49,759][    INFO] ***** Evaluation ***** >>>> Class [31 skis] IoU: 11.66
+[2024-08-26 21:31:49,759][    INFO] ***** Evaluation ***** >>>> Class [32 snowboard] IoU: 14.01
+[2024-08-26 21:31:49,759][    INFO] ***** Evaluation ***** >>>> Class [33 sports ball] IoU: 28.47
+[2024-08-26 21:31:49,759][    INFO] ***** Evaluation ***** >>>> Class [34 kite] IoU: 37.66
+[2024-08-26 21:31:49,759][    INFO] ***** Evaluation ***** >>>> Class [35 baseball bat] IoU: 15.80
+[2024-08-26 21:31:49,759][    INFO] ***** Evaluation ***** >>>> Class [36 baseball glove] IoU: 28.93
+[2024-08-26 21:31:49,759][    INFO] ***** Evaluation ***** >>>> Class [37 skateboard] IoU: 16.19
+[2024-08-26 21:31:49,759][    INFO] ***** Evaluation ***** >>>> Class [38 surfboard] IoU: 47.34
+[2024-08-26 21:31:49,759][    INFO] ***** Evaluation ***** >>>> Class [39 tennis racket] IoU: 47.05
+[2024-08-26 21:31:49,759][    INFO] ***** Evaluation ***** >>>> Class [40 bottle] IoU: 36.37
+[2024-08-26 21:31:49,759][    INFO] ***** Evaluation ***** >>>> Class [41 wine glass] IoU: 28.77
+[2024-08-26 21:31:49,759][    INFO] ***** Evaluation ***** >>>> Class [42 cup] IoU: 38.59
+[2024-08-26 21:31:49,759][    INFO] ***** Evaluation ***** >>>> Class [43 fork] IoU: 7.66
+[2024-08-26 21:31:49,759][    INFO] ***** Evaluation ***** >>>> Class [44 knife] IoU: 8.30
+[2024-08-26 21:31:49,759][    INFO] ***** Evaluation ***** >>>> Class [45 spoon] IoU: 3.93
+[2024-08-26 21:31:49,759][    INFO] ***** Evaluation ***** >>>> Class [46 bowl] IoU: 19.94
+[2024-08-26 21:31:49,759][    INFO] ***** Evaluation ***** >>>> Class [47 banana] IoU: 52.48
+[2024-08-26 21:31:49,759][    INFO] ***** Evaluation ***** >>>> Class [48 apple] IoU: 17.91
+[2024-08-26 21:31:49,759][    INFO] ***** Evaluation ***** >>>> Class [49 sandwich] IoU: 32.34
+[2024-08-26 21:31:49,759][    INFO] ***** Evaluation ***** >>>> Class [50 orange] IoU: 38.55
+[2024-08-26 21:31:49,759][    INFO] ***** Evaluation ***** >>>> Class [51 broccoli] IoU: 39.20
+[2024-08-26 21:31:49,759][    INFO] ***** Evaluation ***** >>>> Class [52 carrot] IoU: 24.02
+[2024-08-26 21:31:49,759][    INFO] ***** Evaluation ***** >>>> Class [53 hot dog] IoU: 39.81
+[2024-08-26 21:31:49,759][    INFO] ***** Evaluation ***** >>>> Class [54 pizza] IoU: 59.70
+[2024-08-26 21:31:49,759][    INFO] ***** Evaluation ***** >>>> Class [55 donut] IoU: 53.30
+[2024-08-26 21:31:49,759][    INFO] ***** Evaluation ***** >>>> Class [56 cake] IoU: 37.84
+[2024-08-26 21:31:49,759][    INFO] ***** Evaluation ***** >>>> Class [57 chair] IoU: 34.11
+[2024-08-26 21:31:49,759][    INFO] ***** Evaluation ***** >>>> Class [58 couch] IoU: 48.32
+[2024-08-26 21:31:49,760][    INFO] ***** Evaluation ***** >>>> Class [59 potted plant] IoU: 15.26
+[2024-08-26 21:31:49,760][    INFO] ***** Evaluation ***** >>>> Class [60 bed] IoU: 49.25
+[2024-08-26 21:31:49,760][    INFO] ***** Evaluation ***** >>>> Class [61 dining table] IoU: 32.43
+[2024-08-26 21:31:49,760][    INFO] ***** Evaluation ***** >>>> Class [62 toilet] IoU: 67.50
+[2024-08-26 21:31:49,760][    INFO] ***** Evaluation ***** >>>> Class [63 tv] IoU: 57.01
+[2024-08-26 21:31:49,760][    INFO] ***** Evaluation ***** >>>> Class [64 laptop] IoU: 63.79
+[2024-08-26 21:31:49,760][    INFO] ***** Evaluation ***** >>>> Class [65 mouse] IoU: 24.96
+[2024-08-26 21:31:49,760][    INFO] ***** Evaluation ***** >>>> Class [66 remote] IoU: 31.67
+[2024-08-26 21:31:49,760][    INFO] ***** Evaluation ***** >>>> Class [67 keyboard] IoU: 53.36
+[2024-08-26 21:31:49,760][    INFO] ***** Evaluation ***** >>>> Class [68 cell phone] IoU: 47.34
+[2024-08-26 21:31:49,760][    INFO] ***** Evaluation ***** >>>> Class [69 microwave] IoU: 20.69
+[2024-08-26 21:31:49,760][    INFO] ***** Evaluation ***** >>>> Class [70 oven] IoU: 30.98
+[2024-08-26 21:31:49,760][    INFO] ***** Evaluation ***** >>>> Class [71 toaster] IoU: 0.00
+[2024-08-26 21:31:49,760][    INFO] ***** Evaluation ***** >>>> Class [72 sink] IoU: 36.81
+[2024-08-26 21:31:49,760][    INFO] ***** Evaluation ***** >>>> Class [73 refrigerator] IoU: 51.91
+[2024-08-26 21:31:49,760][    INFO] ***** Evaluation ***** >>>> Class [74 book] IoU: 33.89
+[2024-08-26 21:31:49,760][    INFO] ***** Evaluation ***** >>>> Class [75 clock] IoU: 57.31
+[2024-08-26 21:31:49,760][    INFO] ***** Evaluation ***** >>>> Class [76 vase] IoU: 35.79
+[2024-08-26 21:31:49,760][    INFO] ***** Evaluation ***** >>>> Class [77 scissors] IoU: 39.87
+[2024-08-26 21:31:49,760][    INFO] ***** Evaluation ***** >>>> Class [78 teddy bear] IoU: 67.03
+[2024-08-26 21:31:49,760][    INFO] ***** Evaluation ***** >>>> Class [79 hair drier] IoU: 0.00
+[2024-08-26 21:31:49,760][    INFO] ***** Evaluation ***** >>>> Class [80 toothbrush] IoU: 6.94
+[2024-08-26 21:31:49,760][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 43.92
+
+[2024-08-26 21:31:50,762][    INFO] ===========> Epoch: 11, LR: 0.0000024, Previous best: 43.92
+[2024-08-26 21:31:51,292][    INFO] Iters: 0, Total loss: 0.092
+[2024-08-26 21:32:25,267][    INFO] Iters: 117, Total loss: 0.066
+[2024-08-26 21:32:59,253][    INFO] Iters: 234, Total loss: 0.067
+[2024-08-26 21:33:33,230][    INFO] Iters: 351, Total loss: 0.067
+[2024-08-26 21:34:07,213][    INFO] Iters: 468, Total loss: 0.067
+[2024-08-26 21:34:41,190][    INFO] Iters: 585, Total loss: 0.067
+[2024-08-26 21:35:15,174][    INFO] Iters: 702, Total loss: 0.067
+[2024-08-26 21:35:49,150][    INFO] Iters: 819, Total loss: 0.067
+[2024-08-26 21:36:23,136][    INFO] Iters: 936, Total loss: 0.067
+[2024-08-26 21:37:06,445][    INFO] ***** Evaluation ***** >>>> Class [0 void] IoU: 87.77
+[2024-08-26 21:37:06,446][    INFO] ***** Evaluation ***** >>>> Class [1 person] IoU: 80.64
+[2024-08-26 21:37:06,446][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 54.17
+[2024-08-26 21:37:06,446][    INFO] ***** Evaluation ***** >>>> Class [3 car] IoU: 49.13
+[2024-08-26 21:37:06,446][    INFO] ***** Evaluation ***** >>>> Class [4 motorcycle] IoU: 74.84
+[2024-08-26 21:37:06,446][    INFO] ***** Evaluation ***** >>>> Class [5 airplane] IoU: 70.00
+[2024-08-26 21:37:06,446][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 70.95
+[2024-08-26 21:37:06,446][    INFO] ***** Evaluation ***** >>>> Class [7 train] IoU: 69.60
+[2024-08-26 21:37:06,446][    INFO] ***** Evaluation ***** >>>> Class [8 truck] IoU: 42.62
+[2024-08-26 21:37:06,446][    INFO] ***** Evaluation ***** >>>> Class [9 boat] IoU: 58.37
+[2024-08-26 21:37:06,446][    INFO] ***** Evaluation ***** >>>> Class [10 traffic light] IoU: 42.18
+[2024-08-26 21:37:06,446][    INFO] ***** Evaluation ***** >>>> Class [11 fire hydrant] IoU: 77.79
+[2024-08-26 21:37:06,446][    INFO] ***** Evaluation ***** >>>> Class [12 stop sign] IoU: 79.96
+[2024-08-26 21:37:06,446][    INFO] ***** Evaluation ***** >>>> Class [13 parking meter] IoU: 47.40
+[2024-08-26 21:37:06,446][    INFO] ***** Evaluation ***** >>>> Class [14 bench] IoU: 39.93
+[2024-08-26 21:37:06,446][    INFO] ***** Evaluation ***** >>>> Class [15 bird] IoU: 63.30
+[2024-08-26 21:37:06,446][    INFO] ***** Evaluation ***** >>>> Class [16 cat] IoU: 77.96
+[2024-08-26 21:37:06,446][    INFO] ***** Evaluation ***** >>>> Class [17 dog] IoU: 70.40
+[2024-08-26 21:37:06,446][    INFO] ***** Evaluation ***** >>>> Class [18 horse] IoU: 72.95
+[2024-08-26 21:37:06,446][    INFO] ***** Evaluation ***** >>>> Class [19 sheep] IoU: 62.53
+[2024-08-26 21:37:06,446][    INFO] ***** Evaluation ***** >>>> Class [20 cow] IoU: 64.23
+[2024-08-26 21:37:06,446][    INFO] ***** Evaluation ***** >>>> Class [21 elephant] IoU: 86.14
+[2024-08-26 21:37:06,446][    INFO] ***** Evaluation ***** >>>> Class [22 bear] IoU: 60.29
+[2024-08-26 21:37:06,446][    INFO] ***** Evaluation ***** >>>> Class [23 zebra] IoU: 87.60
+[2024-08-26 21:37:06,446][    INFO] ***** Evaluation ***** >>>> Class [24 giraffe] IoU: 82.07
+[2024-08-26 21:37:06,446][    INFO] ***** Evaluation ***** >>>> Class [25 backpack] IoU: 14.24
+[2024-08-26 21:37:06,447][    INFO] ***** Evaluation ***** >>>> Class [26 umbrella] IoU: 70.18
+[2024-08-26 21:37:06,447][    INFO] ***** Evaluation ***** >>>> Class [27 handbag] IoU: 14.49
+[2024-08-26 21:37:06,447][    INFO] ***** Evaluation ***** >>>> Class [28 tie] IoU: 2.30
+[2024-08-26 21:37:06,447][    INFO] ***** Evaluation ***** >>>> Class [29 suitcase] IoU: 44.10
+[2024-08-26 21:37:06,447][    INFO] ***** Evaluation ***** >>>> Class [30 frisbee] IoU: 30.58
+[2024-08-26 21:37:06,447][    INFO] ***** Evaluation ***** >>>> Class [31 skis] IoU: 6.65
+[2024-08-26 21:37:06,447][    INFO] ***** Evaluation ***** >>>> Class [32 snowboard] IoU: 12.79
+[2024-08-26 21:37:06,447][    INFO] ***** Evaluation ***** >>>> Class [33 sports ball] IoU: 28.37
+[2024-08-26 21:37:06,447][    INFO] ***** Evaluation ***** >>>> Class [34 kite] IoU: 36.42
+[2024-08-26 21:37:06,447][    INFO] ***** Evaluation ***** >>>> Class [35 baseball bat] IoU: 15.46
+[2024-08-26 21:37:06,447][    INFO] ***** Evaluation ***** >>>> Class [36 baseball glove] IoU: 31.59
+[2024-08-26 21:37:06,447][    INFO] ***** Evaluation ***** >>>> Class [37 skateboard] IoU: 15.39
+[2024-08-26 21:37:06,447][    INFO] ***** Evaluation ***** >>>> Class [38 surfboard] IoU: 51.95
+[2024-08-26 21:37:06,447][    INFO] ***** Evaluation ***** >>>> Class [39 tennis racket] IoU: 51.17
+[2024-08-26 21:37:06,447][    INFO] ***** Evaluation ***** >>>> Class [40 bottle] IoU: 35.09
+[2024-08-26 21:37:06,447][    INFO] ***** Evaluation ***** >>>> Class [41 wine glass] IoU: 23.23
+[2024-08-26 21:37:06,447][    INFO] ***** Evaluation ***** >>>> Class [42 cup] IoU: 38.32
+[2024-08-26 21:37:06,447][    INFO] ***** Evaluation ***** >>>> Class [43 fork] IoU: 7.55
+[2024-08-26 21:37:06,447][    INFO] ***** Evaluation ***** >>>> Class [44 knife] IoU: 9.28
+[2024-08-26 21:37:06,447][    INFO] ***** Evaluation ***** >>>> Class [45 spoon] IoU: 3.05
+[2024-08-26 21:37:06,447][    INFO] ***** Evaluation ***** >>>> Class [46 bowl] IoU: 22.42
+[2024-08-26 21:37:06,447][    INFO] ***** Evaluation ***** >>>> Class [47 banana] IoU: 53.06
+[2024-08-26 21:37:06,447][    INFO] ***** Evaluation ***** >>>> Class [48 apple] IoU: 21.72
+[2024-08-26 21:37:06,447][    INFO] ***** Evaluation ***** >>>> Class [49 sandwich] IoU: 34.22
+[2024-08-26 21:37:06,447][    INFO] ***** Evaluation ***** >>>> Class [50 orange] IoU: 40.46
+[2024-08-26 21:37:06,447][    INFO] ***** Evaluation ***** >>>> Class [51 broccoli] IoU: 37.11
+[2024-08-26 21:37:06,447][    INFO] ***** Evaluation ***** >>>> Class [52 carrot] IoU: 24.70
+[2024-08-26 21:37:06,447][    INFO] ***** Evaluation ***** >>>> Class [53 hot dog] IoU: 42.28
+[2024-08-26 21:37:06,447][    INFO] ***** Evaluation ***** >>>> Class [54 pizza] IoU: 60.42
+[2024-08-26 21:37:06,448][    INFO] ***** Evaluation ***** >>>> Class [55 donut] IoU: 52.71
+[2024-08-26 21:37:06,448][    INFO] ***** Evaluation ***** >>>> Class [56 cake] IoU: 37.49
+[2024-08-26 21:37:06,448][    INFO] ***** Evaluation ***** >>>> Class [57 chair] IoU: 31.92
+[2024-08-26 21:37:06,448][    INFO] ***** Evaluation ***** >>>> Class [58 couch] IoU: 50.49
+[2024-08-26 21:37:06,448][    INFO] ***** Evaluation ***** >>>> Class [59 potted plant] IoU: 18.72
+[2024-08-26 21:37:06,448][    INFO] ***** Evaluation ***** >>>> Class [60 bed] IoU: 47.35
+[2024-08-26 21:37:06,448][    INFO] ***** Evaluation ***** >>>> Class [61 dining table] IoU: 31.99
+[2024-08-26 21:37:06,448][    INFO] ***** Evaluation ***** >>>> Class [62 toilet] IoU: 67.10
+[2024-08-26 21:37:06,448][    INFO] ***** Evaluation ***** >>>> Class [63 tv] IoU: 56.27
+[2024-08-26 21:37:06,448][    INFO] ***** Evaluation ***** >>>> Class [64 laptop] IoU: 64.39
+[2024-08-26 21:37:06,448][    INFO] ***** Evaluation ***** >>>> Class [65 mouse] IoU: 19.47
+[2024-08-26 21:37:06,448][    INFO] ***** Evaluation ***** >>>> Class [66 remote] IoU: 34.80
+[2024-08-26 21:37:06,448][    INFO] ***** Evaluation ***** >>>> Class [67 keyboard] IoU: 53.40
+[2024-08-26 21:37:06,448][    INFO] ***** Evaluation ***** >>>> Class [68 cell phone] IoU: 48.56
+[2024-08-26 21:37:06,448][    INFO] ***** Evaluation ***** >>>> Class [69 microwave] IoU: 22.23
+[2024-08-26 21:37:06,448][    INFO] ***** Evaluation ***** >>>> Class [70 oven] IoU: 33.69
+[2024-08-26 21:37:06,448][    INFO] ***** Evaluation ***** >>>> Class [71 toaster] IoU: 0.00
+[2024-08-26 21:37:06,448][    INFO] ***** Evaluation ***** >>>> Class [72 sink] IoU: 38.92
+[2024-08-26 21:37:06,448][    INFO] ***** Evaluation ***** >>>> Class [73 refrigerator] IoU: 51.42
+[2024-08-26 21:37:06,448][    INFO] ***** Evaluation ***** >>>> Class [74 book] IoU: 29.37
+[2024-08-26 21:37:06,448][    INFO] ***** Evaluation ***** >>>> Class [75 clock] IoU: 61.62
+[2024-08-26 21:37:06,448][    INFO] ***** Evaluation ***** >>>> Class [76 vase] IoU: 36.79
+[2024-08-26 21:37:06,448][    INFO] ***** Evaluation ***** >>>> Class [77 scissors] IoU: 50.11
+[2024-08-26 21:37:06,448][    INFO] ***** Evaluation ***** >>>> Class [78 teddy bear] IoU: 65.96
+[2024-08-26 21:37:06,448][    INFO] ***** Evaluation ***** >>>> Class [79 hair drier] IoU: 0.00
+[2024-08-26 21:37:06,448][    INFO] ***** Evaluation ***** >>>> Class [80 toothbrush] IoU: 3.51
+[2024-08-26 21:37:06,448][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 43.95
+
+[2024-08-26 21:37:07,415][    INFO] ===========> Epoch: 12, LR: 0.0000022, Previous best: 43.95
+[2024-08-26 21:37:07,933][    INFO] Iters: 0, Total loss: 0.037
+[2024-08-26 21:37:41,912][    INFO] Iters: 117, Total loss: 0.066
+[2024-08-26 21:38:15,897][    INFO] Iters: 234, Total loss: 0.064
+[2024-08-26 21:38:49,883][    INFO] Iters: 351, Total loss: 0.064
+[2024-08-26 21:39:23,879][    INFO] Iters: 468, Total loss: 0.064
+[2024-08-26 21:39:57,880][    INFO] Iters: 585, Total loss: 0.063
+[2024-08-26 21:40:31,871][    INFO] Iters: 702, Total loss: 0.063
+[2024-08-26 21:41:05,861][    INFO] Iters: 819, Total loss: 0.063
+[2024-08-26 21:41:39,850][    INFO] Iters: 936, Total loss: 0.063
+[2024-08-26 21:42:23,240][    INFO] ***** Evaluation ***** >>>> Class [0 void] IoU: 87.75
+[2024-08-26 21:42:23,240][    INFO] ***** Evaluation ***** >>>> Class [1 person] IoU: 80.66
+[2024-08-26 21:42:23,240][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 55.18
+[2024-08-26 21:42:23,240][    INFO] ***** Evaluation ***** >>>> Class [3 car] IoU: 48.74
+[2024-08-26 21:42:23,240][    INFO] ***** Evaluation ***** >>>> Class [4 motorcycle] IoU: 74.38
+[2024-08-26 21:42:23,240][    INFO] ***** Evaluation ***** >>>> Class [5 airplane] IoU: 72.92
+[2024-08-26 21:42:23,240][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 71.17
+[2024-08-26 21:42:23,240][    INFO] ***** Evaluation ***** >>>> Class [7 train] IoU: 70.03
+[2024-08-26 21:42:23,240][    INFO] ***** Evaluation ***** >>>> Class [8 truck] IoU: 42.76
+[2024-08-26 21:42:23,240][    INFO] ***** Evaluation ***** >>>> Class [9 boat] IoU: 59.55
+[2024-08-26 21:42:23,240][    INFO] ***** Evaluation ***** >>>> Class [10 traffic light] IoU: 45.64
+[2024-08-26 21:42:23,240][    INFO] ***** Evaluation ***** >>>> Class [11 fire hydrant] IoU: 74.26
+[2024-08-26 21:42:23,240][    INFO] ***** Evaluation ***** >>>> Class [12 stop sign] IoU: 79.10
+[2024-08-26 21:42:23,240][    INFO] ***** Evaluation ***** >>>> Class [13 parking meter] IoU: 49.37
+[2024-08-26 21:42:23,240][    INFO] ***** Evaluation ***** >>>> Class [14 bench] IoU: 39.85
+[2024-08-26 21:42:23,240][    INFO] ***** Evaluation ***** >>>> Class [15 bird] IoU: 64.02
+[2024-08-26 21:42:23,240][    INFO] ***** Evaluation ***** >>>> Class [16 cat] IoU: 77.14
+[2024-08-26 21:42:23,240][    INFO] ***** Evaluation ***** >>>> Class [17 dog] IoU: 69.46
+[2024-08-26 21:42:23,240][    INFO] ***** Evaluation ***** >>>> Class [18 horse] IoU: 72.56
+[2024-08-26 21:42:23,241][    INFO] ***** Evaluation ***** >>>> Class [19 sheep] IoU: 68.72
+[2024-08-26 21:42:23,241][    INFO] ***** Evaluation ***** >>>> Class [20 cow] IoU: 69.04
+[2024-08-26 21:42:23,241][    INFO] ***** Evaluation ***** >>>> Class [21 elephant] IoU: 86.84
+[2024-08-26 21:42:23,241][    INFO] ***** Evaluation ***** >>>> Class [22 bear] IoU: 71.87
+[2024-08-26 21:42:23,241][    INFO] ***** Evaluation ***** >>>> Class [23 zebra] IoU: 87.28
+[2024-08-26 21:42:23,241][    INFO] ***** Evaluation ***** >>>> Class [24 giraffe] IoU: 81.98
+[2024-08-26 21:42:23,241][    INFO] ***** Evaluation ***** >>>> Class [25 backpack] IoU: 14.89
+[2024-08-26 21:42:23,241][    INFO] ***** Evaluation ***** >>>> Class [26 umbrella] IoU: 69.35
+[2024-08-26 21:42:23,241][    INFO] ***** Evaluation ***** >>>> Class [27 handbag] IoU: 12.99
+[2024-08-26 21:42:23,241][    INFO] ***** Evaluation ***** >>>> Class [28 tie] IoU: 2.04
+[2024-08-26 21:42:23,241][    INFO] ***** Evaluation ***** >>>> Class [29 suitcase] IoU: 45.26
+[2024-08-26 21:42:23,241][    INFO] ***** Evaluation ***** >>>> Class [30 frisbee] IoU: 31.37
+[2024-08-26 21:42:23,241][    INFO] ***** Evaluation ***** >>>> Class [31 skis] IoU: 12.54
+[2024-08-26 21:42:23,241][    INFO] ***** Evaluation ***** >>>> Class [32 snowboard] IoU: 18.10
+[2024-08-26 21:42:23,241][    INFO] ***** Evaluation ***** >>>> Class [33 sports ball] IoU: 29.14
+[2024-08-26 21:42:23,241][    INFO] ***** Evaluation ***** >>>> Class [34 kite] IoU: 36.65
+[2024-08-26 21:42:23,241][    INFO] ***** Evaluation ***** >>>> Class [35 baseball bat] IoU: 15.70
+[2024-08-26 21:42:23,241][    INFO] ***** Evaluation ***** >>>> Class [36 baseball glove] IoU: 23.87
+[2024-08-26 21:42:23,241][    INFO] ***** Evaluation ***** >>>> Class [37 skateboard] IoU: 19.29
+[2024-08-26 21:42:23,241][    INFO] ***** Evaluation ***** >>>> Class [38 surfboard] IoU: 53.98
+[2024-08-26 21:42:23,241][    INFO] ***** Evaluation ***** >>>> Class [39 tennis racket] IoU: 52.70
+[2024-08-26 21:42:23,241][    INFO] ***** Evaluation ***** >>>> Class [40 bottle] IoU: 35.08
+[2024-08-26 21:42:23,241][    INFO] ***** Evaluation ***** >>>> Class [41 wine glass] IoU: 25.44
+[2024-08-26 21:42:23,241][    INFO] ***** Evaluation ***** >>>> Class [42 cup] IoU: 39.14
+[2024-08-26 21:42:23,241][    INFO] ***** Evaluation ***** >>>> Class [43 fork] IoU: 11.43
+[2024-08-26 21:42:23,241][    INFO] ***** Evaluation ***** >>>> Class [44 knife] IoU: 10.88
+[2024-08-26 21:42:23,241][    INFO] ***** Evaluation ***** >>>> Class [45 spoon] IoU: 3.53
+[2024-08-26 21:42:23,241][    INFO] ***** Evaluation ***** >>>> Class [46 bowl] IoU: 23.05
+[2024-08-26 21:42:23,242][    INFO] ***** Evaluation ***** >>>> Class [47 banana] IoU: 53.48
+[2024-08-26 21:42:23,242][    INFO] ***** Evaluation ***** >>>> Class [48 apple] IoU: 17.11
+[2024-08-26 21:42:23,242][    INFO] ***** Evaluation ***** >>>> Class [49 sandwich] IoU: 35.00
+[2024-08-26 21:42:23,242][    INFO] ***** Evaluation ***** >>>> Class [50 orange] IoU: 37.05
+[2024-08-26 21:42:23,242][    INFO] ***** Evaluation ***** >>>> Class [51 broccoli] IoU: 31.89
+[2024-08-26 21:42:23,242][    INFO] ***** Evaluation ***** >>>> Class [52 carrot] IoU: 25.59
+[2024-08-26 21:42:23,242][    INFO] ***** Evaluation ***** >>>> Class [53 hot dog] IoU: 41.18
+[2024-08-26 21:42:23,242][    INFO] ***** Evaluation ***** >>>> Class [54 pizza] IoU: 59.79
+[2024-08-26 21:42:23,242][    INFO] ***** Evaluation ***** >>>> Class [55 donut] IoU: 53.62
+[2024-08-26 21:42:23,242][    INFO] ***** Evaluation ***** >>>> Class [56 cake] IoU: 38.67
+[2024-08-26 21:42:23,242][    INFO] ***** Evaluation ***** >>>> Class [57 chair] IoU: 33.67
+[2024-08-26 21:42:23,242][    INFO] ***** Evaluation ***** >>>> Class [58 couch] IoU: 50.43
+[2024-08-26 21:42:23,242][    INFO] ***** Evaluation ***** >>>> Class [59 potted plant] IoU: 20.24
+[2024-08-26 21:42:23,242][    INFO] ***** Evaluation ***** >>>> Class [60 bed] IoU: 48.77
+[2024-08-26 21:42:23,242][    INFO] ***** Evaluation ***** >>>> Class [61 dining table] IoU: 30.73
+[2024-08-26 21:42:23,242][    INFO] ***** Evaluation ***** >>>> Class [62 toilet] IoU: 69.31
+[2024-08-26 21:42:23,242][    INFO] ***** Evaluation ***** >>>> Class [63 tv] IoU: 55.87
+[2024-08-26 21:42:23,242][    INFO] ***** Evaluation ***** >>>> Class [64 laptop] IoU: 63.41
+[2024-08-26 21:42:23,242][    INFO] ***** Evaluation ***** >>>> Class [65 mouse] IoU: 20.89
+[2024-08-26 21:42:23,242][    INFO] ***** Evaluation ***** >>>> Class [66 remote] IoU: 31.26
+[2024-08-26 21:42:23,242][    INFO] ***** Evaluation ***** >>>> Class [67 keyboard] IoU: 55.53
+[2024-08-26 21:42:23,242][    INFO] ***** Evaluation ***** >>>> Class [68 cell phone] IoU: 45.33
+[2024-08-26 21:42:23,242][    INFO] ***** Evaluation ***** >>>> Class [69 microwave] IoU: 26.81
+[2024-08-26 21:42:23,242][    INFO] ***** Evaluation ***** >>>> Class [70 oven] IoU: 32.01
+[2024-08-26 21:42:23,242][    INFO] ***** Evaluation ***** >>>> Class [71 toaster] IoU: 0.00
+[2024-08-26 21:42:23,242][    INFO] ***** Evaluation ***** >>>> Class [72 sink] IoU: 44.77
+[2024-08-26 21:42:23,242][    INFO] ***** Evaluation ***** >>>> Class [73 refrigerator] IoU: 52.14
+[2024-08-26 21:42:23,242][    INFO] ***** Evaluation ***** >>>> Class [74 book] IoU: 29.70
+[2024-08-26 21:42:23,243][    INFO] ***** Evaluation ***** >>>> Class [75 clock] IoU: 63.49
+[2024-08-26 21:42:23,243][    INFO] ***** Evaluation ***** >>>> Class [76 vase] IoU: 38.02
+[2024-08-26 21:42:23,243][    INFO] ***** Evaluation ***** >>>> Class [77 scissors] IoU: 51.21
+[2024-08-26 21:42:23,243][    INFO] ***** Evaluation ***** >>>> Class [78 teddy bear] IoU: 66.20
+[2024-08-26 21:42:23,243][    INFO] ***** Evaluation ***** >>>> Class [79 hair drier] IoU: 0.00
+[2024-08-26 21:42:23,243][    INFO] ***** Evaluation ***** >>>> Class [80 toothbrush] IoU: 5.36
+[2024-08-26 21:42:23,243][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 44.63
+
+[2024-08-26 21:42:24,250][    INFO] ===========> Epoch: 13, LR: 0.0000019, Previous best: 44.63
+[2024-08-26 21:42:24,772][    INFO] Iters: 0, Total loss: 0.075
+[2024-08-26 21:42:58,751][    INFO] Iters: 117, Total loss: 0.063
+[2024-08-26 21:43:32,728][    INFO] Iters: 234, Total loss: 0.063
+[2024-08-26 21:44:06,708][    INFO] Iters: 351, Total loss: 0.062
+[2024-08-26 21:44:40,681][    INFO] Iters: 468, Total loss: 0.063
+[2024-08-26 21:45:14,681][    INFO] Iters: 585, Total loss: 0.063
+[2024-08-26 21:45:48,673][    INFO] Iters: 702, Total loss: 0.063
+[2024-08-26 21:46:22,668][    INFO] Iters: 819, Total loss: 0.063
+[2024-08-26 21:46:56,647][    INFO] Iters: 936, Total loss: 0.062
+[2024-08-26 21:47:40,034][    INFO] ***** Evaluation ***** >>>> Class [0 void] IoU: 87.50
+[2024-08-26 21:47:40,034][    INFO] ***** Evaluation ***** >>>> Class [1 person] IoU: 80.49
+[2024-08-26 21:47:40,034][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 55.03
+[2024-08-26 21:47:40,034][    INFO] ***** Evaluation ***** >>>> Class [3 car] IoU: 48.15
+[2024-08-26 21:47:40,034][    INFO] ***** Evaluation ***** >>>> Class [4 motorcycle] IoU: 74.46
+[2024-08-26 21:47:40,034][    INFO] ***** Evaluation ***** >>>> Class [5 airplane] IoU: 70.12
+[2024-08-26 21:47:40,034][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 71.65
+[2024-08-26 21:47:40,034][    INFO] ***** Evaluation ***** >>>> Class [7 train] IoU: 68.08
+[2024-08-26 21:47:40,034][    INFO] ***** Evaluation ***** >>>> Class [8 truck] IoU: 42.30
+[2024-08-26 21:47:40,034][    INFO] ***** Evaluation ***** >>>> Class [9 boat] IoU: 58.25
+[2024-08-26 21:47:40,034][    INFO] ***** Evaluation ***** >>>> Class [10 traffic light] IoU: 43.64
+[2024-08-26 21:47:40,034][    INFO] ***** Evaluation ***** >>>> Class [11 fire hydrant] IoU: 76.04
+[2024-08-26 21:47:40,035][    INFO] ***** Evaluation ***** >>>> Class [12 stop sign] IoU: 83.69
+[2024-08-26 21:47:40,035][    INFO] ***** Evaluation ***** >>>> Class [13 parking meter] IoU: 47.61
+[2024-08-26 21:47:40,035][    INFO] ***** Evaluation ***** >>>> Class [14 bench] IoU: 39.67
+[2024-08-26 21:47:40,035][    INFO] ***** Evaluation ***** >>>> Class [15 bird] IoU: 63.36
+[2024-08-26 21:47:40,035][    INFO] ***** Evaluation ***** >>>> Class [16 cat] IoU: 76.84
+[2024-08-26 21:47:40,035][    INFO] ***** Evaluation ***** >>>> Class [17 dog] IoU: 69.76
+[2024-08-26 21:47:40,035][    INFO] ***** Evaluation ***** >>>> Class [18 horse] IoU: 70.80
+[2024-08-26 21:47:40,035][    INFO] ***** Evaluation ***** >>>> Class [19 sheep] IoU: 61.93
+[2024-08-26 21:47:40,035][    INFO] ***** Evaluation ***** >>>> Class [20 cow] IoU: 66.71
+[2024-08-26 21:47:40,035][    INFO] ***** Evaluation ***** >>>> Class [21 elephant] IoU: 86.86
+[2024-08-26 21:47:40,035][    INFO] ***** Evaluation ***** >>>> Class [22 bear] IoU: 58.94
+[2024-08-26 21:47:40,035][    INFO] ***** Evaluation ***** >>>> Class [23 zebra] IoU: 87.15
+[2024-08-26 21:47:40,035][    INFO] ***** Evaluation ***** >>>> Class [24 giraffe] IoU: 82.09
+[2024-08-26 21:47:40,035][    INFO] ***** Evaluation ***** >>>> Class [25 backpack] IoU: 13.86
+[2024-08-26 21:47:40,035][    INFO] ***** Evaluation ***** >>>> Class [26 umbrella] IoU: 70.20
+[2024-08-26 21:47:40,035][    INFO] ***** Evaluation ***** >>>> Class [27 handbag] IoU: 14.59
+[2024-08-26 21:47:40,035][    INFO] ***** Evaluation ***** >>>> Class [28 tie] IoU: 2.68
+[2024-08-26 21:47:40,035][    INFO] ***** Evaluation ***** >>>> Class [29 suitcase] IoU: 43.22
+[2024-08-26 21:47:40,035][    INFO] ***** Evaluation ***** >>>> Class [30 frisbee] IoU: 29.89
+[2024-08-26 21:47:40,035][    INFO] ***** Evaluation ***** >>>> Class [31 skis] IoU: 13.64
+[2024-08-26 21:47:40,035][    INFO] ***** Evaluation ***** >>>> Class [32 snowboard] IoU: 10.16
+[2024-08-26 21:47:40,035][    INFO] ***** Evaluation ***** >>>> Class [33 sports ball] IoU: 29.95
+[2024-08-26 21:47:40,035][    INFO] ***** Evaluation ***** >>>> Class [34 kite] IoU: 34.70
+[2024-08-26 21:47:40,035][    INFO] ***** Evaluation ***** >>>> Class [35 baseball bat] IoU: 12.70
+[2024-08-26 21:47:40,035][    INFO] ***** Evaluation ***** >>>> Class [36 baseball glove] IoU: 33.18
+[2024-08-26 21:47:40,035][    INFO] ***** Evaluation ***** >>>> Class [37 skateboard] IoU: 12.64
+[2024-08-26 21:47:40,035][    INFO] ***** Evaluation ***** >>>> Class [38 surfboard] IoU: 41.45
+[2024-08-26 21:47:40,035][    INFO] ***** Evaluation ***** >>>> Class [39 tennis racket] IoU: 46.60
+[2024-08-26 21:47:40,035][    INFO] ***** Evaluation ***** >>>> Class [40 bottle] IoU: 35.10
+[2024-08-26 21:47:40,036][    INFO] ***** Evaluation ***** >>>> Class [41 wine glass] IoU: 23.16
+[2024-08-26 21:47:40,036][    INFO] ***** Evaluation ***** >>>> Class [42 cup] IoU: 37.27
+[2024-08-26 21:47:40,036][    INFO] ***** Evaluation ***** >>>> Class [43 fork] IoU: 8.87
+[2024-08-26 21:47:40,036][    INFO] ***** Evaluation ***** >>>> Class [44 knife] IoU: 10.03
+[2024-08-26 21:47:40,036][    INFO] ***** Evaluation ***** >>>> Class [45 spoon] IoU: 5.11
+[2024-08-26 21:47:40,036][    INFO] ***** Evaluation ***** >>>> Class [46 bowl] IoU: 20.84
+[2024-08-26 21:47:40,036][    INFO] ***** Evaluation ***** >>>> Class [47 banana] IoU: 53.78
+[2024-08-26 21:47:40,036][    INFO] ***** Evaluation ***** >>>> Class [48 apple] IoU: 19.30
+[2024-08-26 21:47:40,036][    INFO] ***** Evaluation ***** >>>> Class [49 sandwich] IoU: 33.30
+[2024-08-26 21:47:40,036][    INFO] ***** Evaluation ***** >>>> Class [50 orange] IoU: 36.29
+[2024-08-26 21:47:40,036][    INFO] ***** Evaluation ***** >>>> Class [51 broccoli] IoU: 36.76
+[2024-08-26 21:47:40,036][    INFO] ***** Evaluation ***** >>>> Class [52 carrot] IoU: 24.78
+[2024-08-26 21:47:40,036][    INFO] ***** Evaluation ***** >>>> Class [53 hot dog] IoU: 40.15
+[2024-08-26 21:47:40,036][    INFO] ***** Evaluation ***** >>>> Class [54 pizza] IoU: 60.78
+[2024-08-26 21:47:40,036][    INFO] ***** Evaluation ***** >>>> Class [55 donut] IoU: 51.17
+[2024-08-26 21:47:40,036][    INFO] ***** Evaluation ***** >>>> Class [56 cake] IoU: 36.10
+[2024-08-26 21:47:40,036][    INFO] ***** Evaluation ***** >>>> Class [57 chair] IoU: 30.70
+[2024-08-26 21:47:40,036][    INFO] ***** Evaluation ***** >>>> Class [58 couch] IoU: 50.44
+[2024-08-26 21:47:40,036][    INFO] ***** Evaluation ***** >>>> Class [59 potted plant] IoU: 17.47
+[2024-08-26 21:47:40,036][    INFO] ***** Evaluation ***** >>>> Class [60 bed] IoU: 45.05
+[2024-08-26 21:47:40,036][    INFO] ***** Evaluation ***** >>>> Class [61 dining table] IoU: 30.60
+[2024-08-26 21:47:40,036][    INFO] ***** Evaluation ***** >>>> Class [62 toilet] IoU: 65.00
+[2024-08-26 21:47:40,036][    INFO] ***** Evaluation ***** >>>> Class [63 tv] IoU: 55.42
+[2024-08-26 21:47:40,036][    INFO] ***** Evaluation ***** >>>> Class [64 laptop] IoU: 63.04
+[2024-08-26 21:47:40,036][    INFO] ***** Evaluation ***** >>>> Class [65 mouse] IoU: 20.15
+[2024-08-26 21:47:40,036][    INFO] ***** Evaluation ***** >>>> Class [66 remote] IoU: 32.19
+[2024-08-26 21:47:40,036][    INFO] ***** Evaluation ***** >>>> Class [67 keyboard] IoU: 54.21
+[2024-08-26 21:47:40,036][    INFO] ***** Evaluation ***** >>>> Class [68 cell phone] IoU: 46.28
+[2024-08-26 21:47:40,036][    INFO] ***** Evaluation ***** >>>> Class [69 microwave] IoU: 23.29
+[2024-08-26 21:47:40,037][    INFO] ***** Evaluation ***** >>>> Class [70 oven] IoU: 31.38
+[2024-08-26 21:47:40,037][    INFO] ***** Evaluation ***** >>>> Class [71 toaster] IoU: 0.00
+[2024-08-26 21:47:40,037][    INFO] ***** Evaluation ***** >>>> Class [72 sink] IoU: 36.04
+[2024-08-26 21:47:40,037][    INFO] ***** Evaluation ***** >>>> Class [73 refrigerator] IoU: 48.12
+[2024-08-26 21:47:40,037][    INFO] ***** Evaluation ***** >>>> Class [74 book] IoU: 27.78
+[2024-08-26 21:47:40,037][    INFO] ***** Evaluation ***** >>>> Class [75 clock] IoU: 61.53
+[2024-08-26 21:47:40,037][    INFO] ***** Evaluation ***** >>>> Class [76 vase] IoU: 37.59
+[2024-08-26 21:47:40,037][    INFO] ***** Evaluation ***** >>>> Class [77 scissors] IoU: 45.63
+[2024-08-26 21:47:40,037][    INFO] ***** Evaluation ***** >>>> Class [78 teddy bear] IoU: 66.42
+[2024-08-26 21:47:40,037][    INFO] ***** Evaluation ***** >>>> Class [79 hair drier] IoU: 0.00
+[2024-08-26 21:47:40,037][    INFO] ***** Evaluation ***** >>>> Class [80 toothbrush] IoU: 2.25
+[2024-08-26 21:47:40,037][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 43.26
+
+[2024-08-26 21:47:40,566][    INFO] ===========> Epoch: 14, LR: 0.0000017, Previous best: 44.63
+[2024-08-26 21:47:41,072][    INFO] Iters: 0, Total loss: 0.024
+[2024-08-26 21:48:15,046][    INFO] Iters: 117, Total loss: 0.058
+[2024-08-26 21:48:49,036][    INFO] Iters: 234, Total loss: 0.060
+[2024-08-26 21:49:23,025][    INFO] Iters: 351, Total loss: 0.060
+[2024-08-26 21:49:57,016][    INFO] Iters: 468, Total loss: 0.060
+[2024-08-26 21:50:31,008][    INFO] Iters: 585, Total loss: 0.060
+[2024-08-26 21:51:05,003][    INFO] Iters: 702, Total loss: 0.060
+[2024-08-26 21:51:38,997][    INFO] Iters: 819, Total loss: 0.062
+[2024-08-26 21:52:12,987][    INFO] Iters: 936, Total loss: 0.062
+[2024-08-26 21:52:56,320][    INFO] ***** Evaluation ***** >>>> Class [0 void] IoU: 87.64
+[2024-08-26 21:52:56,320][    INFO] ***** Evaluation ***** >>>> Class [1 person] IoU: 80.61
+[2024-08-26 21:52:56,320][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 53.93
+[2024-08-26 21:52:56,320][    INFO] ***** Evaluation ***** >>>> Class [3 car] IoU: 48.50
+[2024-08-26 21:52:56,320][    INFO] ***** Evaluation ***** >>>> Class [4 motorcycle] IoU: 74.31
+[2024-08-26 21:52:56,320][    INFO] ***** Evaluation ***** >>>> Class [5 airplane] IoU: 70.95
+[2024-08-26 21:52:56,320][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 71.65
+[2024-08-26 21:52:56,320][    INFO] ***** Evaluation ***** >>>> Class [7 train] IoU: 69.41
+[2024-08-26 21:52:56,320][    INFO] ***** Evaluation ***** >>>> Class [8 truck] IoU: 42.10
+[2024-08-26 21:52:56,320][    INFO] ***** Evaluation ***** >>>> Class [9 boat] IoU: 59.41
+[2024-08-26 21:52:56,320][    INFO] ***** Evaluation ***** >>>> Class [10 traffic light] IoU: 41.77
+[2024-08-26 21:52:56,320][    INFO] ***** Evaluation ***** >>>> Class [11 fire hydrant] IoU: 75.65
+[2024-08-26 21:52:56,320][    INFO] ***** Evaluation ***** >>>> Class [12 stop sign] IoU: 77.79
+[2024-08-26 21:52:56,320][    INFO] ***** Evaluation ***** >>>> Class [13 parking meter] IoU: 50.12
+[2024-08-26 21:52:56,320][    INFO] ***** Evaluation ***** >>>> Class [14 bench] IoU: 41.35
+[2024-08-26 21:52:56,320][    INFO] ***** Evaluation ***** >>>> Class [15 bird] IoU: 62.84
+[2024-08-26 21:52:56,320][    INFO] ***** Evaluation ***** >>>> Class [16 cat] IoU: 74.60
+[2024-08-26 21:52:56,320][    INFO] ***** Evaluation ***** >>>> Class [17 dog] IoU: 65.94
+[2024-08-26 21:52:56,320][    INFO] ***** Evaluation ***** >>>> Class [18 horse] IoU: 70.26
+[2024-08-26 21:52:56,320][    INFO] ***** Evaluation ***** >>>> Class [19 sheep] IoU: 57.46
+[2024-08-26 21:52:56,320][    INFO] ***** Evaluation ***** >>>> Class [20 cow] IoU: 58.14
+[2024-08-26 21:52:56,320][    INFO] ***** Evaluation ***** >>>> Class [21 elephant] IoU: 87.01
+[2024-08-26 21:52:56,320][    INFO] ***** Evaluation ***** >>>> Class [22 bear] IoU: 58.02
+[2024-08-26 21:52:56,320][    INFO] ***** Evaluation ***** >>>> Class [23 zebra] IoU: 87.46
+[2024-08-26 21:52:56,321][    INFO] ***** Evaluation ***** >>>> Class [24 giraffe] IoU: 82.34
+[2024-08-26 21:52:56,321][    INFO] ***** Evaluation ***** >>>> Class [25 backpack] IoU: 15.59
+[2024-08-26 21:52:56,321][    INFO] ***** Evaluation ***** >>>> Class [26 umbrella] IoU: 67.74
+[2024-08-26 21:52:56,321][    INFO] ***** Evaluation ***** >>>> Class [27 handbag] IoU: 16.31
+[2024-08-26 21:52:56,321][    INFO] ***** Evaluation ***** >>>> Class [28 tie] IoU: 2.14
+[2024-08-26 21:52:56,321][    INFO] ***** Evaluation ***** >>>> Class [29 suitcase] IoU: 46.64
+[2024-08-26 21:52:56,321][    INFO] ***** Evaluation ***** >>>> Class [30 frisbee] IoU: 29.10
+[2024-08-26 21:52:56,321][    INFO] ***** Evaluation ***** >>>> Class [31 skis] IoU: 17.26
+[2024-08-26 21:52:56,321][    INFO] ***** Evaluation ***** >>>> Class [32 snowboard] IoU: 9.74
+[2024-08-26 21:52:56,321][    INFO] ***** Evaluation ***** >>>> Class [33 sports ball] IoU: 29.74
+[2024-08-26 21:52:56,321][    INFO] ***** Evaluation ***** >>>> Class [34 kite] IoU: 35.14
+[2024-08-26 21:52:56,321][    INFO] ***** Evaluation ***** >>>> Class [35 baseball bat] IoU: 14.06
+[2024-08-26 21:52:56,321][    INFO] ***** Evaluation ***** >>>> Class [36 baseball glove] IoU: 38.89
+[2024-08-26 21:52:56,321][    INFO] ***** Evaluation ***** >>>> Class [37 skateboard] IoU: 17.59
+[2024-08-26 21:52:56,321][    INFO] ***** Evaluation ***** >>>> Class [38 surfboard] IoU: 44.95
+[2024-08-26 21:52:56,321][    INFO] ***** Evaluation ***** >>>> Class [39 tennis racket] IoU: 55.62
+[2024-08-26 21:52:56,321][    INFO] ***** Evaluation ***** >>>> Class [40 bottle] IoU: 34.15
+[2024-08-26 21:52:56,321][    INFO] ***** Evaluation ***** >>>> Class [41 wine glass] IoU: 26.06
+[2024-08-26 21:52:56,321][    INFO] ***** Evaluation ***** >>>> Class [42 cup] IoU: 37.34
+[2024-08-26 21:52:56,321][    INFO] ***** Evaluation ***** >>>> Class [43 fork] IoU: 9.82
+[2024-08-26 21:52:56,321][    INFO] ***** Evaluation ***** >>>> Class [44 knife] IoU: 9.50
+[2024-08-26 21:52:56,321][    INFO] ***** Evaluation ***** >>>> Class [45 spoon] IoU: 7.61
+[2024-08-26 21:52:56,321][    INFO] ***** Evaluation ***** >>>> Class [46 bowl] IoU: 20.35
+[2024-08-26 21:52:56,321][    INFO] ***** Evaluation ***** >>>> Class [47 banana] IoU: 52.14
+[2024-08-26 21:52:56,321][    INFO] ***** Evaluation ***** >>>> Class [48 apple] IoU: 17.13
+[2024-08-26 21:52:56,321][    INFO] ***** Evaluation ***** >>>> Class [49 sandwich] IoU: 34.46
+[2024-08-26 21:52:56,321][    INFO] ***** Evaluation ***** >>>> Class [50 orange] IoU: 40.43
+[2024-08-26 21:52:56,321][    INFO] ***** Evaluation ***** >>>> Class [51 broccoli] IoU: 36.35
+[2024-08-26 21:52:56,322][    INFO] ***** Evaluation ***** >>>> Class [52 carrot] IoU: 25.66
+[2024-08-26 21:52:56,322][    INFO] ***** Evaluation ***** >>>> Class [53 hot dog] IoU: 39.80
+[2024-08-26 21:52:56,322][    INFO] ***** Evaluation ***** >>>> Class [54 pizza] IoU: 60.69
+[2024-08-26 21:52:56,322][    INFO] ***** Evaluation ***** >>>> Class [55 donut] IoU: 49.46
+[2024-08-26 21:52:56,322][    INFO] ***** Evaluation ***** >>>> Class [56 cake] IoU: 38.25
+[2024-08-26 21:52:56,322][    INFO] ***** Evaluation ***** >>>> Class [57 chair] IoU: 32.02
+[2024-08-26 21:52:56,322][    INFO] ***** Evaluation ***** >>>> Class [58 couch] IoU: 47.49
+[2024-08-26 21:52:56,322][    INFO] ***** Evaluation ***** >>>> Class [59 potted plant] IoU: 18.72
+[2024-08-26 21:52:56,322][    INFO] ***** Evaluation ***** >>>> Class [60 bed] IoU: 44.59
+[2024-08-26 21:52:56,322][    INFO] ***** Evaluation ***** >>>> Class [61 dining table] IoU: 30.66
+[2024-08-26 21:52:56,322][    INFO] ***** Evaluation ***** >>>> Class [62 toilet] IoU: 66.17
+[2024-08-26 21:52:56,322][    INFO] ***** Evaluation ***** >>>> Class [63 tv] IoU: 52.94
+[2024-08-26 21:52:56,322][    INFO] ***** Evaluation ***** >>>> Class [64 laptop] IoU: 62.41
+[2024-08-26 21:52:56,322][    INFO] ***** Evaluation ***** >>>> Class [65 mouse] IoU: 27.03
+[2024-08-26 21:52:56,322][    INFO] ***** Evaluation ***** >>>> Class [66 remote] IoU: 29.49
+[2024-08-26 21:52:56,322][    INFO] ***** Evaluation ***** >>>> Class [67 keyboard] IoU: 53.98
+[2024-08-26 21:52:56,322][    INFO] ***** Evaluation ***** >>>> Class [68 cell phone] IoU: 41.45
+[2024-08-26 21:52:56,322][    INFO] ***** Evaluation ***** >>>> Class [69 microwave] IoU: 22.55
+[2024-08-26 21:52:56,322][    INFO] ***** Evaluation ***** >>>> Class [70 oven] IoU: 33.62
+[2024-08-26 21:52:56,322][    INFO] ***** Evaluation ***** >>>> Class [71 toaster] IoU: 0.00
+[2024-08-26 21:52:56,322][    INFO] ***** Evaluation ***** >>>> Class [72 sink] IoU: 39.37
+[2024-08-26 21:52:56,322][    INFO] ***** Evaluation ***** >>>> Class [73 refrigerator] IoU: 46.00
+[2024-08-26 21:52:56,322][    INFO] ***** Evaluation ***** >>>> Class [74 book] IoU: 25.84
+[2024-08-26 21:52:56,322][    INFO] ***** Evaluation ***** >>>> Class [75 clock] IoU: 61.30
+[2024-08-26 21:52:56,322][    INFO] ***** Evaluation ***** >>>> Class [76 vase] IoU: 38.15
+[2024-08-26 21:52:56,322][    INFO] ***** Evaluation ***** >>>> Class [77 scissors] IoU: 49.45
+[2024-08-26 21:52:56,322][    INFO] ***** Evaluation ***** >>>> Class [78 teddy bear] IoU: 65.34
+[2024-08-26 21:52:56,322][    INFO] ***** Evaluation ***** >>>> Class [79 hair drier] IoU: 0.00
+[2024-08-26 21:52:56,322][    INFO] ***** Evaluation ***** >>>> Class [80 toothbrush] IoU: 2.87
+[2024-08-26 21:52:56,323][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 43.46
+
+[2024-08-26 21:52:56,842][    INFO] ===========> Epoch: 15, LR: 0.0000014, Previous best: 44.63
+[2024-08-26 21:52:57,344][    INFO] Iters: 0, Total loss: 0.054
+[2024-08-26 21:53:31,301][    INFO] Iters: 117, Total loss: 0.060
+[2024-08-26 21:54:05,291][    INFO] Iters: 234, Total loss: 0.058
+[2024-08-26 21:54:39,277][    INFO] Iters: 351, Total loss: 0.058
+[2024-08-26 21:55:13,269][    INFO] Iters: 468, Total loss: 0.058
+[2024-08-26 21:55:47,251][    INFO] Iters: 585, Total loss: 0.058
+[2024-08-26 21:56:21,243][    INFO] Iters: 702, Total loss: 0.057
+[2024-08-26 21:56:55,243][    INFO] Iters: 819, Total loss: 0.057
+[2024-08-26 21:57:29,258][    INFO] Iters: 936, Total loss: 0.057
+[2024-08-26 21:58:12,582][    INFO] ***** Evaluation ***** >>>> Class [0 void] IoU: 87.63
+[2024-08-26 21:58:12,582][    INFO] ***** Evaluation ***** >>>> Class [1 person] IoU: 80.67
+[2024-08-26 21:58:12,582][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 53.86
+[2024-08-26 21:58:12,582][    INFO] ***** Evaluation ***** >>>> Class [3 car] IoU: 48.55
+[2024-08-26 21:58:12,582][    INFO] ***** Evaluation ***** >>>> Class [4 motorcycle] IoU: 74.13
+[2024-08-26 21:58:12,582][    INFO] ***** Evaluation ***** >>>> Class [5 airplane] IoU: 71.54
+[2024-08-26 21:58:12,582][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 71.32
+[2024-08-26 21:58:12,582][    INFO] ***** Evaluation ***** >>>> Class [7 train] IoU: 68.88
+[2024-08-26 21:58:12,582][    INFO] ***** Evaluation ***** >>>> Class [8 truck] IoU: 42.60
+[2024-08-26 21:58:12,582][    INFO] ***** Evaluation ***** >>>> Class [9 boat] IoU: 59.53
+[2024-08-26 21:58:12,582][    INFO] ***** Evaluation ***** >>>> Class [10 traffic light] IoU: 44.35
+[2024-08-26 21:58:12,582][    INFO] ***** Evaluation ***** >>>> Class [11 fire hydrant] IoU: 75.18
+[2024-08-26 21:58:12,582][    INFO] ***** Evaluation ***** >>>> Class [12 stop sign] IoU: 81.51
+[2024-08-26 21:58:12,582][    INFO] ***** Evaluation ***** >>>> Class [13 parking meter] IoU: 50.12
+[2024-08-26 21:58:12,582][    INFO] ***** Evaluation ***** >>>> Class [14 bench] IoU: 40.27
+[2024-08-26 21:58:12,582][    INFO] ***** Evaluation ***** >>>> Class [15 bird] IoU: 62.43
+[2024-08-26 21:58:12,582][    INFO] ***** Evaluation ***** >>>> Class [16 cat] IoU: 77.05
+[2024-08-26 21:58:12,582][    INFO] ***** Evaluation ***** >>>> Class [17 dog] IoU: 68.85
+[2024-08-26 21:58:12,582][    INFO] ***** Evaluation ***** >>>> Class [18 horse] IoU: 72.63
+[2024-08-26 21:58:12,583][    INFO] ***** Evaluation ***** >>>> Class [19 sheep] IoU: 63.31
+[2024-08-26 21:58:12,583][    INFO] ***** Evaluation ***** >>>> Class [20 cow] IoU: 65.80
+[2024-08-26 21:58:12,583][    INFO] ***** Evaluation ***** >>>> Class [21 elephant] IoU: 87.22
+[2024-08-26 21:58:12,583][    INFO] ***** Evaluation ***** >>>> Class [22 bear] IoU: 63.55
+[2024-08-26 21:58:12,583][    INFO] ***** Evaluation ***** >>>> Class [23 zebra] IoU: 87.24
+[2024-08-26 21:58:12,583][    INFO] ***** Evaluation ***** >>>> Class [24 giraffe] IoU: 82.05
+[2024-08-26 21:58:12,583][    INFO] ***** Evaluation ***** >>>> Class [25 backpack] IoU: 14.98
+[2024-08-26 21:58:12,583][    INFO] ***** Evaluation ***** >>>> Class [26 umbrella] IoU: 69.65
+[2024-08-26 21:58:12,583][    INFO] ***** Evaluation ***** >>>> Class [27 handbag] IoU: 13.15
+[2024-08-26 21:58:12,583][    INFO] ***** Evaluation ***** >>>> Class [28 tie] IoU: 2.23
+[2024-08-26 21:58:12,583][    INFO] ***** Evaluation ***** >>>> Class [29 suitcase] IoU: 43.60
+[2024-08-26 21:58:12,583][    INFO] ***** Evaluation ***** >>>> Class [30 frisbee] IoU: 28.99
+[2024-08-26 21:58:12,583][    INFO] ***** Evaluation ***** >>>> Class [31 skis] IoU: 15.97
+[2024-08-26 21:58:12,583][    INFO] ***** Evaluation ***** >>>> Class [32 snowboard] IoU: 11.74
+[2024-08-26 21:58:12,583][    INFO] ***** Evaluation ***** >>>> Class [33 sports ball] IoU: 28.97
+[2024-08-26 21:58:12,583][    INFO] ***** Evaluation ***** >>>> Class [34 kite] IoU: 35.20
+[2024-08-26 21:58:12,583][    INFO] ***** Evaluation ***** >>>> Class [35 baseball bat] IoU: 13.89
+[2024-08-26 21:58:12,583][    INFO] ***** Evaluation ***** >>>> Class [36 baseball glove] IoU: 32.50
+[2024-08-26 21:58:12,583][    INFO] ***** Evaluation ***** >>>> Class [37 skateboard] IoU: 18.06
+[2024-08-26 21:58:12,583][    INFO] ***** Evaluation ***** >>>> Class [38 surfboard] IoU: 46.50
+[2024-08-26 21:58:12,583][    INFO] ***** Evaluation ***** >>>> Class [39 tennis racket] IoU: 53.84
+[2024-08-26 21:58:12,583][    INFO] ***** Evaluation ***** >>>> Class [40 bottle] IoU: 35.90
+[2024-08-26 21:58:12,583][    INFO] ***** Evaluation ***** >>>> Class [41 wine glass] IoU: 29.91
+[2024-08-26 21:58:12,583][    INFO] ***** Evaluation ***** >>>> Class [42 cup] IoU: 38.21
+[2024-08-26 21:58:12,583][    INFO] ***** Evaluation ***** >>>> Class [43 fork] IoU: 9.03
+[2024-08-26 21:58:12,583][    INFO] ***** Evaluation ***** >>>> Class [44 knife] IoU: 7.97
+[2024-08-26 21:58:12,583][    INFO] ***** Evaluation ***** >>>> Class [45 spoon] IoU: 7.01
+[2024-08-26 21:58:12,583][    INFO] ***** Evaluation ***** >>>> Class [46 bowl] IoU: 20.26
+[2024-08-26 21:58:12,583][    INFO] ***** Evaluation ***** >>>> Class [47 banana] IoU: 53.37
+[2024-08-26 21:58:12,584][    INFO] ***** Evaluation ***** >>>> Class [48 apple] IoU: 14.57
+[2024-08-26 21:58:12,584][    INFO] ***** Evaluation ***** >>>> Class [49 sandwich] IoU: 32.10
+[2024-08-26 21:58:12,584][    INFO] ***** Evaluation ***** >>>> Class [50 orange] IoU: 38.42
+[2024-08-26 21:58:12,584][    INFO] ***** Evaluation ***** >>>> Class [51 broccoli] IoU: 38.74
+[2024-08-26 21:58:12,584][    INFO] ***** Evaluation ***** >>>> Class [52 carrot] IoU: 26.86
+[2024-08-26 21:58:12,584][    INFO] ***** Evaluation ***** >>>> Class [53 hot dog] IoU: 38.33
+[2024-08-26 21:58:12,584][    INFO] ***** Evaluation ***** >>>> Class [54 pizza] IoU: 59.26
+[2024-08-26 21:58:12,584][    INFO] ***** Evaluation ***** >>>> Class [55 donut] IoU: 48.60
+[2024-08-26 21:58:12,584][    INFO] ***** Evaluation ***** >>>> Class [56 cake] IoU: 35.29
+[2024-08-26 21:58:12,584][    INFO] ***** Evaluation ***** >>>> Class [57 chair] IoU: 32.52
+[2024-08-26 21:58:12,584][    INFO] ***** Evaluation ***** >>>> Class [58 couch] IoU: 47.22
+[2024-08-26 21:58:12,584][    INFO] ***** Evaluation ***** >>>> Class [59 potted plant] IoU: 18.00
+[2024-08-26 21:58:12,584][    INFO] ***** Evaluation ***** >>>> Class [60 bed] IoU: 46.45
+[2024-08-26 21:58:12,584][    INFO] ***** Evaluation ***** >>>> Class [61 dining table] IoU: 30.88
+[2024-08-26 21:58:12,584][    INFO] ***** Evaluation ***** >>>> Class [62 toilet] IoU: 66.00
+[2024-08-26 21:58:12,584][    INFO] ***** Evaluation ***** >>>> Class [63 tv] IoU: 54.65
+[2024-08-26 21:58:12,584][    INFO] ***** Evaluation ***** >>>> Class [64 laptop] IoU: 62.97
+[2024-08-26 21:58:12,584][    INFO] ***** Evaluation ***** >>>> Class [65 mouse] IoU: 26.72
+[2024-08-26 21:58:12,584][    INFO] ***** Evaluation ***** >>>> Class [66 remote] IoU: 30.27
+[2024-08-26 21:58:12,584][    INFO] ***** Evaluation ***** >>>> Class [67 keyboard] IoU: 53.15
+[2024-08-26 21:58:12,584][    INFO] ***** Evaluation ***** >>>> Class [68 cell phone] IoU: 43.60
+[2024-08-26 21:58:12,584][    INFO] ***** Evaluation ***** >>>> Class [69 microwave] IoU: 27.58
+[2024-08-26 21:58:12,584][    INFO] ***** Evaluation ***** >>>> Class [70 oven] IoU: 33.33
+[2024-08-26 21:58:12,584][    INFO] ***** Evaluation ***** >>>> Class [71 toaster] IoU: 0.00
+[2024-08-26 21:58:12,584][    INFO] ***** Evaluation ***** >>>> Class [72 sink] IoU: 36.84
+[2024-08-26 21:58:12,584][    INFO] ***** Evaluation ***** >>>> Class [73 refrigerator] IoU: 49.02
+[2024-08-26 21:58:12,584][    INFO] ***** Evaluation ***** >>>> Class [74 book] IoU: 29.14
+[2024-08-26 21:58:12,584][    INFO] ***** Evaluation ***** >>>> Class [75 clock] IoU: 61.76
+[2024-08-26 21:58:12,584][    INFO] ***** Evaluation ***** >>>> Class [76 vase] IoU: 37.93
+[2024-08-26 21:58:12,585][    INFO] ***** Evaluation ***** >>>> Class [77 scissors] IoU: 46.02
+[2024-08-26 21:58:12,585][    INFO] ***** Evaluation ***** >>>> Class [78 teddy bear] IoU: 65.31
+[2024-08-26 21:58:12,585][    INFO] ***** Evaluation ***** >>>> Class [79 hair drier] IoU: 0.00
+[2024-08-26 21:58:12,585][    INFO] ***** Evaluation ***** >>>> Class [80 toothbrush] IoU: 7.86
+[2024-08-26 21:58:12,585][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 43.83
+
+[2024-08-26 21:58:13,102][    INFO] ===========> Epoch: 16, LR: 0.0000012, Previous best: 44.63
+[2024-08-26 21:58:13,583][    INFO] Iters: 0, Total loss: 0.038
+[2024-08-26 21:58:47,548][    INFO] Iters: 117, Total loss: 0.057
+[2024-08-26 21:59:21,526][    INFO] Iters: 234, Total loss: 0.055
+[2024-08-26 21:59:55,522][    INFO] Iters: 351, Total loss: 0.056
+[2024-08-26 22:00:29,514][    INFO] Iters: 468, Total loss: 0.055
+[2024-08-26 22:01:03,504][    INFO] Iters: 585, Total loss: 0.055
+[2024-08-26 22:01:37,496][    INFO] Iters: 702, Total loss: 0.055
+[2024-08-26 22:02:11,502][    INFO] Iters: 819, Total loss: 0.055
+[2024-08-26 22:02:45,498][    INFO] Iters: 936, Total loss: 0.055
+[2024-08-26 22:03:28,828][    INFO] ***** Evaluation ***** >>>> Class [0 void] IoU: 87.54
+[2024-08-26 22:03:28,829][    INFO] ***** Evaluation ***** >>>> Class [1 person] IoU: 80.75
+[2024-08-26 22:03:28,829][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 53.48
+[2024-08-26 22:03:28,829][    INFO] ***** Evaluation ***** >>>> Class [3 car] IoU: 49.06
+[2024-08-26 22:03:28,829][    INFO] ***** Evaluation ***** >>>> Class [4 motorcycle] IoU: 74.31
+[2024-08-26 22:03:28,829][    INFO] ***** Evaluation ***** >>>> Class [5 airplane] IoU: 71.42
+[2024-08-26 22:03:28,829][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 71.05
+[2024-08-26 22:03:28,829][    INFO] ***** Evaluation ***** >>>> Class [7 train] IoU: 67.94
+[2024-08-26 22:03:28,829][    INFO] ***** Evaluation ***** >>>> Class [8 truck] IoU: 42.45
+[2024-08-26 22:03:28,829][    INFO] ***** Evaluation ***** >>>> Class [9 boat] IoU: 57.95
+[2024-08-26 22:03:28,829][    INFO] ***** Evaluation ***** >>>> Class [10 traffic light] IoU: 44.38
+[2024-08-26 22:03:28,829][    INFO] ***** Evaluation ***** >>>> Class [11 fire hydrant] IoU: 74.71
+[2024-08-26 22:03:28,829][    INFO] ***** Evaluation ***** >>>> Class [12 stop sign] IoU: 81.54
+[2024-08-26 22:03:28,829][    INFO] ***** Evaluation ***** >>>> Class [13 parking meter] IoU: 49.97
+[2024-08-26 22:03:28,829][    INFO] ***** Evaluation ***** >>>> Class [14 bench] IoU: 38.32
+[2024-08-26 22:03:28,829][    INFO] ***** Evaluation ***** >>>> Class [15 bird] IoU: 62.38
+[2024-08-26 22:03:28,829][    INFO] ***** Evaluation ***** >>>> Class [16 cat] IoU: 75.68
+[2024-08-26 22:03:28,829][    INFO] ***** Evaluation ***** >>>> Class [17 dog] IoU: 68.14
+[2024-08-26 22:03:28,829][    INFO] ***** Evaluation ***** >>>> Class [18 horse] IoU: 72.62
+[2024-08-26 22:03:28,829][    INFO] ***** Evaluation ***** >>>> Class [19 sheep] IoU: 63.38
+[2024-08-26 22:03:28,829][    INFO] ***** Evaluation ***** >>>> Class [20 cow] IoU: 65.98
+[2024-08-26 22:03:28,829][    INFO] ***** Evaluation ***** >>>> Class [21 elephant] IoU: 86.98
+[2024-08-26 22:03:28,829][    INFO] ***** Evaluation ***** >>>> Class [22 bear] IoU: 63.86
+[2024-08-26 22:03:28,829][    INFO] ***** Evaluation ***** >>>> Class [23 zebra] IoU: 87.08
+[2024-08-26 22:03:28,829][    INFO] ***** Evaluation ***** >>>> Class [24 giraffe] IoU: 82.12
+[2024-08-26 22:03:28,830][    INFO] ***** Evaluation ***** >>>> Class [25 backpack] IoU: 11.94
+[2024-08-26 22:03:28,830][    INFO] ***** Evaluation ***** >>>> Class [26 umbrella] IoU: 69.91
+[2024-08-26 22:03:28,830][    INFO] ***** Evaluation ***** >>>> Class [27 handbag] IoU: 14.56
+[2024-08-26 22:03:28,830][    INFO] ***** Evaluation ***** >>>> Class [28 tie] IoU: 1.98
+[2024-08-26 22:03:28,830][    INFO] ***** Evaluation ***** >>>> Class [29 suitcase] IoU: 44.84
+[2024-08-26 22:03:28,830][    INFO] ***** Evaluation ***** >>>> Class [30 frisbee] IoU: 32.20
+[2024-08-26 22:03:28,830][    INFO] ***** Evaluation ***** >>>> Class [31 skis] IoU: 13.42
+[2024-08-26 22:03:28,830][    INFO] ***** Evaluation ***** >>>> Class [32 snowboard] IoU: 11.83
+[2024-08-26 22:03:28,830][    INFO] ***** Evaluation ***** >>>> Class [33 sports ball] IoU: 29.27
+[2024-08-26 22:03:28,830][    INFO] ***** Evaluation ***** >>>> Class [34 kite] IoU: 35.92
+[2024-08-26 22:03:28,830][    INFO] ***** Evaluation ***** >>>> Class [35 baseball bat] IoU: 13.27
+[2024-08-26 22:03:28,830][    INFO] ***** Evaluation ***** >>>> Class [36 baseball glove] IoU: 36.01
+[2024-08-26 22:03:28,830][    INFO] ***** Evaluation ***** >>>> Class [37 skateboard] IoU: 18.67
+[2024-08-26 22:03:28,830][    INFO] ***** Evaluation ***** >>>> Class [38 surfboard] IoU: 46.30
+[2024-08-26 22:03:28,830][    INFO] ***** Evaluation ***** >>>> Class [39 tennis racket] IoU: 50.38
+[2024-08-26 22:03:28,830][    INFO] ***** Evaluation ***** >>>> Class [40 bottle] IoU: 35.40
+[2024-08-26 22:03:28,830][    INFO] ***** Evaluation ***** >>>> Class [41 wine glass] IoU: 28.57
+[2024-08-26 22:03:28,830][    INFO] ***** Evaluation ***** >>>> Class [42 cup] IoU: 37.40
+[2024-08-26 22:03:28,830][    INFO] ***** Evaluation ***** >>>> Class [43 fork] IoU: 5.92
+[2024-08-26 22:03:28,830][    INFO] ***** Evaluation ***** >>>> Class [44 knife] IoU: 7.20
+[2024-08-26 22:03:28,830][    INFO] ***** Evaluation ***** >>>> Class [45 spoon] IoU: 6.68
+[2024-08-26 22:03:28,830][    INFO] ***** Evaluation ***** >>>> Class [46 bowl] IoU: 20.37
+[2024-08-26 22:03:28,830][    INFO] ***** Evaluation ***** >>>> Class [47 banana] IoU: 52.79
+[2024-08-26 22:03:28,830][    INFO] ***** Evaluation ***** >>>> Class [48 apple] IoU: 16.77
+[2024-08-26 22:03:28,830][    INFO] ***** Evaluation ***** >>>> Class [49 sandwich] IoU: 32.53
+[2024-08-26 22:03:28,830][    INFO] ***** Evaluation ***** >>>> Class [50 orange] IoU: 41.17
+[2024-08-26 22:03:28,830][    INFO] ***** Evaluation ***** >>>> Class [51 broccoli] IoU: 37.73
+[2024-08-26 22:03:28,830][    INFO] ***** Evaluation ***** >>>> Class [52 carrot] IoU: 26.33
+[2024-08-26 22:03:28,830][    INFO] ***** Evaluation ***** >>>> Class [53 hot dog] IoU: 38.73
+[2024-08-26 22:03:28,831][    INFO] ***** Evaluation ***** >>>> Class [54 pizza] IoU: 59.20
+[2024-08-26 22:03:28,831][    INFO] ***** Evaluation ***** >>>> Class [55 donut] IoU: 50.27
+[2024-08-26 22:03:28,831][    INFO] ***** Evaluation ***** >>>> Class [56 cake] IoU: 35.62
+[2024-08-26 22:03:28,831][    INFO] ***** Evaluation ***** >>>> Class [57 chair] IoU: 31.30
+[2024-08-26 22:03:28,831][    INFO] ***** Evaluation ***** >>>> Class [58 couch] IoU: 46.96
+[2024-08-26 22:03:28,831][    INFO] ***** Evaluation ***** >>>> Class [59 potted plant] IoU: 19.00
+[2024-08-26 22:03:28,831][    INFO] ***** Evaluation ***** >>>> Class [60 bed] IoU: 45.19
+[2024-08-26 22:03:28,831][    INFO] ***** Evaluation ***** >>>> Class [61 dining table] IoU: 30.48
+[2024-08-26 22:03:28,831][    INFO] ***** Evaluation ***** >>>> Class [62 toilet] IoU: 65.61
+[2024-08-26 22:03:28,831][    INFO] ***** Evaluation ***** >>>> Class [63 tv] IoU: 54.01
+[2024-08-26 22:03:28,831][    INFO] ***** Evaluation ***** >>>> Class [64 laptop] IoU: 63.18
+[2024-08-26 22:03:28,831][    INFO] ***** Evaluation ***** >>>> Class [65 mouse] IoU: 30.15
+[2024-08-26 22:03:28,831][    INFO] ***** Evaluation ***** >>>> Class [66 remote] IoU: 29.64
+[2024-08-26 22:03:28,831][    INFO] ***** Evaluation ***** >>>> Class [67 keyboard] IoU: 53.83
+[2024-08-26 22:03:28,831][    INFO] ***** Evaluation ***** >>>> Class [68 cell phone] IoU: 41.41
+[2024-08-26 22:03:28,831][    INFO] ***** Evaluation ***** >>>> Class [69 microwave] IoU: 22.75
+[2024-08-26 22:03:28,831][    INFO] ***** Evaluation ***** >>>> Class [70 oven] IoU: 30.79
+[2024-08-26 22:03:28,831][    INFO] ***** Evaluation ***** >>>> Class [71 toaster] IoU: 0.00
+[2024-08-26 22:03:28,831][    INFO] ***** Evaluation ***** >>>> Class [72 sink] IoU: 35.56
+[2024-08-26 22:03:28,831][    INFO] ***** Evaluation ***** >>>> Class [73 refrigerator] IoU: 47.36
+[2024-08-26 22:03:28,831][    INFO] ***** Evaluation ***** >>>> Class [74 book] IoU: 25.44
+[2024-08-26 22:03:28,831][    INFO] ***** Evaluation ***** >>>> Class [75 clock] IoU: 61.89
+[2024-08-26 22:03:28,831][    INFO] ***** Evaluation ***** >>>> Class [76 vase] IoU: 36.54
+[2024-08-26 22:03:28,831][    INFO] ***** Evaluation ***** >>>> Class [77 scissors] IoU: 47.77
+[2024-08-26 22:03:28,831][    INFO] ***** Evaluation ***** >>>> Class [78 teddy bear] IoU: 65.28
+[2024-08-26 22:03:28,831][    INFO] ***** Evaluation ***** >>>> Class [79 hair drier] IoU: 0.00
+[2024-08-26 22:03:28,831][    INFO] ***** Evaluation ***** >>>> Class [80 toothbrush] IoU: 6.83
+[2024-08-26 22:03:28,831][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 43.55
+
+[2024-08-26 22:03:29,353][    INFO] ===========> Epoch: 17, LR: 0.0000009, Previous best: 44.63
+[2024-08-26 22:03:29,855][    INFO] Iters: 0, Total loss: 0.038
+[2024-08-26 22:04:03,835][    INFO] Iters: 117, Total loss: 0.053
+[2024-08-26 22:04:37,829][    INFO] Iters: 234, Total loss: 0.055
+[2024-08-26 22:05:11,825][    INFO] Iters: 351, Total loss: 0.055
+[2024-08-26 22:05:45,820][    INFO] Iters: 468, Total loss: 0.054
+[2024-08-26 22:06:19,827][    INFO] Iters: 585, Total loss: 0.054
+[2024-08-26 22:06:53,822][    INFO] Iters: 702, Total loss: 0.054
+[2024-08-26 22:07:27,830][    INFO] Iters: 819, Total loss: 0.053
+[2024-08-26 22:08:01,826][    INFO] Iters: 936, Total loss: 0.053
+[2024-08-26 22:08:45,128][    INFO] ***** Evaluation ***** >>>> Class [0 void] IoU: 87.58
+[2024-08-26 22:08:45,129][    INFO] ***** Evaluation ***** >>>> Class [1 person] IoU: 80.70
+[2024-08-26 22:08:45,129][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 53.14
+[2024-08-26 22:08:45,129][    INFO] ***** Evaluation ***** >>>> Class [3 car] IoU: 49.14
+[2024-08-26 22:08:45,129][    INFO] ***** Evaluation ***** >>>> Class [4 motorcycle] IoU: 74.09
+[2024-08-26 22:08:45,129][    INFO] ***** Evaluation ***** >>>> Class [5 airplane] IoU: 71.48
+[2024-08-26 22:08:45,129][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 71.41
+[2024-08-26 22:08:45,129][    INFO] ***** Evaluation ***** >>>> Class [7 train] IoU: 68.57
+[2024-08-26 22:08:45,129][    INFO] ***** Evaluation ***** >>>> Class [8 truck] IoU: 42.63
+[2024-08-26 22:08:45,129][    INFO] ***** Evaluation ***** >>>> Class [9 boat] IoU: 59.62
+[2024-08-26 22:08:45,129][    INFO] ***** Evaluation ***** >>>> Class [10 traffic light] IoU: 42.54
+[2024-08-26 22:08:45,129][    INFO] ***** Evaluation ***** >>>> Class [11 fire hydrant] IoU: 75.85
+[2024-08-26 22:08:45,129][    INFO] ***** Evaluation ***** >>>> Class [12 stop sign] IoU: 81.15
+[2024-08-26 22:08:45,129][    INFO] ***** Evaluation ***** >>>> Class [13 parking meter] IoU: 51.01
+[2024-08-26 22:08:45,129][    INFO] ***** Evaluation ***** >>>> Class [14 bench] IoU: 38.85
+[2024-08-26 22:08:45,129][    INFO] ***** Evaluation ***** >>>> Class [15 bird] IoU: 63.26
+[2024-08-26 22:08:45,129][    INFO] ***** Evaluation ***** >>>> Class [16 cat] IoU: 76.63
+[2024-08-26 22:08:45,129][    INFO] ***** Evaluation ***** >>>> Class [17 dog] IoU: 68.96
+[2024-08-26 22:08:45,129][    INFO] ***** Evaluation ***** >>>> Class [18 horse] IoU: 72.98
+[2024-08-26 22:08:45,129][    INFO] ***** Evaluation ***** >>>> Class [19 sheep] IoU: 62.25
+[2024-08-26 22:08:45,129][    INFO] ***** Evaluation ***** >>>> Class [20 cow] IoU: 65.24
+[2024-08-26 22:08:45,129][    INFO] ***** Evaluation ***** >>>> Class [21 elephant] IoU: 87.34
+[2024-08-26 22:08:45,129][    INFO] ***** Evaluation ***** >>>> Class [22 bear] IoU: 62.73
+[2024-08-26 22:08:45,129][    INFO] ***** Evaluation ***** >>>> Class [23 zebra] IoU: 87.08
+[2024-08-26 22:08:45,129][    INFO] ***** Evaluation ***** >>>> Class [24 giraffe] IoU: 81.99
+[2024-08-26 22:08:45,129][    INFO] ***** Evaluation ***** >>>> Class [25 backpack] IoU: 13.86
+[2024-08-26 22:08:45,129][    INFO] ***** Evaluation ***** >>>> Class [26 umbrella] IoU: 69.95
+[2024-08-26 22:08:45,130][    INFO] ***** Evaluation ***** >>>> Class [27 handbag] IoU: 14.68
+[2024-08-26 22:08:45,130][    INFO] ***** Evaluation ***** >>>> Class [28 tie] IoU: 2.13
+[2024-08-26 22:08:45,130][    INFO] ***** Evaluation ***** >>>> Class [29 suitcase] IoU: 44.57
+[2024-08-26 22:08:45,130][    INFO] ***** Evaluation ***** >>>> Class [30 frisbee] IoU: 31.98
+[2024-08-26 22:08:45,130][    INFO] ***** Evaluation ***** >>>> Class [31 skis] IoU: 14.41
+[2024-08-26 22:08:45,130][    INFO] ***** Evaluation ***** >>>> Class [32 snowboard] IoU: 12.54
+[2024-08-26 22:08:45,130][    INFO] ***** Evaluation ***** >>>> Class [33 sports ball] IoU: 29.45
+[2024-08-26 22:08:45,130][    INFO] ***** Evaluation ***** >>>> Class [34 kite] IoU: 34.79
+[2024-08-26 22:08:45,130][    INFO] ***** Evaluation ***** >>>> Class [35 baseball bat] IoU: 15.93
+[2024-08-26 22:08:45,130][    INFO] ***** Evaluation ***** >>>> Class [36 baseball glove] IoU: 32.00
+[2024-08-26 22:08:45,130][    INFO] ***** Evaluation ***** >>>> Class [37 skateboard] IoU: 18.11
+[2024-08-26 22:08:45,130][    INFO] ***** Evaluation ***** >>>> Class [38 surfboard] IoU: 46.86
+[2024-08-26 22:08:45,130][    INFO] ***** Evaluation ***** >>>> Class [39 tennis racket] IoU: 49.20
+[2024-08-26 22:08:45,130][    INFO] ***** Evaluation ***** >>>> Class [40 bottle] IoU: 34.81
+[2024-08-26 22:08:45,130][    INFO] ***** Evaluation ***** >>>> Class [41 wine glass] IoU: 28.81
+[2024-08-26 22:08:45,130][    INFO] ***** Evaluation ***** >>>> Class [42 cup] IoU: 38.14
+[2024-08-26 22:08:45,130][    INFO] ***** Evaluation ***** >>>> Class [43 fork] IoU: 9.19
+[2024-08-26 22:08:45,130][    INFO] ***** Evaluation ***** >>>> Class [44 knife] IoU: 8.40
+[2024-08-26 22:08:45,130][    INFO] ***** Evaluation ***** >>>> Class [45 spoon] IoU: 5.57
+[2024-08-26 22:08:45,130][    INFO] ***** Evaluation ***** >>>> Class [46 bowl] IoU: 21.28
+[2024-08-26 22:08:45,130][    INFO] ***** Evaluation ***** >>>> Class [47 banana] IoU: 53.68
+[2024-08-26 22:08:45,130][    INFO] ***** Evaluation ***** >>>> Class [48 apple] IoU: 15.49
+[2024-08-26 22:08:45,130][    INFO] ***** Evaluation ***** >>>> Class [49 sandwich] IoU: 33.25
+[2024-08-26 22:08:45,130][    INFO] ***** Evaluation ***** >>>> Class [50 orange] IoU: 39.69
+[2024-08-26 22:08:45,130][    INFO] ***** Evaluation ***** >>>> Class [51 broccoli] IoU: 40.39
+[2024-08-26 22:08:45,130][    INFO] ***** Evaluation ***** >>>> Class [52 carrot] IoU: 26.57
+[2024-08-26 22:08:45,130][    INFO] ***** Evaluation ***** >>>> Class [53 hot dog] IoU: 39.12
+[2024-08-26 22:08:45,130][    INFO] ***** Evaluation ***** >>>> Class [54 pizza] IoU: 59.90
+[2024-08-26 22:08:45,130][    INFO] ***** Evaluation ***** >>>> Class [55 donut] IoU: 49.28
+[2024-08-26 22:08:45,131][    INFO] ***** Evaluation ***** >>>> Class [56 cake] IoU: 34.08
+[2024-08-26 22:08:45,131][    INFO] ***** Evaluation ***** >>>> Class [57 chair] IoU: 31.54
+[2024-08-26 22:08:45,131][    INFO] ***** Evaluation ***** >>>> Class [58 couch] IoU: 47.46
+[2024-08-26 22:08:45,131][    INFO] ***** Evaluation ***** >>>> Class [59 potted plant] IoU: 17.75
+[2024-08-26 22:08:45,131][    INFO] ***** Evaluation ***** >>>> Class [60 bed] IoU: 46.45
+[2024-08-26 22:08:45,131][    INFO] ***** Evaluation ***** >>>> Class [61 dining table] IoU: 31.40
+[2024-08-26 22:08:45,131][    INFO] ***** Evaluation ***** >>>> Class [62 toilet] IoU: 66.38
+[2024-08-26 22:08:45,131][    INFO] ***** Evaluation ***** >>>> Class [63 tv] IoU: 54.77
+[2024-08-26 22:08:45,131][    INFO] ***** Evaluation ***** >>>> Class [64 laptop] IoU: 62.25
+[2024-08-26 22:08:45,131][    INFO] ***** Evaluation ***** >>>> Class [65 mouse] IoU: 27.73
+[2024-08-26 22:08:45,131][    INFO] ***** Evaluation ***** >>>> Class [66 remote] IoU: 31.36
+[2024-08-26 22:08:45,131][    INFO] ***** Evaluation ***** >>>> Class [67 keyboard] IoU: 53.09
+[2024-08-26 22:08:45,131][    INFO] ***** Evaluation ***** >>>> Class [68 cell phone] IoU: 41.41
+[2024-08-26 22:08:45,131][    INFO] ***** Evaluation ***** >>>> Class [69 microwave] IoU: 23.23
+[2024-08-26 22:08:45,131][    INFO] ***** Evaluation ***** >>>> Class [70 oven] IoU: 33.52
+[2024-08-26 22:08:45,131][    INFO] ***** Evaluation ***** >>>> Class [71 toaster] IoU: 0.00
+[2024-08-26 22:08:45,131][    INFO] ***** Evaluation ***** >>>> Class [72 sink] IoU: 36.20
+[2024-08-26 22:08:45,131][    INFO] ***** Evaluation ***** >>>> Class [73 refrigerator] IoU: 48.67
+[2024-08-26 22:08:45,131][    INFO] ***** Evaluation ***** >>>> Class [74 book] IoU: 27.53
+[2024-08-26 22:08:45,131][    INFO] ***** Evaluation ***** >>>> Class [75 clock] IoU: 62.15
+[2024-08-26 22:08:45,131][    INFO] ***** Evaluation ***** >>>> Class [76 vase] IoU: 38.84
+[2024-08-26 22:08:45,131][    INFO] ***** Evaluation ***** >>>> Class [77 scissors] IoU: 49.36
+[2024-08-26 22:08:45,131][    INFO] ***** Evaluation ***** >>>> Class [78 teddy bear] IoU: 65.54
+[2024-08-26 22:08:45,131][    INFO] ***** Evaluation ***** >>>> Class [79 hair drier] IoU: 0.00
+[2024-08-26 22:08:45,131][    INFO] ***** Evaluation ***** >>>> Class [80 toothbrush] IoU: 7.51
+[2024-08-26 22:08:45,131][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 43.81
+
+[2024-08-26 22:08:45,675][    INFO] ===========> Epoch: 18, LR: 0.0000006, Previous best: 44.63
+[2024-08-26 22:08:46,231][    INFO] Iters: 0, Total loss: 0.052
+[2024-08-26 22:09:20,221][    INFO] Iters: 117, Total loss: 0.051
+[2024-08-26 22:09:54,226][    INFO] Iters: 234, Total loss: 0.052
+[2024-08-26 22:10:28,235][    INFO] Iters: 351, Total loss: 0.052
+[2024-08-26 22:11:02,241][    INFO] Iters: 468, Total loss: 0.052
+[2024-08-26 22:11:36,255][    INFO] Iters: 585, Total loss: 0.052
+[2024-08-26 22:12:10,272][    INFO] Iters: 702, Total loss: 0.052
+[2024-08-26 22:12:44,279][    INFO] Iters: 819, Total loss: 0.052
+[2024-08-26 22:13:18,285][    INFO] Iters: 936, Total loss: 0.052
+[2024-08-26 22:14:01,623][    INFO] ***** Evaluation ***** >>>> Class [0 void] IoU: 87.55
+[2024-08-26 22:14:01,623][    INFO] ***** Evaluation ***** >>>> Class [1 person] IoU: 80.69
+[2024-08-26 22:14:01,623][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 53.98
+[2024-08-26 22:14:01,623][    INFO] ***** Evaluation ***** >>>> Class [3 car] IoU: 48.86
+[2024-08-26 22:14:01,623][    INFO] ***** Evaluation ***** >>>> Class [4 motorcycle] IoU: 74.21
+[2024-08-26 22:14:01,623][    INFO] ***** Evaluation ***** >>>> Class [5 airplane] IoU: 71.88
+[2024-08-26 22:14:01,623][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 71.34
+[2024-08-26 22:14:01,623][    INFO] ***** Evaluation ***** >>>> Class [7 train] IoU: 68.09
+[2024-08-26 22:14:01,623][    INFO] ***** Evaluation ***** >>>> Class [8 truck] IoU: 42.99
+[2024-08-26 22:14:01,623][    INFO] ***** Evaluation ***** >>>> Class [9 boat] IoU: 59.28
+[2024-08-26 22:14:01,624][    INFO] ***** Evaluation ***** >>>> Class [10 traffic light] IoU: 41.57
+[2024-08-26 22:14:01,624][    INFO] ***** Evaluation ***** >>>> Class [11 fire hydrant] IoU: 74.75
+[2024-08-26 22:14:01,624][    INFO] ***** Evaluation ***** >>>> Class [12 stop sign] IoU: 80.76
+[2024-08-26 22:14:01,624][    INFO] ***** Evaluation ***** >>>> Class [13 parking meter] IoU: 50.87
+[2024-08-26 22:14:01,624][    INFO] ***** Evaluation ***** >>>> Class [14 bench] IoU: 38.47
+[2024-08-26 22:14:01,624][    INFO] ***** Evaluation ***** >>>> Class [15 bird] IoU: 62.93
+[2024-08-26 22:14:01,624][    INFO] ***** Evaluation ***** >>>> Class [16 cat] IoU: 75.66
+[2024-08-26 22:14:01,624][    INFO] ***** Evaluation ***** >>>> Class [17 dog] IoU: 67.64
+[2024-08-26 22:14:01,624][    INFO] ***** Evaluation ***** >>>> Class [18 horse] IoU: 73.10
+[2024-08-26 22:14:01,624][    INFO] ***** Evaluation ***** >>>> Class [19 sheep] IoU: 61.80
+[2024-08-26 22:14:01,624][    INFO] ***** Evaluation ***** >>>> Class [20 cow] IoU: 63.57
+[2024-08-26 22:14:01,624][    INFO] ***** Evaluation ***** >>>> Class [21 elephant] IoU: 86.93
+[2024-08-26 22:14:01,624][    INFO] ***** Evaluation ***** >>>> Class [22 bear] IoU: 61.13
+[2024-08-26 22:14:01,624][    INFO] ***** Evaluation ***** >>>> Class [23 zebra] IoU: 87.23
+[2024-08-26 22:14:01,624][    INFO] ***** Evaluation ***** >>>> Class [24 giraffe] IoU: 81.58
+[2024-08-26 22:14:01,624][    INFO] ***** Evaluation ***** >>>> Class [25 backpack] IoU: 14.06
+[2024-08-26 22:14:01,624][    INFO] ***** Evaluation ***** >>>> Class [26 umbrella] IoU: 69.37
+[2024-08-26 22:14:01,624][    INFO] ***** Evaluation ***** >>>> Class [27 handbag] IoU: 14.17
+[2024-08-26 22:14:01,624][    INFO] ***** Evaluation ***** >>>> Class [28 tie] IoU: 1.81
+[2024-08-26 22:14:01,624][    INFO] ***** Evaluation ***** >>>> Class [29 suitcase] IoU: 43.83
+[2024-08-26 22:14:01,624][    INFO] ***** Evaluation ***** >>>> Class [30 frisbee] IoU: 30.33
+[2024-08-26 22:14:01,624][    INFO] ***** Evaluation ***** >>>> Class [31 skis] IoU: 12.65
+[2024-08-26 22:14:01,624][    INFO] ***** Evaluation ***** >>>> Class [32 snowboard] IoU: 12.45
+[2024-08-26 22:14:01,624][    INFO] ***** Evaluation ***** >>>> Class [33 sports ball] IoU: 27.87
+[2024-08-26 22:14:01,624][    INFO] ***** Evaluation ***** >>>> Class [34 kite] IoU: 34.44
+[2024-08-26 22:14:01,624][    INFO] ***** Evaluation ***** >>>> Class [35 baseball bat] IoU: 14.04
+[2024-08-26 22:14:01,624][    INFO] ***** Evaluation ***** >>>> Class [36 baseball glove] IoU: 30.87
+[2024-08-26 22:14:01,624][    INFO] ***** Evaluation ***** >>>> Class [37 skateboard] IoU: 16.63
+[2024-08-26 22:14:01,625][    INFO] ***** Evaluation ***** >>>> Class [38 surfboard] IoU: 46.60
+[2024-08-26 22:14:01,625][    INFO] ***** Evaluation ***** >>>> Class [39 tennis racket] IoU: 49.62
+[2024-08-26 22:14:01,625][    INFO] ***** Evaluation ***** >>>> Class [40 bottle] IoU: 33.65
+[2024-08-26 22:14:01,625][    INFO] ***** Evaluation ***** >>>> Class [41 wine glass] IoU: 28.25
+[2024-08-26 22:14:01,625][    INFO] ***** Evaluation ***** >>>> Class [42 cup] IoU: 37.46
+[2024-08-26 22:14:01,625][    INFO] ***** Evaluation ***** >>>> Class [43 fork] IoU: 7.63
+[2024-08-26 22:14:01,625][    INFO] ***** Evaluation ***** >>>> Class [44 knife] IoU: 6.38
+[2024-08-26 22:14:01,625][    INFO] ***** Evaluation ***** >>>> Class [45 spoon] IoU: 5.97
+[2024-08-26 22:14:01,625][    INFO] ***** Evaluation ***** >>>> Class [46 bowl] IoU: 20.85
+[2024-08-26 22:14:01,625][    INFO] ***** Evaluation ***** >>>> Class [47 banana] IoU: 52.91
+[2024-08-26 22:14:01,625][    INFO] ***** Evaluation ***** >>>> Class [48 apple] IoU: 16.32
+[2024-08-26 22:14:01,625][    INFO] ***** Evaluation ***** >>>> Class [49 sandwich] IoU: 32.44
+[2024-08-26 22:14:01,625][    INFO] ***** Evaluation ***** >>>> Class [50 orange] IoU: 39.65
+[2024-08-26 22:14:01,625][    INFO] ***** Evaluation ***** >>>> Class [51 broccoli] IoU: 41.55
+[2024-08-26 22:14:01,625][    INFO] ***** Evaluation ***** >>>> Class [52 carrot] IoU: 25.49
+[2024-08-26 22:14:01,625][    INFO] ***** Evaluation ***** >>>> Class [53 hot dog] IoU: 38.74
+[2024-08-26 22:14:01,625][    INFO] ***** Evaluation ***** >>>> Class [54 pizza] IoU: 60.28
+[2024-08-26 22:14:01,625][    INFO] ***** Evaluation ***** >>>> Class [55 donut] IoU: 49.91
+[2024-08-26 22:14:01,625][    INFO] ***** Evaluation ***** >>>> Class [56 cake] IoU: 35.37
+[2024-08-26 22:14:01,625][    INFO] ***** Evaluation ***** >>>> Class [57 chair] IoU: 31.25
+[2024-08-26 22:14:01,625][    INFO] ***** Evaluation ***** >>>> Class [58 couch] IoU: 47.12
+[2024-08-26 22:14:01,625][    INFO] ***** Evaluation ***** >>>> Class [59 potted plant] IoU: 18.18
+[2024-08-26 22:14:01,625][    INFO] ***** Evaluation ***** >>>> Class [60 bed] IoU: 46.80
+[2024-08-26 22:14:01,625][    INFO] ***** Evaluation ***** >>>> Class [61 dining table] IoU: 30.91
+[2024-08-26 22:14:01,625][    INFO] ***** Evaluation ***** >>>> Class [62 toilet] IoU: 65.91
+[2024-08-26 22:14:01,625][    INFO] ***** Evaluation ***** >>>> Class [63 tv] IoU: 54.85
+[2024-08-26 22:14:01,625][    INFO] ***** Evaluation ***** >>>> Class [64 laptop] IoU: 62.60
+[2024-08-26 22:14:01,625][    INFO] ***** Evaluation ***** >>>> Class [65 mouse] IoU: 29.25
+[2024-08-26 22:14:01,625][    INFO] ***** Evaluation ***** >>>> Class [66 remote] IoU: 30.79
+[2024-08-26 22:14:01,626][    INFO] ***** Evaluation ***** >>>> Class [67 keyboard] IoU: 53.78
+[2024-08-26 22:14:01,626][    INFO] ***** Evaluation ***** >>>> Class [68 cell phone] IoU: 41.71
+[2024-08-26 22:14:01,626][    INFO] ***** Evaluation ***** >>>> Class [69 microwave] IoU: 24.75
+[2024-08-26 22:14:01,626][    INFO] ***** Evaluation ***** >>>> Class [70 oven] IoU: 32.18
+[2024-08-26 22:14:01,626][    INFO] ***** Evaluation ***** >>>> Class [71 toaster] IoU: 0.00
+[2024-08-26 22:14:01,626][    INFO] ***** Evaluation ***** >>>> Class [72 sink] IoU: 35.78
+[2024-08-26 22:14:01,626][    INFO] ***** Evaluation ***** >>>> Class [73 refrigerator] IoU: 48.33
+[2024-08-26 22:14:01,626][    INFO] ***** Evaluation ***** >>>> Class [74 book] IoU: 28.03
+[2024-08-26 22:14:01,626][    INFO] ***** Evaluation ***** >>>> Class [75 clock] IoU: 61.85
+[2024-08-26 22:14:01,626][    INFO] ***** Evaluation ***** >>>> Class [76 vase] IoU: 38.42
+[2024-08-26 22:14:01,626][    INFO] ***** Evaluation ***** >>>> Class [77 scissors] IoU: 50.60
+[2024-08-26 22:14:01,626][    INFO] ***** Evaluation ***** >>>> Class [78 teddy bear] IoU: 64.96
+[2024-08-26 22:14:01,626][    INFO] ***** Evaluation ***** >>>> Class [79 hair drier] IoU: 0.00
+[2024-08-26 22:14:01,626][    INFO] ***** Evaluation ***** >>>> Class [80 toothbrush] IoU: 8.31
+[2024-08-26 22:14:01,626][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 43.52
+
+[2024-08-26 22:14:02,144][    INFO] ===========> Epoch: 19, LR: 0.0000003, Previous best: 44.63
+[2024-08-26 22:14:02,641][    INFO] Iters: 0, Total loss: 0.045
+[2024-08-26 22:14:36,621][    INFO] Iters: 117, Total loss: 0.047
+[2024-08-26 22:15:10,621][    INFO] Iters: 234, Total loss: 0.050
+[2024-08-26 22:15:44,632][    INFO] Iters: 351, Total loss: 0.050
+[2024-08-26 22:16:18,635][    INFO] Iters: 468, Total loss: 0.051
+[2024-08-26 22:16:52,641][    INFO] Iters: 585, Total loss: 0.052
+[2024-08-26 22:17:26,650][    INFO] Iters: 702, Total loss: 0.052
+[2024-08-26 22:18:00,668][    INFO] Iters: 819, Total loss: 0.052
+[2024-08-26 22:18:34,669][    INFO] Iters: 936, Total loss: 0.052
+[2024-08-26 22:19:18,059][    INFO] ***** Evaluation ***** >>>> Class [0 void] IoU: 87.57
+[2024-08-26 22:19:18,059][    INFO] ***** Evaluation ***** >>>> Class [1 person] IoU: 80.74
+[2024-08-26 22:19:18,059][    INFO] ***** Evaluation ***** >>>> Class [2 bicycle] IoU: 53.99
+[2024-08-26 22:19:18,059][    INFO] ***** Evaluation ***** >>>> Class [3 car] IoU: 48.97
+[2024-08-26 22:19:18,059][    INFO] ***** Evaluation ***** >>>> Class [4 motorcycle] IoU: 74.49
+[2024-08-26 22:19:18,059][    INFO] ***** Evaluation ***** >>>> Class [5 airplane] IoU: 71.69
+[2024-08-26 22:19:18,059][    INFO] ***** Evaluation ***** >>>> Class [6 bus] IoU: 71.33
+[2024-08-26 22:19:18,059][    INFO] ***** Evaluation ***** >>>> Class [7 train] IoU: 68.55
+[2024-08-26 22:19:18,059][    INFO] ***** Evaluation ***** >>>> Class [8 truck] IoU: 42.78
+[2024-08-26 22:19:18,059][    INFO] ***** Evaluation ***** >>>> Class [9 boat] IoU: 59.58
+[2024-08-26 22:19:18,059][    INFO] ***** Evaluation ***** >>>> Class [10 traffic light] IoU: 42.31
+[2024-08-26 22:19:18,059][    INFO] ***** Evaluation ***** >>>> Class [11 fire hydrant] IoU: 74.72
+[2024-08-26 22:19:18,060][    INFO] ***** Evaluation ***** >>>> Class [12 stop sign] IoU: 80.95
+[2024-08-26 22:19:18,060][    INFO] ***** Evaluation ***** >>>> Class [13 parking meter] IoU: 50.54
+[2024-08-26 22:19:18,060][    INFO] ***** Evaluation ***** >>>> Class [14 bench] IoU: 38.48
+[2024-08-26 22:19:18,060][    INFO] ***** Evaluation ***** >>>> Class [15 bird] IoU: 62.62
+[2024-08-26 22:19:18,060][    INFO] ***** Evaluation ***** >>>> Class [16 cat] IoU: 76.08
+[2024-08-26 22:19:18,060][    INFO] ***** Evaluation ***** >>>> Class [17 dog] IoU: 67.81
+[2024-08-26 22:19:18,060][    INFO] ***** Evaluation ***** >>>> Class [18 horse] IoU: 72.88
+[2024-08-26 22:19:18,060][    INFO] ***** Evaluation ***** >>>> Class [19 sheep] IoU: 62.41
+[2024-08-26 22:19:18,060][    INFO] ***** Evaluation ***** >>>> Class [20 cow] IoU: 64.45
+[2024-08-26 22:19:18,060][    INFO] ***** Evaluation ***** >>>> Class [21 elephant] IoU: 87.11
+[2024-08-26 22:19:18,060][    INFO] ***** Evaluation ***** >>>> Class [22 bear] IoU: 62.89
+[2024-08-26 22:19:18,060][    INFO] ***** Evaluation ***** >>>> Class [23 zebra] IoU: 87.21
+[2024-08-26 22:19:18,060][    INFO] ***** Evaluation ***** >>>> Class [24 giraffe] IoU: 81.98
+[2024-08-26 22:19:18,060][    INFO] ***** Evaluation ***** >>>> Class [25 backpack] IoU: 14.05
+[2024-08-26 22:19:18,060][    INFO] ***** Evaluation ***** >>>> Class [26 umbrella] IoU: 69.60
+[2024-08-26 22:19:18,060][    INFO] ***** Evaluation ***** >>>> Class [27 handbag] IoU: 14.95
+[2024-08-26 22:19:18,060][    INFO] ***** Evaluation ***** >>>> Class [28 tie] IoU: 2.15
+[2024-08-26 22:19:18,060][    INFO] ***** Evaluation ***** >>>> Class [29 suitcase] IoU: 43.96
+[2024-08-26 22:19:18,060][    INFO] ***** Evaluation ***** >>>> Class [30 frisbee] IoU: 31.05
+[2024-08-26 22:19:18,060][    INFO] ***** Evaluation ***** >>>> Class [31 skis] IoU: 16.18
+[2024-08-26 22:19:18,060][    INFO] ***** Evaluation ***** >>>> Class [32 snowboard] IoU: 12.89
+[2024-08-26 22:19:18,060][    INFO] ***** Evaluation ***** >>>> Class [33 sports ball] IoU: 28.17
+[2024-08-26 22:19:18,060][    INFO] ***** Evaluation ***** >>>> Class [34 kite] IoU: 33.94
+[2024-08-26 22:19:18,060][    INFO] ***** Evaluation ***** >>>> Class [35 baseball bat] IoU: 14.46
+[2024-08-26 22:19:18,060][    INFO] ***** Evaluation ***** >>>> Class [36 baseball glove] IoU: 32.52
+[2024-08-26 22:19:18,060][    INFO] ***** Evaluation ***** >>>> Class [37 skateboard] IoU: 17.54
+[2024-08-26 22:19:18,060][    INFO] ***** Evaluation ***** >>>> Class [38 surfboard] IoU: 46.65
+[2024-08-26 22:19:18,060][    INFO] ***** Evaluation ***** >>>> Class [39 tennis racket] IoU: 50.15
+[2024-08-26 22:19:18,061][    INFO] ***** Evaluation ***** >>>> Class [40 bottle] IoU: 34.56
+[2024-08-26 22:19:18,061][    INFO] ***** Evaluation ***** >>>> Class [41 wine glass] IoU: 28.19
+[2024-08-26 22:19:18,061][    INFO] ***** Evaluation ***** >>>> Class [42 cup] IoU: 37.38
+[2024-08-26 22:19:18,061][    INFO] ***** Evaluation ***** >>>> Class [43 fork] IoU: 8.49
+[2024-08-26 22:19:18,061][    INFO] ***** Evaluation ***** >>>> Class [44 knife] IoU: 6.86
+[2024-08-26 22:19:18,061][    INFO] ***** Evaluation ***** >>>> Class [45 spoon] IoU: 5.25
+[2024-08-26 22:19:18,061][    INFO] ***** Evaluation ***** >>>> Class [46 bowl] IoU: 21.57
+[2024-08-26 22:19:18,061][    INFO] ***** Evaluation ***** >>>> Class [47 banana] IoU: 53.27
+[2024-08-26 22:19:18,061][    INFO] ***** Evaluation ***** >>>> Class [48 apple] IoU: 16.35
+[2024-08-26 22:19:18,061][    INFO] ***** Evaluation ***** >>>> Class [49 sandwich] IoU: 32.59
+[2024-08-26 22:19:18,061][    INFO] ***** Evaluation ***** >>>> Class [50 orange] IoU: 41.11
+[2024-08-26 22:19:18,061][    INFO] ***** Evaluation ***** >>>> Class [51 broccoli] IoU: 40.01
+[2024-08-26 22:19:18,061][    INFO] ***** Evaluation ***** >>>> Class [52 carrot] IoU: 25.66
+[2024-08-26 22:19:18,061][    INFO] ***** Evaluation ***** >>>> Class [53 hot dog] IoU: 39.33
+[2024-08-26 22:19:18,061][    INFO] ***** Evaluation ***** >>>> Class [54 pizza] IoU: 59.72
+[2024-08-26 22:19:18,061][    INFO] ***** Evaluation ***** >>>> Class [55 donut] IoU: 49.93
+[2024-08-26 22:19:18,061][    INFO] ***** Evaluation ***** >>>> Class [56 cake] IoU: 35.70
+[2024-08-26 22:19:18,061][    INFO] ***** Evaluation ***** >>>> Class [57 chair] IoU: 31.42
+[2024-08-26 22:19:18,061][    INFO] ***** Evaluation ***** >>>> Class [58 couch] IoU: 47.35
+[2024-08-26 22:19:18,061][    INFO] ***** Evaluation ***** >>>> Class [59 potted plant] IoU: 17.96
+[2024-08-26 22:19:18,061][    INFO] ***** Evaluation ***** >>>> Class [60 bed] IoU: 46.26
+[2024-08-26 22:19:18,061][    INFO] ***** Evaluation ***** >>>> Class [61 dining table] IoU: 31.17
+[2024-08-26 22:19:18,061][    INFO] ***** Evaluation ***** >>>> Class [62 toilet] IoU: 66.13
+[2024-08-26 22:19:18,061][    INFO] ***** Evaluation ***** >>>> Class [63 tv] IoU: 54.91
+[2024-08-26 22:19:18,061][    INFO] ***** Evaluation ***** >>>> Class [64 laptop] IoU: 62.66
+[2024-08-26 22:19:18,061][    INFO] ***** Evaluation ***** >>>> Class [65 mouse] IoU: 28.53
+[2024-08-26 22:19:18,061][    INFO] ***** Evaluation ***** >>>> Class [66 remote] IoU: 31.29
+[2024-08-26 22:19:18,061][    INFO] ***** Evaluation ***** >>>> Class [67 keyboard] IoU: 53.64
+[2024-08-26 22:19:18,062][    INFO] ***** Evaluation ***** >>>> Class [68 cell phone] IoU: 41.32
+[2024-08-26 22:19:18,062][    INFO] ***** Evaluation ***** >>>> Class [69 microwave] IoU: 24.84
+[2024-08-26 22:19:18,062][    INFO] ***** Evaluation ***** >>>> Class [70 oven] IoU: 33.09
+[2024-08-26 22:19:18,062][    INFO] ***** Evaluation ***** >>>> Class [71 toaster] IoU: 0.00
+[2024-08-26 22:19:18,062][    INFO] ***** Evaluation ***** >>>> Class [72 sink] IoU: 37.42
+[2024-08-26 22:19:18,062][    INFO] ***** Evaluation ***** >>>> Class [73 refrigerator] IoU: 48.87
+[2024-08-26 22:19:18,062][    INFO] ***** Evaluation ***** >>>> Class [74 book] IoU: 28.42
+[2024-08-26 22:19:18,062][    INFO] ***** Evaluation ***** >>>> Class [75 clock] IoU: 62.13
+[2024-08-26 22:19:18,062][    INFO] ***** Evaluation ***** >>>> Class [76 vase] IoU: 38.24
+[2024-08-26 22:19:18,062][    INFO] ***** Evaluation ***** >>>> Class [77 scissors] IoU: 50.07
+[2024-08-26 22:19:18,062][    INFO] ***** Evaluation ***** >>>> Class [78 teddy bear] IoU: 65.37
+[2024-08-26 22:19:18,062][    INFO] ***** Evaluation ***** >>>> Class [79 hair drier] IoU: 0.00
+[2024-08-26 22:19:18,062][    INFO] ***** Evaluation ***** >>>> Class [80 toothbrush] IoU: 7.24
+[2024-08-26 22:19:18,062][    INFO] ***** Evaluation original ***** >>>> MeanIoU: 43.76
+
