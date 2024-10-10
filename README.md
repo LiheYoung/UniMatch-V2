@@ -15,7 +15,7 @@ class="center">
 
 ## Results
 
-**We provide the [training log of each reported value](https://github.com/LiheYoung/UniMatch-V2/blob/main/training-logs). You can refer to them during reproducing. We also provide all the [checkpoints](https://github.com/LiheYoung/UniMatch-V2/blob/main/training-logs) of our core experiments.**
+**We provide the [training log of each reported value](https://github.com/LiheYoung/UniMatch-V2/blob/main/training-logs). You can refer to them during reproducing. We also provide all the [checkpoints](https://huggingface.co/LiheYoung/UniMatch-V2/tree/main) of our core experiments.**
 
 ### Pascal VOC 2012
 
@@ -56,12 +56,12 @@ class="center">
 
 In addition to the above traditional SSS settings, we also explore a real-world large-scale setting, where substantial images (*e.g.*, 10K) have already been annotated, and menatime much more unlabeled images (*e.g.*, 100K) are available. It is challenging but highly meaningful.
 
-|  Labeled Data (# Img)  |  + Unlabeled Data (# Img)  |  Improvement |
-| :--------------------: | :------------------------: | :----------: |
-| COCO (118K)            | COCO Extra (123K)          | 66.4 --> 67.1|
-| ADE20K (20K)           | COCO Labeled (118K)        | 54.1 --> 54.9|
-| ADE20K (20K)           | COCO All (118K + 123K)     | 54.1 --> 55.7|
-| Cityscapes (3K)        | Cityscapes Extra (20K)     | 85.2 --> 85.5|
+|  Labeled Data (# Img)  |  + Unlabeled Data (# Img)  |   Improvement  |
+| :--------------------: | :------------------------: | :------------: |
+| COCO (118K)            | COCO Extra (123K)          |66.4 &rarr; 67.1|
+| ADE20K (20K)           | COCO Labeled (118K)        |54.1 &rarr; 54.9|
+| ADE20K (20K)           | COCO All (118K + 123K)     |54.1 &rarr; 55.7|
+| Cityscapes (3K)        | Cityscapes Extra (20K)     |85.2 &rarr; 85.5|
 
 
 ## Getting Started
