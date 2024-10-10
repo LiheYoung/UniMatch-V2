@@ -4,7 +4,7 @@ This codebase contains the official PyTorch implementation of <b>UniMatch V2</b>
 
 > **[UniMatch V2: Pushing the Limit of Semi-Supervised Semantic Segmentation]()**</br>
 > Lihe Yang, Zhen Zhao, Wanli Ouyang, Hengshuang Zhao</br>
-> *Preprint, 2024*
+> Preprint, 2024
 
 <p align="left">
 <img src="./docs/framework.png" width=90% height=90% 
@@ -15,7 +15,7 @@ class="center">
 
 ## Results
 
-**We provide the [training logs](https://github.com/LiheYoung/UniMatch-V2/blob/main/training-logs) of *each reported value*. You can refer to them during reproducing. We also provide all the [checkpoints](https://huggingface.co/LiheYoung/UniMatch-V2) of our core experiments.**
+**We provide the [training log of each reported value](https://github.com/LiheYoung/UniMatch-V2/blob/main/training-logs). You can refer to them during reproducing. We also provide all the [checkpoints]((https://github.com/LiheYoung/UniMatch-V2/blob/main/training-logs)) of our core experiments.**
 
 ### Pascal VOC 2012
 
@@ -130,11 +130,11 @@ To train on other datasets or splits, please modify
 
 ### FixMatch
 
-Modify the ``method`` from ``'unimatch_v2'`` to ``'fixmatch'`` in [train.sh](https://github.com/LiheYoung/UniMatch/blob/main/scripts/train.sh).
+Modify the ``method`` from ``'unimatch_v2'`` to ``'fixmatch'`` in [train.sh](https://github.com/LiheYoung/UniMatch-V2/blob/main/scripts/train.sh).
 
 ### Supervised Baseline
 
-Modify the ``method`` from ``'unimatch'`` to ``'supervised'`` in [train.sh](https://github.com/LiheYoung/UniMatch/blob/main/scripts/train.sh). 
+Modify the ``method`` from ``'unimatch'`` to ``'supervised'`` in [train.sh](https://github.com/LiheYoung/UniMatch-V2/blob/main/scripts/train.sh). 
 
 
 ## Citation
