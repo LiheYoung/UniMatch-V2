@@ -2,7 +2,7 @@
 
 This codebase contains the official PyTorch implementation of <b>UniMatch V2</b>:
 
-> **[UniMatch V2: Pushing the Limit of Semi-Supervised Semantic Segmentation](https://github.com/LiheYoung/UniMatch-V2/blob/main/docs/paper.pdf)**</br>
+> **[UniMatch V2: Pushing the Limit of Semi-Supervised Semantic Segmentation](https://arxiv.org/abs/2410.10777)**</br>
 > Lihe Yang, Zhen Zhao, Hengshuang Zhao</br>
 > Preprint, 2024
 
@@ -134,7 +134,7 @@ Modify the ``method`` from ``'unimatch_v2'`` to ``'fixmatch'`` in [train.sh](htt
 
 ### Supervised Baseline
 
-Modify the ``method`` from ``'unimatch'`` to ``'supervised'`` in [train.sh](https://github.com/LiheYoung/UniMatch-V2/blob/main/scripts/train.sh). 
+Modify the ``method`` from ``'unimatch_v2'`` to ``'supervised'`` in [train.sh](https://github.com/LiheYoung/UniMatch-V2/blob/main/scripts/train.sh). 
 
 
 ## Citation
@@ -145,7 +145,7 @@ If you find this project useful, please consider citing:
 @article{unimatchv2,
   title={UniMatch V2: Pushing the Limit of Semi-Supervised Semantic Segmentation},
   author={Yang, Lihe and Zhao, Zhen and Zhao, Hengshuang},
-  journal={arXiv:},
+  journal={arXiv:2410.10777},
   year={2024}
 }
 ```
