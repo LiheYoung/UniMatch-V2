@@ -1,5 +1,14 @@
 # UniMatch V2
 
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/unimatch-v2-pushing-the-limit-of-semi/semi-supervised-semantic-segmentation-on-27)](https://paperswithcode.com/sota/semi-supervised-semantic-segmentation-on-27?p=unimatch-v2-pushing-the-limit-of-semi)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/unimatch-v2-pushing-the-limit-of-semi/semi-supervised-semantic-segmentation-on-10)](https://paperswithcode.com/sota/semi-supervised-semantic-segmentation-on-10?p=unimatch-v2-pushing-the-limit-of-semi)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/unimatch-v2-pushing-the-limit-of-semi/semi-supervised-semantic-segmentation-on-22)](https://paperswithcode.com/sota/semi-supervised-semantic-segmentation-on-22?p=unimatch-v2-pushing-the-limit-of-semi)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/unimatch-v2-pushing-the-limit-of-semi/semi-supervised-semantic-segmentation-on-8)](https://paperswithcode.com/sota/semi-supervised-semantic-segmentation-on-8?p=unimatch-v2-pushing-the-limit-of-semi)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/unimatch-v2-pushing-the-limit-of-semi/semi-supervised-semantic-segmentation-on-coco-1)](https://paperswithcode.com/sota/semi-supervised-semantic-segmentation-on-coco-1?p=unimatch-v2-pushing-the-limit-of-semi)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/unimatch-v2-pushing-the-limit-of-semi/semi-supervised-semantic-segmentation-on-coco-2)](https://paperswithcode.com/sota/semi-supervised-semantic-segmentation-on-coco-2?p=unimatch-v2-pushing-the-limit-of-semi)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/unimatch-v2-pushing-the-limit-of-semi/semi-supervised-semantic-segmentation-on-41)](https://paperswithcode.com/sota/semi-supervised-semantic-segmentation-on-41?p=unimatch-v2-pushing-the-limit-of-semi)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/unimatch-v2-pushing-the-limit-of-semi/semi-supervised-semantic-segmentation-on-42)](https://paperswithcode.com/sota/semi-supervised-semantic-segmentation-on-42?p=unimatch-v2-pushing-the-limit-of-semi)
+
 This codebase contains the official PyTorch implementation of <b>UniMatch V2</b>:
 
 > **[UniMatch V2: Pushing the Limit of Semi-Supervised Semantic Segmentation](https://arxiv.org/abs/2410.10777)**</br>
