@@ -63,7 +63,7 @@ class="center">
 
 ### Real-World Large-Scale SSS Setting
 
-In addition to the above traditional SSS settings, we also explore a real-world large-scale setting, where substantial images (*e.g.*, 10K) have already been annotated, and menatime much more unlabeled images (*e.g.*, 100K) are available. It is challenging but highly meaningful.
+In addition to the above traditional SSS settings, we also explore a real-world large-scale setting, where substantial images (*e.g.*, 10K) have already been annotated, and meantime much more unlabeled images (*e.g.*, 100K) are available. It is challenging but highly meaningful.
 
 |  Labeled Data (# Img)  |  + Unlabeled Data (# Img)  |   Improvement  |
 | :--------------------: | :------------------------: | :------------: |
@@ -72,6 +72,10 @@ In addition to the above traditional SSS settings, we also explore a real-world 
 | ADE20K (20K)           | COCO All (118K + 123K)     |54.1 &rarr; 55.7|
 | Cityscapes (3K)        | Cityscapes Extra (20K)     |85.2 &rarr; 85.5|
 
+
+### More Scenarios
+
+We also apply our UniMatch V2 in the scenarios of semi-supervised [**remote sensing change detection**](https://github.com/LiheYoung/UniMatch-V2/blob/main/remote-sensing).
 
 ## Getting Started
 

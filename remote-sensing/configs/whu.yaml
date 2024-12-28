@@ -1,0 +1,17 @@
+# arguments for dataset
+dataset: whu
+nclass: 2
+crop_size: 252
+data_root: Your/WHU-CD/Path
+
+# arguments for training
+epochs: 60
+batch_size: 8 # per GPU x 1 GPU
+lr: 0.000005
+lr_multi: 40.0
+conf_thresh: 0.95
+
+# arguments for model
+model: dpt
+backbone: dinov2_base
+lock_backbone: False
